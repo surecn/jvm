@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/surecn/Code/CLionProjects/jvm/MainParamater.cpp
+MainParamater.h
+/Users/surecn/Code/CLionProjects/jvm/MainParamater.h
+
+/Users/surecn/Code/CLionProjects/jvm/MainParamater.h
+iostream
+-
+string
+-
+
+/Users/surecn/Code/CLionProjects/jvm/main.cpp
+iostream
+-
+string
+-
+MainParamater.h
+/Users/surecn/Code/CLionProjects/jvm/MainParamater.h
+
