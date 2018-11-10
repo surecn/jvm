@@ -20,7 +20,7 @@ public:
     u4 readU4(); //u4
     u8 readU8(); //u8
     u2* readU2s(); //u2[]
-    u1* readU1s(); //u8[]
+    u1* readU1s(int length); //u8[]
 };
 
 

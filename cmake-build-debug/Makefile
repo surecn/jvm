@@ -393,6 +393,330 @@ MemberInfo.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/MemberInfo.cpp.s
 .PHONY : MemberInfo.cpp.s
 
+attribute/AttributeInfo.o: attribute/AttributeInfo.cpp.o
+
+.PHONY : attribute/AttributeInfo.o
+
+# target to build an object file
+attribute/AttributeInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.o
+.PHONY : attribute/AttributeInfo.cpp.o
+
+attribute/AttributeInfo.i: attribute/AttributeInfo.cpp.i
+
+.PHONY : attribute/AttributeInfo.i
+
+# target to preprocess a source file
+attribute/AttributeInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.i
+.PHONY : attribute/AttributeInfo.cpp.i
+
+attribute/AttributeInfo.s: attribute/AttributeInfo.cpp.s
+
+.PHONY : attribute/AttributeInfo.s
+
+# target to generate assembly for a file
+attribute/AttributeInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.s
+.PHONY : attribute/AttributeInfo.cpp.s
+
+constant/ConstantClassInfo.o: constant/ConstantClassInfo.cpp.o
+
+.PHONY : constant/ConstantClassInfo.o
+
+# target to build an object file
+constant/ConstantClassInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantClassInfo.cpp.o
+.PHONY : constant/ConstantClassInfo.cpp.o
+
+constant/ConstantClassInfo.i: constant/ConstantClassInfo.cpp.i
+
+.PHONY : constant/ConstantClassInfo.i
+
+# target to preprocess a source file
+constant/ConstantClassInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantClassInfo.cpp.i
+.PHONY : constant/ConstantClassInfo.cpp.i
+
+constant/ConstantClassInfo.s: constant/ConstantClassInfo.cpp.s
+
+.PHONY : constant/ConstantClassInfo.s
+
+# target to generate assembly for a file
+constant/ConstantClassInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantClassInfo.cpp.s
+.PHONY : constant/ConstantClassInfo.cpp.s
+
+constant/ConstantDoubleInfo.o: constant/ConstantDoubleInfo.cpp.o
+
+.PHONY : constant/ConstantDoubleInfo.o
+
+# target to build an object file
+constant/ConstantDoubleInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantDoubleInfo.cpp.o
+.PHONY : constant/ConstantDoubleInfo.cpp.o
+
+constant/ConstantDoubleInfo.i: constant/ConstantDoubleInfo.cpp.i
+
+.PHONY : constant/ConstantDoubleInfo.i
+
+# target to preprocess a source file
+constant/ConstantDoubleInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantDoubleInfo.cpp.i
+.PHONY : constant/ConstantDoubleInfo.cpp.i
+
+constant/ConstantDoubleInfo.s: constant/ConstantDoubleInfo.cpp.s
+
+.PHONY : constant/ConstantDoubleInfo.s
+
+# target to generate assembly for a file
+constant/ConstantDoubleInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantDoubleInfo.cpp.s
+.PHONY : constant/ConstantDoubleInfo.cpp.s
+
+constant/ConstantFieldRefInfo.o: constant/ConstantFieldRefInfo.cpp.o
+
+.PHONY : constant/ConstantFieldRefInfo.o
+
+# target to build an object file
+constant/ConstantFieldRefInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantFieldRefInfo.cpp.o
+.PHONY : constant/ConstantFieldRefInfo.cpp.o
+
+constant/ConstantFieldRefInfo.i: constant/ConstantFieldRefInfo.cpp.i
+
+.PHONY : constant/ConstantFieldRefInfo.i
+
+# target to preprocess a source file
+constant/ConstantFieldRefInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantFieldRefInfo.cpp.i
+.PHONY : constant/ConstantFieldRefInfo.cpp.i
+
+constant/ConstantFieldRefInfo.s: constant/ConstantFieldRefInfo.cpp.s
+
+.PHONY : constant/ConstantFieldRefInfo.s
+
+# target to generate assembly for a file
+constant/ConstantFieldRefInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantFieldRefInfo.cpp.s
+.PHONY : constant/ConstantFieldRefInfo.cpp.s
+
+constant/ConstantFloatInfo.o: constant/ConstantFloatInfo.cpp.o
+
+.PHONY : constant/ConstantFloatInfo.o
+
+# target to build an object file
+constant/ConstantFloatInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantFloatInfo.cpp.o
+.PHONY : constant/ConstantFloatInfo.cpp.o
+
+constant/ConstantFloatInfo.i: constant/ConstantFloatInfo.cpp.i
+
+.PHONY : constant/ConstantFloatInfo.i
+
+# target to preprocess a source file
+constant/ConstantFloatInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantFloatInfo.cpp.i
+.PHONY : constant/ConstantFloatInfo.cpp.i
+
+constant/ConstantFloatInfo.s: constant/ConstantFloatInfo.cpp.s
+
+.PHONY : constant/ConstantFloatInfo.s
+
+# target to generate assembly for a file
+constant/ConstantFloatInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantFloatInfo.cpp.s
+.PHONY : constant/ConstantFloatInfo.cpp.s
+
+constant/ConstantIntegerInfo.o: constant/ConstantIntegerInfo.cpp.o
+
+.PHONY : constant/ConstantIntegerInfo.o
+
+# target to build an object file
+constant/ConstantIntegerInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantIntegerInfo.cpp.o
+.PHONY : constant/ConstantIntegerInfo.cpp.o
+
+constant/ConstantIntegerInfo.i: constant/ConstantIntegerInfo.cpp.i
+
+.PHONY : constant/ConstantIntegerInfo.i
+
+# target to preprocess a source file
+constant/ConstantIntegerInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantIntegerInfo.cpp.i
+.PHONY : constant/ConstantIntegerInfo.cpp.i
+
+constant/ConstantIntegerInfo.s: constant/ConstantIntegerInfo.cpp.s
+
+.PHONY : constant/ConstantIntegerInfo.s
+
+# target to generate assembly for a file
+constant/ConstantIntegerInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantIntegerInfo.cpp.s
+.PHONY : constant/ConstantIntegerInfo.cpp.s
+
+constant/ConstantLongInfo.o: constant/ConstantLongInfo.cpp.o
+
+.PHONY : constant/ConstantLongInfo.o
+
+# target to build an object file
+constant/ConstantLongInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantLongInfo.cpp.o
+.PHONY : constant/ConstantLongInfo.cpp.o
+
+constant/ConstantLongInfo.i: constant/ConstantLongInfo.cpp.i
+
+.PHONY : constant/ConstantLongInfo.i
+
+# target to preprocess a source file
+constant/ConstantLongInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantLongInfo.cpp.i
+.PHONY : constant/ConstantLongInfo.cpp.i
+
+constant/ConstantLongInfo.s: constant/ConstantLongInfo.cpp.s
+
+.PHONY : constant/ConstantLongInfo.s
+
+# target to generate assembly for a file
+constant/ConstantLongInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantLongInfo.cpp.s
+.PHONY : constant/ConstantLongInfo.cpp.s
+
+constant/ConstantMemberInfo.o: constant/ConstantMemberInfo.cpp.o
+
+.PHONY : constant/ConstantMemberInfo.o
+
+# target to build an object file
+constant/ConstantMemberInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantMemberInfo.cpp.o
+.PHONY : constant/ConstantMemberInfo.cpp.o
+
+constant/ConstantMemberInfo.i: constant/ConstantMemberInfo.cpp.i
+
+.PHONY : constant/ConstantMemberInfo.i
+
+# target to preprocess a source file
+constant/ConstantMemberInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantMemberInfo.cpp.i
+.PHONY : constant/ConstantMemberInfo.cpp.i
+
+constant/ConstantMemberInfo.s: constant/ConstantMemberInfo.cpp.s
+
+.PHONY : constant/ConstantMemberInfo.s
+
+# target to generate assembly for a file
+constant/ConstantMemberInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantMemberInfo.cpp.s
+.PHONY : constant/ConstantMemberInfo.cpp.s
+
+constant/ConstantMethodInfo.o: constant/ConstantMethodInfo.cpp.o
+
+.PHONY : constant/ConstantMethodInfo.o
+
+# target to build an object file
+constant/ConstantMethodInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantMethodInfo.cpp.o
+.PHONY : constant/ConstantMethodInfo.cpp.o
+
+constant/ConstantMethodInfo.i: constant/ConstantMethodInfo.cpp.i
+
+.PHONY : constant/ConstantMethodInfo.i
+
+# target to preprocess a source file
+constant/ConstantMethodInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantMethodInfo.cpp.i
+.PHONY : constant/ConstantMethodInfo.cpp.i
+
+constant/ConstantMethodInfo.s: constant/ConstantMethodInfo.cpp.s
+
+.PHONY : constant/ConstantMethodInfo.s
+
+# target to generate assembly for a file
+constant/ConstantMethodInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantMethodInfo.cpp.s
+.PHONY : constant/ConstantMethodInfo.cpp.s
+
+constant/ConstantNameAndTypeInfo.o: constant/ConstantNameAndTypeInfo.cpp.o
+
+.PHONY : constant/ConstantNameAndTypeInfo.o
+
+# target to build an object file
+constant/ConstantNameAndTypeInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantNameAndTypeInfo.cpp.o
+.PHONY : constant/ConstantNameAndTypeInfo.cpp.o
+
+constant/ConstantNameAndTypeInfo.i: constant/ConstantNameAndTypeInfo.cpp.i
+
+.PHONY : constant/ConstantNameAndTypeInfo.i
+
+# target to preprocess a source file
+constant/ConstantNameAndTypeInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantNameAndTypeInfo.cpp.i
+.PHONY : constant/ConstantNameAndTypeInfo.cpp.i
+
+constant/ConstantNameAndTypeInfo.s: constant/ConstantNameAndTypeInfo.cpp.s
+
+.PHONY : constant/ConstantNameAndTypeInfo.s
+
+# target to generate assembly for a file
+constant/ConstantNameAndTypeInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantNameAndTypeInfo.cpp.s
+.PHONY : constant/ConstantNameAndTypeInfo.cpp.s
+
+constant/ConstantStringInfo.o: constant/ConstantStringInfo.cpp.o
+
+.PHONY : constant/ConstantStringInfo.o
+
+# target to build an object file
+constant/ConstantStringInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantStringInfo.cpp.o
+.PHONY : constant/ConstantStringInfo.cpp.o
+
+constant/ConstantStringInfo.i: constant/ConstantStringInfo.cpp.i
+
+.PHONY : constant/ConstantStringInfo.i
+
+# target to preprocess a source file
+constant/ConstantStringInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantStringInfo.cpp.i
+.PHONY : constant/ConstantStringInfo.cpp.i
+
+constant/ConstantStringInfo.s: constant/ConstantStringInfo.cpp.s
+
+.PHONY : constant/ConstantStringInfo.s
+
+# target to generate assembly for a file
+constant/ConstantStringInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantStringInfo.cpp.s
+.PHONY : constant/ConstantStringInfo.cpp.s
+
+constant/ConstantUtf8Info.o: constant/ConstantUtf8Info.cpp.o
+
+.PHONY : constant/ConstantUtf8Info.o
+
+# target to build an object file
+constant/ConstantUtf8Info.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantUtf8Info.cpp.o
+.PHONY : constant/ConstantUtf8Info.cpp.o
+
+constant/ConstantUtf8Info.i: constant/ConstantUtf8Info.cpp.i
+
+.PHONY : constant/ConstantUtf8Info.i
+
+# target to preprocess a source file
+constant/ConstantUtf8Info.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantUtf8Info.cpp.i
+.PHONY : constant/ConstantUtf8Info.cpp.i
+
+constant/ConstantUtf8Info.s: constant/ConstantUtf8Info.cpp.s
+
+.PHONY : constant/ConstantUtf8Info.s
+
+# target to generate assembly for a file
+constant/ConstantUtf8Info.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/constant/ConstantUtf8Info.cpp.s
+.PHONY : constant/ConstantUtf8Info.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -459,6 +783,42 @@ help:
 	@echo "... MemberInfo.o"
 	@echo "... MemberInfo.i"
 	@echo "... MemberInfo.s"
+	@echo "... attribute/AttributeInfo.o"
+	@echo "... attribute/AttributeInfo.i"
+	@echo "... attribute/AttributeInfo.s"
+	@echo "... constant/ConstantClassInfo.o"
+	@echo "... constant/ConstantClassInfo.i"
+	@echo "... constant/ConstantClassInfo.s"
+	@echo "... constant/ConstantDoubleInfo.o"
+	@echo "... constant/ConstantDoubleInfo.i"
+	@echo "... constant/ConstantDoubleInfo.s"
+	@echo "... constant/ConstantFieldRefInfo.o"
+	@echo "... constant/ConstantFieldRefInfo.i"
+	@echo "... constant/ConstantFieldRefInfo.s"
+	@echo "... constant/ConstantFloatInfo.o"
+	@echo "... constant/ConstantFloatInfo.i"
+	@echo "... constant/ConstantFloatInfo.s"
+	@echo "... constant/ConstantIntegerInfo.o"
+	@echo "... constant/ConstantIntegerInfo.i"
+	@echo "... constant/ConstantIntegerInfo.s"
+	@echo "... constant/ConstantLongInfo.o"
+	@echo "... constant/ConstantLongInfo.i"
+	@echo "... constant/ConstantLongInfo.s"
+	@echo "... constant/ConstantMemberInfo.o"
+	@echo "... constant/ConstantMemberInfo.i"
+	@echo "... constant/ConstantMemberInfo.s"
+	@echo "... constant/ConstantMethodInfo.o"
+	@echo "... constant/ConstantMethodInfo.i"
+	@echo "... constant/ConstantMethodInfo.s"
+	@echo "... constant/ConstantNameAndTypeInfo.o"
+	@echo "... constant/ConstantNameAndTypeInfo.i"
+	@echo "... constant/ConstantNameAndTypeInfo.s"
+	@echo "... constant/ConstantStringInfo.o"
+	@echo "... constant/ConstantStringInfo.i"
+	@echo "... constant/ConstantStringInfo.s"
+	@echo "... constant/ConstantUtf8Info.o"
+	@echo "... constant/ConstantUtf8Info.i"
+	@echo "... constant/ConstantUtf8Info.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

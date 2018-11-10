@@ -29,8 +29,10 @@ u8 ClassReader::readU8() {
     return ch;
 }
 
-u1* ClassReader::readU1s() {
-
+u1* ClassReader::readU1s(int length) {
+    u1* ch = &data[0];
+    data = &data[length];
+    return ch;
 }
 
 u2* ClassReader::readU2s() {

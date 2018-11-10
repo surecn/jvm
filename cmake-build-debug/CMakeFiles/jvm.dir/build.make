@@ -200,6 +200,162 @@ CMakeFiles/jvm.dir/ConstantInfo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/ConstantInfo.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/ConstantInfo.cpp -o CMakeFiles/jvm.dir/ConstantInfo.cpp.s
 
+CMakeFiles/jvm.dir/constant/ConstantIntegerInfo.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/constant/ConstantIntegerInfo.cpp.o: ../constant/ConstantIntegerInfo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/jvm.dir/constant/ConstantIntegerInfo.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/constant/ConstantIntegerInfo.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/constant/ConstantIntegerInfo.cpp
+
+CMakeFiles/jvm.dir/constant/ConstantIntegerInfo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/constant/ConstantIntegerInfo.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/constant/ConstantIntegerInfo.cpp > CMakeFiles/jvm.dir/constant/ConstantIntegerInfo.cpp.i
+
+CMakeFiles/jvm.dir/constant/ConstantIntegerInfo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/constant/ConstantIntegerInfo.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/constant/ConstantIntegerInfo.cpp -o CMakeFiles/jvm.dir/constant/ConstantIntegerInfo.cpp.s
+
+CMakeFiles/jvm.dir/constant/ConstantLongInfo.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/constant/ConstantLongInfo.cpp.o: ../constant/ConstantLongInfo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/jvm.dir/constant/ConstantLongInfo.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/constant/ConstantLongInfo.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/constant/ConstantLongInfo.cpp
+
+CMakeFiles/jvm.dir/constant/ConstantLongInfo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/constant/ConstantLongInfo.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/constant/ConstantLongInfo.cpp > CMakeFiles/jvm.dir/constant/ConstantLongInfo.cpp.i
+
+CMakeFiles/jvm.dir/constant/ConstantLongInfo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/constant/ConstantLongInfo.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/constant/ConstantLongInfo.cpp -o CMakeFiles/jvm.dir/constant/ConstantLongInfo.cpp.s
+
+CMakeFiles/jvm.dir/constant/ConstantFloatInfo.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/constant/ConstantFloatInfo.cpp.o: ../constant/ConstantFloatInfo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/jvm.dir/constant/ConstantFloatInfo.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/constant/ConstantFloatInfo.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/constant/ConstantFloatInfo.cpp
+
+CMakeFiles/jvm.dir/constant/ConstantFloatInfo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/constant/ConstantFloatInfo.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/constant/ConstantFloatInfo.cpp > CMakeFiles/jvm.dir/constant/ConstantFloatInfo.cpp.i
+
+CMakeFiles/jvm.dir/constant/ConstantFloatInfo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/constant/ConstantFloatInfo.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/constant/ConstantFloatInfo.cpp -o CMakeFiles/jvm.dir/constant/ConstantFloatInfo.cpp.s
+
+CMakeFiles/jvm.dir/constant/ConstantDoubleInfo.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/constant/ConstantDoubleInfo.cpp.o: ../constant/ConstantDoubleInfo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/jvm.dir/constant/ConstantDoubleInfo.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/constant/ConstantDoubleInfo.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/constant/ConstantDoubleInfo.cpp
+
+CMakeFiles/jvm.dir/constant/ConstantDoubleInfo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/constant/ConstantDoubleInfo.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/constant/ConstantDoubleInfo.cpp > CMakeFiles/jvm.dir/constant/ConstantDoubleInfo.cpp.i
+
+CMakeFiles/jvm.dir/constant/ConstantDoubleInfo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/constant/ConstantDoubleInfo.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/constant/ConstantDoubleInfo.cpp -o CMakeFiles/jvm.dir/constant/ConstantDoubleInfo.cpp.s
+
+CMakeFiles/jvm.dir/constant/ConstantUtf8Info.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/constant/ConstantUtf8Info.cpp.o: ../constant/ConstantUtf8Info.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/jvm.dir/constant/ConstantUtf8Info.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/constant/ConstantUtf8Info.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/constant/ConstantUtf8Info.cpp
+
+CMakeFiles/jvm.dir/constant/ConstantUtf8Info.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/constant/ConstantUtf8Info.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/constant/ConstantUtf8Info.cpp > CMakeFiles/jvm.dir/constant/ConstantUtf8Info.cpp.i
+
+CMakeFiles/jvm.dir/constant/ConstantUtf8Info.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/constant/ConstantUtf8Info.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/constant/ConstantUtf8Info.cpp -o CMakeFiles/jvm.dir/constant/ConstantUtf8Info.cpp.s
+
+CMakeFiles/jvm.dir/constant/ConstantStringInfo.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/constant/ConstantStringInfo.cpp.o: ../constant/ConstantStringInfo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/jvm.dir/constant/ConstantStringInfo.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/constant/ConstantStringInfo.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/constant/ConstantStringInfo.cpp
+
+CMakeFiles/jvm.dir/constant/ConstantStringInfo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/constant/ConstantStringInfo.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/constant/ConstantStringInfo.cpp > CMakeFiles/jvm.dir/constant/ConstantStringInfo.cpp.i
+
+CMakeFiles/jvm.dir/constant/ConstantStringInfo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/constant/ConstantStringInfo.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/constant/ConstantStringInfo.cpp -o CMakeFiles/jvm.dir/constant/ConstantStringInfo.cpp.s
+
+CMakeFiles/jvm.dir/constant/ConstantClassInfo.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/constant/ConstantClassInfo.cpp.o: ../constant/ConstantClassInfo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/jvm.dir/constant/ConstantClassInfo.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/constant/ConstantClassInfo.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/constant/ConstantClassInfo.cpp
+
+CMakeFiles/jvm.dir/constant/ConstantClassInfo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/constant/ConstantClassInfo.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/constant/ConstantClassInfo.cpp > CMakeFiles/jvm.dir/constant/ConstantClassInfo.cpp.i
+
+CMakeFiles/jvm.dir/constant/ConstantClassInfo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/constant/ConstantClassInfo.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/constant/ConstantClassInfo.cpp -o CMakeFiles/jvm.dir/constant/ConstantClassInfo.cpp.s
+
+CMakeFiles/jvm.dir/constant/ConstantNameAndTypeInfo.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/constant/ConstantNameAndTypeInfo.cpp.o: ../constant/ConstantNameAndTypeInfo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/jvm.dir/constant/ConstantNameAndTypeInfo.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/constant/ConstantNameAndTypeInfo.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/constant/ConstantNameAndTypeInfo.cpp
+
+CMakeFiles/jvm.dir/constant/ConstantNameAndTypeInfo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/constant/ConstantNameAndTypeInfo.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/constant/ConstantNameAndTypeInfo.cpp > CMakeFiles/jvm.dir/constant/ConstantNameAndTypeInfo.cpp.i
+
+CMakeFiles/jvm.dir/constant/ConstantNameAndTypeInfo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/constant/ConstantNameAndTypeInfo.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/constant/ConstantNameAndTypeInfo.cpp -o CMakeFiles/jvm.dir/constant/ConstantNameAndTypeInfo.cpp.s
+
+CMakeFiles/jvm.dir/constant/ConstantFieldRefInfo.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/constant/ConstantFieldRefInfo.cpp.o: ../constant/ConstantFieldRefInfo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/jvm.dir/constant/ConstantFieldRefInfo.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/constant/ConstantFieldRefInfo.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/constant/ConstantFieldRefInfo.cpp
+
+CMakeFiles/jvm.dir/constant/ConstantFieldRefInfo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/constant/ConstantFieldRefInfo.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/constant/ConstantFieldRefInfo.cpp > CMakeFiles/jvm.dir/constant/ConstantFieldRefInfo.cpp.i
+
+CMakeFiles/jvm.dir/constant/ConstantFieldRefInfo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/constant/ConstantFieldRefInfo.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/constant/ConstantFieldRefInfo.cpp -o CMakeFiles/jvm.dir/constant/ConstantFieldRefInfo.cpp.s
+
+CMakeFiles/jvm.dir/constant/ConstantMethodInfo.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/constant/ConstantMethodInfo.cpp.o: ../constant/ConstantMethodInfo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/jvm.dir/constant/ConstantMethodInfo.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/constant/ConstantMethodInfo.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/constant/ConstantMethodInfo.cpp
+
+CMakeFiles/jvm.dir/constant/ConstantMethodInfo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/constant/ConstantMethodInfo.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/constant/ConstantMethodInfo.cpp > CMakeFiles/jvm.dir/constant/ConstantMethodInfo.cpp.i
+
+CMakeFiles/jvm.dir/constant/ConstantMethodInfo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/constant/ConstantMethodInfo.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/constant/ConstantMethodInfo.cpp -o CMakeFiles/jvm.dir/constant/ConstantMethodInfo.cpp.s
+
+CMakeFiles/jvm.dir/constant/ConstantMemberInfo.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/constant/ConstantMemberInfo.cpp.o: ../constant/ConstantMemberInfo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/jvm.dir/constant/ConstantMemberInfo.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/constant/ConstantMemberInfo.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/constant/ConstantMemberInfo.cpp
+
+CMakeFiles/jvm.dir/constant/ConstantMemberInfo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/constant/ConstantMemberInfo.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/constant/ConstantMemberInfo.cpp > CMakeFiles/jvm.dir/constant/ConstantMemberInfo.cpp.i
+
+CMakeFiles/jvm.dir/constant/ConstantMemberInfo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/constant/ConstantMemberInfo.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/constant/ConstantMemberInfo.cpp -o CMakeFiles/jvm.dir/constant/ConstantMemberInfo.cpp.s
+
+CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.o: ../attribute/AttributeInfo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/attribute/AttributeInfo.cpp
+
+CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/attribute/AttributeInfo.cpp > CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.i
+
+CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/attribute/AttributeInfo.cpp -o CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.s
+
 # Object files for target jvm
 jvm_OBJECTS = \
 "CMakeFiles/jvm.dir/main.cpp.o" \
@@ -212,7 +368,19 @@ jvm_OBJECTS = \
 "CMakeFiles/jvm.dir/ConstantPool.cpp.o" \
 "CMakeFiles/jvm.dir/AttributeInfo.cpp.o" \
 "CMakeFiles/jvm.dir/FieldInfo.cpp.o" \
-"CMakeFiles/jvm.dir/ConstantInfo.cpp.o"
+"CMakeFiles/jvm.dir/ConstantInfo.cpp.o" \
+"CMakeFiles/jvm.dir/constant/ConstantIntegerInfo.cpp.o" \
+"CMakeFiles/jvm.dir/constant/ConstantLongInfo.cpp.o" \
+"CMakeFiles/jvm.dir/constant/ConstantFloatInfo.cpp.o" \
+"CMakeFiles/jvm.dir/constant/ConstantDoubleInfo.cpp.o" \
+"CMakeFiles/jvm.dir/constant/ConstantUtf8Info.cpp.o" \
+"CMakeFiles/jvm.dir/constant/ConstantStringInfo.cpp.o" \
+"CMakeFiles/jvm.dir/constant/ConstantClassInfo.cpp.o" \
+"CMakeFiles/jvm.dir/constant/ConstantNameAndTypeInfo.cpp.o" \
+"CMakeFiles/jvm.dir/constant/ConstantFieldRefInfo.cpp.o" \
+"CMakeFiles/jvm.dir/constant/ConstantMethodInfo.cpp.o" \
+"CMakeFiles/jvm.dir/constant/ConstantMemberInfo.cpp.o" \
+"CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.o"
 
 # External object files for target jvm
 jvm_EXTERNAL_OBJECTS =
@@ -228,9 +396,21 @@ jvm: CMakeFiles/jvm.dir/ConstantPool.cpp.o
 jvm: CMakeFiles/jvm.dir/AttributeInfo.cpp.o
 jvm: CMakeFiles/jvm.dir/FieldInfo.cpp.o
 jvm: CMakeFiles/jvm.dir/ConstantInfo.cpp.o
+jvm: CMakeFiles/jvm.dir/constant/ConstantIntegerInfo.cpp.o
+jvm: CMakeFiles/jvm.dir/constant/ConstantLongInfo.cpp.o
+jvm: CMakeFiles/jvm.dir/constant/ConstantFloatInfo.cpp.o
+jvm: CMakeFiles/jvm.dir/constant/ConstantDoubleInfo.cpp.o
+jvm: CMakeFiles/jvm.dir/constant/ConstantUtf8Info.cpp.o
+jvm: CMakeFiles/jvm.dir/constant/ConstantStringInfo.cpp.o
+jvm: CMakeFiles/jvm.dir/constant/ConstantClassInfo.cpp.o
+jvm: CMakeFiles/jvm.dir/constant/ConstantNameAndTypeInfo.cpp.o
+jvm: CMakeFiles/jvm.dir/constant/ConstantFieldRefInfo.cpp.o
+jvm: CMakeFiles/jvm.dir/constant/ConstantMethodInfo.cpp.o
+jvm: CMakeFiles/jvm.dir/constant/ConstantMemberInfo.cpp.o
+jvm: CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.o
 jvm: CMakeFiles/jvm.dir/build.make
 jvm: CMakeFiles/jvm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable jvm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable jvm"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/jvm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

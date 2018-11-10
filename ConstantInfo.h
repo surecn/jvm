@@ -7,6 +7,8 @@
 
 #include "common.h"
 #include "ClassReader.h"
+#include "ConstantPool.h"
+
 
 const int CONSTANT_Class = 7;
 
@@ -43,11 +45,13 @@ class ConstantInfo {
 public:
     int type;
 
-    void readInfo(ClassReader* classReader);
+    string str;
 
-    ConstantInfo* readConstantInfo(ClassReader* classReader);
+    virtual ConstantInfo* readInfo(ClassReader* classReader);
 
-    ConstantInfo* newConstantInfo(ClassReader* classReader);
+    static ConstantInfo* readConstantInfo(ClassReader* classReader);
+
+    static ConstantInfo* newConstantInfo(u2 tag, ConstantPool *constantPool);
 };
 
 

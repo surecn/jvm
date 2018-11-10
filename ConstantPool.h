@@ -11,15 +11,16 @@
 
 class ConstantPool {
 private:
-    ConstantInfo* constantInfo;
+    ConstantInfo** constantInfos;
 
 public:
-    string* getClassName(ClassFile* classFile);
-
+    string* getClassName(u2 index);
 
     string* getUtf8(u2 index);
 
     void readConstantPool(ClassReader* classReader);
+
+    ConstantInfo* getConstantInfo(u2 index);
 };
 
 
