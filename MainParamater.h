@@ -14,16 +14,17 @@ class MainParamater {
 private:
 
 public:
+    string className;
     bool helpFlag;
     bool versionFlag;
     string XjreOption;
     string cpOption;
-    string classPath;
     string* args[];
 
     MainParamater(int argc, char *argv[]) {
-        printf("argc:%d\n", argc);
-        for (int i = 1; i < argc; ++i) {
+        className = argv[1];
+        cout << "argc:" << argc << " className:" << className << endl;
+        for (int i = 2; i < argc; ++i) {
             char * ch = argv[i];
             printf("argc:%s   \n", ch);
             string sKey(ch);
@@ -37,7 +38,12 @@ public:
                 i++;
                 char * ch = argv[i];
                 string sValue(ch);
-                classPath = sValue;
+                cpOption = sValue;
+            } else if (sKey == "Xjre") {
+                i++;
+                char * ch = argv[i];
+                string sValue(ch);
+                XjreOption = sValue;
             } else {
                 helpFlag = true;
             }

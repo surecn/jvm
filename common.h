@@ -5,14 +5,19 @@
 #ifndef JVM_COMMON_H
 #define JVM_COMMON_H
 
-#endif //JVM_COMMON_H
+
 
 #include <iostream>
 #include <string>
+#include "common/StrUtils.h"
 
 using namespace std;
 
-typedef char u1;    //uint8
-typedef short u2;   //uint16
-typedef int u4;     //uint32
-typedef long u8;    //uint64
+typedef unsigned char byte;
+
+typedef unsigned char u1;    //uint8
+typedef unsigned short u2;   //uint16
+typedef unsigned int u4;     //uint32
+typedef unsigned long u8;    //uint64
+
+#endif //JVM_COMMON_H

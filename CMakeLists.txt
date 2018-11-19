@@ -3,4 +3,27 @@ project(jvm)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(jvm main.cpp common/type.h ClassPath.cpp ClassPath.h MainParamater.cpp MainParamater.h Entry.cpp Entry.h common.h ClassReader.cpp ClassReader.h ClassFile.cpp ClassFile.h MemberInfo.cpp MemberInfo.h ConstantPool.cpp ConstantPool.h AttributeInfo.cpp AttributeInfo.h FieldInfo.cpp FieldInfo.h ConstantInfo.cpp ConstantInfo.h constant/ConstantIntegerInfo.cpp constant/ConstantIntegerInfo.h constant/ConstantLongInfo.cpp constant/ConstantLongInfo.h constant/ConstantFloatInfo.cpp constant/ConstantFloatInfo.h constant/ConstantDoubleInfo.cpp constant/ConstantDoubleInfo.h constant/ConstantUtf8Info.cpp constant/ConstantUtf8Info.h constant/ConstantStringInfo.cpp constant/ConstantStringInfo.h constant/ConstantClassInfo.cpp constant/ConstantClassInfo.h constant/ConstantNameAndTypeInfo.cpp constant/ConstantNameAndTypeInfo.h constant/ConstantFieldRefInfo.cpp constant/ConstantFieldRefInfo.h constant/ConstantMethodInfo.cpp constant/ConstantMethodInfo.h constant/ConstantMemberInfo.cpp constant/ConstantMemberInfo.h attribute/AttributeInfo.cpp attribute/AttributeInfo.h)
+add_executable(jvm main.cpp
+        classpath/ClassPath.cpp classpath/ClassPath.h
+        MainParamater.cpp MainParamater.h
+        classpath/Entry.cpp classpath/Entry.h
+        common.h
+        classfile/ClassReader.cpp classfile/ClassReader.h
+        classfile/ClassFile.cpp classfile/ClassFile.h
+        classfile/MemberInfo.cpp classfile/MemberInfo.h
+        classfile/ConstantPool.cpp classfile/ConstantPool.h
+        classfile/FieldInfo.cpp classfile/FieldInfo.h
+        classfile/ConstantInfo.cpp classfile/ConstantInfo.h
+        classfile/ConstantIntegerInfo.cpp classfile/ConstantIntegerInfo.h
+        classfile/ConstantLongInfo.cpp classfile/ConstantLongInfo.h
+        classfile/ConstantFloatInfo.cpp classfile/ConstantFloatInfo.h
+        classfile/ConstantDoubleInfo.cpp classfile/ConstantDoubleInfo.h
+        classfile/ConstantUtf8Info.cpp classfile/ConstantUtf8Info.h
+        classfile/ConstantStringInfo.cpp classfile/ConstantStringInfo.h
+        classfile/ConstantClassInfo.cpp classfile/ConstantClassInfo.h
+        classfile/ConstantNameAndTypeInfo.cpp classfile/ConstantNameAndTypeInfo.h
+        classfile/ConstantFieldRefInfo.cpp classfile/ConstantFieldRefInfo.h
+        classfile/ConstantMethodInfo.cpp classfile/ConstantMethodInfo.h
+        classfile/ConstantMemberInfo.cpp classfile/ConstantMemberInfo.h
+        attribute/AttributeInfo.cpp attribute/AttributeInfo.h
+        common/StrUtils.h common/StrUtils.cpp)
