@@ -23,9 +23,7 @@ namespace classpath {
 
          string toString();
 
-        Entry* newEntry(string);
-
-        void newCompositeEntry(string, Entry*);
+         Entry* newEntry(string);
     };
 
     class DirEntry : public Entry {
@@ -46,6 +44,35 @@ namespace classpath {
         }
 
     };
+
+    class CompositeEntry : public Entry {
+
+    public:
+        static CompositeEntry* newCompositeEntry(string path) {
+            std::vector<string> list = StrUtils::split(path, "/");
+            for (int i = 0, len = list.size(); i < len; ++i) {
+                string item = list[i];
+
+            }
+        }
+    };
+
+    class WildcardEntry : public Entry {
+
+    public:
+        static CompositeEntry* newWildcardEntry() {
+
+        }
+    };
+
+    class ZipEntry : public Entry {
+    public:
+        static ZipEntry* newZipEntry(string path) {
+
+        }
+
+    };
+
 
 }
 

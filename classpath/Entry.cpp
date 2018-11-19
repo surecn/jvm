@@ -8,10 +8,22 @@
 #include <sys/stat.h>
 
 using namespace std;
-
 using namespace classpath;
 
 Entry* Entry::newEntry(string path) {
+    if (path.find("/", 0) >= 0) {
+        return CompositeEntry::newCompositeEntry(path);
+    }
+    if (path.find("*", 0) >= 0) {
+        return WildcardEntry::newWildcardEntry();
+    }
+    if (StrUtils::endsWith(path, "*")) {
+        return WildcardEntry::newWildcardEntry();
+    }
+    if (StrUtils::endsWith(path, ".jar") || StrUtils::endsWith(path, ".JAR")
+        || StrUtils::endsWith(path, ".zip") || StrUtils::endsWith(path, ".ZIP")) {
+        return ZipEntry::newZipEntry(path);
+    }
     return new DirEntry(path);
 }
 
@@ -38,9 +50,6 @@ int GetFileSizeAndContent(string& fileName, long& size, byte* &data) {
     return 1 ;
 }
 
-void Entry::newCompositeEntry(string, classpath::Entry *) {
-
-}
 
 void DirEntry::readClass(string className, classpath::ClassData &data) {
     string filepath = apply(className);

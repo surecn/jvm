@@ -23,7 +23,15 @@ string getJreDir(string jreOption) {
 }
 
 void ClassPath::parseBootAndExtClassPath(string jreOption) {
+    string jreDir = getJreDir(jreOption);
 
+    // jre/lib/*
+    string jreLibPath = jreDir.append("/lib/*");
+    bootClassPath = WildcardEntry::newWildcardEntry();
+
+    // jre/lib/ext/*
+    string jreExtPath = jreDir.append("/lib/ext/*");
+    extClassPath = WildcardEntry::newWildcardEntry();
 }
 
 

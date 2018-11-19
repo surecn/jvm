@@ -14,9 +14,9 @@ namespace classpath {
 
     class ClassPath {
     private:
-        DirEntry *bootClassPath;
-        DirEntry *extClassPath;
-        DirEntry *userClassPath;
+        Entry *bootClassPath;
+        Entry *extClassPath;
+        Entry *userClassPath;
     public:
 
 

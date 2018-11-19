@@ -34,7 +34,7 @@ void startVM(struct MainParamater cmd) {
     ClassPath* classPath;
     classPath = ClassPath::parse(cmd.XjreOption, cmd.cpOption);
     string className = cmd.className;
-    StrUtils::Replace(className, "/", ".");
+    StrUtils::replace(className, "/", ".");
 
     ClassFile* classFile = loadClass(className, classPath);
 

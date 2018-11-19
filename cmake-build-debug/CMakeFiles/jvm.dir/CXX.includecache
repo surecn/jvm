@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/surecn/Code/CLionProjects/jvm/MainParamater.cpp
-MainParamater.h
-/Users/surecn/Code/CLionProjects/jvm/MainParamater.h
-
 /Users/surecn/Code/CLionProjects/jvm/MainParamater.h
 iostream
 -
@@ -86,6 +82,12 @@ string
 vector
 -
 sstream
+-
+string.h
+-
+iostream
+-
+algorithm
 -
 
 /Users/surecn/Code/CLionProjects/jvm/main.cpp
