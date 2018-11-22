@@ -5,8 +5,3 @@
 #include "ConstantFloatInfo.h"
 
 using namespace cls;
-
-ConstantInfo* ConstantFloatInfo::readInfo(ClassReader *classReader) {
-    value = classReader->readU4();
-    return NULL;
-}

@@ -20,11 +20,13 @@ namespace cls {
 
     public:
 
-        ConstantStringInfo(ConstantPool* cp):constantPool(cp){}
+        ConstantStringInfo(ClassReader* classReader, ConstantPool *cp) : constantPool(cp) {
+            stringIndex = classReader->readU2();
+        }
 
-        ConstantInfo* readInfo(ClassReader* classReader);
-
-        string toString();
+        string toString() {
+            return "string:" + stringIndex;
+        }
     };
 }
 

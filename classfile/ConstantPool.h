@@ -13,37 +13,19 @@ namespace cls {
 
     class ConstantPool {
     private:
-        ConstantInfo** constantInfos;
+        ConstantInfo **constantInfos;
+
+        u2 constantPoolSize;
 
     public:
+
+        ConstantPool(ClassReader *classReader);
+
         string* getClassName(u2 index);
 
         string* getUtf8(u2 index);
 
-        void readConstantPool(ClassReader* classReader);
-
         ConstantInfo* getConstantInfo(u2 index);
-
-
-        static ConstantInfo* newConstantInfo(u2 tag, ConstantPool *constantPool) {
-//        ConstantInfo* info = new ConstantLongInfo();
-//        switch (tag) {
-//            case CONSTANT_Integer:
-//                return new ConstantIntegerInfo();
-//            case CONSTANT_Long:
-//                return new ConstantLongInfo();
-//            case CONSTANT_FLoat:
-//                return NULL;
-//            default:
-//                break;
-//        }
-            return NULL;
-        }
-
-        static ConstantInfo* readConstantInfo(ClassReader* classReader, ConstantPool* constantPool) {
-            u2 tag = classReader->readU2();
-            return newConstantInfo(tag, constantPool);
-        }
 
     };
 

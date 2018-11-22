@@ -5,7 +5,3 @@
 #include "ConstantInfo.h"
 
 using namespace cls;
-
-ConstantInfo* ConstantInfo::readInfo(ClassReader *classReader) {
-    return NULL;
-}

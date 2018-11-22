@@ -14,11 +14,14 @@ namespace cls {
     private:
         long value;
     public:
-        inline long getLong() {
-            return value;
+
+        ConstantLongInfo(ClassReader * classReader) {
+            value = classReader->readU8();
         }
 
-        ConstantInfo* readInfo(ClassReader* classReader);
+        string toString() {
+            return "long:" + std::to_string(value);
+        }
     };
 }
 

@@ -7,6 +7,7 @@
 
 
 #include "ConstantInfo.h"
+#include "ConstantPool.h"
 
 namespace cls {
     class ConstantFieldRefInfo : public ConstantInfo{
@@ -14,7 +15,10 @@ namespace cls {
         u2 classIndex;
         u2 nameAndTypeIndex;
     public:
-        ConstantInfo* readInfo(ClassReader* classReader);
+        ConstantInfo* readInfo(ClassReader* classReader, ConstantPool cp) {
+
+        }
+
 
     };
 }

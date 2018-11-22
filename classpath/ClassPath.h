@@ -19,19 +19,17 @@ namespace classpath {
         Entry *userClassPath;
     public:
 
-
-        void parseBootAndExtClassPath(string jreOption);
-
-        void parseUserClassPath(string cpOption);
-
-        void readClass(string className, struct ClassData &data);
-
-        static ClassPath* parse(string jreOption, string cpOption) {
-            ClassPath* classPath = new ClassPath();
-            classPath->parseBootAndExtClassPath(jreOption);
-            classPath->parseBootAndExtClassPath(cpOption);
-            return classPath;
+        ClassPath(string &jreOption, string &cpOption) {
+            parseBootAndExtClassPath(jreOption);
+            parseUserClassPath(cpOption);
         }
+
+        void parseBootAndExtClassPath(string &jreOption);
+
+        void parseUserClassPath(string &cpOption);
+
+        void readClass(string &className, struct ClassData &data);
+
     };
 
 };

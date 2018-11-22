@@ -356,6 +356,110 @@ CMakeFiles/jvm.dir/common/StrUtils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/common/StrUtils.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.cpp -o CMakeFiles/jvm.dir/common/StrUtils.cpp.s
 
+CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o: ../classfile/ConstantFactory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFactory.cpp
+
+CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFactory.cpp > CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.i
+
+CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFactory.cpp -o CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.s
+
+CMakeFiles/jvm.dir/attribute/CodeAttribute.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/attribute/CodeAttribute.cpp.o: ../attribute/CodeAttribute.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/jvm.dir/attribute/CodeAttribute.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/attribute/CodeAttribute.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/attribute/CodeAttribute.cpp
+
+CMakeFiles/jvm.dir/attribute/CodeAttribute.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/attribute/CodeAttribute.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/attribute/CodeAttribute.cpp > CMakeFiles/jvm.dir/attribute/CodeAttribute.cpp.i
+
+CMakeFiles/jvm.dir/attribute/CodeAttribute.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/attribute/CodeAttribute.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/attribute/CodeAttribute.cpp -o CMakeFiles/jvm.dir/attribute/CodeAttribute.cpp.s
+
+CMakeFiles/jvm.dir/attribute/ConstantValueAttribute.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/attribute/ConstantValueAttribute.cpp.o: ../attribute/ConstantValueAttribute.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/jvm.dir/attribute/ConstantValueAttribute.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/attribute/ConstantValueAttribute.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/attribute/ConstantValueAttribute.cpp
+
+CMakeFiles/jvm.dir/attribute/ConstantValueAttribute.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/attribute/ConstantValueAttribute.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/attribute/ConstantValueAttribute.cpp > CMakeFiles/jvm.dir/attribute/ConstantValueAttribute.cpp.i
+
+CMakeFiles/jvm.dir/attribute/ConstantValueAttribute.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/attribute/ConstantValueAttribute.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/attribute/ConstantValueAttribute.cpp -o CMakeFiles/jvm.dir/attribute/ConstantValueAttribute.cpp.s
+
+CMakeFiles/jvm.dir/attribute/LineNumberAttribute.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/attribute/LineNumberAttribute.cpp.o: ../attribute/LineNumberAttribute.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/jvm.dir/attribute/LineNumberAttribute.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/attribute/LineNumberAttribute.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/attribute/LineNumberAttribute.cpp
+
+CMakeFiles/jvm.dir/attribute/LineNumberAttribute.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/attribute/LineNumberAttribute.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/attribute/LineNumberAttribute.cpp > CMakeFiles/jvm.dir/attribute/LineNumberAttribute.cpp.i
+
+CMakeFiles/jvm.dir/attribute/LineNumberAttribute.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/attribute/LineNumberAttribute.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/attribute/LineNumberAttribute.cpp -o CMakeFiles/jvm.dir/attribute/LineNumberAttribute.cpp.s
+
+CMakeFiles/jvm.dir/attribute/ExceptionAttribute.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/attribute/ExceptionAttribute.cpp.o: ../attribute/ExceptionAttribute.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/jvm.dir/attribute/ExceptionAttribute.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/attribute/ExceptionAttribute.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/attribute/ExceptionAttribute.cpp
+
+CMakeFiles/jvm.dir/attribute/ExceptionAttribute.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/attribute/ExceptionAttribute.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/attribute/ExceptionAttribute.cpp > CMakeFiles/jvm.dir/attribute/ExceptionAttribute.cpp.i
+
+CMakeFiles/jvm.dir/attribute/ExceptionAttribute.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/attribute/ExceptionAttribute.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/attribute/ExceptionAttribute.cpp -o CMakeFiles/jvm.dir/attribute/ExceptionAttribute.cpp.s
+
+CMakeFiles/jvm.dir/attribute/LocalVariableTableAttribute.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/attribute/LocalVariableTableAttribute.cpp.o: ../attribute/LocalVariableTableAttribute.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/jvm.dir/attribute/LocalVariableTableAttribute.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/attribute/LocalVariableTableAttribute.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/attribute/LocalVariableTableAttribute.cpp
+
+CMakeFiles/jvm.dir/attribute/LocalVariableTableAttribute.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/attribute/LocalVariableTableAttribute.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/attribute/LocalVariableTableAttribute.cpp > CMakeFiles/jvm.dir/attribute/LocalVariableTableAttribute.cpp.i
+
+CMakeFiles/jvm.dir/attribute/LocalVariableTableAttribute.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/attribute/LocalVariableTableAttribute.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/attribute/LocalVariableTableAttribute.cpp -o CMakeFiles/jvm.dir/attribute/LocalVariableTableAttribute.cpp.s
+
+CMakeFiles/jvm.dir/attribute/SourceFileAttribute.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/attribute/SourceFileAttribute.cpp.o: ../attribute/SourceFileAttribute.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/jvm.dir/attribute/SourceFileAttribute.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/attribute/SourceFileAttribute.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/attribute/SourceFileAttribute.cpp
+
+CMakeFiles/jvm.dir/attribute/SourceFileAttribute.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/attribute/SourceFileAttribute.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/attribute/SourceFileAttribute.cpp > CMakeFiles/jvm.dir/attribute/SourceFileAttribute.cpp.i
+
+CMakeFiles/jvm.dir/attribute/SourceFileAttribute.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/attribute/SourceFileAttribute.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/attribute/SourceFileAttribute.cpp -o CMakeFiles/jvm.dir/attribute/SourceFileAttribute.cpp.s
+
+CMakeFiles/jvm.dir/attribute/UnparsedAttribute.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/attribute/UnparsedAttribute.cpp.o: ../attribute/UnparsedAttribute.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/jvm.dir/attribute/UnparsedAttribute.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/attribute/UnparsedAttribute.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/attribute/UnparsedAttribute.cpp
+
+CMakeFiles/jvm.dir/attribute/UnparsedAttribute.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/attribute/UnparsedAttribute.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/attribute/UnparsedAttribute.cpp > CMakeFiles/jvm.dir/attribute/UnparsedAttribute.cpp.i
+
+CMakeFiles/jvm.dir/attribute/UnparsedAttribute.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/attribute/UnparsedAttribute.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/attribute/UnparsedAttribute.cpp -o CMakeFiles/jvm.dir/attribute/UnparsedAttribute.cpp.s
+
 # Object files for target jvm
 jvm_OBJECTS = \
 "CMakeFiles/jvm.dir/main.cpp.o" \
@@ -380,7 +484,15 @@ jvm_OBJECTS = \
 "CMakeFiles/jvm.dir/classfile/ConstantMethodInfo.cpp.o" \
 "CMakeFiles/jvm.dir/classfile/ConstantMemberInfo.cpp.o" \
 "CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.o" \
-"CMakeFiles/jvm.dir/common/StrUtils.cpp.o"
+"CMakeFiles/jvm.dir/common/StrUtils.cpp.o" \
+"CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o" \
+"CMakeFiles/jvm.dir/attribute/CodeAttribute.cpp.o" \
+"CMakeFiles/jvm.dir/attribute/ConstantValueAttribute.cpp.o" \
+"CMakeFiles/jvm.dir/attribute/LineNumberAttribute.cpp.o" \
+"CMakeFiles/jvm.dir/attribute/ExceptionAttribute.cpp.o" \
+"CMakeFiles/jvm.dir/attribute/LocalVariableTableAttribute.cpp.o" \
+"CMakeFiles/jvm.dir/attribute/SourceFileAttribute.cpp.o" \
+"CMakeFiles/jvm.dir/attribute/UnparsedAttribute.cpp.o"
 
 # External object files for target jvm
 jvm_EXTERNAL_OBJECTS =
@@ -408,9 +520,17 @@ jvm: CMakeFiles/jvm.dir/classfile/ConstantMethodInfo.cpp.o
 jvm: CMakeFiles/jvm.dir/classfile/ConstantMemberInfo.cpp.o
 jvm: CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.o
 jvm: CMakeFiles/jvm.dir/common/StrUtils.cpp.o
+jvm: CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o
+jvm: CMakeFiles/jvm.dir/attribute/CodeAttribute.cpp.o
+jvm: CMakeFiles/jvm.dir/attribute/ConstantValueAttribute.cpp.o
+jvm: CMakeFiles/jvm.dir/attribute/LineNumberAttribute.cpp.o
+jvm: CMakeFiles/jvm.dir/attribute/ExceptionAttribute.cpp.o
+jvm: CMakeFiles/jvm.dir/attribute/LocalVariableTableAttribute.cpp.o
+jvm: CMakeFiles/jvm.dir/attribute/SourceFileAttribute.cpp.o
+jvm: CMakeFiles/jvm.dir/attribute/UnparsedAttribute.cpp.o
 jvm: CMakeFiles/jvm.dir/build.make
 jvm: CMakeFiles/jvm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking CXX executable jvm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Linking CXX executable jvm"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/jvm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

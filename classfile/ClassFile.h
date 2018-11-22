@@ -42,15 +42,18 @@ namespace cls {
         u2  thisClass;
         u2  superClass;
         u2*  interfaces;
-        cls::MemberInfo* methods;
-        cls::MemberInfo* fields;
+        u2 interfacesLength;
+        cls::MemberInfo** methods;
+        cls::MemberInfo** fields;
         AttributeInfo* attributes;
 
-        void readAndCheckMagic(ClassReader *classReader);
+        bool readAndCheckMagic(ClassReader *classReader);
 
-        void readAndCheckVersion(ClassReader *classReader);
+        bool readAndCheckVersion(ClassReader *classReader);
 
-        cls::MemberInfo* readMemebers(ClassReader *classReader);
+        void readFields(ClassReader *classReader);
+
+        void readMethods(ClassReader *classReader);
 
         AttributeInfo* readAttributes(ClassReader *classReader);
 
@@ -62,6 +65,11 @@ namespace cls {
 
         string* getDescriptor(MemberInfo* memberInfo);
     public:
+
+        ClassFile(byte* &classData){
+            ClassReader classReader(classData);
+            read(&classReader);
+        }
 
         ClassFile* read(ClassReader* classReader);
 
@@ -89,11 +97,6 @@ namespace cls {
                 return constantPool->getClassName(*this->interfaces);
             }
             return 0;
-        }
-
-        static void ParseClassFile(byte* &classData, ClassFile* classFile) {
-            ClassReader classReader(classData);
-            classFile->read(&classReader);
         }
 
     };

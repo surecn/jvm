@@ -46,8 +46,7 @@ namespace cls {
         string str;
     public:
 
-         ConstantInfo* readInfo(ClassReader* classReader);
-
+        virtual string toString() = 0;
     };
 
 

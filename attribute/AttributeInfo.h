@@ -9,73 +9,41 @@
 #include "../classfile/ClassReader.h"
 #include "../classfile/ConstantPool.h"
 
-using namespace cls;
+namespace cls {
+    class AttributeInfo {
+    private:
+        u2 nameIndex;
+        u4 length;
+        u1 *info;
 
-class AttributeInfo {
-private:
-    u2 nameIndex;
-    u4 length;
-    u1 *info;
+    public:
 
-public:
-    void readInfo(ClassReader* classReader);
+        virtual void readInfo(ClassReader* classReader) = 0;
 
-//    static AttributeInfo** readAttributes(ClassReader* classReader, ConstantPool* constantPool);
-//
-//    static AttributeInfo* readAttribute(ClassReader* classReader, ConstantPool* constantPool);
-//
-//    static AttributeInfo* newAttributeInfo(string attrName, u2 attrLen, ConstantPool* constantPool);
+        static AttributeInfo** readAttributes(ClassReader* classReader, ConstantPool* constantPool);
 
-};
+        static AttributeInfo* readAttribute(ClassReader* classReader, ConstantPool* constantPool);
 
-class DeprecatedAttribute : public AttributeInfo {
-};
+        static AttributeInfo* newAttributeInfo(string *attrName, u2 attrLen, ConstantPool* constantPool);
 
-class SyntheticAttribute : public AttributeInfo {
-};
+    };
 
+    class DeprecatedAttribute : public AttributeInfo {
 
-class SourceFileAttribute : public AttributeInfo {
-private:
-    u2 sourceFileIndex;
-};
+    public:
+        void readInfo(ClassReader* classReader) {
+        }
+    };
 
-
-class ConstantValueAttribute : public AttributeInfo {
-private:
-    u2 constantValueIndex;
-};
-
-class CodeAttribute : public AttributeInfo {
-private:
-    u2 maxStack;
-    u2 maxLocals;
-    u4 codeLength;
-    u1* code;
-//    u2 exceptionTableLength;
-//    {
-//        u2 startPc;
-//        u2 endPc;
-//        u2 handlerPc;
-//        u2 catchType;
-//    } exceptionTable[];
-
-};
-
-
-class ExceptionAttribute : public AttributeInfo {
-private:
-    u2 numberOfException;
-    u2 exceptionIndexTable[];
-};
-
-
-class LineNumberTable : public AttributeInfo {
-
-};
+    class SyntheticAttribute : public AttributeInfo {
+    public:
+        void readInfo(ClassReader* classReader) {
+        }
+    };
 
 
 
+}
 
 
 

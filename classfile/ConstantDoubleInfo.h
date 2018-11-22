@@ -13,7 +13,13 @@ namespace cls {
     private:
         double value;
     public:
-        ConstantInfo* readInfo(ClassReader* classReader);
+        ConstantDoubleInfo(ClassReader* classReader) {
+            value = classReader->readU8();
+        }
+
+        string toString() {
+            return "double:" + std::to_string(value);
+        }
     };
 }
 

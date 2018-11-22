@@ -6,12 +6,7 @@
 
 using namespace cls;
 
-ConstantInfo* ConstantStringInfo::readInfo(ClassReader *classReader) {
-    stringIndex = classReader->readU2();
-}
 
-string ConstantStringInfo::toString() {
-
-    constantPool->getUtf8(stringIndex);
-    return NULL;
-}
+//string ConstantStringInfo::toString() {
+//    return *constantPool->getUtf8(stringIndex);
+//}

@@ -12,9 +12,19 @@ namespace cls {
     class ConstantUtf8Info : public ConstantInfo {
     private:
         u2 length;
-        u1* bytes;
+        string *bytes;
     public:
-        ConstantInfo* readInfo(ClassReader* classReader);
+        ConstantUtf8Info(ClassReader* classReader) {
+            bytes = classReader->readString();
+        }
+
+        string *value() {
+            return bytes;
+        }
+
+        string toString() {
+            return *bytes;
+        }
     };
 
 }

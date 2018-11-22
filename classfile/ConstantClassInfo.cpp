@@ -6,9 +6,6 @@
 
 using namespace cls;
 
-ConstantInfo* ConstantClassInfo::readInfo(ClassReader *classReader) {
-    nameIndex = classReader->readU2();
-}
 
 string* ConstantClassInfo::getName() {
     constantPool->getClassName(nameIndex);

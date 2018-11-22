@@ -6,7 +6,7 @@
 
 using namespace cls;
 
-ConstantInfo* ConstantFieldRefInfo::readInfo(ClassReader *classReader) {
-    classIndex = classReader->readU2();
-    nameAndTypeIndex = classReader->readU2();
-}
+//ConstantInfo* ConstantFieldRefInfo::readInfo(ClassReader *classReader) {
+//    classIndex = classReader->readU2();
+//    nameAndTypeIndex = classReader->readU2();
+//}

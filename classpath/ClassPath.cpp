@@ -8,7 +8,7 @@
 
 using namespace classpath;
 
-string getJreDir(string jreOption) {
+string getJreDir(string &jreOption) {
     if (jreOption != "" && access(jreOption.c_str(), F_OK)) { //TODO 判断目录是否存在
         return jreOption;
     }
@@ -22,33 +22,36 @@ string getJreDir(string jreOption) {
     return NULL;
 }
 
-void ClassPath::parseBootAndExtClassPath(string jreOption) {
+void ClassPath::parseBootAndExtClassPath(string &jreOption) {
     string jreDir = getJreDir(jreOption);
 
     // jre/lib/*
     string jreLibPath = jreDir.append("/lib/*");
-    bootClassPath = WildcardEntry::newWildcardEntry();
+    bootClassPath = new WildcardEntry(jreLibPath);
 
     // jre/lib/ext/*
     string jreExtPath = jreDir.append("/lib/ext/*");
-    extClassPath = WildcardEntry::newWildcardEntry();
+    extClassPath = new WildcardEntry(jreExtPath);
 }
 
 
-void ClassPath::parseUserClassPath(string cpOption) {
-
+void ClassPath::parseUserClassPath(string &cpOption) {
+    if (cpOption=="") {
+        cpOption = ".";
+    }
+    userClassPath = Entry::create(cpOption);
 }
 
 
-void ClassPath::readClass(string className, ClassData &data) {
-    className += ".class";
-    bootClassPath->readClass(className, data);
+void ClassPath::readClass(string &className, ClassData &data) {
+    string str = className + ".class";
+    bootClassPath->readClass(str, data);
     if (data.error == 0) {
         return;
     }
-    this->extClassPath->readClass(className, data);
+    this->extClassPath->readClass(str, data);
     if (data.error == 0) {
         return;
     }
-    this->userClassPath->readClass(className, data);
+    this->userClassPath->readClass(str, data);
 }

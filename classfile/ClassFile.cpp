@@ -4,33 +4,50 @@
 
 #include "ClassFile.h"
 #include "ClassReader.h"
+#include "ConstantDoubleInfo.h"
+#include "ConstantLongInfo.h"
+#include "ConstantFactory.h"
 
 using namespace cls;
 
 ClassFile* ClassFile::read(ClassReader *classReader) {
-    readAndCheckMagic(classReader);
-    readAndCheckVersion(classReader);
+    if (!readAndCheckMagic(classReader)) {
+        return NULL;
+    }
+    if (!readAndCheckVersion(classReader)) {
+        return NULL;
+    }
+    constantPool = readConstantPool(classReader);
     //TODO 类访问标志
     accessFlags = classReader->readU2();
     thisClass = classReader->readU2();
+    cout << "classFile className:" << *constantPool->getClassName(thisClass) << endl;
     superClass = classReader->readU2();
-    interfaces = classReader->readU2s();
-
+    cout << "super className:" << *constantPool->getClassName(superClass) << endl;
+    interfaces = classReader->readU2s(&interfacesLength);
+    readFields(classReader);
+    readMethods(classReader);
 }
 
-void ClassFile::readAndCheckMagic(ClassReader *classReader) {
+static ConstantPool* readConstanPool(ClassReader *classReader) {
+    return new ConstantPool(classReader);
+}
+
+bool ClassFile::readAndCheckMagic(ClassReader *classReader) {
     magic = classReader->readU4();
-    if (magic != 0xCAFEBABE) {
-        cout << "java.lang.ClassFormatError: magic" << endl;
+    if (magic == (u4)0XCAFEBABE) {//0xCAFEBABE
+        return true;
     }
+    cout << "java.lang.ClassFormatError: magic" << endl;
+    return false;
 }
 
-void ClassFile::readAndCheckVersion(ClassReader *classReader) {
+bool ClassFile::readAndCheckVersion(ClassReader *classReader) {
     minorVersion = classReader->readU2();
     majorVersion = classReader->readU2();
     switch (majorVersion) {
         case 45:
-            return;
+            return true;
         case 46:
         case 47:
         case 48:
@@ -39,23 +56,11 @@ void ClassFile::readAndCheckVersion(ClassReader *classReader) {
         case 51:
         case 52:
             if (minorVersion == 0) {
-                return;
+                return true;
             }
     }
     cout << "java.lang.UnsupportedClassVersionError!" << endl;
-}
-
-MemberInfo* ClassFile::readMemebers(ClassReader *classReader) {
-    u2 accessFlags = classReader->readU2();
-    u2 nameIndex = classReader->readU2();
-    u2 descriptorIndex =classReader->readU2();
-    AttributeInfo* attributeInfo = this->readAttributes(classReader);
-    return new MemberInfo(constantPool, accessFlags, nameIndex, descriptorIndex, attributeInfo);
-}
-
-AttributeInfo* ClassFile::readAttributes(ClassReader *classReader) {
-    AttributeInfo* attributeInfo = new AttributeInfo();
-    return attributeInfo;
+    return false;
 }
 
 string* ClassFile::getName(MemberInfo *memberInfo) {
@@ -68,18 +73,17 @@ string* ClassFile::getDescriptor(MemberInfo *memberInfo) {
 
 
 ConstantPool* ClassFile::readConstantPool(ClassReader *classReader) {
-    u2 cpCount = classReader->readU2();
-    ConstantPool* constantPool1;
-    ConstantInfo **constantInfo = new ConstantInfo*[cpCount];
-    for (int i = 1; i < cpCount; ++i) {
-        constantInfo[i] = readConstantInfo(classReader, constantPool1);
-//        if (typeid(constantInfo[i]) == typeid(ConstantDoubleInfo) || typeid(constantInfo[i]) == typeid(ConstantLongInfo)) {
-//            i++;
-//        }
-    }
-    return constantPool1;
+    return new ConstantPool(classReader);
+}
+
+void ClassFile::readFields(ClassReader *classReader) {
+    fields = MemberInfo::readMembers(constantPool, classReader);
+}
+
+void ClassFile::readMethods(ClassReader *classReader) {
+    methods = MemberInfo::readMembers(constantPool, classReader);
 }
 
 ConstantInfo* ClassFile::readConstantInfo(ClassReader *classReader, ConstantPool* cp) {
-
+    return ConstantFactory::readConstantInfo(classReader, cp);
 }
