@@ -30,6 +30,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/jvm.dir/attribute/LocalVariableTableAttribute.cpp.o"
   "CMakeFiles/jvm.dir/attribute/SourceFileAttribute.cpp.o"
   "CMakeFiles/jvm.dir/attribute/UnparsedAttribute.cpp.o"
+  "CMakeFiles/jvm.dir/runtime/Thread.cpp.o"
+  "CMakeFiles/jvm.dir/runtime/Frame.cpp.o"
+  "CMakeFiles/jvm.dir/runtime/Strack.cpp.o"
+  "CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o"
+  "CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.o"
   "jvm.pdb"
   "jvm"
 )

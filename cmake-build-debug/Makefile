@@ -960,6 +960,141 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+runtime/Frame.o: runtime/Frame.cpp.o
+
+.PHONY : runtime/Frame.o
+
+# target to build an object file
+runtime/Frame.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/Frame.cpp.o
+.PHONY : runtime/Frame.cpp.o
+
+runtime/Frame.i: runtime/Frame.cpp.i
+
+.PHONY : runtime/Frame.i
+
+# target to preprocess a source file
+runtime/Frame.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/Frame.cpp.i
+.PHONY : runtime/Frame.cpp.i
+
+runtime/Frame.s: runtime/Frame.cpp.s
+
+.PHONY : runtime/Frame.s
+
+# target to generate assembly for a file
+runtime/Frame.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/Frame.cpp.s
+.PHONY : runtime/Frame.cpp.s
+
+runtime/LocalVars.o: runtime/LocalVars.cpp.o
+
+.PHONY : runtime/LocalVars.o
+
+# target to build an object file
+runtime/LocalVars.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o
+.PHONY : runtime/LocalVars.cpp.o
+
+runtime/LocalVars.i: runtime/LocalVars.cpp.i
+
+.PHONY : runtime/LocalVars.i
+
+# target to preprocess a source file
+runtime/LocalVars.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/LocalVars.cpp.i
+.PHONY : runtime/LocalVars.cpp.i
+
+runtime/LocalVars.s: runtime/LocalVars.cpp.s
+
+.PHONY : runtime/LocalVars.s
+
+# target to generate assembly for a file
+runtime/LocalVars.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/LocalVars.cpp.s
+.PHONY : runtime/LocalVars.cpp.s
+
+runtime/OperandStrack.o: runtime/OperandStrack.cpp.o
+
+.PHONY : runtime/OperandStrack.o
+
+# target to build an object file
+runtime/OperandStrack.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.o
+.PHONY : runtime/OperandStrack.cpp.o
+
+runtime/OperandStrack.i: runtime/OperandStrack.cpp.i
+
+.PHONY : runtime/OperandStrack.i
+
+# target to preprocess a source file
+runtime/OperandStrack.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.i
+.PHONY : runtime/OperandStrack.cpp.i
+
+runtime/OperandStrack.s: runtime/OperandStrack.cpp.s
+
+.PHONY : runtime/OperandStrack.s
+
+# target to generate assembly for a file
+runtime/OperandStrack.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.s
+.PHONY : runtime/OperandStrack.cpp.s
+
+runtime/Strack.o: runtime/Strack.cpp.o
+
+.PHONY : runtime/Strack.o
+
+# target to build an object file
+runtime/Strack.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/Strack.cpp.o
+.PHONY : runtime/Strack.cpp.o
+
+runtime/Strack.i: runtime/Strack.cpp.i
+
+.PHONY : runtime/Strack.i
+
+# target to preprocess a source file
+runtime/Strack.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/Strack.cpp.i
+.PHONY : runtime/Strack.cpp.i
+
+runtime/Strack.s: runtime/Strack.cpp.s
+
+.PHONY : runtime/Strack.s
+
+# target to generate assembly for a file
+runtime/Strack.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/Strack.cpp.s
+.PHONY : runtime/Strack.cpp.s
+
+runtime/Thread.o: runtime/Thread.cpp.o
+
+.PHONY : runtime/Thread.o
+
+# target to build an object file
+runtime/Thread.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/Thread.cpp.o
+.PHONY : runtime/Thread.cpp.o
+
+runtime/Thread.i: runtime/Thread.cpp.i
+
+.PHONY : runtime/Thread.i
+
+# target to preprocess a source file
+runtime/Thread.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/Thread.cpp.i
+.PHONY : runtime/Thread.cpp.i
+
+runtime/Thread.s: runtime/Thread.cpp.s
+
+.PHONY : runtime/Thread.s
+
+# target to generate assembly for a file
+runtime/Thread.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/Thread.cpp.s
+.PHONY : runtime/Thread.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1062,6 +1197,21 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... runtime/Frame.o"
+	@echo "... runtime/Frame.i"
+	@echo "... runtime/Frame.s"
+	@echo "... runtime/LocalVars.o"
+	@echo "... runtime/LocalVars.i"
+	@echo "... runtime/LocalVars.s"
+	@echo "... runtime/OperandStrack.o"
+	@echo "... runtime/OperandStrack.i"
+	@echo "... runtime/OperandStrack.s"
+	@echo "... runtime/Strack.o"
+	@echo "... runtime/Strack.i"
+	@echo "... runtime/Strack.s"
+	@echo "... runtime/Thread.o"
+	@echo "... runtime/Thread.i"
+	@echo "... runtime/Thread.s"
 .PHONY : help
 
 

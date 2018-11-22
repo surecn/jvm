@@ -264,6 +264,36 @@
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/main.cpp">
 			<Option target="jvm"/>
 		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/Frame.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/Frame.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/OperandStrack.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/OperandStrack.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/Strack.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/Strack.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/Thread.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/Thread.h">
+			<Option target="jvm"/>
+		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

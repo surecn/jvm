@@ -460,6 +460,71 @@ CMakeFiles/jvm.dir/attribute/UnparsedAttribute.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/attribute/UnparsedAttribute.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/attribute/UnparsedAttribute.cpp -o CMakeFiles/jvm.dir/attribute/UnparsedAttribute.cpp.s
 
+CMakeFiles/jvm.dir/runtime/Thread.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/runtime/Thread.cpp.o: ../runtime/Thread.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/jvm.dir/runtime/Thread.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/runtime/Thread.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/runtime/Thread.cpp
+
+CMakeFiles/jvm.dir/runtime/Thread.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/runtime/Thread.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/runtime/Thread.cpp > CMakeFiles/jvm.dir/runtime/Thread.cpp.i
+
+CMakeFiles/jvm.dir/runtime/Thread.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/runtime/Thread.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/runtime/Thread.cpp -o CMakeFiles/jvm.dir/runtime/Thread.cpp.s
+
+CMakeFiles/jvm.dir/runtime/Frame.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/runtime/Frame.cpp.o: ../runtime/Frame.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/jvm.dir/runtime/Frame.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/runtime/Frame.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/runtime/Frame.cpp
+
+CMakeFiles/jvm.dir/runtime/Frame.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/runtime/Frame.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/runtime/Frame.cpp > CMakeFiles/jvm.dir/runtime/Frame.cpp.i
+
+CMakeFiles/jvm.dir/runtime/Frame.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/runtime/Frame.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/runtime/Frame.cpp -o CMakeFiles/jvm.dir/runtime/Frame.cpp.s
+
+CMakeFiles/jvm.dir/runtime/Strack.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/runtime/Strack.cpp.o: ../runtime/Strack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/jvm.dir/runtime/Strack.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/runtime/Strack.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/runtime/Strack.cpp
+
+CMakeFiles/jvm.dir/runtime/Strack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/runtime/Strack.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/runtime/Strack.cpp > CMakeFiles/jvm.dir/runtime/Strack.cpp.i
+
+CMakeFiles/jvm.dir/runtime/Strack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/runtime/Strack.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/runtime/Strack.cpp -o CMakeFiles/jvm.dir/runtime/Strack.cpp.s
+
+CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o: ../runtime/LocalVars.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.cpp
+
+CMakeFiles/jvm.dir/runtime/LocalVars.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/runtime/LocalVars.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.cpp > CMakeFiles/jvm.dir/runtime/LocalVars.cpp.i
+
+CMakeFiles/jvm.dir/runtime/LocalVars.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/runtime/LocalVars.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.cpp -o CMakeFiles/jvm.dir/runtime/LocalVars.cpp.s
+
+CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.o: ../runtime/OperandStrack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStrack.cpp
+
+CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStrack.cpp > CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.i
+
+CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStrack.cpp -o CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.s
+
 # Object files for target jvm
 jvm_OBJECTS = \
 "CMakeFiles/jvm.dir/main.cpp.o" \
@@ -492,7 +557,12 @@ jvm_OBJECTS = \
 "CMakeFiles/jvm.dir/attribute/ExceptionAttribute.cpp.o" \
 "CMakeFiles/jvm.dir/attribute/LocalVariableTableAttribute.cpp.o" \
 "CMakeFiles/jvm.dir/attribute/SourceFileAttribute.cpp.o" \
-"CMakeFiles/jvm.dir/attribute/UnparsedAttribute.cpp.o"
+"CMakeFiles/jvm.dir/attribute/UnparsedAttribute.cpp.o" \
+"CMakeFiles/jvm.dir/runtime/Thread.cpp.o" \
+"CMakeFiles/jvm.dir/runtime/Frame.cpp.o" \
+"CMakeFiles/jvm.dir/runtime/Strack.cpp.o" \
+"CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o" \
+"CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.o"
 
 # External object files for target jvm
 jvm_EXTERNAL_OBJECTS =
@@ -528,9 +598,14 @@ jvm: CMakeFiles/jvm.dir/attribute/ExceptionAttribute.cpp.o
 jvm: CMakeFiles/jvm.dir/attribute/LocalVariableTableAttribute.cpp.o
 jvm: CMakeFiles/jvm.dir/attribute/SourceFileAttribute.cpp.o
 jvm: CMakeFiles/jvm.dir/attribute/UnparsedAttribute.cpp.o
+jvm: CMakeFiles/jvm.dir/runtime/Thread.cpp.o
+jvm: CMakeFiles/jvm.dir/runtime/Frame.cpp.o
+jvm: CMakeFiles/jvm.dir/runtime/Strack.cpp.o
+jvm: CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o
+jvm: CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.o
 jvm: CMakeFiles/jvm.dir/build.make
 jvm: CMakeFiles/jvm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Linking CXX executable jvm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Linking CXX executable jvm"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/jvm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

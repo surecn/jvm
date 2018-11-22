@@ -270,3 +270,21 @@ CMakeFiles/jvm.dir/main.cpp.o: ../common.h
 CMakeFiles/jvm.dir/main.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/main.cpp.o: ../main.cpp
 
+CMakeFiles/jvm.dir/runtime/Frame.cpp.o: ../common.h
+CMakeFiles/jvm.dir/runtime/Frame.cpp.o: ../common/StrUtils.h
+CMakeFiles/jvm.dir/runtime/Frame.cpp.o: ../runtime/Frame.cpp
+CMakeFiles/jvm.dir/runtime/Frame.cpp.o: ../runtime/Frame.h
+
+CMakeFiles/jvm.dir/runtime/Strack.cpp.o: ../common.h
+CMakeFiles/jvm.dir/runtime/Strack.cpp.o: ../common/StrUtils.h
+CMakeFiles/jvm.dir/runtime/Strack.cpp.o: ../runtime/Frame.h
+CMakeFiles/jvm.dir/runtime/Strack.cpp.o: ../runtime/Strack.cpp
+CMakeFiles/jvm.dir/runtime/Strack.cpp.o: ../runtime/Strack.h
+
+CMakeFiles/jvm.dir/runtime/Thread.cpp.o: ../common.h
+CMakeFiles/jvm.dir/runtime/Thread.cpp.o: ../common/StrUtils.h
+CMakeFiles/jvm.dir/runtime/Thread.cpp.o: ../runtime/Frame.h
+CMakeFiles/jvm.dir/runtime/Thread.cpp.o: ../runtime/Strack.h
+CMakeFiles/jvm.dir/runtime/Thread.cpp.o: ../runtime/Thread.cpp
+CMakeFiles/jvm.dir/runtime/Thread.cpp.o: ../runtime/Thread.h
+
