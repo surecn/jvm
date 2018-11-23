@@ -7,10 +7,10 @@
 
 
 #include "../common.h"
-#include "MemberInfo.h"
 #include "ClassReader.h"
 #include "ConstantPool.h"
 #include "ConstantInfo.h"
+#include "Constants.h"
 
 namespace cls {
 
@@ -48,31 +48,20 @@ namespace cls {
         AttributeInfo* attributes;
 
         bool readAndCheckMagic(ClassReader *classReader);
-
         bool readAndCheckVersion(ClassReader *classReader);
-
         void readFields(ClassReader *classReader);
-
         void readMethods(ClassReader *classReader);
-
         AttributeInfo* readAttributes(ClassReader *classReader);
-
         ConstantPool* readConstantPool(ClassReader *classReader);
-
         ConstantInfo* readConstantInfo(ClassReader *classReader, ConstantPool* cp);
-
         string* getName(MemberInfo* memberInfo);
-
         string* getDescriptor(MemberInfo* memberInfo);
     public:
 
-        ClassFile(byte* &classData){
-            ClassReader classReader(classData);
-            read(&classReader);
-        }
-
+        ClassFile();
+        ~ClassFile();
+        void load(byte* &classData);
         ClassFile* read(ClassReader* classReader);
-
         inline u2 getMinorVersion() {
             return minorVersion;
         }

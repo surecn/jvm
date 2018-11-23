@@ -6,6 +6,10 @@
 
 namespace cls {
 
+    ExceptionAttribute::~ExceptionAttribute() {
+        delete exceptionIndexTable;
+    }
+
     void ExceptionAttribute::readInfo(cls::ClassReader *classReader) {
         exceptionIndexTable = classReader->readU2s(numberOfException);
     }

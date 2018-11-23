@@ -3,7 +3,7 @@
 //
 
 #include "ConstantPool.h"
-#include "ConstantFactory.h"
+#include "Constants.h"
 
 using namespace cls;
 
@@ -11,13 +11,13 @@ ConstantInfo* ConstantPool::getConstantInfo(u2 index) {
     return constantInfos[index];
 }
 
-string* ConstantPool::getClassName(u2 index) {
+string *ConstantPool::getClassName(u2 index) {
     ConstantClassInfo *classConstantInfo = (ConstantClassInfo*)constantInfos[index];
-    return this->getUtf8(classConstantInfo->nameIndex);
+    return classConstantInfo->getName();
 }
 
 
-string* ConstantPool::getUtf8(u2 index) {
+string *ConstantPool::getUtf8(u2 index) {
     return ((ConstantUtf8Info*)getConstantInfo(index))->value();
 }
 
@@ -28,16 +28,9 @@ ConstantPool::ConstantPool(ClassReader *classReader) {
         byte tag = classReader->readU1();
         ConstantInfo* con = ConstantFactory::newConstantInfo(tag, this, classReader);
         constantInfos[i] = con;
-        cout<< i << endl;
+        con->print();
         if (tag == CONSTANT_Double || tag == CONSTANT_Long) {
             i++;
-        }
-
-    }
-
-    for (int j = 1; j < constantPoolSize; ++j) {
-        if (constantInfos[j]) {
-            cout << j << constantInfos[j]->toString() << endl;
         }
     }
 }

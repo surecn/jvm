@@ -10,10 +10,11 @@
 #include <iostream>
 #include <string>
 #include "common/StrUtils.h"
+#include "common/DataUtils.h"
 
 using namespace std;
 
-typedef char byte;
+typedef unsigned char byte;
 
 typedef unsigned char u1;    //uint8
 typedef unsigned short u2;   //uint16

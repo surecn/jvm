@@ -6,6 +6,13 @@
 
 namespace cls {
 
+    CodeAttribute::~CodeAttribute() {
+        delete code;
+        delete exceptionTable;
+        delete [] attributes;
+        delete constantPool;
+    }
+
     void CodeAttribute::readInfo(cls::ClassReader *classReader) {
         maxStack = classReader->readU2();
         maxLocals = classReader->readU2();
@@ -14,7 +21,9 @@ namespace cls {
         code = classReader->readU1s(codeLength);
 
         exceptionTableLength = classReader->readU2();
-        ExceptionTableEntry::readExceptionTable(classReader, exceptionTableLength);
+        if (exceptionTableLength > 0) {
+            ExceptionTableEntry::readExceptionTable(classReader, exceptionTableLength);
+        }
 
         attributes = AttributeInfo::readAttributes(classReader, constantPool);
     }

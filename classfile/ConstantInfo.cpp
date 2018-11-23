@@ -3,5 +3,9 @@
 //
 
 #include "ConstantInfo.h"
+#include "../attribute/AttributeInfo.h"
 
-using namespace cls;
+namespace cls {
+
+
+}

@@ -10,7 +10,7 @@ namespace rt {
     class OperandStrack {
     private:
         int size;
-        void **slot;
+        int *slot;
 
     public:
 
@@ -20,6 +20,9 @@ namespace rt {
 
         int popInt();
 
+        void pushFloat(float val);
+
+        float popFloat();
 
     };
 }

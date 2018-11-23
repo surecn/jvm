@@ -16,6 +16,10 @@ namespace classpath {
         byte *data;
         Entry *entry;
         int error = 1;
+
+        ~ClassData() {
+            delete data;
+        }
     };
 
     class Entry {
@@ -25,6 +29,7 @@ namespace classpath {
         string toString();
 
         static Entry* create(string &path);
+
     };
 
     class DirEntry : public Entry {
@@ -49,11 +54,14 @@ namespace classpath {
     class CompositeEntry : public Entry {
 
     private:
+        /*析构函数释放*/
         list<Entry*> entryList;
     public:
         CompositeEntry(string &path);
 
         virtual void readClass(string &path, classpath::ClassData &data);
+
+        ~CompositeEntry();
     };
 
     class WildcardEntry : public CompositeEntry {

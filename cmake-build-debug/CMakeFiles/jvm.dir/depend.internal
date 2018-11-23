@@ -17,6 +17,7 @@ CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
  /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.h
  /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/DataUtils.h
  /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
 CMakeFiles/jvm.dir/attribute/CodeAttribute.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/attribute/AttributeInfo.h
@@ -26,6 +27,7 @@ CMakeFiles/jvm.dir/attribute/CodeAttribute.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
  /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.h
  /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/DataUtils.h
  /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
 CMakeFiles/jvm.dir/attribute/ConstantValueAttribute.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/attribute/AttributeInfo.h
@@ -35,6 +37,7 @@ CMakeFiles/jvm.dir/attribute/ConstantValueAttribute.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
  /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.h
  /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/DataUtils.h
  /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
 CMakeFiles/jvm.dir/attribute/ExceptionAttribute.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/attribute/AttributeInfo.h
@@ -44,6 +47,7 @@ CMakeFiles/jvm.dir/attribute/ExceptionAttribute.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
  /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.h
  /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/DataUtils.h
  /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
 CMakeFiles/jvm.dir/attribute/LineNumberAttribute.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/attribute/AttributeInfo.h
@@ -53,6 +57,7 @@ CMakeFiles/jvm.dir/attribute/LineNumberAttribute.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
  /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.h
  /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/DataUtils.h
  /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
 CMakeFiles/jvm.dir/attribute/LocalVariableTableAttribute.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/attribute/AttributeInfo.h
@@ -62,6 +67,7 @@ CMakeFiles/jvm.dir/attribute/LocalVariableTableAttribute.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
  /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.h
  /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/DataUtils.h
  /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
 CMakeFiles/jvm.dir/attribute/SourceFileAttribute.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/attribute/AttributeInfo.h
@@ -71,192 +77,107 @@ CMakeFiles/jvm.dir/attribute/SourceFileAttribute.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
  /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.h
  /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/DataUtils.h
  /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
 CMakeFiles/jvm.dir/attribute/UnparsedAttribute.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/attribute/UnparsedAttribute.cpp
  /Users/surecn/Code/CLionProjects/jvm/attribute/UnparsedAttribute.h
  /Users/surecn/Code/CLionProjects/jvm/classfile/ClassReader.h
  /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/DataUtils.h
  /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
 CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/attribute/AttributeInfo.h
  /Users/surecn/Code/CLionProjects/jvm/classfile/ClassFile.cpp
  /Users/surecn/Code/CLionProjects/jvm/classfile/ClassFile.h
  /Users/surecn/Code/CLionProjects/jvm/classfile/ClassReader.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantClassInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantDoubleInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFactory.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFloatInfo.h
  /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantIntegerInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantLongInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantMemberInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantNameAndTypeInfo.h
  /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantStringInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantUtf8Info.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/MemberInfo.h
+ /Users/surecn/Code/CLionProjects/jvm/classfile/Constants.h
  /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/DataUtils.h
  /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
 CMakeFiles/jvm.dir/classfile/ClassReader.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/classfile/ClassReader.cpp
  /Users/surecn/Code/CLionProjects/jvm/classfile/ClassReader.h
  /Users/surecn/Code/CLionProjects/jvm/common.h
- /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
-CMakeFiles/jvm.dir/classfile/ConstantClassInfo.cpp.o
- /Users/surecn/Code/CLionProjects/jvm/classfile/ClassReader.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantClassInfo.cpp
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantClassInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.h
- /Users/surecn/Code/CLionProjects/jvm/common.h
- /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
-CMakeFiles/jvm.dir/classfile/ConstantDoubleInfo.cpp.o
- /Users/surecn/Code/CLionProjects/jvm/classfile/ClassReader.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantDoubleInfo.cpp
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantDoubleInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
- /Users/surecn/Code/CLionProjects/jvm/common.h
- /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
-CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o
- /Users/surecn/Code/CLionProjects/jvm/classfile/ClassReader.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantClassInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantDoubleInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFactory.cpp
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFactory.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFloatInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantIntegerInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantLongInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantMemberInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantNameAndTypeInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantStringInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantUtf8Info.h
- /Users/surecn/Code/CLionProjects/jvm/common.h
- /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
-CMakeFiles/jvm.dir/classfile/ConstantFieldRefInfo.cpp.o
- /Users/surecn/Code/CLionProjects/jvm/classfile/ClassReader.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFieldRefInfo.cpp
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFieldRefInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.h
- /Users/surecn/Code/CLionProjects/jvm/common.h
- /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
-CMakeFiles/jvm.dir/classfile/ConstantFloatInfo.cpp.o
- /Users/surecn/Code/CLionProjects/jvm/classfile/ClassReader.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFloatInfo.cpp
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFloatInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
- /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/DataUtils.h
  /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
 CMakeFiles/jvm.dir/classfile/ConstantInfo.cpp.o
+ /Users/surecn/Code/CLionProjects/jvm/attribute/AttributeInfo.h
  /Users/surecn/Code/CLionProjects/jvm/classfile/ClassReader.h
  /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.cpp
  /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
- /Users/surecn/Code/CLionProjects/jvm/common.h
- /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
-CMakeFiles/jvm.dir/classfile/ConstantIntegerInfo.cpp.o
- /Users/surecn/Code/CLionProjects/jvm/classfile/ClassReader.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantIntegerInfo.cpp
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantIntegerInfo.h
- /Users/surecn/Code/CLionProjects/jvm/common.h
- /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
-CMakeFiles/jvm.dir/classfile/ConstantLongInfo.cpp.o
- /Users/surecn/Code/CLionProjects/jvm/classfile/ClassReader.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantLongInfo.cpp
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantLongInfo.h
- /Users/surecn/Code/CLionProjects/jvm/common.h
- /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
-CMakeFiles/jvm.dir/classfile/ConstantMemberInfo.cpp.o
- /Users/surecn/Code/CLionProjects/jvm/classfile/ClassReader.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantMemberInfo.cpp
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantMemberInfo.h
  /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.h
  /Users/surecn/Code/CLionProjects/jvm/common.h
- /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
-CMakeFiles/jvm.dir/classfile/ConstantMethodInfo.cpp.o
- /Users/surecn/Code/CLionProjects/jvm/classfile/ClassReader.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantMethodInfo.cpp
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantMethodInfo.h
- /Users/surecn/Code/CLionProjects/jvm/common.h
- /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
-CMakeFiles/jvm.dir/classfile/ConstantNameAndTypeInfo.cpp.o
- /Users/surecn/Code/CLionProjects/jvm/classfile/ClassReader.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantNameAndTypeInfo.cpp
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantNameAndTypeInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.h
- /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/DataUtils.h
  /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
 CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o
+ /Users/surecn/Code/CLionProjects/jvm/attribute/AttributeInfo.h
  /Users/surecn/Code/CLionProjects/jvm/classfile/ClassReader.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantClassInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantDoubleInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFactory.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFloatInfo.h
  /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantIntegerInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantLongInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantMemberInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantNameAndTypeInfo.h
  /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.cpp
  /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantStringInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantUtf8Info.h
+ /Users/surecn/Code/CLionProjects/jvm/classfile/Constants.h
  /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/DataUtils.h
  /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
-CMakeFiles/jvm.dir/classfile/ConstantStringInfo.cpp.o
- /Users/surecn/Code/CLionProjects/jvm/classfile/ClassReader.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantStringInfo.cpp
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantStringInfo.h
- /Users/surecn/Code/CLionProjects/jvm/common.h
- /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
-CMakeFiles/jvm.dir/classfile/ConstantUtf8Info.cpp.o
- /Users/surecn/Code/CLionProjects/jvm/classfile/ClassReader.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantUtf8Info.cpp
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantUtf8Info.h
- /Users/surecn/Code/CLionProjects/jvm/common.h
- /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
-CMakeFiles/jvm.dir/classfile/FieldInfo.cpp.o
+CMakeFiles/jvm.dir/classfile/Constants.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/attribute/AttributeInfo.h
  /Users/surecn/Code/CLionProjects/jvm/classfile/ClassReader.h
  /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
  /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/FieldInfo.cpp
- /Users/surecn/Code/CLionProjects/jvm/classfile/FieldInfo.h
+ /Users/surecn/Code/CLionProjects/jvm/classfile/Constants.cpp
+ /Users/surecn/Code/CLionProjects/jvm/classfile/Constants.h
  /Users/surecn/Code/CLionProjects/jvm/common.h
- /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
-CMakeFiles/jvm.dir/classfile/MemberInfo.cpp.o
- /Users/surecn/Code/CLionProjects/jvm/attribute/AttributeInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ClassReader.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/MemberInfo.cpp
- /Users/surecn/Code/CLionProjects/jvm/classfile/MemberInfo.h
- /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/DataUtils.h
  /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
 CMakeFiles/jvm.dir/classpath/ClassPath.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/classpath/ClassPath.cpp
  /Users/surecn/Code/CLionProjects/jvm/classpath/ClassPath.h
  /Users/surecn/Code/CLionProjects/jvm/classpath/Entry.h
  /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/DataUtils.h
  /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
 CMakeFiles/jvm.dir/classpath/Entry.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/classpath/Entry.cpp
  /Users/surecn/Code/CLionProjects/jvm/classpath/Entry.h
  /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/DataUtils.h
  /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
+CMakeFiles/jvm.dir/common/DataUtils.cpp.o
+ /Users/surecn/Code/CLionProjects/jvm/common/DataUtils.cpp
+ /Users/surecn/Code/CLionProjects/jvm/common/DataUtils.h
 CMakeFiles/jvm.dir/common/StrUtils.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.cpp
  /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
+CMakeFiles/jvm.dir/instructions/BytecodeReader.cpp.o
+ /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/DataUtils.h
+ /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
+ /Users/surecn/Code/CLionProjects/jvm/instructions/BytecodeReader.cpp
+ /Users/surecn/Code/CLionProjects/jvm/instructions/BytecodeReader.h
+CMakeFiles/jvm.dir/instructions/Constant.cpp.o
+ /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/DataUtils.h
+ /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
+ /Users/surecn/Code/CLionProjects/jvm/instructions/BytecodeReader.h
+ /Users/surecn/Code/CLionProjects/jvm/instructions/Constant.cpp
+ /Users/surecn/Code/CLionProjects/jvm/instructions/Constant.h
+ /Users/surecn/Code/CLionProjects/jvm/instructions/Instruction.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/Frame.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStrack.h
+CMakeFiles/jvm.dir/instructions/Instruction.cpp.o
+ /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/DataUtils.h
+ /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
+ /Users/surecn/Code/CLionProjects/jvm/instructions/BytecodeReader.h
+ /Users/surecn/Code/CLionProjects/jvm/instructions/Instruction.cpp
+ /Users/surecn/Code/CLionProjects/jvm/instructions/Instruction.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/Frame.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStrack.h
 CMakeFiles/jvm.dir/main.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/MainParamater.h
  /Users/surecn/Code/CLionProjects/jvm/attribute/AttributeInfo.h
@@ -264,27 +185,46 @@ CMakeFiles/jvm.dir/main.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/classfile/ClassReader.h
  /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
  /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.h
- /Users/surecn/Code/CLionProjects/jvm/classfile/MemberInfo.h
+ /Users/surecn/Code/CLionProjects/jvm/classfile/Constants.h
  /Users/surecn/Code/CLionProjects/jvm/classpath/ClassPath.h
  /Users/surecn/Code/CLionProjects/jvm/classpath/Entry.h
  /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/DataUtils.h
  /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
  /Users/surecn/Code/CLionProjects/jvm/main.cpp
 CMakeFiles/jvm.dir/runtime/Frame.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/DataUtils.h
  /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
  /Users/surecn/Code/CLionProjects/jvm/runtime/Frame.cpp
  /Users/surecn/Code/CLionProjects/jvm/runtime/Frame.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStrack.h
+CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o
+ /Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.cpp
+ /Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.h
+CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.o
+ /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/DataUtils.h
+ /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStrack.cpp
+ /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStrack.h
 CMakeFiles/jvm.dir/runtime/Strack.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/DataUtils.h
  /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
  /Users/surecn/Code/CLionProjects/jvm/runtime/Frame.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStrack.h
  /Users/surecn/Code/CLionProjects/jvm/runtime/Strack.cpp
  /Users/surecn/Code/CLionProjects/jvm/runtime/Strack.h
 CMakeFiles/jvm.dir/runtime/Thread.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/DataUtils.h
  /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
  /Users/surecn/Code/CLionProjects/jvm/runtime/Frame.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStrack.h
  /Users/surecn/Code/CLionProjects/jvm/runtime/Strack.h
  /Users/surecn/Code/CLionProjects/jvm/runtime/Thread.cpp
  /Users/surecn/Code/CLionProjects/jvm/runtime/Thread.h

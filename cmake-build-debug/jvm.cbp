@@ -144,70 +144,10 @@
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ClassReader.h">
 			<Option target="jvm"/>
 		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantClassInfo.cpp">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantClassInfo.h">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantDoubleInfo.cpp">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantDoubleInfo.h">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFactory.cpp">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFactory.h">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFieldRefInfo.cpp">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFieldRefInfo.h">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFloatInfo.cpp">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFloatInfo.h">
-			<Option target="jvm"/>
-		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.cpp">
 			<Option target="jvm"/>
 		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantIntegerInfo.cpp">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantIntegerInfo.h">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantLongInfo.cpp">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantLongInfo.h">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantMemberInfo.cpp">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantMemberInfo.h">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantMethodInfo.cpp">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantMethodInfo.h">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantNameAndTypeInfo.cpp">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantNameAndTypeInfo.h">
 			<Option target="jvm"/>
 		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.cpp">
@@ -216,28 +156,10 @@
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.h">
 			<Option target="jvm"/>
 		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantStringInfo.cpp">
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/Constants.cpp">
 			<Option target="jvm"/>
 		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantStringInfo.h">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantUtf8Info.cpp">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantUtf8Info.h">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/FieldInfo.cpp">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/FieldInfo.h">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/MemberInfo.cpp">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/MemberInfo.h">
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/Constants.h">
 			<Option target="jvm"/>
 		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classpath/ClassPath.cpp">
@@ -255,10 +177,34 @@
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/common.h">
 			<Option target="jvm"/>
 		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/common/DataUtils.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/common/DataUtils.h">
+			<Option target="jvm"/>
+		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/common/StrUtils.cpp">
 			<Option target="jvm"/>
 		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/BytecodeReader.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/BytecodeReader.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/Constant.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/Constant.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/Instruction.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/Instruction.h">
 			<Option target="jvm"/>
 		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/main.cpp">

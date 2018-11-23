@@ -18,17 +18,11 @@ namespace classpath {
         Entry *extClassPath;
         Entry *userClassPath;
     public:
-
-        ClassPath(string &jreOption, string &cpOption) {
-            parseBootAndExtClassPath(jreOption);
-            parseUserClassPath(cpOption);
-        }
-
+        ClassPath(string &jreOption, string &cpOption);
         void parseBootAndExtClassPath(string &jreOption);
-
         void parseUserClassPath(string &cpOption);
-
         void readClass(string &className, struct ClassData &data);
+        ~ClassPath();
 
     };
 

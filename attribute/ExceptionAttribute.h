@@ -14,6 +14,8 @@ namespace cls {
         u2 numberOfException;
         u2 *exceptionIndexTable;
     public:
+
+        ~ExceptionAttribute();
         void readInfo(cls::ClassReader *classReader);
     };
 }

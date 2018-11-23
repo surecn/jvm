@@ -33,7 +33,7 @@ namespace cls {
 
     public:
         CodeAttribute(ConstantPool *cp) : constantPool(cp) {}
-
+        ~CodeAttribute();
         void readInfo(cls::ClassReader *classReader);
 
     };

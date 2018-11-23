@@ -8,6 +8,17 @@
 
 using namespace classpath;
 
+ClassPath::ClassPath(string &jreOption, string &cpOption) {
+    parseBootAndExtClassPath(jreOption);
+    parseUserClassPath(cpOption);
+}
+
+ClassPath::~ClassPath() {
+    delete bootClassPath;
+    delete extClassPath;
+    delete userClassPath;
+}
+
 string getJreDir(string &jreOption) {
     if (jreOption != "" && access(jreOption.c_str(), F_OK)) { //TODO 判断目录是否存在
         return jreOption;

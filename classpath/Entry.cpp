@@ -63,6 +63,16 @@ namespace classpath {
         }
     }
 
+    CompositeEntry::~CompositeEntry() {
+        list<Entry *>::iterator iter;
+        for(iter = entryList.begin(); iter != entryList.end(); iter++) {
+            Entry *entry = (*iter);
+            if (entry) {
+                delete entry;
+            }
+        }
+    }
+
     void CompositeEntry::readClass(string &path, classpath::ClassData &data) {
         list<Entry *>::iterator theIterator;
         for (theIterator = entryList.begin(); theIterator != entryList.end(); theIterator++) {

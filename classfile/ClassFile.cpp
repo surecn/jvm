@@ -4,11 +4,22 @@
 
 #include "ClassFile.h"
 #include "ClassReader.h"
-#include "ConstantDoubleInfo.h"
-#include "ConstantLongInfo.h"
-#include "ConstantFactory.h"
 
 using namespace cls;
+
+ClassFile::ClassFile() {}
+
+ClassFile::~ClassFile() {
+    delete interfaces;
+    delete [] methods;
+    delete [] fields;
+    delete attributes;
+}
+
+void ClassFile::load(byte *&classData) {
+    ClassReader classReader(classData);
+    read(&classReader);
+}
 
 ClassFile* ClassFile::read(ClassReader *classReader) {
     if (!readAndCheckMagic(classReader)) {

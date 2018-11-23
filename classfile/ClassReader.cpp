@@ -6,6 +6,12 @@
 
 using namespace cls;
 
+ClassReader::ClassReader(byte* &_data):data(_data) {
+}
+
+ClassReader::~ClassReader() {
+}
+
 u1 ClassReader::readU1() {
     u1 ch = data[0];
     data = &data[1];
@@ -20,7 +26,7 @@ u2 ClassReader::readU2() {
 }
 
 u4 ClassReader::readU4() {
-    unsigned int ch = (((u1)data[0]) << 24) + (((u1)data[1]) << 16) + (((u1)data[2]) << 8) + ((u1)data[3]);
+    unsigned int ch = ((u1)data[0]) << 24 | ((u1)data[1]) << 16 | ((u1)data[2]) << 8 | (u1)data[3];
     data = &data[4];
     return ch;
 }
@@ -55,9 +61,9 @@ u2* ClassReader::readU2s(u2 *length) {
     return readU2s((int)*length);
 }
 
-string* ClassReader::readString() {
+string ClassReader::readString() {
     u2 length = readU2();
-    string *s = new string(data, 0, length);
+    string s((char*)data, 0, length);
     data = &data[length];
     return s;
 }

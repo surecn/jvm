@@ -13,5 +13,7 @@ namespace rt {
     }
 
 
-
+    OperandStrack* Frame::getOperandStrack() {
+        return operandStrack;
+    }
 }

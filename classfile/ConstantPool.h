@@ -14,17 +14,11 @@ namespace cls {
     class ConstantPool {
     private:
         ConstantInfo **constantInfos;
-
         u2 constantPoolSize;
-
     public:
-
         ConstantPool(ClassReader *classReader);
-
-        string* getClassName(u2 index);
-
-        string* getUtf8(u2 index);
-
+        string *getClassName(u2 index);
+        string *getUtf8(u2 index);
         ConstantInfo* getConstantInfo(u2 index);
 
     };

@@ -3,6 +3,7 @@
 //
 
 #include "OperandStrack.h"
+#include "../common.h"
 
 
 namespace rt {
@@ -12,13 +13,20 @@ namespace rt {
     }
 
     void OperandStrack::pushInt(int val) {
-        //slot[size] = val;
+        slot[size] = val;
         size++;
     }
 
     int OperandStrack::popInt() {
         size--;
-        //return slot[size];
+        return slot[size];
     }
+
+    void OperandStrack::pushFloat(float val) {
+        u1 data[4];
+        DataUtils::floatToBytes(val, data);
+        slot[size] = DataUtils::bytesToInt(data, 4);
+    }
+
 
 }
