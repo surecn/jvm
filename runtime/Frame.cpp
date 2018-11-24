@@ -12,6 +12,9 @@ namespace rt {
         return new Frame();
     }
 
+    LocalVars* Frame::getLocalVars() {
+        return localVars;
+    }
 
     OperandStrack* Frame::getOperandStrack() {
         return operandStrack;

@@ -29,5 +29,5 @@ add_executable(jvm main.cpp
         instructions/Instruction.cpp instructions/Instruction.h
         instructions/BytecodeReader.cpp instructions/BytecodeReader.h
         instructions/Constant.cpp instructions/Constant.h
-        common/DataUtils.cpp common/DataUtils.h
-        classfile/Constants.cpp classfile/Constants.h)
+        common/BytesUtils.cpp common/BytesUtils.h
+        classfile/Constants.cpp classfile/Constants.h instructions/IPush.cpp instructions/IPush.h instructions/ILoad.cpp instructions/ILoad.h instructions/IStore.cpp instructions/IStore.h)

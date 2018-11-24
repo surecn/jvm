@@ -15,11 +15,8 @@ namespace rt {
         int pc;
     public:
         void reset(u1 *_code, int _pc);
-
         u1 readU1();
-
         u2 readU2();
-
         u4 readU4();
     };
 }

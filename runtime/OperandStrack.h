@@ -10,19 +10,19 @@ namespace rt {
     class OperandStrack {
     private:
         int size;
-        int *slot;
-
+        long *slot;//win64位除外
     public:
-
         OperandStrack* newOperandStrack(int maxStack);
-
-        void pushInt(int val);
-
-        int popInt();
-
+        void pushInt(long val); //java int
+        long popInt();
+        void pushLong(long long val); //java long
+        long long popLong();
         void pushFloat(float val);
-
         float popFloat();
+        void pushDouble(double val);
+        double popDouble();
+        void pushRef(void* ptr);
+        void* popRef();
 
     };
 }

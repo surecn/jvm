@@ -12,13 +12,13 @@
 namespace rt {
     class Frame {
     private:
-
+        LocalVars* localVars;
+        OperandStrack* operandStrack;
     public:
         Frame* lower;
-        LocalVars localVars;
-        OperandStrack* operandStrack;
         Frame();
         OperandStrack* getOperandStrack();
+        LocalVars* getLocalVars();
         static Frame* newFrame(int maxLocal, int maxStrack);
     };
 

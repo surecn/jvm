@@ -555,32 +555,32 @@ classpath/Entry.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/Entry.cpp.s
 .PHONY : classpath/Entry.cpp.s
 
-common/DataUtils.o: common/DataUtils.cpp.o
+common/BytesUtils.o: common/BytesUtils.cpp.o
 
-.PHONY : common/DataUtils.o
+.PHONY : common/BytesUtils.o
 
 # target to build an object file
-common/DataUtils.cpp.o:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/common/DataUtils.cpp.o
-.PHONY : common/DataUtils.cpp.o
+common/BytesUtils.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/common/BytesUtils.cpp.o
+.PHONY : common/BytesUtils.cpp.o
 
-common/DataUtils.i: common/DataUtils.cpp.i
+common/BytesUtils.i: common/BytesUtils.cpp.i
 
-.PHONY : common/DataUtils.i
+.PHONY : common/BytesUtils.i
 
 # target to preprocess a source file
-common/DataUtils.cpp.i:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/common/DataUtils.cpp.i
-.PHONY : common/DataUtils.cpp.i
+common/BytesUtils.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/common/BytesUtils.cpp.i
+.PHONY : common/BytesUtils.cpp.i
 
-common/DataUtils.s: common/DataUtils.cpp.s
+common/BytesUtils.s: common/BytesUtils.cpp.s
 
-.PHONY : common/DataUtils.s
+.PHONY : common/BytesUtils.s
 
 # target to generate assembly for a file
-common/DataUtils.cpp.s:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/common/DataUtils.cpp.s
-.PHONY : common/DataUtils.cpp.s
+common/BytesUtils.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/common/BytesUtils.cpp.s
+.PHONY : common/BytesUtils.cpp.s
 
 common/StrUtils.o: common/StrUtils.cpp.o
 
@@ -662,6 +662,87 @@ instructions/Constant.s: instructions/Constant.cpp.s
 instructions/Constant.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/Constant.cpp.s
 .PHONY : instructions/Constant.cpp.s
+
+instructions/ILoad.o: instructions/ILoad.cpp.o
+
+.PHONY : instructions/ILoad.o
+
+# target to build an object file
+instructions/ILoad.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/ILoad.cpp.o
+.PHONY : instructions/ILoad.cpp.o
+
+instructions/ILoad.i: instructions/ILoad.cpp.i
+
+.PHONY : instructions/ILoad.i
+
+# target to preprocess a source file
+instructions/ILoad.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/ILoad.cpp.i
+.PHONY : instructions/ILoad.cpp.i
+
+instructions/ILoad.s: instructions/ILoad.cpp.s
+
+.PHONY : instructions/ILoad.s
+
+# target to generate assembly for a file
+instructions/ILoad.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/ILoad.cpp.s
+.PHONY : instructions/ILoad.cpp.s
+
+instructions/IPush.o: instructions/IPush.cpp.o
+
+.PHONY : instructions/IPush.o
+
+# target to build an object file
+instructions/IPush.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/IPush.cpp.o
+.PHONY : instructions/IPush.cpp.o
+
+instructions/IPush.i: instructions/IPush.cpp.i
+
+.PHONY : instructions/IPush.i
+
+# target to preprocess a source file
+instructions/IPush.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/IPush.cpp.i
+.PHONY : instructions/IPush.cpp.i
+
+instructions/IPush.s: instructions/IPush.cpp.s
+
+.PHONY : instructions/IPush.s
+
+# target to generate assembly for a file
+instructions/IPush.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/IPush.cpp.s
+.PHONY : instructions/IPush.cpp.s
+
+instructions/IStore.o: instructions/IStore.cpp.o
+
+.PHONY : instructions/IStore.o
+
+# target to build an object file
+instructions/IStore.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/IStore.cpp.o
+.PHONY : instructions/IStore.cpp.o
+
+instructions/IStore.i: instructions/IStore.cpp.i
+
+.PHONY : instructions/IStore.i
+
+# target to preprocess a source file
+instructions/IStore.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/IStore.cpp.i
+.PHONY : instructions/IStore.cpp.i
+
+instructions/IStore.s: instructions/IStore.cpp.s
+
+.PHONY : instructions/IStore.s
+
+# target to generate assembly for a file
+instructions/IStore.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/IStore.cpp.s
+.PHONY : instructions/IStore.cpp.s
 
 instructions/Instruction.o: instructions/Instruction.cpp.o
 
@@ -909,9 +990,9 @@ help:
 	@echo "... classpath/Entry.o"
 	@echo "... classpath/Entry.i"
 	@echo "... classpath/Entry.s"
-	@echo "... common/DataUtils.o"
-	@echo "... common/DataUtils.i"
-	@echo "... common/DataUtils.s"
+	@echo "... common/BytesUtils.o"
+	@echo "... common/BytesUtils.i"
+	@echo "... common/BytesUtils.s"
 	@echo "... common/StrUtils.o"
 	@echo "... common/StrUtils.i"
 	@echo "... common/StrUtils.s"
@@ -921,6 +1002,15 @@ help:
 	@echo "... instructions/Constant.o"
 	@echo "... instructions/Constant.i"
 	@echo "... instructions/Constant.s"
+	@echo "... instructions/ILoad.o"
+	@echo "... instructions/ILoad.i"
+	@echo "... instructions/ILoad.s"
+	@echo "... instructions/IPush.o"
+	@echo "... instructions/IPush.i"
+	@echo "... instructions/IPush.s"
+	@echo "... instructions/IStore.o"
+	@echo "... instructions/IStore.i"
+	@echo "... instructions/IStore.s"
 	@echo "... instructions/Instruction.o"
 	@echo "... instructions/Instruction.i"
 	@echo "... instructions/Instruction.s"

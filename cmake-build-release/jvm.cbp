@@ -179,10 +179,10 @@
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/common.h">
 			<Option target="jvm"/>
 		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/common/DataUtils.cpp">
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/common/BytesUtils.cpp">
 			<Option target="jvm"/>
 		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/common/DataUtils.h">
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/common/BytesUtils.h">
 			<Option target="jvm"/>
 		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/common/StrUtils.cpp">
@@ -201,6 +201,24 @@
 			<Option target="jvm"/>
 		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/Constant.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/ILoad.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/ILoad.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/IPush.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/IPush.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/IStore.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/IStore.h">
 			<Option target="jvm"/>
 		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/Instruction.cpp">

@@ -24,8 +24,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/jvm.dir/instructions/Instruction.cpp.o"
   "CMakeFiles/jvm.dir/instructions/BytecodeReader.cpp.o"
   "CMakeFiles/jvm.dir/instructions/Constant.cpp.o"
-  "CMakeFiles/jvm.dir/common/DataUtils.cpp.o"
+  "CMakeFiles/jvm.dir/common/BytesUtils.cpp.o"
   "CMakeFiles/jvm.dir/classfile/Constants.cpp.o"
+  "CMakeFiles/jvm.dir/instructions/IPush.cpp.o"
+  "CMakeFiles/jvm.dir/instructions/ILoad.cpp.o"
+  "CMakeFiles/jvm.dir/instructions/IStore.cpp.o"
   "jvm.pdb"
   "jvm"
 )
