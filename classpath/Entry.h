@@ -8,7 +8,7 @@
 #include <list>
 #include "../common.h"
 
-namespace classpath {
+namespace cpath {
     class DirEntry;
     class Entry;
 
@@ -16,52 +16,34 @@ namespace classpath {
         byte *data;
         Entry *entry;
         int error = 1;
-
-        ~ClassData() {
-            delete data;
-        }
+        ~ClassData();
     };
 
     class Entry {
     public:
         virtual void readClass(string &path, ClassData &data) = 0;
-
         string toString();
-
         static Entry* create(string &path);
-
     };
 
     class DirEntry : public Entry {
     private:
         string path;
-
     public:
-
-        DirEntry(string &s) : path(s)
-        {}
-
+        DirEntry(string &s);
         void readClass(string &path, ClassData &data);
-
         string toString();
-
-        inline string apply(string &fileName) {
-            return path + PATH_SEPARATOR + fileName;
-        }
+        string apply(string &fileName);
 
     };
 
     class CompositeEntry : public Entry {
-
     private:
-        /*析构函数释放*/
-        list<Entry*> entryList;
+        list<Entry*> entryList;/*析构函数释放*/
     public:
         CompositeEntry(string &path);
-
-        virtual void readClass(string &path, classpath::ClassData &data);
-
         ~CompositeEntry();
+        virtual void readClass(string &path, ClassData &data);
     };
 
     class WildcardEntry : public CompositeEntry {

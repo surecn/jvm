@@ -11,11 +11,11 @@
 namespace cls {
     class ClassReader {
     private:
+        //class文件
         byte *data;
     public:
         ClassReader(byte* &_data);
         ~ClassReader();
-
         u1 readU1(); //u1
         u2 readU2(); // u2
         u4 readU4(); //u4

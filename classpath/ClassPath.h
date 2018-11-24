@@ -10,7 +10,7 @@
 #include "Entry.h"
 
 
-namespace classpath {
+namespace cpath {
 
     class ClassPath {
     private:

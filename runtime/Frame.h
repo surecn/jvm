@@ -18,7 +18,6 @@ namespace rt {
         LocalVars localVars;
         OperandStrack* operandStrack;
         Frame();
-
         OperandStrack* getOperandStrack();
         static Frame* newFrame(int maxLocal, int maxStrack);
     };

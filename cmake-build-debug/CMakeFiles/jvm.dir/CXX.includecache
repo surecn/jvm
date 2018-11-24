@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+/Users/surecn/Code/CLionProjects/jvm/MainParamater.h
+iostream
+-
+string
+-
+
 /Users/surecn/Code/CLionProjects/jvm/attribute/AttributeInfo.h
 ../common.h
 /Users/surecn/Code/CLionProjects/jvm/common.h
@@ -13,6 +19,18 @@
 /Users/surecn/Code/CLionProjects/jvm/classfile/ClassReader.h
 ../classfile/ConstantPool.h
 /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.h
+
+/Users/surecn/Code/CLionProjects/jvm/classfile/ClassFile.h
+../common.h
+/Users/surecn/Code/CLionProjects/jvm/common.h
+ClassReader.h
+/Users/surecn/Code/CLionProjects/jvm/classfile/ClassReader.h
+ConstantPool.h
+/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.h
+ConstantInfo.h
+/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
+Constants.h
+/Users/surecn/Code/CLionProjects/jvm/classfile/Constants.h
 
 /Users/surecn/Code/CLionProjects/jvm/classfile/ClassReader.h
 ../common.h
@@ -23,12 +41,6 @@
 /Users/surecn/Code/CLionProjects/jvm/common.h
 ClassReader.h
 /Users/surecn/Code/CLionProjects/jvm/classfile/ClassReader.h
-
-/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.cpp
-ConstantPool.h
-/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.h
-Constants.h
-/Users/surecn/Code/CLionProjects/jvm/classfile/Constants.h
 
 /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.h
 ../common.h
@@ -47,6 +59,18 @@ ConstantPool.h
 /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.h
 ../attribute/AttributeInfo.h
 /Users/surecn/Code/CLionProjects/jvm/attribute/AttributeInfo.h
+
+/Users/surecn/Code/CLionProjects/jvm/classpath/ClassPath.h
+../common.h
+/Users/surecn/Code/CLionProjects/jvm/common.h
+Entry.h
+/Users/surecn/Code/CLionProjects/jvm/classpath/Entry.h
+
+/Users/surecn/Code/CLionProjects/jvm/classpath/Entry.h
+list
+-
+../common.h
+/Users/surecn/Code/CLionProjects/jvm/common.h
 
 /Users/surecn/Code/CLionProjects/jvm/common.h
 iostream
@@ -73,4 +97,14 @@ iostream
 -
 algorithm
 -
+
+/Users/surecn/Code/CLionProjects/jvm/main.cpp
+common.h
+/Users/surecn/Code/CLionProjects/jvm/common.h
+MainParamater.h
+/Users/surecn/Code/CLionProjects/jvm/MainParamater.h
+classpath/ClassPath.h
+/Users/surecn/Code/CLionProjects/jvm/classpath/ClassPath.h
+classfile/ClassFile.h
+/Users/surecn/Code/CLionProjects/jvm/classfile/ClassFile.h
 

@@ -6,7 +6,7 @@
 
 const string PATHSeparter;
 
-using namespace classpath;
+using namespace cpath;
 using namespace cls;
 
 void printUsage() {
@@ -18,7 +18,7 @@ void printLoadError(int error) {
 }
 
 void loadClass(string &className, ClassPath &classPath, ClassFile &classFile) {
-    classpath::ClassData classData;
+    ClassData classData;
     classPath.readClass(className, classData);
     if (classData.error != 0) {
         printLoadError(classData.error);

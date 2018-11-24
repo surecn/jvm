@@ -7,7 +7,11 @@
 #include <unistd.h>
 #include <sys/stat.h>
 
-namespace classpath {
+namespace cpath {
+
+    ClassData::~ClassData() {
+        delete data;
+    }
 
     Entry *Entry::create(string &path) {
         if (path.find_first_of(PATH_SEPARATOR, 0) != string::npos) {
@@ -39,12 +43,11 @@ namespace classpath {
         filestr.close();
         return 1 ;
     }
-//
-//    void Entry::readClass(string path, classpath::ClassData &data) {
-//    }
 
+    DirEntry::DirEntry(string &s) : path(s)
+    {}
 
-    void DirEntry::readClass(string &className, classpath::ClassData &data) {
+    void DirEntry::readClass(string &className, ClassData &data) {
         //string filepath = apply(className);
 
         long size;
@@ -53,6 +56,10 @@ namespace classpath {
 
     string DirEntry::toString() {
         return NULL;
+    }
+
+    string DirEntry::apply(string &fileName) {
+        return path + PATH_SEPARATOR + fileName;
     }
 
     CompositeEntry::CompositeEntry(string &path) {
@@ -73,7 +80,7 @@ namespace classpath {
         }
     }
 
-    void CompositeEntry::readClass(string &path, classpath::ClassData &data) {
+    void CompositeEntry::readClass(string &path, ClassData &data) {
         list<Entry *>::iterator theIterator;
         for (theIterator = entryList.begin(); theIterator != entryList.end(); theIterator++) {
             Entry *entry = (*theIterator);
@@ -101,7 +108,7 @@ namespace classpath {
     WildcardEntry::WildcardEntry(string &path) : parentPath(toPathList(path)), CompositeEntry(parentPath) {
     }
 
-    void ZipEntry::readClass(string &path, classpath::ClassData &data) {
+    void ZipEntry::readClass(string &path, ClassData &data) {
 //        try (FileSystem zipFs = FileSystems.newFileSystem(absPath, null)) {
 //            return Files.readAllBytes(zipFs.getPath(className));
 //        }
