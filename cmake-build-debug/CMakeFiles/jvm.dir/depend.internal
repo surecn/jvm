@@ -167,7 +167,7 @@ CMakeFiles/jvm.dir/instructions/Constant.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/instructions/Instruction.h
  /Users/surecn/Code/CLionProjects/jvm/runtime/Frame.h
  /Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.h
- /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStrack.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStack.h
 CMakeFiles/jvm.dir/instructions/ILoad.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/common.h
  /Users/surecn/Code/CLionProjects/jvm/common/BytesUtils.h
@@ -178,7 +178,7 @@ CMakeFiles/jvm.dir/instructions/ILoad.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/instructions/Instruction.h
  /Users/surecn/Code/CLionProjects/jvm/runtime/Frame.h
  /Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.h
- /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStrack.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStack.h
 CMakeFiles/jvm.dir/instructions/IPush.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/common.h
  /Users/surecn/Code/CLionProjects/jvm/common/BytesUtils.h
@@ -189,7 +189,18 @@ CMakeFiles/jvm.dir/instructions/IPush.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/instructions/Instruction.h
  /Users/surecn/Code/CLionProjects/jvm/runtime/Frame.h
  /Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.h
- /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStrack.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStack.h
+CMakeFiles/jvm.dir/instructions/IStore.cpp.o
+ /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/BytesUtils.h
+ /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
+ /Users/surecn/Code/CLionProjects/jvm/instructions/BytecodeReader.h
+ /Users/surecn/Code/CLionProjects/jvm/instructions/IStore.cpp
+ /Users/surecn/Code/CLionProjects/jvm/instructions/IStore.h
+ /Users/surecn/Code/CLionProjects/jvm/instructions/Instruction.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/Frame.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStack.h
 CMakeFiles/jvm.dir/instructions/Instruction.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/common.h
  /Users/surecn/Code/CLionProjects/jvm/common/BytesUtils.h
@@ -199,7 +210,51 @@ CMakeFiles/jvm.dir/instructions/Instruction.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/instructions/Instruction.h
  /Users/surecn/Code/CLionProjects/jvm/runtime/Frame.h
  /Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.h
- /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStrack.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStack.h
+CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.o
+ /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/BytesUtils.h
+ /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
+ /Users/surecn/Code/CLionProjects/jvm/instructions/BytecodeReader.h
+ /Users/surecn/Code/CLionProjects/jvm/instructions/Instruction.h
+ /Users/surecn/Code/CLionProjects/jvm/instructions/stack/Dup.cpp
+ /Users/surecn/Code/CLionProjects/jvm/instructions/stack/Dup.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/Frame.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStack.h
+CMakeFiles/jvm.dir/instructions/stack/Math.cpp.o
+ /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/BytesUtils.h
+ /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
+ /Users/surecn/Code/CLionProjects/jvm/instructions/BytecodeReader.h
+ /Users/surecn/Code/CLionProjects/jvm/instructions/Instruction.h
+ /Users/surecn/Code/CLionProjects/jvm/instructions/stack/Math.cpp
+ /Users/surecn/Code/CLionProjects/jvm/instructions/stack/Math.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/Frame.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStack.h
+CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.o
+ /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/BytesUtils.h
+ /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
+ /Users/surecn/Code/CLionProjects/jvm/instructions/BytecodeReader.h
+ /Users/surecn/Code/CLionProjects/jvm/instructions/Instruction.h
+ /Users/surecn/Code/CLionProjects/jvm/instructions/stack/Pop.cpp
+ /Users/surecn/Code/CLionProjects/jvm/instructions/stack/Pop.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/Frame.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStack.h
+CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.o
+ /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/BytesUtils.h
+ /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
+ /Users/surecn/Code/CLionProjects/jvm/instructions/BytecodeReader.h
+ /Users/surecn/Code/CLionProjects/jvm/instructions/Instruction.h
+ /Users/surecn/Code/CLionProjects/jvm/instructions/stack/Swap.cpp
+ /Users/surecn/Code/CLionProjects/jvm/instructions/stack/Swap.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/Frame.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStack.h
 CMakeFiles/jvm.dir/main.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/MainParamater.h
  /Users/surecn/Code/CLionProjects/jvm/attribute/AttributeInfo.h
@@ -221,32 +276,35 @@ CMakeFiles/jvm.dir/runtime/Frame.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/runtime/Frame.cpp
  /Users/surecn/Code/CLionProjects/jvm/runtime/Frame.h
  /Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.h
- /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStrack.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStack.h
 CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o
- /Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.cpp
- /Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.h
-CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/common.h
  /Users/surecn/Code/CLionProjects/jvm/common/BytesUtils.h
  /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
- /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStrack.cpp
- /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStrack.h
-CMakeFiles/jvm.dir/runtime/Strack.cpp.o
+ /Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.cpp
+ /Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.h
+CMakeFiles/jvm.dir/runtime/OperandStack.cpp.o
+ /Users/surecn/Code/CLionProjects/jvm/common.h
+ /Users/surecn/Code/CLionProjects/jvm/common/BytesUtils.h
+ /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStack.cpp
+ /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStack.h
+CMakeFiles/jvm.dir/runtime/Stack.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/common.h
  /Users/surecn/Code/CLionProjects/jvm/common/BytesUtils.h
  /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
  /Users/surecn/Code/CLionProjects/jvm/runtime/Frame.h
  /Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.h
- /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStrack.h
- /Users/surecn/Code/CLionProjects/jvm/runtime/Strack.cpp
- /Users/surecn/Code/CLionProjects/jvm/runtime/Strack.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStack.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/Stack.cpp
+ /Users/surecn/Code/CLionProjects/jvm/runtime/Stack.h
 CMakeFiles/jvm.dir/runtime/Thread.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/common.h
  /Users/surecn/Code/CLionProjects/jvm/common/BytesUtils.h
  /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
  /Users/surecn/Code/CLionProjects/jvm/runtime/Frame.h
  /Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.h
- /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStrack.h
- /Users/surecn/Code/CLionProjects/jvm/runtime/Strack.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStack.h
+ /Users/surecn/Code/CLionProjects/jvm/runtime/Stack.h
  /Users/surecn/Code/CLionProjects/jvm/runtime/Thread.cpp
  /Users/surecn/Code/CLionProjects/jvm/runtime/Thread.h

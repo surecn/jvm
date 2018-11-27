@@ -10,6 +10,6 @@ namespace rt {
 
     void ILOAD::execute(rt::Frame *frame) {
         long val = frame->getLocalVars()->getInt(index);
-        frame->getOperandStrack()->pushInt(val);
+        frame->getOperandStack()->pushInt(val);
     }
 }

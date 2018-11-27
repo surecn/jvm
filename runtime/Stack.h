@@ -10,14 +10,14 @@
 
 namespace rt {
 
-    class Strack {
+    class Stack {
     private:
         int maxSize;
         int size;
         Frame *_top;
     public:
-        Strack(int xss):maxSize(xss){}
-        static Strack *newStrack(int maxSize);
+        Stack(int xss):maxSize(xss){}
+        static Stack *newStack(int maxSize);
         void push(Frame *frame);
         Frame* pop();
         Frame* current();

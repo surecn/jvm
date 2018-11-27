@@ -5,27 +5,32 @@
 #ifndef JVM_LOCALVARS_H
 #define JVM_LOCALVARS_H
 
+#include "../common.h"
 
-class LocalVars {
-private:
-    int *local;
+namespace rt {
 
-public:
-    void setInt(int index, int val);
-    int getInt(int index);
+    class LocalVars {
+    private:
+        java_int *local;
 
-    void setLong(int index, long val);
-    long getLong(int index);
+    public:
+        void setInt(int index, java_int val);
+        java_int getInt(int index);
 
-    void setFloat(int index, float val);
-    float getFloat(int index);
+        void setLong(int index, java_long val);
+        java_long getLong(int index);
 
-    void setDouble(int index, double val);
-    double getDouble(int index);
+        void setFloat(int index, java_float val);
+        java_float getFloat(int index);
 
-    void setPtr(int index, int* val);
-    int *getPtr(int index);
-};
+        void setDouble(int index, java_double val);
+        java_double getDouble(int index);
 
+        void setPtr(int index, java_int* val);
+        java_int *getPtr(int index);
+    };
+
+
+}
 
 #endif //JVM_LOCALVARS_H

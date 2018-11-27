@@ -7,12 +7,12 @@
 
 
 namespace rt {
-    class OperandStrack {
+    class OperandStack {
     private:
         int size;
-        long *slot;//win64位除外
+        long *slots;//win64位除外
     public:
-        OperandStrack* newOperandStrack(int maxStack);
+        OperandStack* newOperandStrack(int maxStack);
         void pushInt(long val); //java int
         long popInt();
         void pushLong(long long val); //java long
@@ -23,7 +23,8 @@ namespace rt {
         double popDouble();
         void pushRef(void* ptr);
         void* popRef();
-
+        void pushSlot(long slot);
+        long popSlot();
     };
 }
 

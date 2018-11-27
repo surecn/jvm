@@ -18,7 +18,7 @@ namespace rt {
 
     class NoOperandsInstruction : public Instruction {
     public:
-        void fetchOperand(BytecodeReader* reader);
+        virtual void fetchOperand(BytecodeReader* reader);
     };
 
     class BranchInstruction : public Instruction {
@@ -32,7 +32,7 @@ namespace rt {
     private:
         u1 index;
     public:
-        void fetchOperand(BytecodeReader* reader);
+        virtual void fetchOperand(BytecodeReader* reader);
     };
 
     class Index16Instruction : public Instruction {

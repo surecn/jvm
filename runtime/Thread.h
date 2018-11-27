@@ -6,14 +6,14 @@
 #define JVM_THREAD_H
 
 
-#include "Strack.h"
+#include "Stack.h"
 
 namespace rt {
 
     class Thread {
     private:
         int pc;
-        Strack *strack;
+        Stack *strack;
     public:
         Thread();
         static Thread *newThread();

@@ -2,15 +2,15 @@
 // Created by 郑邦国 on 2018/11/22.
 //
 
-#include "Strack.h"
+#include "Stack.h"
 
 namespace rt {
 
-    Strack* Strack::newStrack(int maxSize) {
-        return new Strack(maxSize);
+    Stack* Stack::newStack(int maxSize) {
+        return new Stack(maxSize);
     }
 
-    void Strack::push(rt::Frame *frame) {
+    void Stack::push(rt::Frame *frame) {
         if (size > maxSize) {
             cout << "StrackOverflowError" << endl;
         }
@@ -21,7 +21,7 @@ namespace rt {
         size++;
     }
 
-    Frame* Strack::pop() {
+    Frame* Stack::pop() {
         if (_top == NULL) {
             cout << "jvm strack is empty";
         }
@@ -32,7 +32,7 @@ namespace rt {
         return temp;
     }
 
-    Frame* Strack::top() {
+    Frame* Stack::top() {
         if (_top == NULL) {
             cout << "jvm strack is empty";
         }

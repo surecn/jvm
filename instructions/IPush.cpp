@@ -11,7 +11,7 @@ namespace rt {
     }
 
     void BIPUSH::execute(rt::Frame *frame) {
-        frame->getOperandStrack()->pushInt(val);
+        frame->getOperandStack()->pushInt(val);
     }
 
     void SIPUSH::fetchOperand(rt::BytecodeReader *reader) {
@@ -19,7 +19,7 @@ namespace rt {
     }
 
     void SIPUSH::execute(rt::Frame *frame) {
-        frame->getOperandStrack()->pushInt(val);
+        frame->getOperandStack()->pushInt(val);
     }
 
 

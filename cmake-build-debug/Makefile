@@ -771,6 +771,114 @@ instructions/Instruction.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/Instruction.cpp.s
 .PHONY : instructions/Instruction.cpp.s
 
+instructions/stack/Dup.o: instructions/stack/Dup.cpp.o
+
+.PHONY : instructions/stack/Dup.o
+
+# target to build an object file
+instructions/stack/Dup.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.o
+.PHONY : instructions/stack/Dup.cpp.o
+
+instructions/stack/Dup.i: instructions/stack/Dup.cpp.i
+
+.PHONY : instructions/stack/Dup.i
+
+# target to preprocess a source file
+instructions/stack/Dup.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.i
+.PHONY : instructions/stack/Dup.cpp.i
+
+instructions/stack/Dup.s: instructions/stack/Dup.cpp.s
+
+.PHONY : instructions/stack/Dup.s
+
+# target to generate assembly for a file
+instructions/stack/Dup.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.s
+.PHONY : instructions/stack/Dup.cpp.s
+
+instructions/stack/Math.o: instructions/stack/Math.cpp.o
+
+.PHONY : instructions/stack/Math.o
+
+# target to build an object file
+instructions/stack/Math.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stack/Math.cpp.o
+.PHONY : instructions/stack/Math.cpp.o
+
+instructions/stack/Math.i: instructions/stack/Math.cpp.i
+
+.PHONY : instructions/stack/Math.i
+
+# target to preprocess a source file
+instructions/stack/Math.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stack/Math.cpp.i
+.PHONY : instructions/stack/Math.cpp.i
+
+instructions/stack/Math.s: instructions/stack/Math.cpp.s
+
+.PHONY : instructions/stack/Math.s
+
+# target to generate assembly for a file
+instructions/stack/Math.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stack/Math.cpp.s
+.PHONY : instructions/stack/Math.cpp.s
+
+instructions/stack/Pop.o: instructions/stack/Pop.cpp.o
+
+.PHONY : instructions/stack/Pop.o
+
+# target to build an object file
+instructions/stack/Pop.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.o
+.PHONY : instructions/stack/Pop.cpp.o
+
+instructions/stack/Pop.i: instructions/stack/Pop.cpp.i
+
+.PHONY : instructions/stack/Pop.i
+
+# target to preprocess a source file
+instructions/stack/Pop.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.i
+.PHONY : instructions/stack/Pop.cpp.i
+
+instructions/stack/Pop.s: instructions/stack/Pop.cpp.s
+
+.PHONY : instructions/stack/Pop.s
+
+# target to generate assembly for a file
+instructions/stack/Pop.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.s
+.PHONY : instructions/stack/Pop.cpp.s
+
+instructions/stack/Swap.o: instructions/stack/Swap.cpp.o
+
+.PHONY : instructions/stack/Swap.o
+
+# target to build an object file
+instructions/stack/Swap.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.o
+.PHONY : instructions/stack/Swap.cpp.o
+
+instructions/stack/Swap.i: instructions/stack/Swap.cpp.i
+
+.PHONY : instructions/stack/Swap.i
+
+# target to preprocess a source file
+instructions/stack/Swap.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.i
+.PHONY : instructions/stack/Swap.cpp.i
+
+instructions/stack/Swap.s: instructions/stack/Swap.cpp.s
+
+.PHONY : instructions/stack/Swap.s
+
+# target to generate assembly for a file
+instructions/stack/Swap.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.s
+.PHONY : instructions/stack/Swap.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -852,59 +960,59 @@ runtime/LocalVars.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/LocalVars.cpp.s
 .PHONY : runtime/LocalVars.cpp.s
 
-runtime/OperandStrack.o: runtime/OperandStrack.cpp.o
+runtime/OperandStack.o: runtime/OperandStack.cpp.o
 
-.PHONY : runtime/OperandStrack.o
-
-# target to build an object file
-runtime/OperandStrack.cpp.o:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.o
-.PHONY : runtime/OperandStrack.cpp.o
-
-runtime/OperandStrack.i: runtime/OperandStrack.cpp.i
-
-.PHONY : runtime/OperandStrack.i
-
-# target to preprocess a source file
-runtime/OperandStrack.cpp.i:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.i
-.PHONY : runtime/OperandStrack.cpp.i
-
-runtime/OperandStrack.s: runtime/OperandStrack.cpp.s
-
-.PHONY : runtime/OperandStrack.s
-
-# target to generate assembly for a file
-runtime/OperandStrack.cpp.s:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.s
-.PHONY : runtime/OperandStrack.cpp.s
-
-runtime/Strack.o: runtime/Strack.cpp.o
-
-.PHONY : runtime/Strack.o
+.PHONY : runtime/OperandStack.o
 
 # target to build an object file
-runtime/Strack.cpp.o:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/Strack.cpp.o
-.PHONY : runtime/Strack.cpp.o
+runtime/OperandStack.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/OperandStack.cpp.o
+.PHONY : runtime/OperandStack.cpp.o
 
-runtime/Strack.i: runtime/Strack.cpp.i
+runtime/OperandStack.i: runtime/OperandStack.cpp.i
 
-.PHONY : runtime/Strack.i
+.PHONY : runtime/OperandStack.i
 
 # target to preprocess a source file
-runtime/Strack.cpp.i:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/Strack.cpp.i
-.PHONY : runtime/Strack.cpp.i
+runtime/OperandStack.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/OperandStack.cpp.i
+.PHONY : runtime/OperandStack.cpp.i
 
-runtime/Strack.s: runtime/Strack.cpp.s
+runtime/OperandStack.s: runtime/OperandStack.cpp.s
 
-.PHONY : runtime/Strack.s
+.PHONY : runtime/OperandStack.s
 
 # target to generate assembly for a file
-runtime/Strack.cpp.s:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/Strack.cpp.s
-.PHONY : runtime/Strack.cpp.s
+runtime/OperandStack.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/OperandStack.cpp.s
+.PHONY : runtime/OperandStack.cpp.s
+
+runtime/Stack.o: runtime/Stack.cpp.o
+
+.PHONY : runtime/Stack.o
+
+# target to build an object file
+runtime/Stack.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/Stack.cpp.o
+.PHONY : runtime/Stack.cpp.o
+
+runtime/Stack.i: runtime/Stack.cpp.i
+
+.PHONY : runtime/Stack.i
+
+# target to preprocess a source file
+runtime/Stack.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/Stack.cpp.i
+.PHONY : runtime/Stack.cpp.i
+
+runtime/Stack.s: runtime/Stack.cpp.s
+
+.PHONY : runtime/Stack.s
+
+# target to generate assembly for a file
+runtime/Stack.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/Stack.cpp.s
+.PHONY : runtime/Stack.cpp.s
 
 runtime/Thread.o: runtime/Thread.cpp.o
 
@@ -1014,6 +1122,18 @@ help:
 	@echo "... instructions/Instruction.o"
 	@echo "... instructions/Instruction.i"
 	@echo "... instructions/Instruction.s"
+	@echo "... instructions/stack/Dup.o"
+	@echo "... instructions/stack/Dup.i"
+	@echo "... instructions/stack/Dup.s"
+	@echo "... instructions/stack/Math.o"
+	@echo "... instructions/stack/Math.i"
+	@echo "... instructions/stack/Math.s"
+	@echo "... instructions/stack/Pop.o"
+	@echo "... instructions/stack/Pop.i"
+	@echo "... instructions/stack/Pop.s"
+	@echo "... instructions/stack/Swap.o"
+	@echo "... instructions/stack/Swap.i"
+	@echo "... instructions/stack/Swap.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -1023,12 +1143,12 @@ help:
 	@echo "... runtime/LocalVars.o"
 	@echo "... runtime/LocalVars.i"
 	@echo "... runtime/LocalVars.s"
-	@echo "... runtime/OperandStrack.o"
-	@echo "... runtime/OperandStrack.i"
-	@echo "... runtime/OperandStrack.s"
-	@echo "... runtime/Strack.o"
-	@echo "... runtime/Strack.i"
-	@echo "... runtime/Strack.s"
+	@echo "... runtime/OperandStack.o"
+	@echo "... runtime/OperandStack.i"
+	@echo "... runtime/OperandStack.s"
+	@echo "... runtime/Stack.o"
+	@echo "... runtime/Stack.i"
+	@echo "... runtime/Stack.s"
 	@echo "... runtime/Thread.o"
 	@echo "... runtime/Thread.i"
 	@echo "... runtime/Thread.s"

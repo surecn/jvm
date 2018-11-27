@@ -166,7 +166,7 @@ CMakeFiles/jvm.dir/instructions/Constant.cpp.o: ../instructions/Constant.h
 CMakeFiles/jvm.dir/instructions/Constant.cpp.o: ../instructions/Instruction.h
 CMakeFiles/jvm.dir/instructions/Constant.cpp.o: ../runtime/Frame.h
 CMakeFiles/jvm.dir/instructions/Constant.cpp.o: ../runtime/LocalVars.h
-CMakeFiles/jvm.dir/instructions/Constant.cpp.o: ../runtime/OperandStrack.h
+CMakeFiles/jvm.dir/instructions/Constant.cpp.o: ../runtime/OperandStack.h
 
 CMakeFiles/jvm.dir/instructions/ILoad.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/ILoad.cpp.o: ../common/BytesUtils.h
@@ -177,7 +177,7 @@ CMakeFiles/jvm.dir/instructions/ILoad.cpp.o: ../instructions/ILoad.h
 CMakeFiles/jvm.dir/instructions/ILoad.cpp.o: ../instructions/Instruction.h
 CMakeFiles/jvm.dir/instructions/ILoad.cpp.o: ../runtime/Frame.h
 CMakeFiles/jvm.dir/instructions/ILoad.cpp.o: ../runtime/LocalVars.h
-CMakeFiles/jvm.dir/instructions/ILoad.cpp.o: ../runtime/OperandStrack.h
+CMakeFiles/jvm.dir/instructions/ILoad.cpp.o: ../runtime/OperandStack.h
 
 CMakeFiles/jvm.dir/instructions/IPush.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/IPush.cpp.o: ../common/BytesUtils.h
@@ -188,7 +188,18 @@ CMakeFiles/jvm.dir/instructions/IPush.cpp.o: ../instructions/IPush.h
 CMakeFiles/jvm.dir/instructions/IPush.cpp.o: ../instructions/Instruction.h
 CMakeFiles/jvm.dir/instructions/IPush.cpp.o: ../runtime/Frame.h
 CMakeFiles/jvm.dir/instructions/IPush.cpp.o: ../runtime/LocalVars.h
-CMakeFiles/jvm.dir/instructions/IPush.cpp.o: ../runtime/OperandStrack.h
+CMakeFiles/jvm.dir/instructions/IPush.cpp.o: ../runtime/OperandStack.h
+
+CMakeFiles/jvm.dir/instructions/IStore.cpp.o: ../common.h
+CMakeFiles/jvm.dir/instructions/IStore.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/IStore.cpp.o: ../common/StrUtils.h
+CMakeFiles/jvm.dir/instructions/IStore.cpp.o: ../instructions/BytecodeReader.h
+CMakeFiles/jvm.dir/instructions/IStore.cpp.o: ../instructions/IStore.cpp
+CMakeFiles/jvm.dir/instructions/IStore.cpp.o: ../instructions/IStore.h
+CMakeFiles/jvm.dir/instructions/IStore.cpp.o: ../instructions/Instruction.h
+CMakeFiles/jvm.dir/instructions/IStore.cpp.o: ../runtime/Frame.h
+CMakeFiles/jvm.dir/instructions/IStore.cpp.o: ../runtime/LocalVars.h
+CMakeFiles/jvm.dir/instructions/IStore.cpp.o: ../runtime/OperandStack.h
 
 CMakeFiles/jvm.dir/instructions/Instruction.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/Instruction.cpp.o: ../common/BytesUtils.h
@@ -198,7 +209,51 @@ CMakeFiles/jvm.dir/instructions/Instruction.cpp.o: ../instructions/Instruction.c
 CMakeFiles/jvm.dir/instructions/Instruction.cpp.o: ../instructions/Instruction.h
 CMakeFiles/jvm.dir/instructions/Instruction.cpp.o: ../runtime/Frame.h
 CMakeFiles/jvm.dir/instructions/Instruction.cpp.o: ../runtime/LocalVars.h
-CMakeFiles/jvm.dir/instructions/Instruction.cpp.o: ../runtime/OperandStrack.h
+CMakeFiles/jvm.dir/instructions/Instruction.cpp.o: ../runtime/OperandStack.h
+
+CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.o: ../common.h
+CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.o: ../common/StrUtils.h
+CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.o: ../instructions/BytecodeReader.h
+CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.o: ../instructions/Instruction.h
+CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.o: ../instructions/stack/Dup.cpp
+CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.o: ../instructions/stack/Dup.h
+CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.o: ../runtime/Frame.h
+CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.o: ../runtime/LocalVars.h
+CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.o: ../runtime/OperandStack.h
+
+CMakeFiles/jvm.dir/instructions/stack/Math.cpp.o: ../common.h
+CMakeFiles/jvm.dir/instructions/stack/Math.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/stack/Math.cpp.o: ../common/StrUtils.h
+CMakeFiles/jvm.dir/instructions/stack/Math.cpp.o: ../instructions/BytecodeReader.h
+CMakeFiles/jvm.dir/instructions/stack/Math.cpp.o: ../instructions/Instruction.h
+CMakeFiles/jvm.dir/instructions/stack/Math.cpp.o: ../instructions/stack/Math.cpp
+CMakeFiles/jvm.dir/instructions/stack/Math.cpp.o: ../instructions/stack/Math.h
+CMakeFiles/jvm.dir/instructions/stack/Math.cpp.o: ../runtime/Frame.h
+CMakeFiles/jvm.dir/instructions/stack/Math.cpp.o: ../runtime/LocalVars.h
+CMakeFiles/jvm.dir/instructions/stack/Math.cpp.o: ../runtime/OperandStack.h
+
+CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.o: ../common.h
+CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.o: ../common/StrUtils.h
+CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.o: ../instructions/BytecodeReader.h
+CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.o: ../instructions/Instruction.h
+CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.o: ../instructions/stack/Pop.cpp
+CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.o: ../instructions/stack/Pop.h
+CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.o: ../runtime/Frame.h
+CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.o: ../runtime/LocalVars.h
+CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.o: ../runtime/OperandStack.h
+
+CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.o: ../common.h
+CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.o: ../common/StrUtils.h
+CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.o: ../instructions/BytecodeReader.h
+CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.o: ../instructions/Instruction.h
+CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.o: ../instructions/stack/Swap.cpp
+CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.o: ../instructions/stack/Swap.h
+CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.o: ../runtime/Frame.h
+CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.o: ../runtime/LocalVars.h
+CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.o: ../runtime/OperandStack.h
 
 CMakeFiles/jvm.dir/main.cpp.o: ../MainParamater.h
 CMakeFiles/jvm.dir/main.cpp.o: ../attribute/AttributeInfo.h
@@ -220,33 +275,36 @@ CMakeFiles/jvm.dir/runtime/Frame.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/runtime/Frame.cpp.o: ../runtime/Frame.cpp
 CMakeFiles/jvm.dir/runtime/Frame.cpp.o: ../runtime/Frame.h
 CMakeFiles/jvm.dir/runtime/Frame.cpp.o: ../runtime/LocalVars.h
-CMakeFiles/jvm.dir/runtime/Frame.cpp.o: ../runtime/OperandStrack.h
+CMakeFiles/jvm.dir/runtime/Frame.cpp.o: ../runtime/OperandStack.h
 
+CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o: ../common.h
+CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o: ../runtime/LocalVars.cpp
 CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o: ../runtime/LocalVars.h
 
-CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.o: ../common.h
-CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.o: ../common/BytesUtils.h
-CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.o: ../common/StrUtils.h
-CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.o: ../runtime/OperandStrack.cpp
-CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.o: ../runtime/OperandStrack.h
+CMakeFiles/jvm.dir/runtime/OperandStack.cpp.o: ../common.h
+CMakeFiles/jvm.dir/runtime/OperandStack.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/runtime/OperandStack.cpp.o: ../common/StrUtils.h
+CMakeFiles/jvm.dir/runtime/OperandStack.cpp.o: ../runtime/OperandStack.cpp
+CMakeFiles/jvm.dir/runtime/OperandStack.cpp.o: ../runtime/OperandStack.h
 
-CMakeFiles/jvm.dir/runtime/Strack.cpp.o: ../common.h
-CMakeFiles/jvm.dir/runtime/Strack.cpp.o: ../common/BytesUtils.h
-CMakeFiles/jvm.dir/runtime/Strack.cpp.o: ../common/StrUtils.h
-CMakeFiles/jvm.dir/runtime/Strack.cpp.o: ../runtime/Frame.h
-CMakeFiles/jvm.dir/runtime/Strack.cpp.o: ../runtime/LocalVars.h
-CMakeFiles/jvm.dir/runtime/Strack.cpp.o: ../runtime/OperandStrack.h
-CMakeFiles/jvm.dir/runtime/Strack.cpp.o: ../runtime/Strack.cpp
-CMakeFiles/jvm.dir/runtime/Strack.cpp.o: ../runtime/Strack.h
+CMakeFiles/jvm.dir/runtime/Stack.cpp.o: ../common.h
+CMakeFiles/jvm.dir/runtime/Stack.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/runtime/Stack.cpp.o: ../common/StrUtils.h
+CMakeFiles/jvm.dir/runtime/Stack.cpp.o: ../runtime/Frame.h
+CMakeFiles/jvm.dir/runtime/Stack.cpp.o: ../runtime/LocalVars.h
+CMakeFiles/jvm.dir/runtime/Stack.cpp.o: ../runtime/OperandStack.h
+CMakeFiles/jvm.dir/runtime/Stack.cpp.o: ../runtime/Stack.cpp
+CMakeFiles/jvm.dir/runtime/Stack.cpp.o: ../runtime/Stack.h
 
 CMakeFiles/jvm.dir/runtime/Thread.cpp.o: ../common.h
 CMakeFiles/jvm.dir/runtime/Thread.cpp.o: ../common/BytesUtils.h
 CMakeFiles/jvm.dir/runtime/Thread.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/runtime/Thread.cpp.o: ../runtime/Frame.h
 CMakeFiles/jvm.dir/runtime/Thread.cpp.o: ../runtime/LocalVars.h
-CMakeFiles/jvm.dir/runtime/Thread.cpp.o: ../runtime/OperandStrack.h
-CMakeFiles/jvm.dir/runtime/Thread.cpp.o: ../runtime/Strack.h
+CMakeFiles/jvm.dir/runtime/Thread.cpp.o: ../runtime/OperandStack.h
+CMakeFiles/jvm.dir/runtime/Thread.cpp.o: ../runtime/Stack.h
 CMakeFiles/jvm.dir/runtime/Thread.cpp.o: ../runtime/Thread.cpp
 CMakeFiles/jvm.dir/runtime/Thread.cpp.o: ../runtime/Thread.h
 

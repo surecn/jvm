@@ -28,11 +28,15 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/surecn/Code/CLionProjects/jvm/instructions/IPush.cpp" "/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles/jvm.dir/instructions/IPush.cpp.o"
   "/Users/surecn/Code/CLionProjects/jvm/instructions/IStore.cpp" "/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles/jvm.dir/instructions/IStore.cpp.o"
   "/Users/surecn/Code/CLionProjects/jvm/instructions/Instruction.cpp" "/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles/jvm.dir/instructions/Instruction.cpp.o"
+  "/Users/surecn/Code/CLionProjects/jvm/instructions/stack/Dup.cpp" "/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.o"
+  "/Users/surecn/Code/CLionProjects/jvm/instructions/stack/Math.cpp" "/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles/jvm.dir/instructions/stack/Math.cpp.o"
+  "/Users/surecn/Code/CLionProjects/jvm/instructions/stack/Pop.cpp" "/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.o"
+  "/Users/surecn/Code/CLionProjects/jvm/instructions/stack/Swap.cpp" "/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.o"
   "/Users/surecn/Code/CLionProjects/jvm/main.cpp" "/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles/jvm.dir/main.cpp.o"
   "/Users/surecn/Code/CLionProjects/jvm/runtime/Frame.cpp" "/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles/jvm.dir/runtime/Frame.cpp.o"
   "/Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.cpp" "/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o"
-  "/Users/surecn/Code/CLionProjects/jvm/runtime/OperandStrack.cpp" "/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.o"
-  "/Users/surecn/Code/CLionProjects/jvm/runtime/Strack.cpp" "/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles/jvm.dir/runtime/Strack.cpp.o"
+  "/Users/surecn/Code/CLionProjects/jvm/runtime/OperandStack.cpp" "/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles/jvm.dir/runtime/OperandStack.cpp.o"
+  "/Users/surecn/Code/CLionProjects/jvm/runtime/Stack.cpp" "/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles/jvm.dir/runtime/Stack.cpp.o"
   "/Users/surecn/Code/CLionProjects/jvm/runtime/Thread.cpp" "/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles/jvm.dir/runtime/Thread.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

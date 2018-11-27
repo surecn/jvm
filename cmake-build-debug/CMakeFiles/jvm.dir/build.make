@@ -304,18 +304,18 @@ CMakeFiles/jvm.dir/runtime/Frame.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/runtime/Frame.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/runtime/Frame.cpp -o CMakeFiles/jvm.dir/runtime/Frame.cpp.s
 
-CMakeFiles/jvm.dir/runtime/Strack.cpp.o: CMakeFiles/jvm.dir/flags.make
-CMakeFiles/jvm.dir/runtime/Strack.cpp.o: ../runtime/Strack.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/jvm.dir/runtime/Strack.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/runtime/Strack.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/runtime/Strack.cpp
+CMakeFiles/jvm.dir/runtime/Stack.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/runtime/Stack.cpp.o: ../runtime/Stack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/jvm.dir/runtime/Stack.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/runtime/Stack.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/runtime/Stack.cpp
 
-CMakeFiles/jvm.dir/runtime/Strack.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/runtime/Strack.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/runtime/Strack.cpp > CMakeFiles/jvm.dir/runtime/Strack.cpp.i
+CMakeFiles/jvm.dir/runtime/Stack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/runtime/Stack.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/runtime/Stack.cpp > CMakeFiles/jvm.dir/runtime/Stack.cpp.i
 
-CMakeFiles/jvm.dir/runtime/Strack.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/runtime/Strack.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/runtime/Strack.cpp -o CMakeFiles/jvm.dir/runtime/Strack.cpp.s
+CMakeFiles/jvm.dir/runtime/Stack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/runtime/Stack.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/runtime/Stack.cpp -o CMakeFiles/jvm.dir/runtime/Stack.cpp.s
 
 CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o: CMakeFiles/jvm.dir/flags.make
 CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o: ../runtime/LocalVars.cpp
@@ -330,18 +330,18 @@ CMakeFiles/jvm.dir/runtime/LocalVars.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/runtime/LocalVars.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.cpp -o CMakeFiles/jvm.dir/runtime/LocalVars.cpp.s
 
-CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.o: CMakeFiles/jvm.dir/flags.make
-CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.o: ../runtime/OperandStrack.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStrack.cpp
+CMakeFiles/jvm.dir/runtime/OperandStack.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/runtime/OperandStack.cpp.o: ../runtime/OperandStack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/jvm.dir/runtime/OperandStack.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/runtime/OperandStack.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStack.cpp
 
-CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStrack.cpp > CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.i
+CMakeFiles/jvm.dir/runtime/OperandStack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/runtime/OperandStack.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStack.cpp > CMakeFiles/jvm.dir/runtime/OperandStack.cpp.i
 
-CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStrack.cpp -o CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.s
+CMakeFiles/jvm.dir/runtime/OperandStack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/runtime/OperandStack.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStack.cpp -o CMakeFiles/jvm.dir/runtime/OperandStack.cpp.s
 
 CMakeFiles/jvm.dir/instructions/Instruction.cpp.o: CMakeFiles/jvm.dir/flags.make
 CMakeFiles/jvm.dir/instructions/Instruction.cpp.o: ../instructions/Instruction.cpp
@@ -447,6 +447,58 @@ CMakeFiles/jvm.dir/instructions/IStore.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/instructions/IStore.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/instructions/IStore.cpp -o CMakeFiles/jvm.dir/instructions/IStore.cpp.s
 
+CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.o: ../instructions/stack/Pop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/instructions/stack/Pop.cpp
+
+CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/instructions/stack/Pop.cpp > CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.i
+
+CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/instructions/stack/Pop.cpp -o CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.s
+
+CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.o: ../instructions/stack/Dup.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/instructions/stack/Dup.cpp
+
+CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/instructions/stack/Dup.cpp > CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.i
+
+CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/instructions/stack/Dup.cpp -o CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.s
+
+CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.o: ../instructions/stack/Swap.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/instructions/stack/Swap.cpp
+
+CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/instructions/stack/Swap.cpp > CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.i
+
+CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/instructions/stack/Swap.cpp -o CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.s
+
+CMakeFiles/jvm.dir/instructions/stack/Math.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/instructions/stack/Math.cpp.o: ../instructions/stack/Math.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/jvm.dir/instructions/stack/Math.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/instructions/stack/Math.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/instructions/stack/Math.cpp
+
+CMakeFiles/jvm.dir/instructions/stack/Math.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/instructions/stack/Math.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/instructions/stack/Math.cpp > CMakeFiles/jvm.dir/instructions/stack/Math.cpp.i
+
+CMakeFiles/jvm.dir/instructions/stack/Math.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/instructions/stack/Math.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/instructions/stack/Math.cpp -o CMakeFiles/jvm.dir/instructions/stack/Math.cpp.s
+
 # Object files for target jvm
 jvm_OBJECTS = \
 "CMakeFiles/jvm.dir/main.cpp.o" \
@@ -468,9 +520,9 @@ jvm_OBJECTS = \
 "CMakeFiles/jvm.dir/attribute/UnparsedAttribute.cpp.o" \
 "CMakeFiles/jvm.dir/runtime/Thread.cpp.o" \
 "CMakeFiles/jvm.dir/runtime/Frame.cpp.o" \
-"CMakeFiles/jvm.dir/runtime/Strack.cpp.o" \
+"CMakeFiles/jvm.dir/runtime/Stack.cpp.o" \
 "CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o" \
-"CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.o" \
+"CMakeFiles/jvm.dir/runtime/OperandStack.cpp.o" \
 "CMakeFiles/jvm.dir/instructions/Instruction.cpp.o" \
 "CMakeFiles/jvm.dir/instructions/BytecodeReader.cpp.o" \
 "CMakeFiles/jvm.dir/instructions/Constant.cpp.o" \
@@ -478,7 +530,11 @@ jvm_OBJECTS = \
 "CMakeFiles/jvm.dir/classfile/Constants.cpp.o" \
 "CMakeFiles/jvm.dir/instructions/IPush.cpp.o" \
 "CMakeFiles/jvm.dir/instructions/ILoad.cpp.o" \
-"CMakeFiles/jvm.dir/instructions/IStore.cpp.o"
+"CMakeFiles/jvm.dir/instructions/IStore.cpp.o" \
+"CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.o" \
+"CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.o" \
+"CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.o" \
+"CMakeFiles/jvm.dir/instructions/stack/Math.cpp.o"
 
 # External object files for target jvm
 jvm_EXTERNAL_OBJECTS =
@@ -502,9 +558,9 @@ jvm: CMakeFiles/jvm.dir/attribute/SourceFileAttribute.cpp.o
 jvm: CMakeFiles/jvm.dir/attribute/UnparsedAttribute.cpp.o
 jvm: CMakeFiles/jvm.dir/runtime/Thread.cpp.o
 jvm: CMakeFiles/jvm.dir/runtime/Frame.cpp.o
-jvm: CMakeFiles/jvm.dir/runtime/Strack.cpp.o
+jvm: CMakeFiles/jvm.dir/runtime/Stack.cpp.o
 jvm: CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o
-jvm: CMakeFiles/jvm.dir/runtime/OperandStrack.cpp.o
+jvm: CMakeFiles/jvm.dir/runtime/OperandStack.cpp.o
 jvm: CMakeFiles/jvm.dir/instructions/Instruction.cpp.o
 jvm: CMakeFiles/jvm.dir/instructions/BytecodeReader.cpp.o
 jvm: CMakeFiles/jvm.dir/instructions/Constant.cpp.o
@@ -513,9 +569,13 @@ jvm: CMakeFiles/jvm.dir/classfile/Constants.cpp.o
 jvm: CMakeFiles/jvm.dir/instructions/IPush.cpp.o
 jvm: CMakeFiles/jvm.dir/instructions/ILoad.cpp.o
 jvm: CMakeFiles/jvm.dir/instructions/IStore.cpp.o
+jvm: CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.o
+jvm: CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.o
+jvm: CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.o
+jvm: CMakeFiles/jvm.dir/instructions/stack/Math.cpp.o
 jvm: CMakeFiles/jvm.dir/build.make
 jvm: CMakeFiles/jvm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX executable jvm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Linking CXX executable jvm"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/jvm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

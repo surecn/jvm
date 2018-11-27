@@ -9,7 +9,7 @@ namespace rt {
     IStore::IStore(int _index) : index(_index) {}
 
     void IStore::execute(rt::Frame *frame) {
-        long val = frame->getOperandStrack()->popLong();
+        long val = frame->getOperandStack()->popLong();
         frame->getLocalVars()->setLong(index, val);
     }
 

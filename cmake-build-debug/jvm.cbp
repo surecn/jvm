@@ -225,6 +225,30 @@
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/Instruction.h">
 			<Option target="jvm"/>
 		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/stack/Dup.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/stack/Dup.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/stack/Math.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/stack/Math.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/stack/Pop.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/stack/Pop.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/stack/Swap.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/stack/Swap.h">
+			<Option target="jvm"/>
+		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/main.cpp">
 			<Option target="jvm"/>
 		</Unit>
@@ -240,16 +264,16 @@
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.h">
 			<Option target="jvm"/>
 		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/OperandStrack.cpp">
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/OperandStack.cpp">
 			<Option target="jvm"/>
 		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/OperandStrack.h">
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/OperandStack.h">
 			<Option target="jvm"/>
 		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/Strack.cpp">
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/Stack.cpp">
 			<Option target="jvm"/>
 		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/Strack.h">
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/Stack.h">
 			<Option target="jvm"/>
 		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/Thread.cpp">

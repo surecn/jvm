@@ -6,20 +6,20 @@
 #define JVM_FRAME_H
 
 #include "../common.h"
-#include "OperandStrack.h"
+#include "OperandStack.h"
 #include "LocalVars.h"
 
 namespace rt {
     class Frame {
     private:
         LocalVars* localVars;
-        OperandStrack* operandStrack;
+        OperandStack* operandStack;
     public:
         Frame* lower;
         Frame();
-        OperandStrack* getOperandStrack();
+        OperandStack* getOperandStack();
         LocalVars* getLocalVars();
-        static Frame* newFrame(int maxLocal, int maxStrack);
+        static Frame* newFrame(int maxLocal, int maxStack);
     };
 
 }

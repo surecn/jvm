@@ -14,6 +14,11 @@
 
 using namespace std;
 
+typedef float java_float;
+typedef long java_int;
+typedef long long java_long;
+typedef double java_double;
+
 typedef unsigned char byte;
 
 typedef unsigned char u1;    //uint8

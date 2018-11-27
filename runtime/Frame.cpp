@@ -8,7 +8,7 @@ namespace rt {
 
     Frame::Frame()  {}
 
-    Frame* Frame::newFrame(int maxLocal, int maxStrack) {
+    Frame* Frame::newFrame(int maxLocal, int maxStack) {
         return new Frame();
     }
 
@@ -16,7 +16,7 @@ namespace rt {
         return localVars;
     }
 
-    OperandStrack* Frame::getOperandStrack() {
-        return operandStrack;
+    OperandStack* Frame::getOperandStack() {
+        return operandStack;
     }
 }
