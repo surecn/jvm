@@ -6,10 +6,11 @@
 
 namespace rt {
 
-    Frame::Frame()  {}
 
-    Frame* Frame::newFrame(int maxLocal, int maxStack) {
-        return new Frame();
+    Frame* Frame::newFrame(Thread* thread, int maxLocal, int maxStack) {
+        LocalVars* local = LocalVars::newLocalVars(maxLocal);
+        OperandStack* stack = OperandStack::newOperandStrack(maxStack);
+        return new Frame(thread, stack, local);
     }
 
     LocalVars* Frame::getLocalVars() {
@@ -18,5 +19,17 @@ namespace rt {
 
     OperandStack* Frame::getOperandStack() {
         return operandStack;
+    }
+
+    Thread* Frame::getThread() {
+        return thread;
+    }
+
+    java_int Frame::getNextPc() {
+        return nextPC;
+    }
+
+    void Frame::setNextPc(java_int _nextPc) {
+        nextPC = _nextPc;
     }
 }

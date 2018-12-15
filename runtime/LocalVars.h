@@ -12,8 +12,12 @@ namespace rt {
     class LocalVars {
     private:
         java_int *local;
-
+        LocalVars(java_int val) {
+            local = new java_int[val];
+        }
     public:
+        static LocalVars* newLocalVars(java_int val);
+
         void setInt(int index, java_int val);
         java_int getInt(int index);
 
@@ -26,8 +30,10 @@ namespace rt {
         void setDouble(int index, java_double val);
         java_double getDouble(int index);
 
-        void setPtr(int index, java_int* val);
-        java_int *getPtr(int index);
+        void setRef(int index, java_ref val);
+        java_ref getRef(int index);
+
+
     };
 
 

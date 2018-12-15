@@ -6,7 +6,7 @@
 #define JVM_SWAP_H
 
 
-#include "../Instruction.h"
+#include "../base/Instruction.h"
 
 namespace rt {
     class Swap : public NoOperandsInstruction{

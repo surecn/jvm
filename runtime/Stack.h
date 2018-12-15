@@ -20,7 +20,6 @@ namespace rt {
         static Stack *newStack(int maxSize);
         void push(Frame *frame);
         Frame* pop();
-        Frame* current();
         Frame* top();
     };
 }

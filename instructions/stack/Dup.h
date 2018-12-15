@@ -6,7 +6,7 @@
 #define JVM_DUP_H
 
 
-#include "../Instruction.h"
+#include "../base/Instruction.h"
 
 namespace rt {
 

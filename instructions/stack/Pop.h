@@ -5,7 +5,7 @@
 #ifndef JVM_POP_H
 #define JVM_POP_H
 
-#include "../Instruction.h"
+#include "../base/Instruction.h"
 
 namespace rt {
     class Pop : public NoOperandsInstruction {

@@ -15,14 +15,12 @@ namespace cls {
         u2 nameIndex;
         u4 length;
         u1 *info;
-
+        static AttributeInfo* readAttribute(ClassReader* classReader, ConstantPool* constantPool);
     public:
 
         virtual void readInfo(ClassReader* classReader) = 0;
 
-        static AttributeInfo** readAttributes(ClassReader* classReader, ConstantPool* constantPool);
-
-        static AttributeInfo* readAttribute(ClassReader* classReader, ConstantPool* constantPool);
+        static AttributeInfo** readAttributes(ClassReader* classReader, ConstantPool* constantPool, u2 count);
 
         static AttributeInfo* newAttributeInfo(string *attrName, u2 attrLen, ConstantPool* constantPool);
 

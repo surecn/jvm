@@ -24,8 +24,8 @@ namespace cls {
         if (exceptionTableLength > 0) {
             ExceptionTableEntry::readExceptionTable(classReader, exceptionTableLength);
         }
-
-        attributes = AttributeInfo::readAttributes(classReader, constantPool);
+        u2 count = classReader->readU2();
+        attributes = AttributeInfo::readAttributes(classReader, constantPool, count);
     }
 
     ExceptionTableEntry* ExceptionTableEntry::readExceptionTable(ClassReader *reader, u2 length) {
@@ -34,6 +34,22 @@ namespace cls {
             exceptionTableEntry[i].read(reader);
         }
         return exceptionTableEntry;
+    }
+
+    u1* CodeAttribute::getCode() {
+        return code;
+    }
+
+    u4 CodeAttribute::getCodeLength() {
+        return codeLength;
+    }
+
+    u2 CodeAttribute::getMaxLocals() {
+        return maxLocals;
+    }
+
+    u2 CodeAttribute::getMaxStack() {
+        return maxStack;
     }
 
 

@@ -12,10 +12,16 @@ namespace rt {
 
     class Thread {
     private:
-        int pc;
-        Stack *strack;
+        java_int pc;
+        Stack *stack;
     public:
         Thread();
+        java_int getPC();
+        void setPC(java_int val);
+        void pushFrame(Frame* frame);
+        Frame* popFrame();
+        Frame* currentFrame();
+        Frame* newFrame(int maxLocals, int maxStack);
         static Thread *newThread();
     };
 

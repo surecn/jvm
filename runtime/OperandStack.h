@@ -6,25 +6,28 @@
 #define JVM_OPERANDSTRACK_H
 
 
+#include "../common.h"
+
 namespace rt {
     class OperandStack {
     private:
         int size;
-        long *slots;//win64位除外
+        java_int *slots;//win64位除外
+        OperandStack(java_int val) : size(val) {}
     public:
-        OperandStack* newOperandStrack(int maxStack);
-        void pushInt(long val); //java int
+        static OperandStack* newOperandStrack(int maxStack);
+        void pushInt(java_int val); //java int
         long popInt();
-        void pushLong(long long val); //java long
-        long long popLong();
-        void pushFloat(float val);
-        float popFloat();
-        void pushDouble(double val);
-        double popDouble();
-        void pushRef(void* ptr);
-        void* popRef();
-        void pushSlot(long slot);
-        long popSlot();
+        void pushLong(java_long val); //java long
+        java_long popLong();
+        void pushFloat(java_float val);
+        java_float popFloat();
+        void pushDouble(java_double val);
+        java_double popDouble();
+        void pushRef(java_ref ptr);
+        java_ref popRef();
+        void pushSlot(java_int slot);
+        java_int popSlot();
     };
 }
 

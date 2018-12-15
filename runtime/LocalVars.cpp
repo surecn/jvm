@@ -7,6 +7,11 @@
 
 namespace rt {
 
+    LocalVars* LocalVars::newLocalVars(java_int maxLocals) {
+        LocalVars *localVars = new LocalVars(maxLocals);
+        return localVars;
+    }
+
     java_int LocalVars::getInt(int index) {
         return local[index];
     }
@@ -43,17 +48,25 @@ namespace rt {
     java_double LocalVars::getDouble(int index) {
         java_long low = local[index];
         java_long high = local[index + 1];
-        u1 ch[SIZE_INT];
+        u1 ch[SIZE_INT * 2];
         BytesUtils::intToBytes(low, ch);
-        BytesUtils::intToBytes(low, ch + SIZE_INT);
+        BytesUtils::intToBytes(high, ch + SIZE_INT);
         return BytesUtils::bytesToDouble(ch);
     }
 
-    java_int* LocalVars::getPtr(int index) {
+    void LocalVars::setDouble(int index, java_double val) {
+        u1 ch[SIZE_INT * 2];
+        BytesUtils::doubleToBytes(val, ch);
+        local[index] = BytesUtils::bytesToInt(ch) + BytesUtils::bytesToInt(ch) << SIZE_INT;
+    }
+
+    java_ref LocalVars::getRef(int index) {
         return (java_int*)local[index];
     }
 
-    void LocalVars::setPtr(int index, java_int *val) {
+    void LocalVars::setRef(int index, java_ref val) {
         local[index] = (java_int)val;
     }
+
+
 }

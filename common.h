@@ -18,6 +18,7 @@ typedef float java_float;
 typedef long java_int;
 typedef long long java_long;
 typedef double java_double;
+typedef void* java_ref;
 
 typedef unsigned char byte;
 

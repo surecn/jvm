@@ -35,6 +35,10 @@ namespace cls {
         CodeAttribute(ConstantPool *cp) : constantPool(cp) {}
         ~CodeAttribute();
         void readInfo(cls::ClassReader *classReader);
+        u2 getMaxStack();
+        u2 getMaxLocals();
+        u1* getCode();
+        u4 getCodeLength();
 
     };
 

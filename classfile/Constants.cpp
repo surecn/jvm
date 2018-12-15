@@ -101,8 +101,9 @@ namespace cls {
         accessFlags = classReader->readU2();
         nameIndex = classReader->readU2();
         cout << "MemberInfo:" << *(cp->getUtf8(nameIndex)) << endl;
-        descriptorIndex =classReader->readU2();
-        attributeInfos = AttributeInfo::readAttributes(classReader, constantPool);
+        descriptorIndex = classReader->readU2();
+        attributeCount = classReader->readU2();
+        attributeInfos = AttributeInfo::readAttributes(classReader, constantPool, attributeCount);
     }
 
     MemberInfo** MemberInfo::readMembers(ConstantPool *constantPool, ClassReader *reader) {
@@ -118,6 +119,15 @@ namespace cls {
     u2 MemberInfo::getDescriptorIndex() {
         return descriptorIndex;
     };
+
+    CodeAttribute* MemberInfo::getCodeAttribute() {
+        for (int i = 0, len = attributeCount; i < len; ++i) {
+            if (typeid(attributeInfos[i]) == typeid(CodeAttribute*)) {
+                return (CodeAttribute*)(attributeInfos[i]);
+            }
+        }
+        return NULL;
+    }
 
     ConstantInfo* ConstantFactory::readConstantInfo(cls::ClassReader *classReader, cls::ConstantPool *constantPool) {
         u1 tag = classReader->readU1();

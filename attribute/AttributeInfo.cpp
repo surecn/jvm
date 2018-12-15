@@ -12,8 +12,7 @@
 
 namespace cls {
 
-    AttributeInfo** AttributeInfo::readAttributes(ClassReader *classReader, ConstantPool *constantPool) {
-        u2 count = classReader->readU2();
+    AttributeInfo** AttributeInfo::readAttributes(ClassReader *classReader, ConstantPool *constantPool, u2 count) {
         AttributeInfo** attributeInfos = new AttributeInfo*[count];
         for (int i = 0; i < count; ++i) {
             attributeInfos[i] = readAttribute(classReader, constantPool);

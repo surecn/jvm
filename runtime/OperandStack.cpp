@@ -9,31 +9,31 @@
 namespace rt {
 
     OperandStack *OperandStack::newOperandStrack(int maxStack) {
-        return new OperandStack();
+        return new OperandStack(maxStack);
     }
 
-    void OperandStack::pushInt(long val) {
+    void OperandStack::pushInt(java_int val) {
         slots[size] = val;
         size++;
     }
 
-    long OperandStack::popInt() {
+    java_int OperandStack::popInt() {
         size--;
         return slots[size];
     }
 
-    void OperandStack::pushLong(long long val) {
+    void OperandStack::pushLong(java_long val) {
         slots[size] = (long)val;
         slots[size + 1] = (long)(val >> 32);
         slots+=2;
     }
 
-    long long OperandStack::popLong() {
+    java_long OperandStack::popLong() {
         size-=2;
         return slots[size] | slots[size + 1] << 32;
     }
 
-    float OperandStack::popFloat() {
+    java_float OperandStack::popFloat() {
         size--;
         long intVal = slots[size];
         u1 data[SIZE_INT];
@@ -41,20 +41,20 @@ namespace rt {
         return BytesUtils::bytesToFloat(data);
     }
 
-    void OperandStack::pushFloat(float val) {
+    void OperandStack::pushFloat(java_float val) {
         u1 data[SIZE_INT];
         BytesUtils::floatToBytes(val, data);
         slots[size] = BytesUtils::bytesToInt(data);
     }
 
-    void OperandStack::pushDouble(double val) {
+    void OperandStack::pushDouble(java_double val) {
         u1 data[SIZE_INT * 2];
         BytesUtils::doubleToBytes(val, data);
         slots[size] = BytesUtils::bytesToInt(data);
         slots[size + 1] = BytesUtils::bytesToInt(data + SIZE_INT);
     }
 
-    double OperandStack::popDouble() {
+    java_double OperandStack::popDouble() {
         size-=2;
         u1 data[SIZE_INT * 2];
         BytesUtils::intToBytes(slots[size], data);
@@ -62,22 +62,22 @@ namespace rt {
         return BytesUtils::bytesToDouble(data);
     }
 
-    void OperandStack::pushRef(void *ptr) {
+    void OperandStack::pushRef(java_ref ptr) {
         slots[size] = (long)ptr;
         size++;
     }
 
-    void* OperandStack::popRef() {
+    java_ref OperandStack::popRef() {
         size--;
         return (void*)slots[size];
     }
 
-    void OperandStack::pushSlot(long slot) {
+    void OperandStack::pushSlot(java_int slot) {
         slots[size] = slot;
         size++;
     }
 
-    long OperandStack::popSlot() {
+    java_int OperandStack::popSlot() {
         size--;
         return slots[size];
     }

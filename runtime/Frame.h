@@ -5,21 +5,28 @@
 #ifndef JVM_FRAME_H
 #define JVM_FRAME_H
 
-#include "../common.h"
 #include "OperandStack.h"
 #include "LocalVars.h"
 
+
 namespace rt {
+    extern class Thread;
     class Frame {
     private:
         LocalVars* localVars;
         OperandStack* operandStack;
+        Thread* thread;
+        java_int nextPC;
     public:
         Frame* lower;
-        Frame();
+        Frame() {}
+        Frame(Thread* th, OperandStack* stack, LocalVars* vars) : thread(th), operandStack(stack), localVars(vars) {}
         OperandStack* getOperandStack();
         LocalVars* getLocalVars();
-        static Frame* newFrame(int maxLocal, int maxStack);
+        Thread* getThread();
+        java_int getNextPc();
+        void setNextPc(java_int _nextPc);
+        static Frame* newFrame(Thread* thread, int maxLocal, int maxStack);
     };
 
 }
