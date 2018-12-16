@@ -2,7 +2,7 @@
 #include "MainParamater.h"
 #include "classpath/ClassPath.h"
 #include "classfile/ClassFile.h"
-
+#include "Interperter.h"
 
 const string PATHSeparter;
 
@@ -27,6 +27,18 @@ void loadClass(string &className, ClassPath &classPath, ClassFile &classFile) {
     classFile.load(classData.data);
 }
 
+MemberInfo* getMainMethod(ClassFile* classFile) {
+    for (int i = 0, len = classFile->getMethodCount(); i < len; ++i) {
+        cls::MemberInfo* member = classFile->getMethods()[i];
+        string *name = classFile->getName(member);
+        string *descriptor = classFile->getDescriptor(member);
+        if (*name == "main" && *descriptor == "([Ljava/lang/String;)V") {
+            return member;
+        }
+    }
+    return NULL;
+}
+
 
 void startVM(struct MainParamater cmd) {
     ClassPath classPath(cmd.XjreOption, cmd.cpOption);
@@ -35,6 +47,9 @@ void startVM(struct MainParamater cmd) {
 
     ClassFile classFile;
     loadClass(className, classPath, classFile);
+
+    cls::MemberInfo* memberInfo = getMainMethod(&classFile);
+    Interperter::interpret(memberInfo);
 
     cout << "startVM" << endl;
 }

@@ -866,6 +866,7 @@ CMakeFiles/jvm.dir/instructions/stores/LStore.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/runtime/Stack.h
  /Users/surecn/Code/CLionProjects/jvm/runtime/Thread.h
 CMakeFiles/jvm.dir/main.cpp.o
+ /Users/surecn/Code/CLionProjects/jvm/Interperter.h
  /Users/surecn/Code/CLionProjects/jvm/MainParamater.h
  /Users/surecn/Code/CLionProjects/jvm/attribute/AttributeInfo.h
  /Users/surecn/Code/CLionProjects/jvm/attribute/CodeAttribute.h

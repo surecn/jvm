@@ -86,11 +86,11 @@ namespace cls {
     }
 
     void ClassFile::readFields(ClassReader *classReader) {
-        fields = MemberInfo::readMembers(constantPool, classReader);
+        fields = MemberInfo::readMembers(constantPool, classReader, &_fieldCount);
     }
 
     void ClassFile::readMethods(ClassReader *classReader) {
-        methods = MemberInfo::readMembers(constantPool, classReader);
+        methods = MemberInfo::readMembers(constantPool, classReader, &_methodCount);
     }
 
     ConstantInfo* ClassFile::readConstantInfo(ClassReader *classReader, ConstantPool* cp) {
@@ -121,6 +121,18 @@ namespace cls {
             return constantPool->getClassName(*this->interfaces);
         }
         return 0;
+    }
+
+    MemberInfo** ClassFile::getMethods() {
+        return methods;
+    }
+
+    u2 ClassFile::getMethodCount() {
+        return _methodCount;
+    }
+
+    u2 ClassFile::getFieldCount() {
+        return _fieldCount;
     }
 
 }

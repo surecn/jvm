@@ -115,7 +115,7 @@ namespace cls {
         u2 getNameIndex();
         u2 getDescriptorIndex();
         CodeAttribute* getCodeAttribute();
-        static MemberInfo** readMembers(ConstantPool *constantPool, ClassReader *reader);
+        static MemberInfo** readMembers(ConstantPool *constantPool, ClassReader *reader, u2 *count);
     };
 
 

@@ -556,6 +556,7 @@ namespace rt {
                 // case 0xfe: impdep1
                 // case 0xff: impdep2
             default:
+                cout << "Unsupported opcode:" << hex << (int)opcode << endl;
                 break;
                 //panic(fmt.Errorf("Unsupported opcode: 0x%x!", opcode))
         }

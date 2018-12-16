@@ -13,7 +13,10 @@ namespace rt {
     private:
         int size;
         java_int *slots;//win64位除外
-        OperandStack(java_int val) : size(val) {}
+        OperandStack(java_int val) {
+            size = 0;
+            slots = new java_int[val];
+        }
     public:
         static OperandStack* newOperandStrack(int maxStack);
         void pushInt(java_int val); //java int

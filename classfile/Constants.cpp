@@ -6,6 +6,8 @@
 
 namespace cls {
 
+#include <typeinfo>
+
     ConstantFloatInfo::ConstantFloatInfo(cls::ClassReader *classReader) {
         value = classReader->readU4();
     }
@@ -106,13 +108,12 @@ namespace cls {
         attributeInfos = AttributeInfo::readAttributes(classReader, constantPool, attributeCount);
     }
 
-    MemberInfo** MemberInfo::readMembers(ConstantPool *constantPool, ClassReader *reader) {
-        u2 fieldCount = reader->readU2();
-        MemberInfo** fields = new MemberInfo*[fieldCount];
-        for (int i = 0; i < fieldCount; i++) {
+    MemberInfo** MemberInfo::readMembers(ConstantPool *constantPool, ClassReader *reader, u2 *count) {
+        *count = reader->readU2();
+        MemberInfo** fields = new MemberInfo*[*count];
+        for (int i = 0; i < *count; i++) {
             fields[i] = new MemberInfo(constantPool, reader);
         }
-
         return fields;
     }
 
@@ -122,7 +123,9 @@ namespace cls {
 
     CodeAttribute* MemberInfo::getCodeAttribute() {
         for (int i = 0, len = attributeCount; i < len; ++i) {
-            if (typeid(attributeInfos[i]) == typeid(CodeAttribute*)) {
+            cout << "\ntype:" << typeid(attributeInfos[i]).name() << endl;
+            cout << "type:" << typeid(CodeAttribute*).name() << endl;
+            if (attributeInfos[i]->getAttributeType() == "Code") {
                 return (CodeAttribute*)(attributeInfos[i]);
             }
         }

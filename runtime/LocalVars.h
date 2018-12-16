@@ -12,10 +12,11 @@ namespace rt {
     class LocalVars {
     private:
         java_int *local;
+
+    public:
         LocalVars(java_int val) {
             local = new java_int[val];
         }
-    public:
         static LocalVars* newLocalVars(java_int val);
 
         void setInt(int index, java_int val);

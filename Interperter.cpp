@@ -26,7 +26,7 @@ static void loop(rt::Thread *thread, byte *bytecode) {
 
         //execute
         printf("pc:%2d inst:%T %v\n", pc, instruction, instruction);
-
+        instruction->execute(frame);
     }
 }
 
@@ -40,7 +40,7 @@ void Interperter::interpret(cls::MemberInfo *memberInfo) {
     rt::Thread* thread = rt::Thread::newThread();
     rt::Frame* frame = thread->newFrame(maxLocals, maxStack);
     thread->pushFrame(frame);
-
+    loop(thread, code);
 }
 
 

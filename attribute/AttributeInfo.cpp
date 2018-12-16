@@ -12,6 +12,10 @@
 
 namespace cls {
 
+    string AttributeInfo::getAttributeType() {
+        return type;
+    }
+
     AttributeInfo** AttributeInfo::readAttributes(ClassReader *classReader, ConstantPool *constantPool, u2 count) {
         AttributeInfo** attributeInfos = new AttributeInfo*[count];
         for (int i = 0; i < count; ++i) {
@@ -25,31 +29,37 @@ namespace cls {
         string* attrName = constantPool->getUtf8(attrNameIndex);
         int attLen = classReader->readU4();
         AttributeInfo* attributeInfo = newAttributeInfo(attrName, attLen, constantPool);
-        attributeInfo->readInfo(classReader);
+        if (attributeInfo != NULL) {
+            attributeInfo->readInfo(classReader);
+        }
         return attributeInfo;
     }
 
     AttributeInfo* AttributeInfo::newAttributeInfo(string *attrName, u2 attrLen, ConstantPool *constantPool) {
         cout << "attribute:" + *attrName << endl;
+        AttributeInfo * attributeInfo = NULL;
         if ("Code" == *attrName) {
-            return new CodeAttribute(constantPool);
+            attributeInfo = new CodeAttribute(constantPool);
         } else if ("ConstantValue" == *attrName) {
-            return new ConstantValueAttribute();
+            attributeInfo = new ConstantValueAttribute();
         } else if ("Deprecated" == *attrName) {
-            return new DeprecatedAttribute();
+            attributeInfo = new DeprecatedAttribute();
         } else if ("Exceptions" == *attrName) {
-            return new ExceptionAttribute();
+            attributeInfo = new ExceptionAttribute();
         } else if ("LineNumberTable" == *attrName) {
-            return new LineNumberTableAttribute();
+            attributeInfo = new LineNumberTableAttribute();
         } else if ("LocalVariableTable" == *attrName) {
-            return new LocalVariableTableAttribute();
+            attributeInfo = new LocalVariableTableAttribute();
         } else if ("SourceFile" == *attrName) {
-            return new SourceFileAttribute(constantPool);
+            attributeInfo = new SourceFileAttribute(constantPool);
         } else if ("Synthetic" == *attrName) {
-            return new SyntheticAttribute();
+            attributeInfo = new SyntheticAttribute();
         } else {
             cout << "UnparsedAttribute:" + *attrName;
         }
-        return NULL;
+        if (attributeInfo != NULL) {
+            attributeInfo->type = *attrName;
+        }
+        return attributeInfo;
     }
 }

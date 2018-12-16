@@ -865,6 +865,7 @@ CMakeFiles/jvm.dir/instructions/stores/LStore.cpp.o: ../runtime/OperandStack.h
 CMakeFiles/jvm.dir/instructions/stores/LStore.cpp.o: ../runtime/Stack.h
 CMakeFiles/jvm.dir/instructions/stores/LStore.cpp.o: ../runtime/Thread.h
 
+CMakeFiles/jvm.dir/main.cpp.o: ../Interperter.h
 CMakeFiles/jvm.dir/main.cpp.o: ../MainParamater.h
 CMakeFiles/jvm.dir/main.cpp.o: ../attribute/AttributeInfo.h
 CMakeFiles/jvm.dir/main.cpp.o: ../attribute/CodeAttribute.h

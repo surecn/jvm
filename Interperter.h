@@ -9,7 +9,7 @@
 
 class Interperter {
 public:
-    void interpret(cls::MemberInfo* memberInfo);
+    static void interpret(cls::MemberInfo* memberInfo);
 };
 
 

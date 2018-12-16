@@ -24,6 +24,8 @@ namespace cls {
         u2  superClass;
         u2*  interfaces;
         u2 interfacesLength;
+        u2 _methodCount;
+        u2 _fieldCount;
         cls::MemberInfo** methods;
         cls::MemberInfo** fields;
         AttributeInfo* attributes;
@@ -34,11 +36,12 @@ namespace cls {
         AttributeInfo* readAttributes(ClassReader *classReader);
         ConstantPool* readConstantPool(ClassReader *classReader);
         ConstantInfo* readConstantInfo(ClassReader *classReader, ConstantPool* cp);
-        string* getName(MemberInfo* memberInfo);
-        string* getDescriptor(MemberInfo* memberInfo);
+
     public:
         ClassFile();
         ~ClassFile();
+        string* getName(MemberInfo* memberInfo);
+        string* getDescriptor(MemberInfo* memberInfo);
         void load(byte* &classData);
         ClassFile* read(ClassReader* classReader);
         u2 getMinorVersion();
@@ -46,6 +49,9 @@ namespace cls {
         string* getClassName();
         string* getSuperClassName();
         string* getInterfacesNames();
+        MemberInfo** getMethods();
+        u2 getMethodCount();
+        u2 getFieldCount();
     };
 
 }

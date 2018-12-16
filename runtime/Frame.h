@@ -19,8 +19,13 @@ namespace rt {
         java_int nextPC;
     public:
         Frame* lower;
-        Frame() {}
-        Frame(Thread* th, OperandStack* stack, LocalVars* vars) : thread(th), operandStack(stack), localVars(vars) {}
+        Frame() {
+            nextPC = 0L;
+        }
+        Frame(Thread* th, OperandStack* stack, LocalVars* vars) : thread(th), operandStack(stack), localVars(vars) {
+            nextPC = 0L;
+            cout << "frame" << this << "=====" << localVars << endl;
+        }
         OperandStack* getOperandStack();
         LocalVars* getLocalVars();
         Thread* getThread();
