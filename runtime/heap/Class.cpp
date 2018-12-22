@@ -69,6 +69,10 @@ namespace rt{
         m_superClass = cls;
     }
 
+    Class* Class::getSuperClass() {
+        return m_superClass;
+    }
+
     string** Class::getInterfaceNames() {
         return m_interfaceNames;
     }
@@ -79,6 +83,50 @@ namespace rt{
 
     void Class::setInterfaces(rt::Class **cls) {
         m_interfaces = cls;
+    }
+
+    java_int Class::getInstanceSlotCount() const {
+        return m_instanceSlotCount;
+    }
+
+    void Class::setInstanceSlotCount(java_int instanceSlotCount) {
+        Class::m_instanceSlotCount = instanceSlotCount;
+    }
+
+    java_int Class::getStaticSlotCount() const {
+        return m_staticSlotCount;
+    }
+
+    void Class::setStaticSlotCount(java_int staticSlotCount) {
+        Class::m_staticSlotCount = staticSlotCount;
+    }
+
+    u4 Class::getFieldCount() const {
+        return m_fieldCount;
+    }
+
+    u4 Class::getMethodCount() const {
+        return m_methodCount;
+    }
+
+    Field **Class::getFields() const {
+        return m_fields;
+    }
+
+    Method **Class::getMethod() const {
+        return m_method;
+    }
+
+    SlotArray *Class::getStaticVars() const {
+        return m_staticVars;
+    }
+
+    void Class::setStaticVars(SlotArray *staticVars) {
+        Class::m_staticVars = staticVars;
+    }
+
+    cf::ConstantPool *Class::getConstantPool() const {
+        return m_constantPool;
     }
 
 }

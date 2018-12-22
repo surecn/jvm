@@ -7,7 +7,7 @@
 namespace cf {
 
     void UnparsedAttribute::readInfo(ClassReader *classReader) {
-        info = classReader->readU1s(length);
+        m_info = classReader->readU1s(m_length);
     }
 
 }

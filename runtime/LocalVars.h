@@ -11,9 +11,6 @@
 namespace rt {
 
     class LocalVars : public SlotArray {
-    private:
-        java_int *m_local;
-
     public:
         LocalVars(java_int val);
 

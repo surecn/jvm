@@ -3,6 +3,7 @@
 //
 
 #include "Method.h"
+#include "AccessFlags.h"
 
 namespace rt {
 
@@ -28,6 +29,28 @@ namespace rt {
         return pMethods;
     }
 
+    bool Method::isSynchronized() {
+        return 0 != m_accessFlags & ACC_SYNCHRONIZED;
+    }
 
+    bool Method::isBridge() {
+        return 0 != m_accessFlags & ACC_BRIDGE;
+    }
+
+    bool Method::isVarargs() {
+        return 0 != m_accessFlags & ACC_VARARGS;
+    }
+
+    bool Method::isNative() {
+        return 0 != m_accessFlags & ACC_NATIVE;
+    }
+
+    bool Method::isAbstract() {
+        return 0 != m_accessFlags & ACC_ABSTRACT;
+    }
+
+    bool Method::isStrict() {
+        return 0 != m_accessFlags & ACC_STRICT;
+    }
 
 }

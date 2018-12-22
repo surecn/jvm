@@ -89,6 +89,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/surecn/Code/CLionProjects/jvm/runtime/heap/MemberRef.cpp" "/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles/jvm.dir/runtime/heap/MemberRef.cpp.o"
   "/Users/surecn/Code/CLionProjects/jvm/runtime/heap/Method.cpp" "/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles/jvm.dir/runtime/heap/Method.cpp.o"
   "/Users/surecn/Code/CLionProjects/jvm/runtime/heap/MethodRef.cpp" "/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles/jvm.dir/runtime/heap/MethodRef.cpp.o"
+  "/Users/surecn/Code/CLionProjects/jvm/runtime/heap/Object.cpp" "/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles/jvm.dir/runtime/heap/Object.cpp.o"
   "/Users/surecn/Code/CLionProjects/jvm/runtime/heap/SymRef.cpp" "/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles/jvm.dir/runtime/heap/SymRef.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

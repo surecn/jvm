@@ -37,6 +37,6 @@ namespace rt {
     }
 
     Frame* Thread::newFrame(int maxLocals, int maxStack) {
-        return Frame::newFrame(this, maxLocals, maxStack);
+        return new Frame(this, maxLocals, maxStack);
     }
 }

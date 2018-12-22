@@ -14,6 +14,7 @@ namespace cf {
         u2 m_constantValueIndex;
     public:
         void readInfo(ClassReader* classReader);
+        u2 getConstantValueIndex() const;
     };
 }
 

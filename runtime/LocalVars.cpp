@@ -7,8 +7,8 @@
 
 namespace rt {
 
-    LocalVars::LocalVars(java_int val) {
-        m_local = new java_int[val];
+    LocalVars::LocalVars(java_int val) : SlotArray(val) {
+
     }
 
 }

@@ -3,6 +3,8 @@
 //
 
 #include "Field.h"
+#include "AccessFlags.h"
+#include "../../classfile/attribute/ConstantValueAttribute.h"
 
 namespace rt {
 
@@ -13,8 +15,43 @@ namespace rt {
             fields[i] = new Field();
             fields[i]->_cls = cls;
             fields[i]->copyMemberInfo(cfFields[i]);
+            fields[i]->copyAttributes(cfFields[i]);
         }
         return fields;
     }
 
+    bool Field::isVolatile() {
+        return 0 != m_accessFlags & ACC_VOLATILE;
+    }
+
+    bool Field::isTransient() {
+        return 0 != m_accessFlags & ACC_TRANSIENT;
+    }
+
+    bool Field::isEnum() {
+        return 0 != m_accessFlags & ACC_ENUM;
+    }
+
+    bool Field::isLongOrDouble() {
+        return *m_descriptor == "J" || *m_descriptor == "D";
+    }
+
+    u4 Field::getSlotId() const {
+        return m_slotId;
+    }
+
+    void Field::setSlotId(u4 slotId) {
+        Field::m_slotId = slotId;
+    }
+
+    void Field::copyAttributes(cf::MemberInfo *memberInfo) {
+        cf::ConstantValueAttribute *attribute = memberInfo->getConstantValueAttribute();
+        if (attribute != NULL) {
+            m_constValueIndex = attribute->getConstantValueIndex();
+        }
+    }
+
+    u4 Field::getConstValueIndex() const {
+        return m_constValueIndex;
+    }
 }

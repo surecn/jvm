@@ -10,6 +10,7 @@
 #include "ConstantPool.h"
 #include "attribute/AttributeInfo.h"
 #include "attribute/CodeAttribute.h"
+#include "attribute/ConstantValueAttribute.h"
 
 namespace cf {
     class ConstantFloatInfo : public ConstantInfo {
@@ -144,6 +145,7 @@ namespace cf {
         u2 getAccessFlags();
         string *getName();
         string *getDescriptor();
+        ConstantValueAttribute* getConstantValueAttribute();
         static MemberInfo** readMembers(ConstantPool *constantPool, ClassReader *reader, u2 *count);
     };
 

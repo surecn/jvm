@@ -4,6 +4,10 @@
 
 #include "SlotArray.h"
 
+SlotArray::SlotArray(u4 size) {
+    m_slots = new java_int(size);
+}
+
 java_int SlotArray::getInt(int index) {
     return m_slots[index];
 }

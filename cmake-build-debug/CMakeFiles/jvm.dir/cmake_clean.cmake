@@ -85,6 +85,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/jvm.dir/runtime/heap/InterfaceMethodRef.cpp.o"
   "CMakeFiles/jvm.dir/runtime/heap/ClassLoader.cpp.o"
   "CMakeFiles/jvm.dir/common/SlotArray.cpp.o"
+  "CMakeFiles/jvm.dir/runtime/heap/Object.cpp.o"
   "jvm.pdb"
   "jvm"
 )

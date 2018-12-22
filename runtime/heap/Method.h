@@ -17,6 +17,13 @@ namespace rt {
         void copyAttributes(cf::MemberInfo *memberInfo);
     public:
         static Method** newMethods(Class *cls, cf::MemberInfo **cfMembers, int count);
+
+        bool isSynchronized();
+        bool isBridge();
+        bool isVarargs();
+        bool isNative();
+        bool isAbstract();
+        bool isStrict();
     };
 }
 

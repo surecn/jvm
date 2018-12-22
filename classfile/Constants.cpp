@@ -215,6 +215,14 @@ namespace cf {
         return m_constantPool->getUtf8(this->m_descriptorIndex);
     }
 
+    ConstantValueAttribute* MemberInfo::getConstantValueAttribute() {
+        for (int i = 0, len = m_attributeCount; i < len; ++i) {
+            if ("ConstantValue" == m_attributeInfos[i]->getAttributeType()) {
+                return (ConstantValueAttribute*)m_attributeInfos[i];
+            }
+        }
+    }
+
     ConstantInfo* ConstantFactory::readConstantInfo(ClassReader *classReader, ConstantPool *constantPool) {
         u1 tag = classReader->readU1();
         return newConstantInfo(tag, constantPool, classReader);

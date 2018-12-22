@@ -66,6 +66,85 @@ namespace rt {
 
     }
 
+    void ClassLoader::prepare(rt::Class *cls) {
+        calcInstanceFieldSlotIds(cls);
+        calcStaticFieldSlotIds(cls);
+
+    }
+
+    void ClassLoader::calcInstanceFieldSlotIds(rt::Class *cls) {
+        u4 slotId = 0;
+        Class* superClass = cls->getSuperClass();
+        if (superClass != NULL) {
+            slotId = superClass->getInstanceSlotCount();
+        }
+        Field** fields = cls->getFields();
+        u4 fieldCount = cls->getFieldCount();
+        for (int i = 0; i < fieldCount; ++i) {
+            if (!fields[i]->isStatic()) {
+                fields[i]->setSlotId(slotId);
+                slotId++;
+                if (fields[i]->isLongOrDouble()) {
+                    slotId++;
+                }
+            }
+        }
+        cls->setInstanceSlotCount(slotId);
+    }
+
+    void ClassLoader::calcStaticFieldSlotIds(rt::Class *cls) {
+        u4 slotId = 0;
+        Field** fields = cls->getFields();
+        u4 fieldCount = cls->getFieldCount();
+        for (int i = 0; i < fieldCount; ++i) {
+            if (fields[i]->isStatic()) {
+                fields[i]->setSlotId(slotId);
+                slotId++;
+                if (fields[i]->isLongOrDouble()) {
+                    slotId++;
+                }
+            }
+        }
+        cls->setStaticSlotCount(slotId);
+    }
+
+    void ClassLoader::allocAndInitStaticVars(rt::Class *cls) {
+        SlotArray *slotArray = new SlotArray(cls->getStaticSlotCount());
+        cls->setStaticVars(slotArray);
+        Field** fields = cls->getFields();
+        u4 fieldCount = cls->getFieldCount();
+        for (int i = 0; i < fieldCount; ++i) {
+            if (fields[i]->isStatic() && fields[i]->isFinal()) {
+                initStaticFinalVar(cls, fields[i]);
+            }
+        }
+    }
+
+    void ClassLoader::initStaticFinalVar(rt::Class *cls, rt::Field *field) {
+        SlotArray * slotArray = cls->getStaticVars();
+        cf::ConstantPool *cp = cls->getConstantPool();
+        u4 cpIndex = field->getConstValueIndex();
+        u4 slotId = field->getSlotId();
+        if (cpIndex > 0) {
+            string *s = field->getDescriptor();
+            if (*s == "Z" || *s == "B" || *s == "C" || *s == "S" || *s == "I") {
+                java_int *val = (java_int *)cp->getConstantInfo(cpIndex)->getValue();
+                slotArray->setInt(slotId, *val);
+            } else if (*s == "J") {
+                java_long *val = (java_long *)cp->getConstantInfo(cpIndex)->getValue();
+                slotArray->setLong(slotId, *val);
+            } else if (*s == "F") {
+                java_float *val = (java_float *)cp->getConstantInfo(cpIndex)->getValue();
+                slotArray->setFloat(slotId, *val);
+            } else if (*s == "D") {
+                java_double *val = (java_double *)cp->getConstantInfo(cpIndex)->getValue();
+                slotArray->setDouble(slotId, *val);
+            } else if (*s == "Ljava/lang/String;") {
+                cout << "todo" << endl;//TODO 第八章实现
+            }
+        }
+    }
+
     Class* ClassLoader::loadClass(string *name) {
         Class *cls =m_classMap[*name];
         if(cls != NULL) {

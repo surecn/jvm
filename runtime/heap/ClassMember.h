@@ -12,13 +12,20 @@
 namespace rt{
     extern class Class;
     class ClassMember {
-    private:
+    protected:
         u2 m_accessFlags;
         string *m_name;
         string *m_descriptor;
     public:
         Class *_cls;
-        ClassMember* copyMemberInfo(cf::MemberInfo *memberInfo);
+        bool isPublic();
+        bool isPrivate();
+        bool isProtected();
+        bool isStatic();
+        bool isFinal();
+        bool isSynthetic();
+        void copyMemberInfo(cf::MemberInfo *memberInfo);
+        string *getDescriptor() const;
     };
 }
 

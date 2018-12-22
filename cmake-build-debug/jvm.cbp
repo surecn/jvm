@@ -593,6 +593,12 @@
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/MethodRef.h">
 			<Option target="jvm"/>
 		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/Object.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/Object.h">
+			<Option target="jvm"/>
+		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/SymRef.cpp">
 			<Option target="jvm"/>
 		</Unit>

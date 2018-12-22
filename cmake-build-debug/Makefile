@@ -2418,6 +2418,33 @@ runtime/heap/MethodRef.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/MethodRef.cpp.s
 .PHONY : runtime/heap/MethodRef.cpp.s
 
+runtime/heap/Object.o: runtime/heap/Object.cpp.o
+
+.PHONY : runtime/heap/Object.o
+
+# target to build an object file
+runtime/heap/Object.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/Object.cpp.o
+.PHONY : runtime/heap/Object.cpp.o
+
+runtime/heap/Object.i: runtime/heap/Object.cpp.i
+
+.PHONY : runtime/heap/Object.i
+
+# target to preprocess a source file
+runtime/heap/Object.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/Object.cpp.i
+.PHONY : runtime/heap/Object.cpp.i
+
+runtime/heap/Object.s: runtime/heap/Object.cpp.s
+
+.PHONY : runtime/heap/Object.s
+
+# target to generate assembly for a file
+runtime/heap/Object.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/Object.cpp.s
+.PHONY : runtime/heap/Object.cpp.s
+
 runtime/heap/SymRef.o: runtime/heap/SymRef.cpp.o
 
 .PHONY : runtime/heap/SymRef.o
@@ -2709,6 +2736,9 @@ help:
 	@echo "... runtime/heap/MethodRef.o"
 	@echo "... runtime/heap/MethodRef.i"
 	@echo "... runtime/heap/MethodRef.s"
+	@echo "... runtime/heap/Object.o"
+	@echo "... runtime/heap/Object.i"
+	@echo "... runtime/heap/Object.s"
 	@echo "... runtime/heap/SymRef.o"
 	@echo "... runtime/heap/SymRef.i"
 	@echo "... runtime/heap/SymRef.s"

@@ -11,11 +11,20 @@
 namespace rt {
 
     class Field : public ClassMember{
-
+    private:
+        u4 m_slotId;
+        u4 m_constValueIndex;
     public:
         Field **newFields(Class *cls, cf::MemberInfo **cfFields, int count);
+        bool isVolatile();
+        bool isTransient();
+        bool isEnum();
+        bool isLongOrDouble();
+        u4 getSlotId() const;
+        void setSlotId(u4 slotId);
+        void copyAttributes(cf::MemberInfo *memberInfo);
+        u4 getConstValueIndex() const;
     };
-
 }
 
 

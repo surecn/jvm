@@ -12,6 +12,8 @@ class SlotArray {
 private:
     java_int *m_slots;
 public:
+    SlotArray(u4 size);
+
     void setInt(int index, java_int val);
     java_int getInt(int index);
 

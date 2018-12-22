@@ -10,4 +10,8 @@ namespace cf {
         m_constantValueIndex = classReader->readU2();
     }
 
+    u2 ConstantValueAttribute::getConstantValueIndex() const {
+        return m_constantValueIndex;
+    }
+
 }

@@ -25,7 +25,11 @@ namespace rt {
         void resolveInterfaces(Class *cls);
         void link(Class *cls);
         void verity(Class *cls);
-
+        void prepare(Class *cls);
+        void calcInstanceFieldSlotIds(Class *cls);
+        void calcStaticFieldSlotIds(Class *cls);
+        void allocAndInitStaticVars(Class *cls);
+        void initStaticFinalVar(Class *cls, Field* field);
     public:
         ClassLoader(cp::ClassPath *classPath);
         Class* loadClass(string *name);
