@@ -13,25 +13,22 @@ namespace rt {
     extern class Thread;
     class Frame {
     private:
-        LocalVars* localVars;
-        OperandStack* operandStack;
-        Thread* thread;
-        java_int nextPC;
+        LocalVars* m_localVars;
+        OperandStack* m_operandStack;
+        Thread* m_thread;
+        java_int m_nextPC;
     public:
         Frame* lower;
-        Frame() {
-            nextPC = 0L;
-        }
-        Frame(Thread* th, OperandStack* stack, LocalVars* vars) : thread(th), operandStack(stack), localVars(vars) {
-            nextPC = 0L;
-            cout << "frame" << this << "=====" << localVars << endl;
-        }
+        Frame();
+        Frame(Thread* th, int maxLocal, int maxStack);
+        ~Frame();
         OperandStack* getOperandStack();
         LocalVars* getLocalVars();
         Thread* getThread();
         java_int getNextPc();
         void setNextPc(java_int _nextPc);
         static Frame* newFrame(Thread* thread, int maxLocal, int maxStack);
+
     };
 
 }

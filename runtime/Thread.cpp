@@ -7,33 +7,33 @@
 namespace rt {
 
     Thread::Thread() {
-        stack = NULL;
+        m_stack = NULL;
     }
 
     Thread* Thread::newThread() {
         Thread * thread = new Thread();
-        thread->stack = Stack::newStack(1024);
+        thread->m_stack = Stack::newStack(1024);
         return thread;
     }
 
     java_int Thread::getPC() {
-        return pc;
+        return m_pc;
     }
 
     void Thread::setPC(java_int val) {
-        pc = val;
+        m_pc = val;
     }
 
     void Thread::pushFrame(rt::Frame *frame) {
-        stack->push(frame);
+        m_stack->push(frame);
     }
 
     Frame* Thread::popFrame() {
-        return stack->pop();
+        return m_stack->pop();
     }
 
     Frame* Thread::currentFrame() {
-        return stack->top();
+        return m_stack->top();
     }
 
     Frame* Thread::newFrame(int maxLocals, int maxStack) {

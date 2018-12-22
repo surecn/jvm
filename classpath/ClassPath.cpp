@@ -6,7 +6,7 @@
 #include <unistd.h>
 
 
-namespace cpath {
+namespace cp {
 
     ClassPath::ClassPath(string &jreOption, string &cpOption) {
         parseBootAndExtClassPath(jreOption);
@@ -14,9 +14,9 @@ namespace cpath {
     }
 
     ClassPath::~ClassPath() {
-        delete bootClassPath;
-        delete extClassPath;
-        delete userClassPath;
+        delete m_bootClassPath;
+        delete m_extClassPath;
+        delete m_userClassPath;
     }
 
     string getJreDir(string &jreOption) {
@@ -38,11 +38,11 @@ namespace cpath {
 
         // jre/lib/*
         string jreLibPath = jreDir.append("/lib/*");
-        bootClassPath = new WildcardEntry(jreLibPath);
+        m_bootClassPath = new WildcardEntry(jreLibPath);
 
         // jre/lib/ext/*
         string jreExtPath = jreDir.append("/lib/ext/*");
-        extClassPath = new WildcardEntry(jreExtPath);
+        m_extClassPath = new WildcardEntry(jreExtPath);
     }
 
 
@@ -50,20 +50,20 @@ namespace cpath {
         if (cpOption == "") {
             cpOption = ".";
         }
-        userClassPath = Entry::create(cpOption);
+        m_userClassPath = Entry::create(cpOption);
     }
 
 
     void ClassPath::readClass(string &className, ClassData &data) {
         string str = className + ".class";
-        bootClassPath->readClass(str, data);
-        if (data.error == 0) {
+        m_bootClassPath->readClass(str, data);
+        if (data.m_error == 0) {
             return;
         }
-        this->extClassPath->readClass(str, data);
-        if (data.error == 0) {
+        this->m_extClassPath->readClass(str, data);
+        if (data.m_error == 0) {
             return;
         }
-        this->userClassPath->readClass(str, data);
+        this->m_userClassPath->readClass(str, data);
     }
 }

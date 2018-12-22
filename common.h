@@ -27,6 +27,11 @@ typedef unsigned short u2;   //uint16
 typedef unsigned int u4;     //uint32
 typedef unsigned long u8;    //uint64
 
+struct NameAndType {
+    string *name;
+    string *type;
+};
+
 #define PATH_SEPARATOR "/"
 
 #endif //JVM_COMMON_H

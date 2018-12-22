@@ -9,7 +9,7 @@
 #include "ClassReader.h"
 
 
-namespace cls {
+namespace cf {
 
     static const int CONSTANT_Class = 7;
     static const int CONSTANT_Fieldref = 9;
@@ -28,10 +28,10 @@ namespace cls {
 
     class ConstantInfo {
     public:
-        int type;
-        string str;
+        int m_type;
     public:
         virtual void print() = 0;
+        virtual void* getValue();
     };
 
 }

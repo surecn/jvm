@@ -3,14 +3,15 @@
 
 CMakeFiles/jvm.dir/Interperter.cpp.o: ../Interperter.cpp
 CMakeFiles/jvm.dir/Interperter.cpp.o: ../Interperter.h
-CMakeFiles/jvm.dir/Interperter.cpp.o: ../attribute/AttributeInfo.h
-CMakeFiles/jvm.dir/Interperter.cpp.o: ../attribute/CodeAttribute.h
 CMakeFiles/jvm.dir/Interperter.cpp.o: ../classfile/ClassReader.h
 CMakeFiles/jvm.dir/Interperter.cpp.o: ../classfile/ConstantInfo.h
 CMakeFiles/jvm.dir/Interperter.cpp.o: ../classfile/ConstantPool.h
 CMakeFiles/jvm.dir/Interperter.cpp.o: ../classfile/Constants.h
+CMakeFiles/jvm.dir/Interperter.cpp.o: ../classfile/attribute/AttributeInfo.h
+CMakeFiles/jvm.dir/Interperter.cpp.o: ../classfile/attribute/CodeAttribute.h
 CMakeFiles/jvm.dir/Interperter.cpp.o: ../common.h
 CMakeFiles/jvm.dir/Interperter.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/Interperter.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/Interperter.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/Interperter.cpp.o: ../instructions/Factory.h
 CMakeFiles/jvm.dir/Interperter.cpp.o: ../instructions/base/BytecodeReader.h
@@ -55,96 +56,14 @@ CMakeFiles/jvm.dir/Interperter.cpp.o: ../runtime/Thread.h
 CMakeFiles/jvm.dir/MainParamater.cpp.o: ../MainParamater.cpp
 CMakeFiles/jvm.dir/MainParamater.cpp.o: ../MainParamater.h
 
-CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.o: ../attribute/AttributeInfo.cpp
-CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.o: ../attribute/AttributeInfo.h
-CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.o: ../attribute/CodeAttribute.h
-CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.o: ../attribute/ConstantValueAttribute.h
-CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.o: ../attribute/ExceptionAttribute.h
-CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.o: ../attribute/LineNumberAttribute.h
-CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.o: ../attribute/LocalVariableTableAttribute.h
-CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.o: ../attribute/SourceFileAttribute.h
-CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.o: ../classfile/ClassReader.h
-CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.o: ../classfile/ConstantInfo.h
-CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.o: ../classfile/ConstantPool.h
-CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.o: ../common.h
-CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.o: ../common/BytesUtils.h
-CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.o: ../common/StrUtils.h
-
-CMakeFiles/jvm.dir/attribute/CodeAttribute.cpp.o: ../attribute/AttributeInfo.h
-CMakeFiles/jvm.dir/attribute/CodeAttribute.cpp.o: ../attribute/CodeAttribute.cpp
-CMakeFiles/jvm.dir/attribute/CodeAttribute.cpp.o: ../attribute/CodeAttribute.h
-CMakeFiles/jvm.dir/attribute/CodeAttribute.cpp.o: ../classfile/ClassReader.h
-CMakeFiles/jvm.dir/attribute/CodeAttribute.cpp.o: ../classfile/ConstantInfo.h
-CMakeFiles/jvm.dir/attribute/CodeAttribute.cpp.o: ../classfile/ConstantPool.h
-CMakeFiles/jvm.dir/attribute/CodeAttribute.cpp.o: ../common.h
-CMakeFiles/jvm.dir/attribute/CodeAttribute.cpp.o: ../common/BytesUtils.h
-CMakeFiles/jvm.dir/attribute/CodeAttribute.cpp.o: ../common/StrUtils.h
-
-CMakeFiles/jvm.dir/attribute/ConstantValueAttribute.cpp.o: ../attribute/AttributeInfo.h
-CMakeFiles/jvm.dir/attribute/ConstantValueAttribute.cpp.o: ../attribute/ConstantValueAttribute.cpp
-CMakeFiles/jvm.dir/attribute/ConstantValueAttribute.cpp.o: ../attribute/ConstantValueAttribute.h
-CMakeFiles/jvm.dir/attribute/ConstantValueAttribute.cpp.o: ../classfile/ClassReader.h
-CMakeFiles/jvm.dir/attribute/ConstantValueAttribute.cpp.o: ../classfile/ConstantInfo.h
-CMakeFiles/jvm.dir/attribute/ConstantValueAttribute.cpp.o: ../classfile/ConstantPool.h
-CMakeFiles/jvm.dir/attribute/ConstantValueAttribute.cpp.o: ../common.h
-CMakeFiles/jvm.dir/attribute/ConstantValueAttribute.cpp.o: ../common/BytesUtils.h
-CMakeFiles/jvm.dir/attribute/ConstantValueAttribute.cpp.o: ../common/StrUtils.h
-
-CMakeFiles/jvm.dir/attribute/ExceptionAttribute.cpp.o: ../attribute/AttributeInfo.h
-CMakeFiles/jvm.dir/attribute/ExceptionAttribute.cpp.o: ../attribute/ExceptionAttribute.cpp
-CMakeFiles/jvm.dir/attribute/ExceptionAttribute.cpp.o: ../attribute/ExceptionAttribute.h
-CMakeFiles/jvm.dir/attribute/ExceptionAttribute.cpp.o: ../classfile/ClassReader.h
-CMakeFiles/jvm.dir/attribute/ExceptionAttribute.cpp.o: ../classfile/ConstantInfo.h
-CMakeFiles/jvm.dir/attribute/ExceptionAttribute.cpp.o: ../classfile/ConstantPool.h
-CMakeFiles/jvm.dir/attribute/ExceptionAttribute.cpp.o: ../common.h
-CMakeFiles/jvm.dir/attribute/ExceptionAttribute.cpp.o: ../common/BytesUtils.h
-CMakeFiles/jvm.dir/attribute/ExceptionAttribute.cpp.o: ../common/StrUtils.h
-
-CMakeFiles/jvm.dir/attribute/LineNumberAttribute.cpp.o: ../attribute/AttributeInfo.h
-CMakeFiles/jvm.dir/attribute/LineNumberAttribute.cpp.o: ../attribute/LineNumberAttribute.cpp
-CMakeFiles/jvm.dir/attribute/LineNumberAttribute.cpp.o: ../attribute/LineNumberAttribute.h
-CMakeFiles/jvm.dir/attribute/LineNumberAttribute.cpp.o: ../classfile/ClassReader.h
-CMakeFiles/jvm.dir/attribute/LineNumberAttribute.cpp.o: ../classfile/ConstantInfo.h
-CMakeFiles/jvm.dir/attribute/LineNumberAttribute.cpp.o: ../classfile/ConstantPool.h
-CMakeFiles/jvm.dir/attribute/LineNumberAttribute.cpp.o: ../common.h
-CMakeFiles/jvm.dir/attribute/LineNumberAttribute.cpp.o: ../common/BytesUtils.h
-CMakeFiles/jvm.dir/attribute/LineNumberAttribute.cpp.o: ../common/StrUtils.h
-
-CMakeFiles/jvm.dir/attribute/LocalVariableTableAttribute.cpp.o: ../attribute/AttributeInfo.h
-CMakeFiles/jvm.dir/attribute/LocalVariableTableAttribute.cpp.o: ../attribute/LocalVariableTableAttribute.cpp
-CMakeFiles/jvm.dir/attribute/LocalVariableTableAttribute.cpp.o: ../attribute/LocalVariableTableAttribute.h
-CMakeFiles/jvm.dir/attribute/LocalVariableTableAttribute.cpp.o: ../classfile/ClassReader.h
-CMakeFiles/jvm.dir/attribute/LocalVariableTableAttribute.cpp.o: ../classfile/ConstantInfo.h
-CMakeFiles/jvm.dir/attribute/LocalVariableTableAttribute.cpp.o: ../classfile/ConstantPool.h
-CMakeFiles/jvm.dir/attribute/LocalVariableTableAttribute.cpp.o: ../common.h
-CMakeFiles/jvm.dir/attribute/LocalVariableTableAttribute.cpp.o: ../common/BytesUtils.h
-CMakeFiles/jvm.dir/attribute/LocalVariableTableAttribute.cpp.o: ../common/StrUtils.h
-
-CMakeFiles/jvm.dir/attribute/SourceFileAttribute.cpp.o: ../attribute/AttributeInfo.h
-CMakeFiles/jvm.dir/attribute/SourceFileAttribute.cpp.o: ../attribute/SourceFileAttribute.cpp
-CMakeFiles/jvm.dir/attribute/SourceFileAttribute.cpp.o: ../attribute/SourceFileAttribute.h
-CMakeFiles/jvm.dir/attribute/SourceFileAttribute.cpp.o: ../classfile/ClassReader.h
-CMakeFiles/jvm.dir/attribute/SourceFileAttribute.cpp.o: ../classfile/ConstantInfo.h
-CMakeFiles/jvm.dir/attribute/SourceFileAttribute.cpp.o: ../classfile/ConstantPool.h
-CMakeFiles/jvm.dir/attribute/SourceFileAttribute.cpp.o: ../common.h
-CMakeFiles/jvm.dir/attribute/SourceFileAttribute.cpp.o: ../common/BytesUtils.h
-CMakeFiles/jvm.dir/attribute/SourceFileAttribute.cpp.o: ../common/StrUtils.h
-
-CMakeFiles/jvm.dir/attribute/UnparsedAttribute.cpp.o: ../attribute/UnparsedAttribute.cpp
-CMakeFiles/jvm.dir/attribute/UnparsedAttribute.cpp.o: ../attribute/UnparsedAttribute.h
-CMakeFiles/jvm.dir/attribute/UnparsedAttribute.cpp.o: ../classfile/ClassReader.h
-CMakeFiles/jvm.dir/attribute/UnparsedAttribute.cpp.o: ../common.h
-CMakeFiles/jvm.dir/attribute/UnparsedAttribute.cpp.o: ../common/BytesUtils.h
-CMakeFiles/jvm.dir/attribute/UnparsedAttribute.cpp.o: ../common/StrUtils.h
-
-CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../attribute/AttributeInfo.h
-CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../attribute/CodeAttribute.h
 CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../classfile/ClassFile.cpp
 CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../classfile/ClassFile.h
 CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../classfile/ClassReader.h
 CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../classfile/ConstantInfo.h
 CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../classfile/ConstantPool.h
 CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../classfile/Constants.h
+CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../classfile/attribute/AttributeInfo.h
+CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../classfile/attribute/CodeAttribute.h
 CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../common.h
 CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../common/BytesUtils.h
 CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../common/StrUtils.h
@@ -155,36 +74,118 @@ CMakeFiles/jvm.dir/classfile/ClassReader.cpp.o: ../common.h
 CMakeFiles/jvm.dir/classfile/ClassReader.cpp.o: ../common/BytesUtils.h
 CMakeFiles/jvm.dir/classfile/ClassReader.cpp.o: ../common/StrUtils.h
 
-CMakeFiles/jvm.dir/classfile/ConstantInfo.cpp.o: ../attribute/AttributeInfo.h
 CMakeFiles/jvm.dir/classfile/ConstantInfo.cpp.o: ../classfile/ClassReader.h
 CMakeFiles/jvm.dir/classfile/ConstantInfo.cpp.o: ../classfile/ConstantInfo.cpp
 CMakeFiles/jvm.dir/classfile/ConstantInfo.cpp.o: ../classfile/ConstantInfo.h
 CMakeFiles/jvm.dir/classfile/ConstantInfo.cpp.o: ../classfile/ConstantPool.h
+CMakeFiles/jvm.dir/classfile/ConstantInfo.cpp.o: ../classfile/attribute/AttributeInfo.h
 CMakeFiles/jvm.dir/classfile/ConstantInfo.cpp.o: ../common.h
 CMakeFiles/jvm.dir/classfile/ConstantInfo.cpp.o: ../common/BytesUtils.h
 CMakeFiles/jvm.dir/classfile/ConstantInfo.cpp.o: ../common/StrUtils.h
 
-CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../attribute/AttributeInfo.h
-CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../attribute/CodeAttribute.h
 CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../classfile/ClassReader.h
 CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../classfile/ConstantInfo.h
 CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../classfile/ConstantPool.cpp
 CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../classfile/ConstantPool.h
 CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../classfile/Constants.h
+CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../classfile/attribute/AttributeInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../classfile/attribute/CodeAttribute.h
 CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../common.h
 CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../common/BytesUtils.h
 CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../common/StrUtils.h
 
-CMakeFiles/jvm.dir/classfile/Constants.cpp.o: ../attribute/AttributeInfo.h
-CMakeFiles/jvm.dir/classfile/Constants.cpp.o: ../attribute/CodeAttribute.h
 CMakeFiles/jvm.dir/classfile/Constants.cpp.o: ../classfile/ClassReader.h
 CMakeFiles/jvm.dir/classfile/Constants.cpp.o: ../classfile/ConstantInfo.h
 CMakeFiles/jvm.dir/classfile/Constants.cpp.o: ../classfile/ConstantPool.h
 CMakeFiles/jvm.dir/classfile/Constants.cpp.o: ../classfile/Constants.cpp
 CMakeFiles/jvm.dir/classfile/Constants.cpp.o: ../classfile/Constants.h
+CMakeFiles/jvm.dir/classfile/Constants.cpp.o: ../classfile/attribute/AttributeInfo.h
+CMakeFiles/jvm.dir/classfile/Constants.cpp.o: ../classfile/attribute/CodeAttribute.h
 CMakeFiles/jvm.dir/classfile/Constants.cpp.o: ../common.h
 CMakeFiles/jvm.dir/classfile/Constants.cpp.o: ../common/BytesUtils.h
 CMakeFiles/jvm.dir/classfile/Constants.cpp.o: ../common/StrUtils.h
+
+CMakeFiles/jvm.dir/classfile/attribute/AttributeInfo.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/classfile/attribute/AttributeInfo.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/classfile/attribute/AttributeInfo.cpp.o: ../classfile/ConstantPool.h
+CMakeFiles/jvm.dir/classfile/attribute/AttributeInfo.cpp.o: ../classfile/attribute/AttributeInfo.cpp
+CMakeFiles/jvm.dir/classfile/attribute/AttributeInfo.cpp.o: ../classfile/attribute/AttributeInfo.h
+CMakeFiles/jvm.dir/classfile/attribute/AttributeInfo.cpp.o: ../classfile/attribute/CodeAttribute.h
+CMakeFiles/jvm.dir/classfile/attribute/AttributeInfo.cpp.o: ../classfile/attribute/ConstantValueAttribute.h
+CMakeFiles/jvm.dir/classfile/attribute/AttributeInfo.cpp.o: ../classfile/attribute/ExceptionAttribute.h
+CMakeFiles/jvm.dir/classfile/attribute/AttributeInfo.cpp.o: ../classfile/attribute/LineNumberAttribute.h
+CMakeFiles/jvm.dir/classfile/attribute/AttributeInfo.cpp.o: ../classfile/attribute/LocalVariableTableAttribute.h
+CMakeFiles/jvm.dir/classfile/attribute/AttributeInfo.cpp.o: ../classfile/attribute/SourceFileAttribute.h
+CMakeFiles/jvm.dir/classfile/attribute/AttributeInfo.cpp.o: ../common.h
+CMakeFiles/jvm.dir/classfile/attribute/AttributeInfo.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/classfile/attribute/AttributeInfo.cpp.o: ../common/StrUtils.h
+
+CMakeFiles/jvm.dir/classfile/attribute/CodeAttribute.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/classfile/attribute/CodeAttribute.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/classfile/attribute/CodeAttribute.cpp.o: ../classfile/ConstantPool.h
+CMakeFiles/jvm.dir/classfile/attribute/CodeAttribute.cpp.o: ../classfile/attribute/AttributeInfo.h
+CMakeFiles/jvm.dir/classfile/attribute/CodeAttribute.cpp.o: ../classfile/attribute/CodeAttribute.cpp
+CMakeFiles/jvm.dir/classfile/attribute/CodeAttribute.cpp.o: ../classfile/attribute/CodeAttribute.h
+CMakeFiles/jvm.dir/classfile/attribute/CodeAttribute.cpp.o: ../common.h
+CMakeFiles/jvm.dir/classfile/attribute/CodeAttribute.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/classfile/attribute/CodeAttribute.cpp.o: ../common/StrUtils.h
+
+CMakeFiles/jvm.dir/classfile/attribute/ConstantValueAttribute.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/classfile/attribute/ConstantValueAttribute.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/classfile/attribute/ConstantValueAttribute.cpp.o: ../classfile/ConstantPool.h
+CMakeFiles/jvm.dir/classfile/attribute/ConstantValueAttribute.cpp.o: ../classfile/attribute/AttributeInfo.h
+CMakeFiles/jvm.dir/classfile/attribute/ConstantValueAttribute.cpp.o: ../classfile/attribute/ConstantValueAttribute.cpp
+CMakeFiles/jvm.dir/classfile/attribute/ConstantValueAttribute.cpp.o: ../classfile/attribute/ConstantValueAttribute.h
+CMakeFiles/jvm.dir/classfile/attribute/ConstantValueAttribute.cpp.o: ../common.h
+CMakeFiles/jvm.dir/classfile/attribute/ConstantValueAttribute.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/classfile/attribute/ConstantValueAttribute.cpp.o: ../common/StrUtils.h
+
+CMakeFiles/jvm.dir/classfile/attribute/ExceptionAttribute.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/classfile/attribute/ExceptionAttribute.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/classfile/attribute/ExceptionAttribute.cpp.o: ../classfile/ConstantPool.h
+CMakeFiles/jvm.dir/classfile/attribute/ExceptionAttribute.cpp.o: ../classfile/attribute/AttributeInfo.h
+CMakeFiles/jvm.dir/classfile/attribute/ExceptionAttribute.cpp.o: ../classfile/attribute/ExceptionAttribute.cpp
+CMakeFiles/jvm.dir/classfile/attribute/ExceptionAttribute.cpp.o: ../classfile/attribute/ExceptionAttribute.h
+CMakeFiles/jvm.dir/classfile/attribute/ExceptionAttribute.cpp.o: ../common.h
+CMakeFiles/jvm.dir/classfile/attribute/ExceptionAttribute.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/classfile/attribute/ExceptionAttribute.cpp.o: ../common/StrUtils.h
+
+CMakeFiles/jvm.dir/classfile/attribute/LineNumberAttribute.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/classfile/attribute/LineNumberAttribute.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/classfile/attribute/LineNumberAttribute.cpp.o: ../classfile/ConstantPool.h
+CMakeFiles/jvm.dir/classfile/attribute/LineNumberAttribute.cpp.o: ../classfile/attribute/AttributeInfo.h
+CMakeFiles/jvm.dir/classfile/attribute/LineNumberAttribute.cpp.o: ../classfile/attribute/LineNumberAttribute.cpp
+CMakeFiles/jvm.dir/classfile/attribute/LineNumberAttribute.cpp.o: ../classfile/attribute/LineNumberAttribute.h
+CMakeFiles/jvm.dir/classfile/attribute/LineNumberAttribute.cpp.o: ../common.h
+CMakeFiles/jvm.dir/classfile/attribute/LineNumberAttribute.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/classfile/attribute/LineNumberAttribute.cpp.o: ../common/StrUtils.h
+
+CMakeFiles/jvm.dir/classfile/attribute/LocalVariableTableAttribute.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/classfile/attribute/LocalVariableTableAttribute.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/classfile/attribute/LocalVariableTableAttribute.cpp.o: ../classfile/ConstantPool.h
+CMakeFiles/jvm.dir/classfile/attribute/LocalVariableTableAttribute.cpp.o: ../classfile/attribute/AttributeInfo.h
+CMakeFiles/jvm.dir/classfile/attribute/LocalVariableTableAttribute.cpp.o: ../classfile/attribute/LocalVariableTableAttribute.cpp
+CMakeFiles/jvm.dir/classfile/attribute/LocalVariableTableAttribute.cpp.o: ../classfile/attribute/LocalVariableTableAttribute.h
+CMakeFiles/jvm.dir/classfile/attribute/LocalVariableTableAttribute.cpp.o: ../common.h
+CMakeFiles/jvm.dir/classfile/attribute/LocalVariableTableAttribute.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/classfile/attribute/LocalVariableTableAttribute.cpp.o: ../common/StrUtils.h
+
+CMakeFiles/jvm.dir/classfile/attribute/SourceFileAttribute.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/classfile/attribute/SourceFileAttribute.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/classfile/attribute/SourceFileAttribute.cpp.o: ../classfile/ConstantPool.h
+CMakeFiles/jvm.dir/classfile/attribute/SourceFileAttribute.cpp.o: ../classfile/attribute/AttributeInfo.h
+CMakeFiles/jvm.dir/classfile/attribute/SourceFileAttribute.cpp.o: ../classfile/attribute/SourceFileAttribute.cpp
+CMakeFiles/jvm.dir/classfile/attribute/SourceFileAttribute.cpp.o: ../classfile/attribute/SourceFileAttribute.h
+CMakeFiles/jvm.dir/classfile/attribute/SourceFileAttribute.cpp.o: ../common.h
+CMakeFiles/jvm.dir/classfile/attribute/SourceFileAttribute.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/classfile/attribute/SourceFileAttribute.cpp.o: ../common/StrUtils.h
+
+CMakeFiles/jvm.dir/classfile/attribute/UnparsedAttribute.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/classfile/attribute/UnparsedAttribute.cpp.o: ../classfile/attribute/UnparsedAttribute.cpp
+CMakeFiles/jvm.dir/classfile/attribute/UnparsedAttribute.cpp.o: ../classfile/attribute/UnparsedAttribute.h
+CMakeFiles/jvm.dir/classfile/attribute/UnparsedAttribute.cpp.o: ../common.h
+CMakeFiles/jvm.dir/classfile/attribute/UnparsedAttribute.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/classfile/attribute/UnparsedAttribute.cpp.o: ../common/StrUtils.h
 
 CMakeFiles/jvm.dir/classpath/ClassPath.cpp.o: ../classpath/ClassPath.cpp
 CMakeFiles/jvm.dir/classpath/ClassPath.cpp.o: ../classpath/ClassPath.h
@@ -202,11 +203,18 @@ CMakeFiles/jvm.dir/classpath/Entry.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/common/BytesUtils.cpp.o: ../common/BytesUtils.cpp
 CMakeFiles/jvm.dir/common/BytesUtils.cpp.o: ../common/BytesUtils.h
 
+CMakeFiles/jvm.dir/common/SlotArray.cpp.o: ../common.h
+CMakeFiles/jvm.dir/common/SlotArray.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/common/SlotArray.cpp.o: ../common/SlotArray.cpp
+CMakeFiles/jvm.dir/common/SlotArray.cpp.o: ../common/SlotArray.h
+CMakeFiles/jvm.dir/common/SlotArray.cpp.o: ../common/StrUtils.h
+
 CMakeFiles/jvm.dir/common/StrUtils.cpp.o: ../common/StrUtils.cpp
 CMakeFiles/jvm.dir/common/StrUtils.cpp.o: ../common/StrUtils.h
 
 CMakeFiles/jvm.dir/instructions/Factory.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/Factory.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/Factory.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/Factory.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/Factory.cpp.o: ../instructions/Factory.cpp
 CMakeFiles/jvm.dir/instructions/Factory.cpp.o: ../instructions/Factory.h
@@ -270,6 +278,7 @@ CMakeFiles/jvm.dir/instructions/base/BytecodeReader.cpp.o: ../instructions/base/
 
 CMakeFiles/jvm.dir/instructions/base/Instruction.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/base/Instruction.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/base/Instruction.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/base/Instruction.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/base/Instruction.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/base/Instruction.cpp.o: ../instructions/base/Instruction.cpp
@@ -282,6 +291,7 @@ CMakeFiles/jvm.dir/instructions/base/Instruction.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/comparisons/Dcmp.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/comparisons/Dcmp.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/comparisons/Dcmp.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/comparisons/Dcmp.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/comparisons/Dcmp.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/comparisons/Dcmp.cpp.o: ../instructions/base/Instruction.h
@@ -295,6 +305,7 @@ CMakeFiles/jvm.dir/instructions/comparisons/Dcmp.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/comparisons/Fcmp.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/comparisons/Fcmp.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/comparisons/Fcmp.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/comparisons/Fcmp.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/comparisons/Fcmp.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/comparisons/Fcmp.cpp.o: ../instructions/base/Instruction.h
@@ -308,6 +319,7 @@ CMakeFiles/jvm.dir/instructions/comparisons/Fcmp.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/comparisons/IF_ACMP.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/comparisons/IF_ACMP.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/comparisons/IF_ACMP.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/comparisons/IF_ACMP.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/comparisons/IF_ACMP.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/comparisons/IF_ACMP.cpp.o: ../instructions/base/Instruction.h
@@ -321,6 +333,7 @@ CMakeFiles/jvm.dir/instructions/comparisons/IF_ACMP.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/comparisons/IF_ICMP.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/comparisons/IF_ICMP.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/comparisons/IF_ICMP.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/comparisons/IF_ICMP.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/comparisons/IF_ICMP.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/comparisons/IF_ICMP.cpp.o: ../instructions/base/Instruction.h
@@ -334,6 +347,7 @@ CMakeFiles/jvm.dir/instructions/comparisons/IF_ICMP.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/comparisons/Icmp.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/comparisons/Icmp.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/comparisons/Icmp.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/comparisons/Icmp.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/comparisons/Icmp.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/comparisons/Icmp.cpp.o: ../instructions/base/Instruction.h
@@ -347,6 +361,7 @@ CMakeFiles/jvm.dir/instructions/comparisons/Icmp.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/comparisons/Ifcond.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/comparisons/Ifcond.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/comparisons/Ifcond.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/comparisons/Ifcond.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/comparisons/Ifcond.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/comparisons/Ifcond.cpp.o: ../instructions/base/Instruction.h
@@ -360,6 +375,7 @@ CMakeFiles/jvm.dir/instructions/comparisons/Ifcond.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/comparisons/Lcmp.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/comparisons/Lcmp.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/comparisons/Lcmp.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/comparisons/Lcmp.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/comparisons/Lcmp.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/comparisons/Lcmp.cpp.o: ../instructions/base/Instruction.h
@@ -373,6 +389,7 @@ CMakeFiles/jvm.dir/instructions/comparisons/Lcmp.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/constants/Constant.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/constants/Constant.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/constants/Constant.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/constants/Constant.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/constants/Constant.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/constants/Constant.cpp.o: ../instructions/base/Instruction.h
@@ -386,6 +403,7 @@ CMakeFiles/jvm.dir/instructions/constants/Constant.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/constants/Ipush.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/constants/Ipush.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/constants/Ipush.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/constants/Ipush.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/constants/Ipush.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/constants/Ipush.cpp.o: ../instructions/base/Instruction.h
@@ -399,6 +417,7 @@ CMakeFiles/jvm.dir/instructions/constants/Ipush.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/constants/SIPUSH.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/constants/SIPUSH.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/constants/SIPUSH.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/constants/SIPUSH.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/constants/SIPUSH.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/constants/SIPUSH.cpp.o: ../instructions/base/Instruction.h
@@ -412,6 +431,7 @@ CMakeFiles/jvm.dir/instructions/constants/SIPUSH.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/control/Goto.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/control/Goto.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/control/Goto.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/control/Goto.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/control/Goto.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/control/Goto.cpp.o: ../instructions/base/Instruction.h
@@ -425,6 +445,7 @@ CMakeFiles/jvm.dir/instructions/control/Goto.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/control/LookupSwitch.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/control/LookupSwitch.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/control/LookupSwitch.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/control/LookupSwitch.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/control/LookupSwitch.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/control/LookupSwitch.cpp.o: ../instructions/base/Instruction.h
@@ -440,6 +461,7 @@ CMakeFiles/jvm.dir/instructions/control/TableSwitch.cpp.o: ../instructions/contr
 
 CMakeFiles/jvm.dir/instructions/conversions/D2x.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/conversions/D2x.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/conversions/D2x.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/conversions/D2x.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/conversions/D2x.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/conversions/D2x.cpp.o: ../instructions/base/Instruction.h
@@ -453,6 +475,7 @@ CMakeFiles/jvm.dir/instructions/conversions/D2x.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/conversions/F2x.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/conversions/F2x.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/conversions/F2x.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/conversions/F2x.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/conversions/F2x.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/conversions/F2x.cpp.o: ../instructions/base/Instruction.h
@@ -466,6 +489,7 @@ CMakeFiles/jvm.dir/instructions/conversions/F2x.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/conversions/I2x.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/conversions/I2x.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/conversions/I2x.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/conversions/I2x.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/conversions/I2x.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/conversions/I2x.cpp.o: ../instructions/base/Instruction.h
@@ -479,6 +503,7 @@ CMakeFiles/jvm.dir/instructions/conversions/I2x.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/conversions/L2x.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/conversions/L2x.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/conversions/L2x.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/conversions/L2x.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/conversions/L2x.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/conversions/L2x.cpp.o: ../instructions/base/Instruction.h
@@ -492,6 +517,7 @@ CMakeFiles/jvm.dir/instructions/conversions/L2x.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/extended/GotoW.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/extended/GotoW.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/extended/GotoW.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/extended/GotoW.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/extended/GotoW.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/extended/GotoW.cpp.o: ../instructions/base/Instruction.h
@@ -505,6 +531,7 @@ CMakeFiles/jvm.dir/instructions/extended/GotoW.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/extended/IFNonNull.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/extended/IFNonNull.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/extended/IFNonNull.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/extended/IFNonNull.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/extended/IFNonNull.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/extended/IFNonNull.cpp.o: ../instructions/base/Instruction.h
@@ -518,6 +545,7 @@ CMakeFiles/jvm.dir/instructions/extended/IFNonNull.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/extended/IFNull.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/extended/IFNull.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/extended/IFNull.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/extended/IFNull.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/extended/IFNull.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/extended/IFNull.cpp.o: ../instructions/base/Instruction.h
@@ -531,6 +559,7 @@ CMakeFiles/jvm.dir/instructions/extended/IFNull.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/extended/Wide.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/extended/Wide.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/extended/Wide.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/extended/Wide.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/extended/Wide.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/extended/Wide.cpp.o: ../instructions/base/Instruction.h
@@ -555,6 +584,7 @@ CMakeFiles/jvm.dir/instructions/extended/Wide.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/loads/ALoad.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/loads/ALoad.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/loads/ALoad.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/loads/ALoad.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/loads/ALoad.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/loads/ALoad.cpp.o: ../instructions/base/Instruction.h
@@ -568,6 +598,7 @@ CMakeFiles/jvm.dir/instructions/loads/ALoad.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/loads/DLoad.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/loads/DLoad.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/loads/DLoad.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/loads/DLoad.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/loads/DLoad.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/loads/DLoad.cpp.o: ../instructions/base/Instruction.h
@@ -581,6 +612,7 @@ CMakeFiles/jvm.dir/instructions/loads/DLoad.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/loads/FLoad.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/loads/FLoad.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/loads/FLoad.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/loads/FLoad.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/loads/FLoad.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/loads/FLoad.cpp.o: ../instructions/base/Instruction.h
@@ -594,6 +626,7 @@ CMakeFiles/jvm.dir/instructions/loads/FLoad.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/loads/ILoad.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/loads/ILoad.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/loads/ILoad.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/loads/ILoad.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/loads/ILoad.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/loads/ILoad.cpp.o: ../instructions/base/Instruction.h
@@ -607,6 +640,7 @@ CMakeFiles/jvm.dir/instructions/loads/ILoad.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/loads/LLoad.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/loads/LLoad.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/loads/LLoad.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/loads/LLoad.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/loads/LLoad.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/loads/LLoad.cpp.o: ../instructions/base/Instruction.h
@@ -620,6 +654,7 @@ CMakeFiles/jvm.dir/instructions/loads/LLoad.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/math/Add.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/math/Add.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/math/Add.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/math/Add.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/math/Add.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/math/Add.cpp.o: ../instructions/base/Instruction.h
@@ -633,6 +668,7 @@ CMakeFiles/jvm.dir/instructions/math/Add.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/math/And.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/math/And.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/math/And.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/math/And.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/math/And.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/math/And.cpp.o: ../instructions/base/Instruction.h
@@ -646,6 +682,7 @@ CMakeFiles/jvm.dir/instructions/math/And.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/math/Div.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/math/Div.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/math/Div.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/math/Div.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/math/Div.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/math/Div.cpp.o: ../instructions/base/Instruction.h
@@ -659,6 +696,7 @@ CMakeFiles/jvm.dir/instructions/math/Div.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/math/IINC.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/math/IINC.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/math/IINC.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/math/IINC.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/math/IINC.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/math/IINC.cpp.o: ../instructions/base/Instruction.h
@@ -672,6 +710,7 @@ CMakeFiles/jvm.dir/instructions/math/IINC.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/math/Mul.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/math/Mul.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/math/Mul.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/math/Mul.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/math/Mul.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/math/Mul.cpp.o: ../instructions/base/Instruction.h
@@ -685,6 +724,7 @@ CMakeFiles/jvm.dir/instructions/math/Mul.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/math/Neg.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/math/Neg.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/math/Neg.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/math/Neg.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/math/Neg.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/math/Neg.cpp.o: ../instructions/base/Instruction.h
@@ -698,6 +738,7 @@ CMakeFiles/jvm.dir/instructions/math/Neg.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/math/Or.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/math/Or.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/math/Or.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/math/Or.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/math/Or.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/math/Or.cpp.o: ../instructions/base/Instruction.h
@@ -711,6 +752,7 @@ CMakeFiles/jvm.dir/instructions/math/Or.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/math/Rem.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/math/Rem.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/math/Rem.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/math/Rem.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/math/Rem.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/math/Rem.cpp.o: ../instructions/base/Instruction.h
@@ -724,6 +766,7 @@ CMakeFiles/jvm.dir/instructions/math/Rem.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/math/Sh.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/math/Sh.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/math/Sh.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/math/Sh.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/math/Sh.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/math/Sh.cpp.o: ../instructions/base/Instruction.h
@@ -737,6 +780,7 @@ CMakeFiles/jvm.dir/instructions/math/Sh.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/math/Sub.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/math/Sub.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/math/Sub.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/math/Sub.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/math/Sub.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/math/Sub.cpp.o: ../instructions/base/Instruction.h
@@ -750,6 +794,7 @@ CMakeFiles/jvm.dir/instructions/math/Sub.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/math/Xor.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/math/Xor.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/math/Xor.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/math/Xor.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/math/Xor.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/math/Xor.cpp.o: ../instructions/base/Instruction.h
@@ -763,6 +808,7 @@ CMakeFiles/jvm.dir/instructions/math/Xor.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.o: ../instructions/base/Instruction.h
@@ -776,6 +822,7 @@ CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.o: ../instructions/base/Instruction.h
@@ -789,6 +836,7 @@ CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.o: ../instructions/base/Instruction.h
@@ -802,6 +850,7 @@ CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/stores/AStore.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/stores/AStore.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/stores/AStore.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/stores/AStore.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/stores/AStore.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/stores/AStore.cpp.o: ../instructions/base/Instruction.h
@@ -815,6 +864,7 @@ CMakeFiles/jvm.dir/instructions/stores/AStore.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/stores/DStore.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/stores/DStore.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/stores/DStore.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/stores/DStore.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/stores/DStore.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/stores/DStore.cpp.o: ../instructions/base/Instruction.h
@@ -828,6 +878,7 @@ CMakeFiles/jvm.dir/instructions/stores/DStore.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/stores/FStore.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/stores/FStore.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/stores/FStore.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/stores/FStore.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/stores/FStore.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/stores/FStore.cpp.o: ../instructions/base/Instruction.h
@@ -841,6 +892,7 @@ CMakeFiles/jvm.dir/instructions/stores/FStore.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/stores/IStore.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/stores/IStore.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/stores/IStore.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/stores/IStore.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/stores/IStore.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/stores/IStore.cpp.o: ../instructions/base/Instruction.h
@@ -854,6 +906,7 @@ CMakeFiles/jvm.dir/instructions/stores/IStore.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/instructions/stores/LStore.cpp.o: ../common.h
 CMakeFiles/jvm.dir/instructions/stores/LStore.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/instructions/stores/LStore.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/instructions/stores/LStore.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/instructions/stores/LStore.cpp.o: ../instructions/base/BytecodeReader.h
 CMakeFiles/jvm.dir/instructions/stores/LStore.cpp.o: ../instructions/base/Instruction.h
@@ -867,13 +920,13 @@ CMakeFiles/jvm.dir/instructions/stores/LStore.cpp.o: ../runtime/Thread.h
 
 CMakeFiles/jvm.dir/main.cpp.o: ../Interperter.h
 CMakeFiles/jvm.dir/main.cpp.o: ../MainParamater.h
-CMakeFiles/jvm.dir/main.cpp.o: ../attribute/AttributeInfo.h
-CMakeFiles/jvm.dir/main.cpp.o: ../attribute/CodeAttribute.h
 CMakeFiles/jvm.dir/main.cpp.o: ../classfile/ClassFile.h
 CMakeFiles/jvm.dir/main.cpp.o: ../classfile/ClassReader.h
 CMakeFiles/jvm.dir/main.cpp.o: ../classfile/ConstantInfo.h
 CMakeFiles/jvm.dir/main.cpp.o: ../classfile/ConstantPool.h
 CMakeFiles/jvm.dir/main.cpp.o: ../classfile/Constants.h
+CMakeFiles/jvm.dir/main.cpp.o: ../classfile/attribute/AttributeInfo.h
+CMakeFiles/jvm.dir/main.cpp.o: ../classfile/attribute/CodeAttribute.h
 CMakeFiles/jvm.dir/main.cpp.o: ../classpath/ClassPath.h
 CMakeFiles/jvm.dir/main.cpp.o: ../classpath/Entry.h
 CMakeFiles/jvm.dir/main.cpp.o: ../common.h
@@ -883,6 +936,7 @@ CMakeFiles/jvm.dir/main.cpp.o: ../main.cpp
 
 CMakeFiles/jvm.dir/runtime/Frame.cpp.o: ../common.h
 CMakeFiles/jvm.dir/runtime/Frame.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/runtime/Frame.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/runtime/Frame.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/runtime/Frame.cpp.o: ../runtime/Frame.cpp
 CMakeFiles/jvm.dir/runtime/Frame.cpp.o: ../runtime/Frame.h
@@ -891,6 +945,7 @@ CMakeFiles/jvm.dir/runtime/Frame.cpp.o: ../runtime/OperandStack.h
 
 CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o: ../common.h
 CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o: ../runtime/LocalVars.cpp
 CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o: ../runtime/LocalVars.h
@@ -903,6 +958,7 @@ CMakeFiles/jvm.dir/runtime/OperandStack.cpp.o: ../runtime/OperandStack.h
 
 CMakeFiles/jvm.dir/runtime/Stack.cpp.o: ../common.h
 CMakeFiles/jvm.dir/runtime/Stack.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/runtime/Stack.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/runtime/Stack.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/runtime/Stack.cpp.o: ../runtime/Frame.h
 CMakeFiles/jvm.dir/runtime/Stack.cpp.o: ../runtime/LocalVars.h
@@ -912,6 +968,7 @@ CMakeFiles/jvm.dir/runtime/Stack.cpp.o: ../runtime/Stack.h
 
 CMakeFiles/jvm.dir/runtime/Thread.cpp.o: ../common.h
 CMakeFiles/jvm.dir/runtime/Thread.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/runtime/Thread.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/runtime/Thread.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/runtime/Thread.cpp.o: ../runtime/Frame.h
 CMakeFiles/jvm.dir/runtime/Thread.cpp.o: ../runtime/LocalVars.h
@@ -919,4 +976,211 @@ CMakeFiles/jvm.dir/runtime/Thread.cpp.o: ../runtime/OperandStack.h
 CMakeFiles/jvm.dir/runtime/Thread.cpp.o: ../runtime/Stack.h
 CMakeFiles/jvm.dir/runtime/Thread.cpp.o: ../runtime/Thread.cpp
 CMakeFiles/jvm.dir/runtime/Thread.cpp.o: ../runtime/Thread.h
+
+CMakeFiles/jvm.dir/runtime/heap/Class.cpp.o: ../classfile/ClassFile.h
+CMakeFiles/jvm.dir/runtime/heap/Class.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/runtime/heap/Class.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/runtime/heap/Class.cpp.o: ../classfile/ConstantPool.h
+CMakeFiles/jvm.dir/runtime/heap/Class.cpp.o: ../classfile/Constants.h
+CMakeFiles/jvm.dir/runtime/heap/Class.cpp.o: ../classfile/attribute/AttributeInfo.h
+CMakeFiles/jvm.dir/runtime/heap/Class.cpp.o: ../classfile/attribute/CodeAttribute.h
+CMakeFiles/jvm.dir/runtime/heap/Class.cpp.o: ../common.h
+CMakeFiles/jvm.dir/runtime/heap/Class.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/runtime/heap/Class.cpp.o: ../common/StrUtils.h
+CMakeFiles/jvm.dir/runtime/heap/Class.cpp.o: ../runtime/heap/AccessFlags.h
+CMakeFiles/jvm.dir/runtime/heap/Class.cpp.o: ../runtime/heap/Class.cpp
+CMakeFiles/jvm.dir/runtime/heap/Class.cpp.o: ../runtime/heap/Class.h
+CMakeFiles/jvm.dir/runtime/heap/Class.cpp.o: ../runtime/heap/ClassMember.h
+CMakeFiles/jvm.dir/runtime/heap/Class.cpp.o: ../runtime/heap/Field.h
+CMakeFiles/jvm.dir/runtime/heap/Class.cpp.o: ../runtime/heap/Method.h
+
+CMakeFiles/jvm.dir/runtime/heap/ClassLoader.cpp.o: ../classfile/ClassFile.h
+CMakeFiles/jvm.dir/runtime/heap/ClassLoader.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/runtime/heap/ClassLoader.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/runtime/heap/ClassLoader.cpp.o: ../classfile/ConstantPool.h
+CMakeFiles/jvm.dir/runtime/heap/ClassLoader.cpp.o: ../classfile/Constants.h
+CMakeFiles/jvm.dir/runtime/heap/ClassLoader.cpp.o: ../classfile/attribute/AttributeInfo.h
+CMakeFiles/jvm.dir/runtime/heap/ClassLoader.cpp.o: ../classfile/attribute/CodeAttribute.h
+CMakeFiles/jvm.dir/runtime/heap/ClassLoader.cpp.o: ../classpath/ClassPath.h
+CMakeFiles/jvm.dir/runtime/heap/ClassLoader.cpp.o: ../classpath/Entry.h
+CMakeFiles/jvm.dir/runtime/heap/ClassLoader.cpp.o: ../common.h
+CMakeFiles/jvm.dir/runtime/heap/ClassLoader.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/runtime/heap/ClassLoader.cpp.o: ../common/StrUtils.h
+CMakeFiles/jvm.dir/runtime/heap/ClassLoader.cpp.o: ../runtime/heap/Class.h
+CMakeFiles/jvm.dir/runtime/heap/ClassLoader.cpp.o: ../runtime/heap/ClassLoader.cpp
+CMakeFiles/jvm.dir/runtime/heap/ClassLoader.cpp.o: ../runtime/heap/ClassLoader.h
+CMakeFiles/jvm.dir/runtime/heap/ClassLoader.cpp.o: ../runtime/heap/ClassMember.h
+CMakeFiles/jvm.dir/runtime/heap/ClassLoader.cpp.o: ../runtime/heap/Field.h
+CMakeFiles/jvm.dir/runtime/heap/ClassLoader.cpp.o: ../runtime/heap/Method.h
+
+CMakeFiles/jvm.dir/runtime/heap/ClassMember.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/runtime/heap/ClassMember.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/runtime/heap/ClassMember.cpp.o: ../classfile/ConstantPool.h
+CMakeFiles/jvm.dir/runtime/heap/ClassMember.cpp.o: ../classfile/Constants.h
+CMakeFiles/jvm.dir/runtime/heap/ClassMember.cpp.o: ../classfile/attribute/AttributeInfo.h
+CMakeFiles/jvm.dir/runtime/heap/ClassMember.cpp.o: ../classfile/attribute/CodeAttribute.h
+CMakeFiles/jvm.dir/runtime/heap/ClassMember.cpp.o: ../common.h
+CMakeFiles/jvm.dir/runtime/heap/ClassMember.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/runtime/heap/ClassMember.cpp.o: ../common/StrUtils.h
+CMakeFiles/jvm.dir/runtime/heap/ClassMember.cpp.o: ../runtime/heap/ClassMember.cpp
+CMakeFiles/jvm.dir/runtime/heap/ClassMember.cpp.o: ../runtime/heap/ClassMember.h
+
+CMakeFiles/jvm.dir/runtime/heap/ClassRef.cpp.o: ../classfile/ClassFile.h
+CMakeFiles/jvm.dir/runtime/heap/ClassRef.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/runtime/heap/ClassRef.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/runtime/heap/ClassRef.cpp.o: ../classfile/ConstantPool.h
+CMakeFiles/jvm.dir/runtime/heap/ClassRef.cpp.o: ../classfile/Constants.h
+CMakeFiles/jvm.dir/runtime/heap/ClassRef.cpp.o: ../classfile/attribute/AttributeInfo.h
+CMakeFiles/jvm.dir/runtime/heap/ClassRef.cpp.o: ../classfile/attribute/CodeAttribute.h
+CMakeFiles/jvm.dir/runtime/heap/ClassRef.cpp.o: ../common.h
+CMakeFiles/jvm.dir/runtime/heap/ClassRef.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/runtime/heap/ClassRef.cpp.o: ../common/StrUtils.h
+CMakeFiles/jvm.dir/runtime/heap/ClassRef.cpp.o: ../runtime/heap/Class.h
+CMakeFiles/jvm.dir/runtime/heap/ClassRef.cpp.o: ../runtime/heap/ClassMember.h
+CMakeFiles/jvm.dir/runtime/heap/ClassRef.cpp.o: ../runtime/heap/ClassRef.cpp
+CMakeFiles/jvm.dir/runtime/heap/ClassRef.cpp.o: ../runtime/heap/ClassRef.h
+CMakeFiles/jvm.dir/runtime/heap/ClassRef.cpp.o: ../runtime/heap/ConstantPool.h
+CMakeFiles/jvm.dir/runtime/heap/ClassRef.cpp.o: ../runtime/heap/Field.h
+CMakeFiles/jvm.dir/runtime/heap/ClassRef.cpp.o: ../runtime/heap/Method.h
+CMakeFiles/jvm.dir/runtime/heap/ClassRef.cpp.o: ../runtime/heap/SymRef.h
+
+CMakeFiles/jvm.dir/runtime/heap/ConstantPool.cpp.o: ../classfile/ClassFile.h
+CMakeFiles/jvm.dir/runtime/heap/ConstantPool.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/runtime/heap/ConstantPool.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/runtime/heap/ConstantPool.cpp.o: ../classfile/ConstantPool.h
+CMakeFiles/jvm.dir/runtime/heap/ConstantPool.cpp.o: ../classfile/Constants.h
+CMakeFiles/jvm.dir/runtime/heap/ConstantPool.cpp.o: ../classfile/attribute/AttributeInfo.h
+CMakeFiles/jvm.dir/runtime/heap/ConstantPool.cpp.o: ../classfile/attribute/CodeAttribute.h
+CMakeFiles/jvm.dir/runtime/heap/ConstantPool.cpp.o: ../common.h
+CMakeFiles/jvm.dir/runtime/heap/ConstantPool.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/runtime/heap/ConstantPool.cpp.o: ../common/StrUtils.h
+CMakeFiles/jvm.dir/runtime/heap/ConstantPool.cpp.o: ../runtime/heap/Class.h
+CMakeFiles/jvm.dir/runtime/heap/ConstantPool.cpp.o: ../runtime/heap/ClassMember.h
+CMakeFiles/jvm.dir/runtime/heap/ConstantPool.cpp.o: ../runtime/heap/ConstantPool.cpp
+CMakeFiles/jvm.dir/runtime/heap/ConstantPool.cpp.o: ../runtime/heap/ConstantPool.h
+CMakeFiles/jvm.dir/runtime/heap/ConstantPool.cpp.o: ../runtime/heap/Field.h
+CMakeFiles/jvm.dir/runtime/heap/ConstantPool.cpp.o: ../runtime/heap/Method.h
+
+CMakeFiles/jvm.dir/runtime/heap/Field.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/runtime/heap/Field.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/runtime/heap/Field.cpp.o: ../classfile/ConstantPool.h
+CMakeFiles/jvm.dir/runtime/heap/Field.cpp.o: ../classfile/Constants.h
+CMakeFiles/jvm.dir/runtime/heap/Field.cpp.o: ../classfile/attribute/AttributeInfo.h
+CMakeFiles/jvm.dir/runtime/heap/Field.cpp.o: ../classfile/attribute/CodeAttribute.h
+CMakeFiles/jvm.dir/runtime/heap/Field.cpp.o: ../common.h
+CMakeFiles/jvm.dir/runtime/heap/Field.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/runtime/heap/Field.cpp.o: ../common/StrUtils.h
+CMakeFiles/jvm.dir/runtime/heap/Field.cpp.o: ../runtime/heap/ClassMember.h
+CMakeFiles/jvm.dir/runtime/heap/Field.cpp.o: ../runtime/heap/Field.cpp
+CMakeFiles/jvm.dir/runtime/heap/Field.cpp.o: ../runtime/heap/Field.h
+
+CMakeFiles/jvm.dir/runtime/heap/FieldRef.cpp.o: ../classfile/ClassFile.h
+CMakeFiles/jvm.dir/runtime/heap/FieldRef.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/runtime/heap/FieldRef.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/runtime/heap/FieldRef.cpp.o: ../classfile/ConstantPool.h
+CMakeFiles/jvm.dir/runtime/heap/FieldRef.cpp.o: ../classfile/Constants.h
+CMakeFiles/jvm.dir/runtime/heap/FieldRef.cpp.o: ../classfile/attribute/AttributeInfo.h
+CMakeFiles/jvm.dir/runtime/heap/FieldRef.cpp.o: ../classfile/attribute/CodeAttribute.h
+CMakeFiles/jvm.dir/runtime/heap/FieldRef.cpp.o: ../common.h
+CMakeFiles/jvm.dir/runtime/heap/FieldRef.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/runtime/heap/FieldRef.cpp.o: ../common/StrUtils.h
+CMakeFiles/jvm.dir/runtime/heap/FieldRef.cpp.o: ../runtime/heap/Class.h
+CMakeFiles/jvm.dir/runtime/heap/FieldRef.cpp.o: ../runtime/heap/ClassMember.h
+CMakeFiles/jvm.dir/runtime/heap/FieldRef.cpp.o: ../runtime/heap/ConstantPool.h
+CMakeFiles/jvm.dir/runtime/heap/FieldRef.cpp.o: ../runtime/heap/Field.h
+CMakeFiles/jvm.dir/runtime/heap/FieldRef.cpp.o: ../runtime/heap/FieldRef.cpp
+CMakeFiles/jvm.dir/runtime/heap/FieldRef.cpp.o: ../runtime/heap/FieldRef.h
+CMakeFiles/jvm.dir/runtime/heap/FieldRef.cpp.o: ../runtime/heap/MemberRef.h
+CMakeFiles/jvm.dir/runtime/heap/FieldRef.cpp.o: ../runtime/heap/Method.h
+CMakeFiles/jvm.dir/runtime/heap/FieldRef.cpp.o: ../runtime/heap/SymRef.h
+
+CMakeFiles/jvm.dir/runtime/heap/InterfaceMethodRef.cpp.o: ../classfile/ClassFile.h
+CMakeFiles/jvm.dir/runtime/heap/InterfaceMethodRef.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/runtime/heap/InterfaceMethodRef.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/runtime/heap/InterfaceMethodRef.cpp.o: ../classfile/ConstantPool.h
+CMakeFiles/jvm.dir/runtime/heap/InterfaceMethodRef.cpp.o: ../classfile/Constants.h
+CMakeFiles/jvm.dir/runtime/heap/InterfaceMethodRef.cpp.o: ../classfile/attribute/AttributeInfo.h
+CMakeFiles/jvm.dir/runtime/heap/InterfaceMethodRef.cpp.o: ../classfile/attribute/CodeAttribute.h
+CMakeFiles/jvm.dir/runtime/heap/InterfaceMethodRef.cpp.o: ../common.h
+CMakeFiles/jvm.dir/runtime/heap/InterfaceMethodRef.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/runtime/heap/InterfaceMethodRef.cpp.o: ../common/StrUtils.h
+CMakeFiles/jvm.dir/runtime/heap/InterfaceMethodRef.cpp.o: ../runtime/heap/Class.h
+CMakeFiles/jvm.dir/runtime/heap/InterfaceMethodRef.cpp.o: ../runtime/heap/ClassMember.h
+CMakeFiles/jvm.dir/runtime/heap/InterfaceMethodRef.cpp.o: ../runtime/heap/ConstantPool.h
+CMakeFiles/jvm.dir/runtime/heap/InterfaceMethodRef.cpp.o: ../runtime/heap/Field.h
+CMakeFiles/jvm.dir/runtime/heap/InterfaceMethodRef.cpp.o: ../runtime/heap/InterfaceMethodRef.cpp
+CMakeFiles/jvm.dir/runtime/heap/InterfaceMethodRef.cpp.o: ../runtime/heap/InterfaceMethodRef.h
+CMakeFiles/jvm.dir/runtime/heap/InterfaceMethodRef.cpp.o: ../runtime/heap/MemberRef.h
+CMakeFiles/jvm.dir/runtime/heap/InterfaceMethodRef.cpp.o: ../runtime/heap/Method.h
+CMakeFiles/jvm.dir/runtime/heap/InterfaceMethodRef.cpp.o: ../runtime/heap/SymRef.h
+
+CMakeFiles/jvm.dir/runtime/heap/MemberRef.cpp.o: ../classfile/ClassFile.h
+CMakeFiles/jvm.dir/runtime/heap/MemberRef.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/runtime/heap/MemberRef.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/runtime/heap/MemberRef.cpp.o: ../classfile/ConstantPool.h
+CMakeFiles/jvm.dir/runtime/heap/MemberRef.cpp.o: ../classfile/Constants.h
+CMakeFiles/jvm.dir/runtime/heap/MemberRef.cpp.o: ../classfile/attribute/AttributeInfo.h
+CMakeFiles/jvm.dir/runtime/heap/MemberRef.cpp.o: ../classfile/attribute/CodeAttribute.h
+CMakeFiles/jvm.dir/runtime/heap/MemberRef.cpp.o: ../common.h
+CMakeFiles/jvm.dir/runtime/heap/MemberRef.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/runtime/heap/MemberRef.cpp.o: ../common/StrUtils.h
+CMakeFiles/jvm.dir/runtime/heap/MemberRef.cpp.o: ../runtime/heap/Class.h
+CMakeFiles/jvm.dir/runtime/heap/MemberRef.cpp.o: ../runtime/heap/ClassMember.h
+CMakeFiles/jvm.dir/runtime/heap/MemberRef.cpp.o: ../runtime/heap/ConstantPool.h
+CMakeFiles/jvm.dir/runtime/heap/MemberRef.cpp.o: ../runtime/heap/Field.h
+CMakeFiles/jvm.dir/runtime/heap/MemberRef.cpp.o: ../runtime/heap/MemberRef.cpp
+CMakeFiles/jvm.dir/runtime/heap/MemberRef.cpp.o: ../runtime/heap/MemberRef.h
+CMakeFiles/jvm.dir/runtime/heap/MemberRef.cpp.o: ../runtime/heap/Method.h
+CMakeFiles/jvm.dir/runtime/heap/MemberRef.cpp.o: ../runtime/heap/SymRef.h
+
+CMakeFiles/jvm.dir/runtime/heap/Method.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/runtime/heap/Method.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/runtime/heap/Method.cpp.o: ../classfile/ConstantPool.h
+CMakeFiles/jvm.dir/runtime/heap/Method.cpp.o: ../classfile/Constants.h
+CMakeFiles/jvm.dir/runtime/heap/Method.cpp.o: ../classfile/attribute/AttributeInfo.h
+CMakeFiles/jvm.dir/runtime/heap/Method.cpp.o: ../classfile/attribute/CodeAttribute.h
+CMakeFiles/jvm.dir/runtime/heap/Method.cpp.o: ../common.h
+CMakeFiles/jvm.dir/runtime/heap/Method.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/runtime/heap/Method.cpp.o: ../common/StrUtils.h
+CMakeFiles/jvm.dir/runtime/heap/Method.cpp.o: ../runtime/heap/ClassMember.h
+CMakeFiles/jvm.dir/runtime/heap/Method.cpp.o: ../runtime/heap/Method.cpp
+CMakeFiles/jvm.dir/runtime/heap/Method.cpp.o: ../runtime/heap/Method.h
+
+CMakeFiles/jvm.dir/runtime/heap/MethodRef.cpp.o: ../classfile/ClassFile.h
+CMakeFiles/jvm.dir/runtime/heap/MethodRef.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/runtime/heap/MethodRef.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/runtime/heap/MethodRef.cpp.o: ../classfile/ConstantPool.h
+CMakeFiles/jvm.dir/runtime/heap/MethodRef.cpp.o: ../classfile/Constants.h
+CMakeFiles/jvm.dir/runtime/heap/MethodRef.cpp.o: ../classfile/attribute/AttributeInfo.h
+CMakeFiles/jvm.dir/runtime/heap/MethodRef.cpp.o: ../classfile/attribute/CodeAttribute.h
+CMakeFiles/jvm.dir/runtime/heap/MethodRef.cpp.o: ../common.h
+CMakeFiles/jvm.dir/runtime/heap/MethodRef.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/runtime/heap/MethodRef.cpp.o: ../common/StrUtils.h
+CMakeFiles/jvm.dir/runtime/heap/MethodRef.cpp.o: ../runtime/heap/Class.h
+CMakeFiles/jvm.dir/runtime/heap/MethodRef.cpp.o: ../runtime/heap/ClassMember.h
+CMakeFiles/jvm.dir/runtime/heap/MethodRef.cpp.o: ../runtime/heap/ConstantPool.h
+CMakeFiles/jvm.dir/runtime/heap/MethodRef.cpp.o: ../runtime/heap/Field.h
+CMakeFiles/jvm.dir/runtime/heap/MethodRef.cpp.o: ../runtime/heap/MemberRef.h
+CMakeFiles/jvm.dir/runtime/heap/MethodRef.cpp.o: ../runtime/heap/Method.h
+CMakeFiles/jvm.dir/runtime/heap/MethodRef.cpp.o: ../runtime/heap/MethodRef.cpp
+CMakeFiles/jvm.dir/runtime/heap/MethodRef.cpp.o: ../runtime/heap/MethodRef.h
+CMakeFiles/jvm.dir/runtime/heap/MethodRef.cpp.o: ../runtime/heap/SymRef.h
+
+CMakeFiles/jvm.dir/runtime/heap/SymRef.cpp.o: ../classfile/ClassFile.h
+CMakeFiles/jvm.dir/runtime/heap/SymRef.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/runtime/heap/SymRef.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/runtime/heap/SymRef.cpp.o: ../classfile/ConstantPool.h
+CMakeFiles/jvm.dir/runtime/heap/SymRef.cpp.o: ../classfile/Constants.h
+CMakeFiles/jvm.dir/runtime/heap/SymRef.cpp.o: ../classfile/attribute/AttributeInfo.h
+CMakeFiles/jvm.dir/runtime/heap/SymRef.cpp.o: ../classfile/attribute/CodeAttribute.h
+CMakeFiles/jvm.dir/runtime/heap/SymRef.cpp.o: ../common.h
+CMakeFiles/jvm.dir/runtime/heap/SymRef.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/runtime/heap/SymRef.cpp.o: ../common/StrUtils.h
+CMakeFiles/jvm.dir/runtime/heap/SymRef.cpp.o: ../runtime/heap/Class.h
+CMakeFiles/jvm.dir/runtime/heap/SymRef.cpp.o: ../runtime/heap/ClassMember.h
+CMakeFiles/jvm.dir/runtime/heap/SymRef.cpp.o: ../runtime/heap/ConstantPool.h
+CMakeFiles/jvm.dir/runtime/heap/SymRef.cpp.o: ../runtime/heap/Field.h
+CMakeFiles/jvm.dir/runtime/heap/SymRef.cpp.o: ../runtime/heap/Method.h
+CMakeFiles/jvm.dir/runtime/heap/SymRef.cpp.o: ../runtime/heap/SymRef.cpp
+CMakeFiles/jvm.dir/runtime/heap/SymRef.cpp.o: ../runtime/heap/SymRef.h
 

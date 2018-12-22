@@ -3,9 +3,12 @@
 //
 
 #include "ConstantInfo.h"
-#include "../attribute/AttributeInfo.h"
+#include "attribute/AttributeInfo.h"
 
-namespace cls {
+namespace cf {
 
+    void* ConstantInfo::getValue() {
+        return NULL;
+    }
 
 }

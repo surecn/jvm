@@ -7,10 +7,10 @@
 #include <unistd.h>
 #include <sys/stat.h>
 
-namespace cpath {
+namespace cp {
 
     ClassData::~ClassData() {
-        delete data;
+        delete m_data;
     }
 
     Entry *Entry::create(string &path) {
@@ -44,14 +44,14 @@ namespace cpath {
         return 1 ;
     }
 
-    DirEntry::DirEntry(string &s) : path(s)
+    DirEntry::DirEntry(string &s) : m_path(s)
     {}
 
     void DirEntry::readClass(string &className, ClassData &data) {
         //string filepath = apply(className);
 
         long size;
-        data.error = !GetFileSizeAndContent(className, size, &data.data);
+        data.m_error = !GetFileSizeAndContent(className, size, &data.m_data);
     }
 
     string DirEntry::toString() {
@@ -59,20 +59,20 @@ namespace cpath {
     }
 
     string DirEntry::apply(string &fileName) {
-        return path + PATH_SEPARATOR + fileName;
+        return m_path + PATH_SEPARATOR + fileName;
     }
 
     CompositeEntry::CompositeEntry(string &path) {
         std::vector<string> list = StrUtils::split(path, PATH_SEPARATOR);
         for (int i = 0, len = list.size(); i < len; ++i) {
             string item = list[i];
-            entryList.push_back(Entry::create(item));
+            m_entryList.push_back(Entry::create(item));
         }
     }
 
     CompositeEntry::~CompositeEntry() {
         list<Entry *>::iterator iter;
-        for(iter = entryList.begin(); iter != entryList.end(); iter++) {
+        for(iter = m_entryList.begin(); iter != m_entryList.end(); iter++) {
             Entry *entry = (*iter);
             if (entry) {
                 delete entry;
@@ -82,7 +82,7 @@ namespace cpath {
 
     void CompositeEntry::readClass(string &path, ClassData &data) {
         list<Entry *>::iterator theIterator;
-        for (theIterator = entryList.begin(); theIterator != entryList.end(); theIterator++) {
+        for (theIterator = m_entryList.begin(); theIterator != m_entryList.end(); theIterator++) {
             Entry *entry = (*theIterator);
             entry->readClass(path, data);
         }
@@ -105,7 +105,7 @@ namespace cpath {
     }
 
 
-    WildcardEntry::WildcardEntry(string &path) : parentPath(toPathList(path)), CompositeEntry(parentPath) {
+    WildcardEntry::WildcardEntry(string &path) : m_parentPath(toPathList(path)), CompositeEntry(m_parentPath) {
     }
 
     void ZipEntry::readClass(string &path, ClassData &data) {

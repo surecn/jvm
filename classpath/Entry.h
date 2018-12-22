@@ -8,14 +8,14 @@
 #include <list>
 #include "../common.h"
 
-namespace cpath {
+namespace cp {
     class DirEntry;
     class Entry;
 
     struct ClassData {
-        byte *data;
-        Entry *entry;
-        int error = 1;
+        byte *m_data;
+        Entry *m_entry;
+        int m_error = 1;
         ~ClassData();
     };
 
@@ -28,7 +28,7 @@ namespace cpath {
 
     class DirEntry : public Entry {
     private:
-        string path;
+        string m_path;
     public:
         DirEntry(string &s);
         void readClass(string &path, ClassData &data);
@@ -39,7 +39,7 @@ namespace cpath {
 
     class CompositeEntry : public Entry {
     private:
-        list<Entry*> entryList;/*析构函数释放*/
+        list<Entry*> m_entryList;/*析构函数释放*/
     public:
         CompositeEntry(string &path);
         ~CompositeEntry();
@@ -48,7 +48,7 @@ namespace cpath {
 
     class WildcardEntry : public CompositeEntry {
     private:
-        string parentPath;
+        string m_parentPath;
     public:
         WildcardEntry(string &path);
     };

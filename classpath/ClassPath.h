@@ -10,13 +10,13 @@
 #include "Entry.h"
 
 
-namespace cpath {
+namespace cp {
 
     class ClassPath {
     private:
-        Entry *bootClassPath;
-        Entry *extClassPath;
-        Entry *userClassPath;
+        Entry *m_bootClassPath;
+        Entry *m_extClassPath;
+        Entry *m_userClassPath;
     public:
         ClassPath(string &jreOption, string &cpOption);
         void parseBootAndExtClassPath(string &jreOption);

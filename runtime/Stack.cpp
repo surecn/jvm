@@ -11,32 +11,32 @@ namespace rt {
     }
 
     void Stack::push(rt::Frame *frame) {
-        if (size > maxSize) {
+        if (m_size > m_maxSize) {
             cout << "StrackOverflowError" << endl;
         }
-        if (_top != NULL) {
-            frame->lower = _top;
+        if (m_top != NULL) {
+            frame->lower = m_top;
         }
-        _top = frame;
-        size++;
+        m_top = frame;
+        m_size++;
     }
 
     Frame* Stack::pop() {
-        if (_top == NULL) {
+        if (m_top == NULL) {
             cout << "jvm strack is empty";
         }
-        Frame* temp = _top;
-        _top = _top->lower;
+        Frame* temp = m_top;
+        m_top = m_top->lower;
         temp->lower = NULL;
-        size--;
+        m_size--;
         return temp;
     }
 
     Frame* Stack::top() {
-        if (_top == NULL) {
+        if (m_top == NULL) {
             cout << "jvm strack is empty";
         }
-        return _top;
+        return m_top;
     }
 
 

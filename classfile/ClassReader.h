@@ -8,11 +8,11 @@
 
 #include "../common.h"
 
-namespace cls {
+namespace cf {
     class ClassReader {
     private:
         //class文件
-        byte *data;
+        byte *m_data;
     public:
         ClassReader(byte* &_data);
         ~ClassReader();

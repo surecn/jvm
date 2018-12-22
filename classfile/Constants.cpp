@@ -4,108 +4,179 @@
 
 #include "Constants.h"
 
-namespace cls {
+namespace cf {
 
 #include <typeinfo>
 
-    ConstantFloatInfo::ConstantFloatInfo(cls::ClassReader *classReader) {
-        value = classReader->readU4();
+    ConstantFloatInfo::ConstantFloatInfo(ClassReader *classReader) {
+        m_value = classReader->readU4();
     }
 
     void ConstantFloatInfo::print() {
-        cout << "float:" + std::to_string(value) << endl;
+        cout << "float:" + std::to_string(m_value) << endl;
     }
 
-    ConstantInfo* ConstantFieldRefInfo::readInfo(cls::ClassReader *classReader, cls::ConstantPool cp) {
-
+    void* ConstantFloatInfo::getValue() {
+        return &m_value;
     }
 
-    ConstantDoubleInfo::ConstantDoubleInfo(cls::ClassReader *classReader) {
-        value = classReader->readU8();
+    ConstantDoubleInfo::ConstantDoubleInfo(ClassReader *classReader) {
+        m_value = classReader->readU8();
     }
 
     void ConstantDoubleInfo::print() {
-        cout << "double:" + std::to_string(value) << endl;
+        cout << "double:" + std::to_string(m_value) << endl;
     }
 
-    ConstantClassInfo::ConstantClassInfo(cls::ClassReader *classReader, cls::ConstantPool *cp) : constantPool(cp){
-        nameIndex = classReader->readU2();
+    void* ConstantDoubleInfo::getValue() {
+        return &m_value;
+    }
+
+    ConstantClassInfo::ConstantClassInfo(ClassReader *classReader, ConstantPool *cp) : m_constantPool(cp){
+        m_nameIndex = classReader->readU2();
     }
 
     string* ConstantClassInfo::getName() {
-        return constantPool->getUtf8(nameIndex);
+        return m_constantPool->getUtf8(m_nameIndex);
     }
 
     void ConstantClassInfo::print() {
-        cout << "Class:" + std::to_string(nameIndex) << endl;
+        cout << "Class:" + std::to_string(m_nameIndex) << endl;
     }
 
-    ConstantIntegerInfo::ConstantIntegerInfo(cls::ClassReader *classReader) {
-        value = classReader->readU4();
+    void* ConstantClassInfo::getValue() {
+        return NULL;
+    }
+
+    ConstantIntegerInfo::ConstantIntegerInfo(ClassReader *classReader) {
+        m_value = classReader->readU4();
     }
 
     void ConstantIntegerInfo::print() {
-        cout << "integer:" + std::to_string(value) << endl;
+        cout << "integer:" + std::to_string(m_value) << endl;
     }
 
-    ConstantLongInfo::ConstantLongInfo(cls::ClassReader *classReader) {
-        value = classReader->readU8();
+    void* ConstantIntegerInfo::getValue() {
+        return &m_value;
+    }
+
+    ConstantLongInfo::ConstantLongInfo(ClassReader *classReader) {
+        m_value = classReader->readU8();
     }
 
     void ConstantLongInfo::print() {
-        cout << "long:" + std::to_string(value) << endl;
+        cout << "long:" + std::to_string(m_value) << endl;
     }
 
-    ConstantMemberInfo::ConstantMemberInfo(cls::ClassReader *classReader, cls::ConstantPool *cp) : constantPool(cp) {
-        classIndex = classReader->readU2();
-        nameAndTypeIndex = classReader->readU2();
+    void* ConstantLongInfo::getValue() {
+        return &m_value;
+    }
+
+    ConstantMemberInfo::ConstantMemberInfo(ClassReader *classReader, ConstantPool *cp) : m_constantPool(cp) {
+        m_classIndex = classReader->readU2();
+        m_nameAndTypeIndex = classReader->readU2();
     }
 
     void ConstantMemberInfo::print() {
-        cout << "Member:" + std::to_string(nameAndTypeIndex) << endl;
+        cout << "Member:" + std::to_string(m_nameAndTypeIndex) << endl;
     }
 
-    ConstantNameAndTypeInfo::ConstantNameAndTypeInfo(cls::ClassReader *classReader, cls::ConstantPool *cp) : constantPool(cp) {
-        nameIndex = classReader->readU2();
-        desciptorIndex = classReader->readU2();
+    void* ConstantMemberInfo::getValue() {
+        return NULL;
+    }
+
+    string* ConstantMemberInfo::getClassName() {
+        m_constantPool->getClassName(m_classIndex);
+    }
+
+    NameAndType ConstantMemberInfo::getNameAndType() {
+        return m_constantPool->getNameAndType(m_nameAndTypeIndex);
+    }
+
+    ConstantInfo* ConstantFieldRefInfo::readInfo(ClassReader *classReader, ConstantPool cp) {
+
+    }
+
+    void* ConstantFieldRefInfo::getValue() {
+        return NULL;
+    }
+
+    ConstantInfo* ConstantMethodRefInfo::readInfo(ClassReader *classReader, ConstantPool cp) {
+
+    }
+
+    void* ConstantMethodRefInfo::getValue() {
+        return NULL;
+    }
+
+    ConstantInfo* ConstantInterfaceMethodRefInfo::readInfo(ClassReader *classReader, ConstantPool cp) {
+
+    }
+
+    void* ConstantInterfaceMethodRefInfo::getValue() {
+        return NULL;
+    }
+
+    ConstantNameAndTypeInfo::ConstantNameAndTypeInfo(ClassReader *classReader, ConstantPool *cp) : constantPool(cp) {
+        m_name_index = classReader->readU2();
+        m_desciptor_index = classReader->readU2();
     }
 
     void ConstantNameAndTypeInfo::print() {
-        cout << "NameAndType:" + std::to_string(nameIndex) << endl;
+        cout << "NameAndType:" + std::to_string(m_name_index) << endl;
     }
 
-    ConstantStringInfo::ConstantStringInfo(cls::ClassReader *classReader, cls::ConstantPool *cp) : constantPool(cp) {
-        stringIndex = classReader->readU2();
+    void* ConstantNameAndTypeInfo::getValue() {
+        return NULL;
+    }
+
+    u2 ConstantNameAndTypeInfo::getNameIndex() {
+        return m_name_index;
+    }
+
+    u2 ConstantNameAndTypeInfo::getDescriptorIndex() {
+        return m_desciptor_index;
+    }
+
+    ConstantStringInfo::ConstantStringInfo(ClassReader *classReader, ConstantPool *cp) : m_constantPool(cp) {
+        m_stringIndex = classReader->readU2();
     }
 
     void ConstantStringInfo::print() {
-        cout << "string:" + stringIndex << endl;
+        cout << "string:" + m_stringIndex << endl;
     }
 
-    ConstantUtf8Info::ConstantUtf8Info(cls::ClassReader *classReader) {
-        bytes = classReader->readString();
+    void* ConstantStringInfo::getValue() {
+        return m_constantPool->getUtf8(m_stringIndex);
+    }
+
+    ConstantUtf8Info::ConstantUtf8Info(ClassReader *classReader) {
+        m_bytes = classReader->readString();
     }
 
     string* ConstantUtf8Info::value() {
-        return &bytes;
+        return &m_bytes;
+    }
+
+    void* ConstantUtf8Info::getValue() {
+        return &m_bytes;
     }
 
     void ConstantUtf8Info::print() {
-        cout << "UTF8:" << bytes << endl;
+        cout << "UTF8:" << m_bytes << endl;
     }
 
-
     u2 MemberInfo::getNameIndex() {
-        return nameIndex;
+        return m_nameIndex;
     };
 
-    MemberInfo::MemberInfo(ConstantPool *cp, ClassReader *classReader):constantPool(cp) {
-        accessFlags = classReader->readU2();
-        nameIndex = classReader->readU2();
-        cout << "MemberInfo:" << *(cp->getUtf8(nameIndex)) << endl;
-        descriptorIndex = classReader->readU2();
-        attributeCount = classReader->readU2();
-        attributeInfos = AttributeInfo::readAttributes(classReader, constantPool, attributeCount);
+    MemberInfo::MemberInfo(ConstantPool *cp, ClassReader *classReader):m_constantPool(cp) {
+        m_accessFlags = classReader->readU2();
+        m_nameIndex = classReader->readU2();
+        cout << "MemberInfo:" << *(cp->getUtf8(m_nameIndex)) << endl;
+        m_descriptorIndex = classReader->readU2();
+        m_attributeCount = classReader->readU2();
+        m_attributeInfos = AttributeInfo::readAttributes(classReader, m_constantPool, m_attributeCount);
     }
 
     MemberInfo** MemberInfo::readMembers(ConstantPool *constantPool, ClassReader *reader, u2 *count) {
@@ -118,27 +189,38 @@ namespace cls {
     }
 
     u2 MemberInfo::getDescriptorIndex() {
-        return descriptorIndex;
+        return m_descriptorIndex;
     };
 
     CodeAttribute* MemberInfo::getCodeAttribute() {
-        for (int i = 0, len = attributeCount; i < len; ++i) {
-            cout << "\ntype:" << typeid(attributeInfos[i]).name() << endl;
+        for (int i = 0, len = m_attributeCount; i < len; ++i) {
+            cout << "\ntype:" << typeid(m_attributeInfos[i]).name() << endl;
             cout << "type:" << typeid(CodeAttribute*).name() << endl;
-            if (attributeInfos[i]->getAttributeType() == "Code") {
-                return (CodeAttribute*)(attributeInfos[i]);
+            if (m_attributeInfos[i]->getAttributeType() == "Code") {
+                return (CodeAttribute*)(m_attributeInfos[i]);
             }
         }
         return NULL;
     }
 
-    ConstantInfo* ConstantFactory::readConstantInfo(cls::ClassReader *classReader, cls::ConstantPool *constantPool) {
+    u2 MemberInfo::getAccessFlags() {
+        return m_accessFlags;
+    }
+
+    string* MemberInfo::getName() {
+        return m_constantPool->getUtf8(this->m_nameIndex);
+    }
+
+    string* MemberInfo::getDescriptor() {
+        return m_constantPool->getUtf8(this->m_descriptorIndex);
+    }
+
+    ConstantInfo* ConstantFactory::readConstantInfo(ClassReader *classReader, ConstantPool *constantPool) {
         u1 tag = classReader->readU1();
         return newConstantInfo(tag, constantPool, classReader);
     }
 
-    ConstantInfo* ConstantFactory::newConstantInfo(u1 tag, cls::ConstantPool *constantPool,
-                                                   cls::ClassReader *classReader) {
+    ConstantInfo* ConstantFactory::newConstantInfo(u1 tag, ConstantPool *constantPool, ClassReader *classReader) {
         switch (tag) {
             case CONSTANT_Integer:
                 return new ConstantIntegerInfo(classReader);

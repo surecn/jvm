@@ -8,113 +8,142 @@
 #include "../common.h"
 #include "ConstantInfo.h"
 #include "ConstantPool.h"
-#include "../attribute/AttributeInfo.h"
-#include "../attribute/CodeAttribute.h"
+#include "attribute/AttributeInfo.h"
+#include "attribute/CodeAttribute.h"
 
-namespace cls {
+namespace cf {
     class ConstantFloatInfo : public ConstantInfo {
     private:
-        float value;
+        float m_value;
     public:
         ConstantFloatInfo(ClassReader *classReader);
         void print();
-    };
-
-    class ConstantFieldRefInfo : public ConstantInfo{
-    private:
-        u2 classIndex;
-        u2 nameAndTypeIndex;
-    public:
-        ConstantInfo* readInfo(ClassReader* classReader, ConstantPool cp);
+        void* getValue();
     };
 
     class ConstantDoubleInfo : public ConstantInfo {
     private:
-        double value;
+        double m_value;
     public:
         ConstantDoubleInfo(ClassReader* classReader);
         void print();
+        void* getValue();
     };
 
     class ConstantClassInfo : public ConstantInfo {
     private:
-        ConstantPool *constantPool;
-        u2 nameIndex;
+        ConstantPool *m_constantPool;
+        u2 m_nameIndex;
     public:
         ConstantClassInfo(ClassReader* classReader, ConstantPool* cp);
         string* getName();
         void print();
+        void* getValue();
     };
 
     class ConstantIntegerInfo : public ConstantInfo {
     private:
-        int value;
+        int m_value;
     public:
         ConstantIntegerInfo(ClassReader *classReader);
         void print();
+        void* getValue();
     };
 
     class ConstantLongInfo : public ConstantInfo {
     private:
-        long value;
+        long m_value;
     public:
         ConstantLongInfo(ClassReader * classReader);
         void print();
+        void* getValue();
     };
 
     class ConstantMemberInfo : public ConstantInfo {
     private:
-        u2 classIndex;
-        u2 nameAndTypeIndex;
-        ConstantPool *constantPool;
+        u2 m_classIndex;
+        u2 m_nameAndTypeIndex;
+        ConstantPool *m_constantPool;
     public:
         ConstantMemberInfo(ClassReader* classReader, ConstantPool *cp);
         void print();
+        void* getValue();
+        string *getClassName();
+        NameAndType getNameAndType();
+    };
+
+    class ConstantFieldRefInfo : public ConstantMemberInfo {
+    private:
+    public:
+        ConstantInfo* readInfo(ClassReader* classReader, ConstantPool cp);
+        void* getValue();
+    };
+
+    class ConstantMethodRefInfo : public ConstantMemberInfo {
+    private:
+    public:
+        ConstantInfo* readInfo(ClassReader* classReader, ConstantPool cp);
+        void* getValue();
+    };
+
+    class ConstantInterfaceMethodRefInfo : public ConstantMemberInfo {
+    private:
+    public:
+        ConstantInfo* readInfo(ClassReader* classReader, ConstantPool cp);
+        void* getValue();
     };
 
     class ConstantNameAndTypeInfo : public ConstantInfo{
     private:
-        u2 nameIndex;
-        u2 desciptorIndex;
+        u2 m_name_index;
+        u2 m_desciptor_index;
         ConstantPool *constantPool;
     public:
         ConstantNameAndTypeInfo(ClassReader* classReader, ConstantPool *cp);
         void print();
+        void* getValue();
+        u2 getNameIndex();
+        u2 getDescriptorIndex();
     };
 
     class ConstantStringInfo : public ConstantInfo {
     private:
-        u2 stringIndex;
-        ConstantPool *constantPool;
+        u2 m_stringIndex;
+        ConstantPool *m_constantPool;
     public:
         ConstantStringInfo(ClassReader* classReader, ConstantPool *cp);
         void print();
+        void* getValue();
     };
 
     class ConstantUtf8Info : public ConstantInfo {
     private:
-        u2 length;
-        string bytes;
+        u2 m_length;
+        string m_bytes;
     public:
         ConstantUtf8Info(ClassReader* classReader);
         string *value();
         void print();
+        void* getValue();
     };
 
 
     class MemberInfo {
     private:
-        ConstantPool *constantPool;
-        u2  accessFlags;
-        u2  nameIndex;
-        u2  descriptorIndex;
-        u2  attributeCount;
-        AttributeInfo**  attributeInfos;
+        ConstantPool *m_constantPool;
+        u2  m_accessFlags;
+        u2  m_nameIndex;
+        u2  m_descriptorIndex;
+        u2  m_attributeCount;
+        AttributeInfo**  m_attributeInfos;
     public:
         MemberInfo(ConstantPool *cp, ClassReader* classReader);
         u2 getNameIndex();
         u2 getDescriptorIndex();
         CodeAttribute* getCodeAttribute();
+        u2 getAccessFlags();
+        string *getName();
+        string *getDescriptor();
         static MemberInfo** readMembers(ConstantPool *constantPool, ClassReader *reader, u2 *count);
     };
 

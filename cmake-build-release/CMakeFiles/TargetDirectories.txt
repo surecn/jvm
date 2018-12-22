@@ -1,3 +1,0 @@
-/Users/surecn/Code/CLionProjects/jvm/cmake-build-release/CMakeFiles/rebuild_cache.dir
-/Users/surecn/Code/CLionProjects/jvm/cmake-build-release/CMakeFiles/edit_cache.dir
-/Users/surecn/Code/CLionProjects/jvm/cmake-build-release/CMakeFiles/jvm.dir

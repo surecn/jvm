@@ -5,17 +5,17 @@
 #include "ClassFile.h"
 #include "ClassReader.h"
 
-namespace cls {
+namespace cf {
     ClassFile::ClassFile() {}
 
     ClassFile::~ClassFile() {
-        delete interfaces;
-        delete [] methods;
-        delete [] fields;
-        delete attributes;
+        delete m_interfaces;
+        delete [] m_methods;
+        delete [] m_fields;
+        delete m_attributes;
     }
 
-    void ClassFile::load(byte *&classData) {
+    void ClassFile::parse(byte *&classData) {
         ClassReader classReader(classData);
         read(&classReader);
     }
@@ -27,14 +27,14 @@ namespace cls {
         if (!readAndCheckVersion(classReader)) {
             return NULL;
         }
-        constantPool = readConstantPool(classReader);
+        m_constantPool = readConstantPool(classReader);
         //TODO 类访问标志
-        accessFlags = classReader->readU2();
-        thisClass = classReader->readU2();
-        cout << "classFile className:" << *constantPool->getClassName(thisClass) << endl;
-        superClass = classReader->readU2();
-        cout << "super className:" << *constantPool->getClassName(superClass) << endl;
-        interfaces = classReader->readU2s(&interfacesLength);
+        m_accessFlags = classReader->readU2();
+        m_thisClass = classReader->readU2();
+        cout << "classFile className:" << *m_constantPool->getClassName(m_thisClass) << endl;
+        m_superClass = classReader->readU2();
+        cout << "super className:" << *m_constantPool->getClassName(m_superClass) << endl;
+        m_interfaces = classReader->readU2s(&m_interfacesCount);
         readFields(classReader);
         readMethods(classReader);
     }
@@ -44,8 +44,8 @@ namespace cls {
     }
 
     bool ClassFile::readAndCheckMagic(ClassReader *classReader) {
-        magic = classReader->readU4();
-        if (magic == (u4)0XCAFEBABE) {//0xCAFEBABE
+        m_magic = classReader->readU4();
+        if (m_magic == (u4)0XCAFEBABE) {//0xCAFEBABE
             return true;
         }
         cout << "java.lang.ClassFormatError: magic" << endl;
@@ -53,9 +53,9 @@ namespace cls {
     }
 
     bool ClassFile::readAndCheckVersion(ClassReader *classReader) {
-        minorVersion = classReader->readU2();
-        majorVersion = classReader->readU2();
-        switch (majorVersion) {
+        m_minorVersion = classReader->readU2();
+        m_majorVersion = classReader->readU2();
+        switch (m_majorVersion) {
             case 45:
                 return true;
             case 46:
@@ -65,7 +65,7 @@ namespace cls {
             case 50:
             case 51:
             case 52:
-                if (minorVersion == 0) {
+                if (m_minorVersion == 0) {
                     return true;
                 }
         }
@@ -74,11 +74,11 @@ namespace cls {
     }
 
     string* ClassFile::getName(MemberInfo *memberInfo) {
-        return constantPool->getUtf8(memberInfo->getNameIndex());
+        return m_constantPool->getUtf8(memberInfo->getNameIndex());
     }
 
     string* ClassFile::getDescriptor(MemberInfo *memberInfo) {
-        return constantPool->getUtf8(memberInfo->getDescriptorIndex());
+        return m_constantPool->getUtf8(memberInfo->getDescriptorIndex());
     }
 
     ConstantPool* ClassFile::readConstantPool(ClassReader *classReader) {
@@ -86,11 +86,11 @@ namespace cls {
     }
 
     void ClassFile::readFields(ClassReader *classReader) {
-        fields = MemberInfo::readMembers(constantPool, classReader, &_fieldCount);
+        m_fields = MemberInfo::readMembers(m_constantPool, classReader, &m_fieldCount);
     }
 
     void ClassFile::readMethods(ClassReader *classReader) {
-        methods = MemberInfo::readMembers(constantPool, classReader, &_methodCount);
+        m_methods = MemberInfo::readMembers(m_constantPool, classReader, &m_methodCount);
     }
 
     ConstantInfo* ClassFile::readConstantInfo(ClassReader *classReader, ConstantPool* cp) {
@@ -98,41 +98,57 @@ namespace cls {
     }
 
     u2 ClassFile::getMinorVersion() {
-        return minorVersion;
+        return m_minorVersion;
     }
 
     u2 ClassFile::getMajorVersion() {
-        return majorVersion;
+        return m_majorVersion;
     }
 
     string* ClassFile::getClassName() {
-        constantPool->getClassName(this->thisClass);
+        m_constantPool->getClassName(this->m_thisClass);
     }
 
     string* ClassFile::getSuperClassName() {
-        if (superClass > 0) {
-            return constantPool->getClassName(this->superClass);
+        if (m_superClass > 0) {
+            return m_constantPool->getClassName(this->m_superClass);
         }
         return 0;
     }
 
-    string* ClassFile::getInterfacesNames() {
-        if (interfaces) {
-            return constantPool->getClassName(*this->interfaces);
+    string** ClassFile::getInterfacesNames() {
+        if (m_interfaces) {
+            string **names = new string*[m_interfacesCount];
+            for (int i = 0; i < m_interfacesCount; ++i) {
+                names[i] = m_constantPool->getClassName(this->m_interfaces[i]);
+            }
+            return names;
         }
-        return 0;
+        return NULL;
+    }
+
+    u2 ClassFile::getInterfaceCount() {
+        return m_interfacesCount;
     }
 
     MemberInfo** ClassFile::getMethods() {
-        return methods;
+        return m_methods;
     }
 
     u2 ClassFile::getMethodCount() {
-        return _methodCount;
+        return m_methodCount;
     }
 
     u2 ClassFile::getFieldCount() {
-        return _fieldCount;
+        return m_fieldCount;
+    }
+
+    u2 ClassFile::getAccessFlags() {
+        return m_accessFlags;
+    }
+
+    ConstantPool* ClassFile::getConstantPool() {
+        return m_constantPool;
     }
 
 }

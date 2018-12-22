@@ -12,11 +12,11 @@ namespace rt {
 
     class Stack {
     private:
-        int maxSize;
-        int size;
-        Frame *_top;
+        int m_maxSize;
+        int m_size;
+        Frame *m_top;
     public:
-        Stack(int xss):maxSize(xss){}
+        Stack(int xss):m_maxSize(xss){}
         static Stack *newStack(int maxSize);
         void push(Frame *frame);
         Frame* pop();

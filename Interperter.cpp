@@ -3,7 +3,7 @@
 //
 
 #include "Interperter.h"
-#include "attribute/CodeAttribute.h"
+#include "classfile/attribute/CodeAttribute.h"
 #include "runtime/Thread.h"
 #include "instructions/base/BytecodeReader.h"
 #include "instructions/base/Instruction.h"
@@ -31,8 +31,8 @@ static void loop(rt::Thread *thread, byte *bytecode) {
 }
 
 
-void Interperter::interpret(cls::MemberInfo *memberInfo) {
-    cls::CodeAttribute* attribute = memberInfo->getCodeAttribute();
+void Interperter::interpret(cf::MemberInfo *memberInfo) {
+    cf::CodeAttribute* attribute = memberInfo->getCodeAttribute();
     u2 maxLocals = attribute->getMaxLocals();
     u2 maxStack = attribute->getMaxStack();
     u1* code = attribute->getCode();

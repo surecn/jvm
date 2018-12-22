@@ -12,8 +12,8 @@ namespace rt {
 
     class Thread {
     private:
-        java_int pc;
-        Stack *stack;
+        java_int m_pc;
+        Stack *m_stack;
     public:
         Thread();
         java_int getPC();

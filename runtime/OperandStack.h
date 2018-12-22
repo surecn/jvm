@@ -11,14 +11,10 @@
 namespace rt {
     class OperandStack {
     private:
-        int size;
-        java_int *slots;//win64位除外
-        OperandStack(java_int val) {
-            size = 0;
-            slots = new java_int[val];
-        }
+        int m_size;
+        java_int *m_slots;//win64位除外
     public:
-        static OperandStack* newOperandStrack(int maxStack);
+        OperandStack(java_int val);
         void pushInt(java_int val); //java int
         long popInt();
         void pushLong(java_long val); //java long

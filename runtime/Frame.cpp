@@ -6,30 +6,41 @@
 
 namespace rt {
 
+    Frame::Frame() {
+        m_nextPC = 0L;
+    }
 
-    Frame* Frame::newFrame(Thread* thread, int maxLocal, int maxStack) {
-        LocalVars* local = LocalVars::newLocalVars(maxLocal);
-        OperandStack* stack = OperandStack::newOperandStrack(maxStack);
-        return new Frame(thread, stack, local);
+    Frame::Frame(Thread* th, int maxLocal, int maxStack) : m_thread(th), m_operandStack(new OperandStack(maxStack)), m_localVars(new LocalVars(maxLocal)) {
+        m_nextPC = 0L;
+        cout << "frame" << this << "=====" << m_localVars << endl;
+    }
+
+    Frame::~Frame() {
+        if (m_operandStack != NULL) {
+            delete m_operandStack;
+        }
+        if (m_localVars != NULL) {
+            delete m_localVars;
+        }
     }
 
     LocalVars* Frame::getLocalVars() {
-        return localVars;
+        return m_localVars;
     }
 
     OperandStack* Frame::getOperandStack() {
-        return operandStack;
+        return m_operandStack;
     }
 
     Thread* Frame::getThread() {
-        return thread;
+        return m_thread;
     }
 
     java_int Frame::getNextPc() {
-        return nextPC;
+        return m_nextPC;
     }
 
     void Frame::setNextPc(java_int _nextPc) {
-        nextPC = _nextPc;
+        m_nextPC = _nextPc;
     }
 }
