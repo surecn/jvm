@@ -12,7 +12,7 @@ namespace rt {
     }
 
     void ASTORE::execute(rt::Frame *frame) {
-        _astore(frame, _index);
+        _astore(frame, m_index);
     }
 
     void ASTORE_0::execute(rt::Frame *frame) {

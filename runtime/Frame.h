@@ -7,6 +7,7 @@
 
 #include "OperandStack.h"
 #include "LocalVars.h"
+#include "heap/Method.h"
 
 
 namespace rt {
@@ -17,18 +18,18 @@ namespace rt {
         OperandStack* m_operandStack;
         Thread* m_thread;
         java_int m_nextPC;
+        Method *m_method;
     public:
         Frame* lower;
         Frame();
-        Frame(Thread* th, int maxLocal, int maxStack);
+        Frame(Thread* th, Method *method);
         ~Frame();
         OperandStack* getOperandStack();
         LocalVars* getLocalVars();
         Thread* getThread();
         java_int getNextPc();
         void setNextPc(java_int _nextPc);
-        static Frame* newFrame(Thread* thread, int maxLocal, int maxStack);
-
+        Method *getMethod() const;
     };
 
 }

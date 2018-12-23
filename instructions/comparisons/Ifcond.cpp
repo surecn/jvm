@@ -9,42 +9,42 @@ namespace rt {
     void IFEQ::execute(rt::Frame *frame) {
         java_int val = frame->getOperandStack()->popInt();
         if (val == 0) {
-            branch(frame, _offset);
+            branch(frame, m_offset);
         }
     }
 
     void IFNE::execute(rt::Frame *frame) {
         java_int val = frame->getOperandStack()->popInt();
         if (val != 0) {
-            branch(frame, _offset);
+            branch(frame, m_offset);
         }
     }
 
     void IFLT::execute(rt::Frame *frame) {
         java_int val = frame->getOperandStack()->popInt();
         if (val < 0) {
-            branch(frame, _offset);
+            branch(frame, m_offset);
         }
     }
 
     void IFLE::execute(rt::Frame *frame) {
         java_int val = frame->getOperandStack()->popInt();
         if (val <= 0) {
-            branch(frame, _offset);
+            branch(frame, m_offset);
         }
     }
 
     void IFGT::execute(rt::Frame *frame) {
         java_int val = frame->getOperandStack()->popInt();
         if (val > 0) {
-            branch(frame, _offset);
+            branch(frame, m_offset);
         }
     }
 
     void IFGE::execute(rt::Frame *frame) {
         java_int val = frame->getOperandStack()->popInt();
         if (val >= 0) {
-            branch(frame, _offset);
+            branch(frame, m_offset);
         }
     }
 

@@ -22,7 +22,7 @@ namespace rt {
         for (int i = 0; i < count; ++i) {
             cf::MemberInfo *memberInfo = cfMembers[i];
             pMethods[i] = new Method();
-            pMethods[i]->_cls = cls;
+            pMethods[i]->setClass(cls);
             pMethods[i]->copyMemberInfo(memberInfo);
             pMethods[i]->copyAttributes(memberInfo);
         }
@@ -51,6 +51,14 @@ namespace rt {
 
     bool Method::isStrict() {
         return 0 != m_accessFlags & ACC_STRICT;
+    }
+
+    u4 Method::getMaxStack() const {
+        return m_maxStack;
+    }
+
+    u4 Method::getMaxLocals() const {
+        return m_maxLocals;
     }
 
 }

@@ -11,8 +11,10 @@
 namespace rt {
 
     class ClassRef : public SymRef {
+    private:
     public:
         ClassRef(ConstantPool *cp, cf::ConstantClassInfo *classInfo);
+
     };
 
 }

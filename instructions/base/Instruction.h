@@ -14,7 +14,7 @@ namespace rt {
     class Instruction {
     public:
         virtual void fetchOperand(BytecodeReader* reader) = 0;
-        virtual void execute(rt::Frame* frame) = 0;
+        virtual void execute(Frame* frame) = 0;
     };
 
     class NoOperandsInstruction : public Instruction {
@@ -24,7 +24,7 @@ namespace rt {
 
     class BranchInstruction : public Instruction {
     protected:
-        u2 _offset;
+        u2 m_offset;
     public:
         void fetchOperand(BytecodeReader* reader);
         void branch(Frame *frame, int offset);
@@ -32,7 +32,7 @@ namespace rt {
 
     class Index8Instruction : public Instruction {
     protected:
-        u1 _index;
+        u1 m_index;
     public:
         virtual void fetchOperand(BytecodeReader* reader);
         void setIndex(u1 index);
@@ -40,7 +40,7 @@ namespace rt {
 
     class Index16Instruction : public Instruction {
     protected:
-        u2 _index;
+        u2 m_index;
     public:
         void fetchOperand(BytecodeReader* reader);
     };

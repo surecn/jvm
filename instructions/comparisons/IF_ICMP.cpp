@@ -11,7 +11,7 @@ namespace rt {
         int val2 = stack->popInt();
         int val1 = stack->popInt();
         if (val1 == val2) {
-            branch(frame, _offset);
+            branch(frame, m_offset);
         }
     }
 
@@ -20,7 +20,7 @@ namespace rt {
         int val2 = stack->popInt();
         int val1 = stack->popInt();
         if (val1 != val2) {
-            branch(frame, _offset);
+            branch(frame, m_offset);
         }
     }
 
@@ -29,7 +29,7 @@ namespace rt {
         int val2 = stack->popInt();
         int val1 = stack->popInt();
         if (val1 < val2) {
-            branch(frame, _offset);
+            branch(frame, m_offset);
         }
     }
 
@@ -38,7 +38,7 @@ namespace rt {
         int val2 = stack->popInt();
         int val1 = stack->popInt();
         if (val1 <= val2) {
-            branch(frame, _offset);
+            branch(frame, m_offset);
         }
     }
 
@@ -47,7 +47,7 @@ namespace rt {
         int val2 = stack->popInt();
         int val1 = stack->popInt();
         if (val1 > val2) {
-            branch(frame, _offset);
+            branch(frame, m_offset);
         }
     }
 
@@ -56,7 +56,7 @@ namespace rt {
         int val2 = stack->popInt();
         int val1 = stack->popInt();
         if (val1 >= val2) {
-            branch(frame, _offset);
+            branch(frame, m_offset);
         }
     }
 

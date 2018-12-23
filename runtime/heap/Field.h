@@ -15,7 +15,7 @@ namespace rt {
         u4 m_slotId;
         u4 m_constValueIndex;
     public:
-        Field **newFields(Class *cls, cf::MemberInfo **cfFields, int count);
+        static Field **newFields(Class *cls, cf::MemberInfo **cfFields, int count);
         bool isVolatile();
         bool isTransient();
         bool isEnum();

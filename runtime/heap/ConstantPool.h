@@ -15,11 +15,12 @@ namespace rt {
 
     class ConstantPool {
     private:
-        Class *m_cls;
+        Class *m_class;
         Constant *m_consts;
     public:
         ConstantPool(Class *cls, cf::ConstantPool *cfCp);
         Constant getConstant(u4 index);
+        Class *getClass();
     };
 }
 

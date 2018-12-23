@@ -9,9 +9,11 @@
 #include "Field.h"
 #include "../../classfile/ClassFile.h"
 #include "../../common/SlotArray.h"
+#include "Object.h"
 
 namespace rt {
     extern class ClassLoader;
+    extern class ConstantPool;
     class Class {
     private:
         u2 m_accessFlags;
@@ -19,7 +21,7 @@ namespace rt {
         string *m_suerClassName;
         string **m_interfaceNames;
         u2 m_interfaceCount;
-        cf::ConstantPool * m_constantPool;
+        ConstantPool * m_cp;
         Field **m_fields;
         u4 m_fieldCount;
         Method **m_method;
@@ -40,7 +42,7 @@ namespace rt {
         bool isSynthetic();
         bool isAnnotation();
         bool isEnum();
-        cf::ConstantPool *getConstantPool() const;
+        ConstantPool* getConstantPool() const;
         Field **getFields() const;
         Method **getMethod() const;
         u4 getFieldCount() const;
@@ -54,12 +56,20 @@ namespace rt {
         string **getInterfaceNames();
         u2 getInterfaceCount();
         void setInterfaces(Class **cls);
+        Class **getInterfaces();
         java_int getInstanceSlotCount() const;
         void setInstanceSlotCount(java_int m_instanceSlotCount);
         java_int getStaticSlotCount() const;
         void setStaticSlotCount(java_int m_staticSlotCount);
         SlotArray *getStaticVars() const;
         void setStaticVars(SlotArray *m_staticVars);
+        string getPackageName();
+        bool isAccessibleTo(Class *other);
+        bool isSubClassOf(Class *cls);
+        Object* newObject();
+        bool isAssignableFrom(Class *other);
+        bool isImplements(Class *other);
+        bool isSubInterfaceOf(rt::Class *other);
     };
 
 

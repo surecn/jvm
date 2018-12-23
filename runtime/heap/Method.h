@@ -17,7 +17,8 @@ namespace rt {
         void copyAttributes(cf::MemberInfo *memberInfo);
     public:
         static Method** newMethods(Class *cls, cf::MemberInfo **cfMembers, int count);
-
+        u4 getMaxStack() const;
+        u4 getMaxLocals() const;
         bool isSynchronized();
         bool isBridge();
         bool isVarargs();

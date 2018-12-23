@@ -55,6 +55,7 @@ namespace cf {
         u2 getFieldCount();
         u2 getAccessFlags();
         ConstantPool* getConstantPool();
+        MemberInfo **getFields() const;
     };
 
 }

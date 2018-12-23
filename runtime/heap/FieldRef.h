@@ -13,8 +13,11 @@ namespace rt {
     class FieldRef : public MemberRef {
     private:
         Field *m_field;
+        void resolveFieldRef();
+        Field *lookupField(Class *cls, string *name, string *descriptor);
     public:
         FieldRef(ConstantPool* cp, cf::ConstantFieldRefInfo *refInfo);
+        Field *resolvedField();
     };
 
 }

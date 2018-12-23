@@ -7,7 +7,7 @@
 namespace rt {
 
     void GOTO::execute(rt::Frame *frame) {
-        branch(frame, _offset);
+        branch(frame, m_offset);
     }
 
 }

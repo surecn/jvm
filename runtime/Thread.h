@@ -21,7 +21,7 @@ namespace rt {
         void pushFrame(Frame* frame);
         Frame* popFrame();
         Frame* currentFrame();
-        Frame* newFrame(int maxLocals, int maxStack);
+        Frame* newFrame(Method *method);
         static Thread *newThread();
     };
 

@@ -1743,6 +1743,222 @@ instructions/math/Xor.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/Xor.cpp.s
 .PHONY : instructions/math/Xor.cpp.s
 
+instructions/references/CHECK_CAST.o: instructions/references/CHECK_CAST.cpp.o
+
+.PHONY : instructions/references/CHECK_CAST.o
+
+# target to build an object file
+instructions/references/CHECK_CAST.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/CHECK_CAST.cpp.o
+.PHONY : instructions/references/CHECK_CAST.cpp.o
+
+instructions/references/CHECK_CAST.i: instructions/references/CHECK_CAST.cpp.i
+
+.PHONY : instructions/references/CHECK_CAST.i
+
+# target to preprocess a source file
+instructions/references/CHECK_CAST.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/CHECK_CAST.cpp.i
+.PHONY : instructions/references/CHECK_CAST.cpp.i
+
+instructions/references/CHECK_CAST.s: instructions/references/CHECK_CAST.cpp.s
+
+.PHONY : instructions/references/CHECK_CAST.s
+
+# target to generate assembly for a file
+instructions/references/CHECK_CAST.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/CHECK_CAST.cpp.s
+.PHONY : instructions/references/CHECK_CAST.cpp.s
+
+instructions/references/GET_FIELD.o: instructions/references/GET_FIELD.cpp.o
+
+.PHONY : instructions/references/GET_FIELD.o
+
+# target to build an object file
+instructions/references/GET_FIELD.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/GET_FIELD.cpp.o
+.PHONY : instructions/references/GET_FIELD.cpp.o
+
+instructions/references/GET_FIELD.i: instructions/references/GET_FIELD.cpp.i
+
+.PHONY : instructions/references/GET_FIELD.i
+
+# target to preprocess a source file
+instructions/references/GET_FIELD.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/GET_FIELD.cpp.i
+.PHONY : instructions/references/GET_FIELD.cpp.i
+
+instructions/references/GET_FIELD.s: instructions/references/GET_FIELD.cpp.s
+
+.PHONY : instructions/references/GET_FIELD.s
+
+# target to generate assembly for a file
+instructions/references/GET_FIELD.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/GET_FIELD.cpp.s
+.PHONY : instructions/references/GET_FIELD.cpp.s
+
+instructions/references/GET_STATIC.o: instructions/references/GET_STATIC.cpp.o
+
+.PHONY : instructions/references/GET_STATIC.o
+
+# target to build an object file
+instructions/references/GET_STATIC.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/GET_STATIC.cpp.o
+.PHONY : instructions/references/GET_STATIC.cpp.o
+
+instructions/references/GET_STATIC.i: instructions/references/GET_STATIC.cpp.i
+
+.PHONY : instructions/references/GET_STATIC.i
+
+# target to preprocess a source file
+instructions/references/GET_STATIC.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/GET_STATIC.cpp.i
+.PHONY : instructions/references/GET_STATIC.cpp.i
+
+instructions/references/GET_STATIC.s: instructions/references/GET_STATIC.cpp.s
+
+.PHONY : instructions/references/GET_STATIC.s
+
+# target to generate assembly for a file
+instructions/references/GET_STATIC.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/GET_STATIC.cpp.s
+.PHONY : instructions/references/GET_STATIC.cpp.s
+
+instructions/references/INSTANCEOF.o: instructions/references/INSTANCEOF.cpp.o
+
+.PHONY : instructions/references/INSTANCEOF.o
+
+# target to build an object file
+instructions/references/INSTANCEOF.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/INSTANCEOF.cpp.o
+.PHONY : instructions/references/INSTANCEOF.cpp.o
+
+instructions/references/INSTANCEOF.i: instructions/references/INSTANCEOF.cpp.i
+
+.PHONY : instructions/references/INSTANCEOF.i
+
+# target to preprocess a source file
+instructions/references/INSTANCEOF.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/INSTANCEOF.cpp.i
+.PHONY : instructions/references/INSTANCEOF.cpp.i
+
+instructions/references/INSTANCEOF.s: instructions/references/INSTANCEOF.cpp.s
+
+.PHONY : instructions/references/INSTANCEOF.s
+
+# target to generate assembly for a file
+instructions/references/INSTANCEOF.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/INSTANCEOF.cpp.s
+.PHONY : instructions/references/INSTANCEOF.cpp.s
+
+instructions/references/LDC.o: instructions/references/LDC.cpp.o
+
+.PHONY : instructions/references/LDC.o
+
+# target to build an object file
+instructions/references/LDC.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/LDC.cpp.o
+.PHONY : instructions/references/LDC.cpp.o
+
+instructions/references/LDC.i: instructions/references/LDC.cpp.i
+
+.PHONY : instructions/references/LDC.i
+
+# target to preprocess a source file
+instructions/references/LDC.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/LDC.cpp.i
+.PHONY : instructions/references/LDC.cpp.i
+
+instructions/references/LDC.s: instructions/references/LDC.cpp.s
+
+.PHONY : instructions/references/LDC.s
+
+# target to generate assembly for a file
+instructions/references/LDC.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/LDC.cpp.s
+.PHONY : instructions/references/LDC.cpp.s
+
+instructions/references/NEW.o: instructions/references/NEW.cpp.o
+
+.PHONY : instructions/references/NEW.o
+
+# target to build an object file
+instructions/references/NEW.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/NEW.cpp.o
+.PHONY : instructions/references/NEW.cpp.o
+
+instructions/references/NEW.i: instructions/references/NEW.cpp.i
+
+.PHONY : instructions/references/NEW.i
+
+# target to preprocess a source file
+instructions/references/NEW.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/NEW.cpp.i
+.PHONY : instructions/references/NEW.cpp.i
+
+instructions/references/NEW.s: instructions/references/NEW.cpp.s
+
+.PHONY : instructions/references/NEW.s
+
+# target to generate assembly for a file
+instructions/references/NEW.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/NEW.cpp.s
+.PHONY : instructions/references/NEW.cpp.s
+
+instructions/references/PUT_FIELD.o: instructions/references/PUT_FIELD.cpp.o
+
+.PHONY : instructions/references/PUT_FIELD.o
+
+# target to build an object file
+instructions/references/PUT_FIELD.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/PUT_FIELD.cpp.o
+.PHONY : instructions/references/PUT_FIELD.cpp.o
+
+instructions/references/PUT_FIELD.i: instructions/references/PUT_FIELD.cpp.i
+
+.PHONY : instructions/references/PUT_FIELD.i
+
+# target to preprocess a source file
+instructions/references/PUT_FIELD.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/PUT_FIELD.cpp.i
+.PHONY : instructions/references/PUT_FIELD.cpp.i
+
+instructions/references/PUT_FIELD.s: instructions/references/PUT_FIELD.cpp.s
+
+.PHONY : instructions/references/PUT_FIELD.s
+
+# target to generate assembly for a file
+instructions/references/PUT_FIELD.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/PUT_FIELD.cpp.s
+.PHONY : instructions/references/PUT_FIELD.cpp.s
+
+instructions/references/PUT_STATIC.o: instructions/references/PUT_STATIC.cpp.o
+
+.PHONY : instructions/references/PUT_STATIC.o
+
+# target to build an object file
+instructions/references/PUT_STATIC.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/PUT_STATIC.cpp.o
+.PHONY : instructions/references/PUT_STATIC.cpp.o
+
+instructions/references/PUT_STATIC.i: instructions/references/PUT_STATIC.cpp.i
+
+.PHONY : instructions/references/PUT_STATIC.i
+
+# target to preprocess a source file
+instructions/references/PUT_STATIC.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/PUT_STATIC.cpp.i
+.PHONY : instructions/references/PUT_STATIC.cpp.i
+
+instructions/references/PUT_STATIC.s: instructions/references/PUT_STATIC.cpp.s
+
+.PHONY : instructions/references/PUT_STATIC.s
+
+# target to generate assembly for a file
+instructions/references/PUT_STATIC.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/PUT_STATIC.cpp.s
+.PHONY : instructions/references/PUT_STATIC.cpp.s
+
 instructions/stack/Dup.o: instructions/stack/Dup.cpp.o
 
 .PHONY : instructions/stack/Dup.o
@@ -2661,6 +2877,30 @@ help:
 	@echo "... instructions/math/Xor.o"
 	@echo "... instructions/math/Xor.i"
 	@echo "... instructions/math/Xor.s"
+	@echo "... instructions/references/CHECK_CAST.o"
+	@echo "... instructions/references/CHECK_CAST.i"
+	@echo "... instructions/references/CHECK_CAST.s"
+	@echo "... instructions/references/GET_FIELD.o"
+	@echo "... instructions/references/GET_FIELD.i"
+	@echo "... instructions/references/GET_FIELD.s"
+	@echo "... instructions/references/GET_STATIC.o"
+	@echo "... instructions/references/GET_STATIC.i"
+	@echo "... instructions/references/GET_STATIC.s"
+	@echo "... instructions/references/INSTANCEOF.o"
+	@echo "... instructions/references/INSTANCEOF.i"
+	@echo "... instructions/references/INSTANCEOF.s"
+	@echo "... instructions/references/LDC.o"
+	@echo "... instructions/references/LDC.i"
+	@echo "... instructions/references/LDC.s"
+	@echo "... instructions/references/NEW.o"
+	@echo "... instructions/references/NEW.i"
+	@echo "... instructions/references/NEW.s"
+	@echo "... instructions/references/PUT_FIELD.o"
+	@echo "... instructions/references/PUT_FIELD.i"
+	@echo "... instructions/references/PUT_FIELD.s"
+	@echo "... instructions/references/PUT_STATIC.o"
+	@echo "... instructions/references/PUT_STATIC.i"
+	@echo "... instructions/references/PUT_STATIC.s"
 	@echo "... instructions/stack/Dup.o"
 	@echo "... instructions/stack/Dup.i"
 	@echo "... instructions/stack/Dup.s"

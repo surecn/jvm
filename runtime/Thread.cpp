@@ -36,7 +36,7 @@ namespace rt {
         return m_stack->top();
     }
 
-    Frame* Thread::newFrame(int maxLocals, int maxStack) {
-        return new Frame(this, maxLocals, maxStack);
+    Frame* Thread::newFrame(Method *method) {
+        return new Frame(this, method);
     }
 }

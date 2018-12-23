@@ -51,4 +51,8 @@ namespace rt {
         return constant;
     }
 
+    Class* ConstantPool::getClass() {
+        return m_class;
+    }
+
 }

@@ -9,7 +9,7 @@ namespace rt {
     void IFNULL::execute(rt::Frame *frame) {
         java_ref ref = frame->getOperandStack()->popRef();
         if (ref == NULL) {
-            branch(frame, _offset);
+            branch(frame, m_offset);
         }
     }
 

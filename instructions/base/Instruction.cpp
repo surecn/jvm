@@ -11,7 +11,7 @@ namespace rt {
     }
 
     void BranchInstruction::fetchOperand(BytecodeReader *reader) {
-        _offset = reader->readU2();
+        m_offset = reader->readU2();
     }
 
     void BranchInstruction::branch(rt::Frame *frame, int offset) {
@@ -22,15 +22,15 @@ namespace rt {
     }
 
     void Index8Instruction::fetchOperand(BytecodeReader *reader) {
-        _index = reader->readU1();
+        m_index = reader->readU1();
     }
 
     void Index8Instruction::setIndex(u1 index) {
-        _index = index;
+        m_index = index;
     }
 
     void Index16Instruction::fetchOperand(BytecodeReader *reader) {
-        _index = reader->readU2();
+        m_index = reader->readU2();
     }
 
 

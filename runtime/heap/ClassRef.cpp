@@ -3,6 +3,7 @@
 //
 
 #include "ClassRef.h"
+#include "ClassLoader.h"
 
 namespace rt {
 

@@ -139,6 +139,10 @@ namespace cf {
         return m_methodCount;
     }
 
+    MemberInfo **ClassFile::getFields() const {
+        return m_fields;
+    }
+
     u2 ClassFile::getFieldCount() {
         return m_fieldCount;
     }

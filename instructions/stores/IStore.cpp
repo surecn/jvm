@@ -12,7 +12,7 @@ namespace rt {
     }
 
     void ISTORE::execute(rt::Frame *frame) {
-        _istore(frame, _index);
+        _istore(frame, m_index);
     }
 
     void ISTORE_0::execute(rt::Frame *frame) {

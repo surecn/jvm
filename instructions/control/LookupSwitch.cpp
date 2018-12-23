@@ -18,8 +18,8 @@ namespace rt {
         u4 len = npairs * 2;
         for (int i = 0; i < len; i+=2) {
             if (matchOffsets[i] == key) {
-                _offset = matchOffsets[i + 1];
-                branch(frame, _offset);
+                m_offset = matchOffsets[i + 1];
+                branch(frame, m_offset);
                 return;
             }
         }

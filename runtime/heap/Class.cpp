@@ -13,8 +13,9 @@ namespace rt{
         m_suerClassName = cf->getSuperClassName();
         m_interfaceNames = cf->getInterfacesNames();
         m_interfaceCount = cf->getInterfaceCount();
-        //cls->_constantPool = newConstantPool(cls, cf->getConstantPool());
-        //cls->_fields = newFields(class, cf.get);
+        m_cp = new ConstantPool(this, cf->getConstantPool());
+        m_fields = Field::newFields(this, cf->getFields(), cf->getFieldCount());
+        m_method = Method::newMethods(this, cf->getMethods(), cf->getMethodCount());
     }
 
     bool Class::isPublic() {
@@ -85,6 +86,10 @@ namespace rt{
         m_interfaces = cls;
     }
 
+    Class** Class::getInterfaces() {
+        return m_interfaces;
+    }
+
     java_int Class::getInstanceSlotCount() const {
         return m_instanceSlotCount;
     }
@@ -125,8 +130,66 @@ namespace rt{
         Class::m_staticVars = staticVars;
     }
 
-    cf::ConstantPool *Class::getConstantPool() const {
-        return m_constantPool;
+    ConstantPool* Class::getConstantPool() const {
+        return m_cp;
+    }
+
+    string Class::getPackageName() {
+        int index = m_name->rfind('/', 0);
+        if (index >= 0) {
+            return m_name->substr(0, index);
+        }
+        return "";
+    }
+
+    bool Class::isAccessibleTo(rt::Class *other) {
+        return isPublic() || getPackageName() == other->getPackageName();
+    }
+
+    bool Class::isSubClassOf(rt::Class *other) {
+        for (Class *c = getSuperClass();  c != NULL; c = c->getSuperClass()) {
+            if (c == other) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    Object* Class::newObject() {
+        return new Object(this, new SlotArray(m_instanceSlotCount));
+    }
+
+    bool Class::isAssignableFrom(rt::Class *other) {
+        if (this == other) {
+            return true;
+        }
+        if (this->isInterface()) {
+            return other->isSubClassOf(this);
+        } else {
+            return other->isImplements(this);
+        }
+    }
+
+    bool Class::isImplements(Class *other) {
+        for (Class *c = this;  c != NULL; c = c->getSuperClass()) {
+            for (int i = 0, len = c->getInterfaceCount(); i < len; ++i) {
+                Class *interface = c->getInterfaces()[i];
+                if (interface == other || interface->isSubInterfaceOf(other)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
+    bool Class::isSubInterfaceOf(rt::Class *other) {
+        for (int i = 0, len = this->getInterfaceCount(); i < len; ++i) {
+            Class *interface = this->getInterfaces()[i];
+            if (interface == other || interface->isSubInterfaceOf(other)) {
+                return true;
+            }
+        }
+        return false;
     }
 
 }

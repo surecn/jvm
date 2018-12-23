@@ -6,15 +6,19 @@
 #define JVM_OBJECT_H
 
 #include "../../common/SlotArray.h"
-#include "Class.h"
 
 namespace rt {
-
+    extern class Class;
     class Object {
     private:
-        Class *cls;
-        SlotArray *slotArray;
+        Class *m_class;
+        SlotArray *m_slotArray;
+    public:
+        Object(Class *cls, SlotArray *slotArray);
 
+        Class *getClass() const;
+
+        SlotArray *getSlotArray() const;
     };
 
 

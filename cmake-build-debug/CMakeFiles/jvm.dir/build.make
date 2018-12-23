@@ -1188,6 +1188,110 @@ CMakeFiles/jvm.dir/runtime/heap/Object.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/runtime/heap/Object.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/runtime/heap/Object.cpp -o CMakeFiles/jvm.dir/runtime/heap/Object.cpp.s
 
+CMakeFiles/jvm.dir/instructions/references/NEW.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/instructions/references/NEW.cpp.o: ../instructions/references/NEW.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building CXX object CMakeFiles/jvm.dir/instructions/references/NEW.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/instructions/references/NEW.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/instructions/references/NEW.cpp
+
+CMakeFiles/jvm.dir/instructions/references/NEW.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/instructions/references/NEW.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/instructions/references/NEW.cpp > CMakeFiles/jvm.dir/instructions/references/NEW.cpp.i
+
+CMakeFiles/jvm.dir/instructions/references/NEW.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/instructions/references/NEW.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/instructions/references/NEW.cpp -o CMakeFiles/jvm.dir/instructions/references/NEW.cpp.s
+
+CMakeFiles/jvm.dir/instructions/references/PUT_STATIC.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/instructions/references/PUT_STATIC.cpp.o: ../instructions/references/PUT_STATIC.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building CXX object CMakeFiles/jvm.dir/instructions/references/PUT_STATIC.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/instructions/references/PUT_STATIC.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/instructions/references/PUT_STATIC.cpp
+
+CMakeFiles/jvm.dir/instructions/references/PUT_STATIC.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/instructions/references/PUT_STATIC.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/instructions/references/PUT_STATIC.cpp > CMakeFiles/jvm.dir/instructions/references/PUT_STATIC.cpp.i
+
+CMakeFiles/jvm.dir/instructions/references/PUT_STATIC.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/instructions/references/PUT_STATIC.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/instructions/references/PUT_STATIC.cpp -o CMakeFiles/jvm.dir/instructions/references/PUT_STATIC.cpp.s
+
+CMakeFiles/jvm.dir/instructions/references/GET_STATIC.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/instructions/references/GET_STATIC.cpp.o: ../instructions/references/GET_STATIC.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building CXX object CMakeFiles/jvm.dir/instructions/references/GET_STATIC.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/instructions/references/GET_STATIC.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/instructions/references/GET_STATIC.cpp
+
+CMakeFiles/jvm.dir/instructions/references/GET_STATIC.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/instructions/references/GET_STATIC.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/instructions/references/GET_STATIC.cpp > CMakeFiles/jvm.dir/instructions/references/GET_STATIC.cpp.i
+
+CMakeFiles/jvm.dir/instructions/references/GET_STATIC.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/instructions/references/GET_STATIC.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/instructions/references/GET_STATIC.cpp -o CMakeFiles/jvm.dir/instructions/references/GET_STATIC.cpp.s
+
+CMakeFiles/jvm.dir/instructions/references/PUT_FIELD.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/instructions/references/PUT_FIELD.cpp.o: ../instructions/references/PUT_FIELD.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building CXX object CMakeFiles/jvm.dir/instructions/references/PUT_FIELD.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/instructions/references/PUT_FIELD.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/instructions/references/PUT_FIELD.cpp
+
+CMakeFiles/jvm.dir/instructions/references/PUT_FIELD.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/instructions/references/PUT_FIELD.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/instructions/references/PUT_FIELD.cpp > CMakeFiles/jvm.dir/instructions/references/PUT_FIELD.cpp.i
+
+CMakeFiles/jvm.dir/instructions/references/PUT_FIELD.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/instructions/references/PUT_FIELD.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/instructions/references/PUT_FIELD.cpp -o CMakeFiles/jvm.dir/instructions/references/PUT_FIELD.cpp.s
+
+CMakeFiles/jvm.dir/instructions/references/GET_FIELD.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/instructions/references/GET_FIELD.cpp.o: ../instructions/references/GET_FIELD.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building CXX object CMakeFiles/jvm.dir/instructions/references/GET_FIELD.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/instructions/references/GET_FIELD.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/instructions/references/GET_FIELD.cpp
+
+CMakeFiles/jvm.dir/instructions/references/GET_FIELD.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/instructions/references/GET_FIELD.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/instructions/references/GET_FIELD.cpp > CMakeFiles/jvm.dir/instructions/references/GET_FIELD.cpp.i
+
+CMakeFiles/jvm.dir/instructions/references/GET_FIELD.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/instructions/references/GET_FIELD.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/instructions/references/GET_FIELD.cpp -o CMakeFiles/jvm.dir/instructions/references/GET_FIELD.cpp.s
+
+CMakeFiles/jvm.dir/instructions/references/INSTANCEOF.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/instructions/references/INSTANCEOF.cpp.o: ../instructions/references/INSTANCEOF.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building CXX object CMakeFiles/jvm.dir/instructions/references/INSTANCEOF.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/instructions/references/INSTANCEOF.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/instructions/references/INSTANCEOF.cpp
+
+CMakeFiles/jvm.dir/instructions/references/INSTANCEOF.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/instructions/references/INSTANCEOF.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/instructions/references/INSTANCEOF.cpp > CMakeFiles/jvm.dir/instructions/references/INSTANCEOF.cpp.i
+
+CMakeFiles/jvm.dir/instructions/references/INSTANCEOF.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/instructions/references/INSTANCEOF.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/instructions/references/INSTANCEOF.cpp -o CMakeFiles/jvm.dir/instructions/references/INSTANCEOF.cpp.s
+
+CMakeFiles/jvm.dir/instructions/references/CHECK_CAST.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/instructions/references/CHECK_CAST.cpp.o: ../instructions/references/CHECK_CAST.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building CXX object CMakeFiles/jvm.dir/instructions/references/CHECK_CAST.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/instructions/references/CHECK_CAST.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/instructions/references/CHECK_CAST.cpp
+
+CMakeFiles/jvm.dir/instructions/references/CHECK_CAST.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/instructions/references/CHECK_CAST.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/instructions/references/CHECK_CAST.cpp > CMakeFiles/jvm.dir/instructions/references/CHECK_CAST.cpp.i
+
+CMakeFiles/jvm.dir/instructions/references/CHECK_CAST.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/instructions/references/CHECK_CAST.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/instructions/references/CHECK_CAST.cpp -o CMakeFiles/jvm.dir/instructions/references/CHECK_CAST.cpp.s
+
+CMakeFiles/jvm.dir/instructions/references/LDC.cpp.o: CMakeFiles/jvm.dir/flags.make
+CMakeFiles/jvm.dir/instructions/references/LDC.cpp.o: ../instructions/references/LDC.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building CXX object CMakeFiles/jvm.dir/instructions/references/LDC.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/instructions/references/LDC.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/instructions/references/LDC.cpp
+
+CMakeFiles/jvm.dir/instructions/references/LDC.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/instructions/references/LDC.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/instructions/references/LDC.cpp > CMakeFiles/jvm.dir/instructions/references/LDC.cpp.i
+
+CMakeFiles/jvm.dir/instructions/references/LDC.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/instructions/references/LDC.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/instructions/references/LDC.cpp -o CMakeFiles/jvm.dir/instructions/references/LDC.cpp.s
+
 # Object files for target jvm
 jvm_OBJECTS = \
 "CMakeFiles/jvm.dir/main.cpp.o" \
@@ -1276,7 +1380,15 @@ jvm_OBJECTS = \
 "CMakeFiles/jvm.dir/runtime/heap/InterfaceMethodRef.cpp.o" \
 "CMakeFiles/jvm.dir/runtime/heap/ClassLoader.cpp.o" \
 "CMakeFiles/jvm.dir/common/SlotArray.cpp.o" \
-"CMakeFiles/jvm.dir/runtime/heap/Object.cpp.o"
+"CMakeFiles/jvm.dir/runtime/heap/Object.cpp.o" \
+"CMakeFiles/jvm.dir/instructions/references/NEW.cpp.o" \
+"CMakeFiles/jvm.dir/instructions/references/PUT_STATIC.cpp.o" \
+"CMakeFiles/jvm.dir/instructions/references/GET_STATIC.cpp.o" \
+"CMakeFiles/jvm.dir/instructions/references/PUT_FIELD.cpp.o" \
+"CMakeFiles/jvm.dir/instructions/references/GET_FIELD.cpp.o" \
+"CMakeFiles/jvm.dir/instructions/references/INSTANCEOF.cpp.o" \
+"CMakeFiles/jvm.dir/instructions/references/CHECK_CAST.cpp.o" \
+"CMakeFiles/jvm.dir/instructions/references/LDC.cpp.o"
 
 # External object files for target jvm
 jvm_EXTERNAL_OBJECTS =
@@ -1368,9 +1480,17 @@ jvm: CMakeFiles/jvm.dir/runtime/heap/InterfaceMethodRef.cpp.o
 jvm: CMakeFiles/jvm.dir/runtime/heap/ClassLoader.cpp.o
 jvm: CMakeFiles/jvm.dir/common/SlotArray.cpp.o
 jvm: CMakeFiles/jvm.dir/runtime/heap/Object.cpp.o
+jvm: CMakeFiles/jvm.dir/instructions/references/NEW.cpp.o
+jvm: CMakeFiles/jvm.dir/instructions/references/PUT_STATIC.cpp.o
+jvm: CMakeFiles/jvm.dir/instructions/references/GET_STATIC.cpp.o
+jvm: CMakeFiles/jvm.dir/instructions/references/PUT_FIELD.cpp.o
+jvm: CMakeFiles/jvm.dir/instructions/references/GET_FIELD.cpp.o
+jvm: CMakeFiles/jvm.dir/instructions/references/INSTANCEOF.cpp.o
+jvm: CMakeFiles/jvm.dir/instructions/references/CHECK_CAST.cpp.o
+jvm: CMakeFiles/jvm.dir/instructions/references/LDC.cpp.o
 jvm: CMakeFiles/jvm.dir/build.make
 jvm: CMakeFiles/jvm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Linking CXX executable jvm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Linking CXX executable jvm"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/jvm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

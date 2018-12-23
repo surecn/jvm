@@ -11,7 +11,7 @@
 namespace rt {
 
     class MemberRef : public SymRef {
-    private:
+    protected:
         string *m_name;
         string *m_descriptor;
     public:

@@ -13,7 +13,7 @@ namespace rt {
     }
 
     void LSTORE::execute(rt::Frame *frame) {
-        _lstore(frame, _index);
+        _lstore(frame, m_index);
     }
 
     void LSTORE_0::execute(rt::Frame *frame) {

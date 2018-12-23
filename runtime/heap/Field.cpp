@@ -13,7 +13,7 @@ namespace rt {
         for (int i = 0; i < count; ++i) {
             cf::MemberInfo *memberInfo = cfFields[i];
             fields[i] = new Field();
-            fields[i]->_cls = cls;
+            fields[i]->setClass(cls);
             fields[i]->copyMemberInfo(cfFields[i]);
             fields[i]->copyAttributes(cfFields[i]);
         }

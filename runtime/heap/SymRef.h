@@ -11,15 +11,17 @@
 namespace rt {
 
     class SymRef {
-    private:
+    protected:
         ConstantPool *m_cp;
         string *m_className;
-        Class *m_cls;
+        Class *m_class;
+        void resolveClassRef();
     public:
         SymRef(){};
         SymRef(ConstantPool *cp, cf::ConstantClassInfo *classInfo);
         void setClassName(string *className);
         void setConstantPool(ConstantPool *constantPool);
+        Class* resolvedClass();
     };
 
 }

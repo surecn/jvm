@@ -16,8 +16,10 @@ namespace rt{
         u2 m_accessFlags;
         string *m_name;
         string *m_descriptor;
+        Class *m_class;
     public:
-        Class *_cls;
+        Class *getClass() const;
+        void setClass(Class *cls);
         bool isPublic();
         bool isPrivate();
         bool isProtected();
@@ -26,6 +28,8 @@ namespace rt{
         bool isSynthetic();
         void copyMemberInfo(cf::MemberInfo *memberInfo);
         string *getDescriptor() const;
+        string *getName() const;
+        bool isAccessiableTo(Class *cls);
     };
 }
 

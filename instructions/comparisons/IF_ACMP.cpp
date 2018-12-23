@@ -11,7 +11,7 @@ namespace rt {
         java_ref ref2 = stack->popRef();
         java_ref ref1 = stack->popRef();
         if (ref1 == ref2) {
-            branch(frame, _offset);
+            branch(frame, m_offset);
         }
     }
 
@@ -20,7 +20,7 @@ namespace rt {
         java_ref ref2 = stack->popRef();
         java_ref ref1 = stack->popRef();
         if (ref1 != ref2) {
-            branch(frame, _offset);
+            branch(frame, m_offset);
         }
     }
 

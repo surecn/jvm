@@ -12,7 +12,7 @@ namespace rt {
     }
 
     void DLOAD::execute(rt::Frame *frame) {
-        _dload(frame, _index);
+        _dload(frame, m_index);
     }
 
     void DLOAD_0::execute(rt::Frame *frame) {
