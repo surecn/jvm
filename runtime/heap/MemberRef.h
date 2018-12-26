@@ -16,6 +16,8 @@ namespace rt {
         string *m_descriptor;
     public:
         void copyMemberRefInfo(cf::ConstantMemberInfo *memberInfo);
+        string *getName();
+        string *getDescriptor();
     };
 }
 

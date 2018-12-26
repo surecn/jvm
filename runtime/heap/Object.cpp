@@ -3,6 +3,7 @@
 //
 
 #include "Object.h"
+#include "Class.h"
 
 namespace rt {
 
@@ -17,6 +18,10 @@ namespace rt {
 
     SlotArray *Object::getSlotArray() const {
         return m_slotArray;
+    }
+
+    bool Object::isInstanceOf(rt::Class *cls) {
+        return cls->isAssignableFrom(m_class);
     }
 
 }

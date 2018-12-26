@@ -13,119 +13,87 @@
 #include "attribute/ConstantValueAttribute.h"
 
 namespace cf {
-    class ConstantFloatInfo : public ConstantInfo {
-    private:
-        float m_value;
-    public:
-        ConstantFloatInfo(ClassReader *classReader);
-        void print();
-        void* getValue();
-    };
 
-    class ConstantDoubleInfo : public ConstantInfo {
-    private:
-        double m_value;
-    public:
-        ConstantDoubleInfo(ClassReader* classReader);
-        void print();
-        void* getValue();
-    };
 
     class ConstantClassInfo : public ConstantInfo {
     private:
-        ConstantPool *m_constantPool;
+        ConstantPool *m_cp;
         u2 m_nameIndex;
     public:
-        ConstantClassInfo(ClassReader* classReader, ConstantPool* cp);
+        ConstantClassInfo(ConstantPool* cp);
         string* getName();
         void print();
         void* getValue();
-    };
-
-    class ConstantIntegerInfo : public ConstantInfo {
-    private:
-        int m_value;
-    public:
-        ConstantIntegerInfo(ClassReader *classReader);
-        void print();
-        void* getValue();
-    };
-
-    class ConstantLongInfo : public ConstantInfo {
-    private:
-        long m_value;
-    public:
-        ConstantLongInfo(ClassReader * classReader);
-        void print();
-        void* getValue();
+        void readInfo(ClassReader* classReader);
     };
 
     class ConstantMemberInfo : public ConstantInfo {
     private:
         u2 m_classIndex;
         u2 m_nameAndTypeIndex;
-        ConstantPool *m_constantPool;
+        ConstantPool *m_cp;
     public:
-        ConstantMemberInfo(ClassReader* classReader, ConstantPool *cp);
+        ConstantMemberInfo(ConstantPool *cp);
         void print();
         void* getValue();
         string *getClassName();
         NameAndType getNameAndType();
+        void readInfo(ClassReader* classReader);
     };
 
     class ConstantFieldRefInfo : public ConstantMemberInfo {
     private:
     public:
-        ConstantInfo* readInfo(ClassReader* classReader, ConstantPool cp);
-        void* getValue();
+        ConstantFieldRefInfo(ConstantPool *cp);
     };
 
     class ConstantMethodRefInfo : public ConstantMemberInfo {
     private:
     public:
-        ConstantInfo* readInfo(ClassReader* classReader, ConstantPool cp);
-        void* getValue();
+        ConstantMethodRefInfo(ConstantPool *cp);
     };
 
     class ConstantInterfaceMethodRefInfo : public ConstantMemberInfo {
     private:
     public:
-        ConstantInfo* readInfo(ClassReader* classReader, ConstantPool cp);
-        void* getValue();
+        ConstantInterfaceMethodRefInfo(ConstantPool *cp);
     };
 
     class ConstantNameAndTypeInfo : public ConstantInfo{
     private:
         u2 m_name_index;
         u2 m_desciptor_index;
-        ConstantPool *constantPool;
+        ConstantPool *m_cp;
     public:
-        ConstantNameAndTypeInfo(ClassReader* classReader, ConstantPool *cp);
+        ConstantNameAndTypeInfo(ConstantPool *cp);
         void print();
         void* getValue();
         u2 getNameIndex();
         u2 getDescriptorIndex();
+        void readInfo(ClassReader* classReader);
     };
 
     class ConstantStringInfo : public ConstantInfo {
     private:
         u2 m_stringIndex;
-        ConstantPool *m_constantPool;
+        ConstantPool *m_cp;
     public:
-        ConstantStringInfo(ClassReader* classReader, ConstantPool *cp);
+        ConstantStringInfo(ConstantPool *cp);
         void print();
         void* getValue();
+        void readInfo(ClassReader* classReader);
     };
 
     class ConstantUtf8Info : public ConstantInfo {
     private:
         u2 m_length;
-        string m_bytes;
+        string *m_utf8;
+        ConstantPool *m_cp;
     public:
-        ConstantUtf8Info(ClassReader* classReader);
         string *value();
         void print();
         void* getValue();
+        void readInfo(ClassReader* classReader);
     };
 
 
@@ -153,7 +121,7 @@ namespace cf {
     class ConstantFactory {
     public:
         static ConstantInfo *readConstantInfo(ClassReader *classReader, ConstantPool *constantPool);
-        static ConstantInfo *newConstantInfo(u1 tag, ConstantPool *constantPool, ClassReader *classReader);
+        static ConstantInfo *newConstantInfo(u1 tag, ConstantPool *constantPool);
     };
 }
 

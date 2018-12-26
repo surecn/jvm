@@ -3,41 +3,17 @@
 //
 
 #include "Constants.h"
+#include "ConstantNumeric.h"
+#include "ConstantInvokeDynamic.h"
+
 
 namespace cf {
 
-#include <typeinfo>
-
-    ConstantFloatInfo::ConstantFloatInfo(ClassReader *classReader) {
-        m_value = classReader->readU4();
-    }
-
-    void ConstantFloatInfo::print() {
-        cout << "float:" + std::to_string(m_value) << endl;
-    }
-
-    void* ConstantFloatInfo::getValue() {
-        return &m_value;
-    }
-
-    ConstantDoubleInfo::ConstantDoubleInfo(ClassReader *classReader) {
-        m_value = classReader->readU8();
-    }
-
-    void ConstantDoubleInfo::print() {
-        cout << "double:" + std::to_string(m_value) << endl;
-    }
-
-    void* ConstantDoubleInfo::getValue() {
-        return &m_value;
-    }
-
-    ConstantClassInfo::ConstantClassInfo(ClassReader *classReader, ConstantPool *cp) : m_constantPool(cp){
-        m_nameIndex = classReader->readU2();
+    ConstantClassInfo::ConstantClassInfo(ConstantPool *cp) : m_cp(cp){
     }
 
     string* ConstantClassInfo::getName() {
-        return m_constantPool->getUtf8(m_nameIndex);
+        return m_cp->getUtf8(m_nameIndex);
     }
 
     void ConstantClassInfo::print() {
@@ -48,33 +24,11 @@ namespace cf {
         return NULL;
     }
 
-    ConstantIntegerInfo::ConstantIntegerInfo(ClassReader *classReader) {
-        m_value = classReader->readU4();
+    void ConstantClassInfo::readInfo(cf::ClassReader *classReader) {
+        m_nameIndex = classReader->readU2();
     }
 
-    void ConstantIntegerInfo::print() {
-        cout << "integer:" + std::to_string(m_value) << endl;
-    }
-
-    void* ConstantIntegerInfo::getValue() {
-        return &m_value;
-    }
-
-    ConstantLongInfo::ConstantLongInfo(ClassReader *classReader) {
-        m_value = classReader->readU8();
-    }
-
-    void ConstantLongInfo::print() {
-        cout << "long:" + std::to_string(m_value) << endl;
-    }
-
-    void* ConstantLongInfo::getValue() {
-        return &m_value;
-    }
-
-    ConstantMemberInfo::ConstantMemberInfo(ClassReader *classReader, ConstantPool *cp) : m_constantPool(cp) {
-        m_classIndex = classReader->readU2();
-        m_nameAndTypeIndex = classReader->readU2();
+    ConstantMemberInfo::ConstantMemberInfo(ConstantPool *cp) : m_cp(cp) {
     }
 
     void ConstantMemberInfo::print() {
@@ -85,39 +39,32 @@ namespace cf {
         return NULL;
     }
 
+    void ConstantMemberInfo::readInfo(cf::ClassReader *classReader) {
+        m_classIndex = classReader->readU2();
+        m_nameAndTypeIndex = classReader->readU2();
+    }
+
     string* ConstantMemberInfo::getClassName() {
-        m_constantPool->getClassName(m_classIndex);
+        return m_cp->getClassName(m_classIndex);
     }
 
     NameAndType ConstantMemberInfo::getNameAndType() {
-        return m_constantPool->getNameAndType(m_nameAndTypeIndex);
+        return m_cp->getNameAndType(m_nameAndTypeIndex);
     }
 
-    ConstantInfo* ConstantFieldRefInfo::readInfo(ClassReader *classReader, ConstantPool cp) {
-
+    ConstantFieldRefInfo::ConstantFieldRefInfo(ConstantPool *cp) : ConstantMemberInfo(cp) {
     }
 
-    void* ConstantFieldRefInfo::getValue() {
-        return NULL;
+    ConstantMethodRefInfo::ConstantMethodRefInfo(cf::ConstantPool *cp) : ConstantMemberInfo(cp) {
     }
 
-    ConstantInfo* ConstantMethodRefInfo::readInfo(ClassReader *classReader, ConstantPool cp) {
-
+    ConstantInterfaceMethodRefInfo::ConstantInterfaceMethodRefInfo(cf::ConstantPool *cp) : ConstantMemberInfo(cp) {
     }
 
-    void* ConstantMethodRefInfo::getValue() {
-        return NULL;
+    ConstantNameAndTypeInfo::ConstantNameAndTypeInfo(ConstantPool *cp) : m_cp(cp) {
     }
 
-    ConstantInfo* ConstantInterfaceMethodRefInfo::readInfo(ClassReader *classReader, ConstantPool cp) {
-
-    }
-
-    void* ConstantInterfaceMethodRefInfo::getValue() {
-        return NULL;
-    }
-
-    ConstantNameAndTypeInfo::ConstantNameAndTypeInfo(ClassReader *classReader, ConstantPool *cp) : constantPool(cp) {
+    void ConstantNameAndTypeInfo::readInfo(cf::ClassReader *classReader) {
         m_name_index = classReader->readU2();
         m_desciptor_index = classReader->readU2();
     }
@@ -138,7 +85,10 @@ namespace cf {
         return m_desciptor_index;
     }
 
-    ConstantStringInfo::ConstantStringInfo(ClassReader *classReader, ConstantPool *cp) : m_constantPool(cp) {
+    ConstantStringInfo::ConstantStringInfo(ConstantPool *cp) : m_cp(cp) {
+    }
+
+    void ConstantStringInfo::readInfo(cf::ClassReader *classReader) {
         m_stringIndex = classReader->readU2();
     }
 
@@ -147,23 +97,23 @@ namespace cf {
     }
 
     void* ConstantStringInfo::getValue() {
-        return m_constantPool->getUtf8(m_stringIndex);
+        return m_cp->getUtf8(m_stringIndex);
     }
 
-    ConstantUtf8Info::ConstantUtf8Info(ClassReader *classReader) {
-        m_bytes = classReader->readString();
+    void ConstantUtf8Info::readInfo(cf::ClassReader *classReader) {
+        m_utf8 = classReader->readString();
     }
 
     string* ConstantUtf8Info::value() {
-        return &m_bytes;
+        return m_utf8;
     }
 
     void* ConstantUtf8Info::getValue() {
-        return &m_bytes;
+        return m_utf8;
     }
 
     void ConstantUtf8Info::print() {
-        cout << "UTF8:" << m_bytes << endl;
+        cout << "UTF8:" << *m_utf8 << endl;
     }
 
     u2 MemberInfo::getNameIndex() {
@@ -173,7 +123,7 @@ namespace cf {
     MemberInfo::MemberInfo(ConstantPool *cp, ClassReader *classReader):m_constantPool(cp) {
         m_accessFlags = classReader->readU2();
         m_nameIndex = classReader->readU2();
-        cout << "MemberInfo:" << *(cp->getUtf8(m_nameIndex)) << endl;
+        //cout << "MemberInfo:" << *(cp->getUtf8(m_nameIndex)) << endl;
         m_descriptorIndex = classReader->readU2();
         m_attributeCount = classReader->readU2();
         m_attributeInfos = AttributeInfo::readAttributes(classReader, m_constantPool, m_attributeCount);
@@ -194,8 +144,6 @@ namespace cf {
 
     CodeAttribute* MemberInfo::getCodeAttribute() {
         for (int i = 0, len = m_attributeCount; i < len; ++i) {
-            cout << "\ntype:" << typeid(m_attributeInfos[i]).name() << endl;
-            cout << "type:" << typeid(CodeAttribute*).name() << endl;
             if (m_attributeInfos[i]->getAttributeType() == "Code") {
                 return (CodeAttribute*)(m_attributeInfos[i]);
             }
@@ -225,44 +173,46 @@ namespace cf {
 
     ConstantInfo* ConstantFactory::readConstantInfo(ClassReader *classReader, ConstantPool *constantPool) {
         u1 tag = classReader->readU1();
-        return newConstantInfo(tag, constantPool, classReader);
+        ConstantInfo *constantInfo = newConstantInfo(tag, constantPool);
+        constantInfo->setType(tag);
+        constantInfo->readInfo(classReader);
+        return constantInfo;
     }
 
-    ConstantInfo* ConstantFactory::newConstantInfo(u1 tag, ConstantPool *constantPool, ClassReader *classReader) {
+    ConstantInfo* ConstantFactory::newConstantInfo(u1 tag, ConstantPool *constantPool) {
+        //cout << "attribute:" << tag << endl;
         switch (tag) {
             case CONSTANT_Integer:
-                return new ConstantIntegerInfo(classReader);
+                return new ConstantIntegerInfo();
             case CONSTANT_Long:
-                return new ConstantLongInfo(classReader);
+                return new ConstantLongInfo();
             case CONSTANT_FLoat:
-                return new ConstantFloatInfo(classReader);
+                return new ConstantFloatInfo();
             case CONSTANT_Double:
-                return new ConstantDoubleInfo(classReader);
+                return new ConstantDoubleInfo();
             case CONSTANT_Utf8:
-                return new ConstantUtf8Info(classReader);
+                return new ConstantUtf8Info();
             case CONSTANT_String:
-                return new ConstantStringInfo(classReader, constantPool);
+                return new ConstantStringInfo(constantPool);
             case CONSTANT_Class:
-                return new ConstantClassInfo(classReader, constantPool);
-            case CONSTANT_NameAndType:
-                return new ConstantNameAndTypeInfo(classReader, constantPool);
+                return new ConstantClassInfo(constantPool);
             case CONSTANT_Methodref:
-                return new ConstantMemberInfo(classReader, constantPool);
+                return new ConstantMethodRefInfo(constantPool);
             case CONSTANT_Fieldref:
-                return new ConstantMemberInfo(classReader, constantPool);
+                return new ConstantFieldRefInfo(constantPool);
             case CONSTANT_InterfaceMethodRef:
-                return new ConstantMemberInfo(classReader, constantPool);
-
+                return new ConstantInterfaceMethodRefInfo(constantPool);
+            case CONSTANT_NameAndType:
+                return new ConstantNameAndTypeInfo(constantPool);
+            case CONSTANT_MethodType:
+                return new ConstantMethodTypeInfo();
                 //是Java SE 7才添加到class文件中的，目的是支持新增的invokedynamic指令
-//            case CONST_TAG_METHOD_HANDLE:
-//                return null;
-//            case CONST_TAG_METHOD_TYPE:
-//                return null;
-//            case CONST_TAG_INVOKE_DYNAMIC:
-//                return null;
-
+            case CONSTANT_MethodHandle:
+                return new ConstantMethodHandleInfo();
+            case CONSTANT_InvokeDynamic:
+                return new ConstantInvokeDynamicInfo();
             default:
-                cout << "constant pool tag!" << endl;
+                cout << "java.lang.ClassFormatError: constant pool tag! " << endl;
                 break;
                 //throw new ClassFormatError("constant pool tag!");
         }

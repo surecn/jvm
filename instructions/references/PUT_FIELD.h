@@ -10,7 +10,7 @@
 
 namespace rt {
 
-    class PUT_FIELD : Index16Instruction {
+    class PUT_FIELD : public Index16Instruction {
     public:
         void execute(Frame* frame);
     };

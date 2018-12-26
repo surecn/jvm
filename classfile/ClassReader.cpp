@@ -8,9 +8,6 @@ namespace cf {
     ClassReader::ClassReader(byte* &_data):m_data(_data) {
     }
 
-    ClassReader::~ClassReader() {
-    }
-
     u1 ClassReader::readU1() {
         u1 ch = m_data[0];
         m_data = &m_data[1];
@@ -60,9 +57,9 @@ namespace cf {
         return readU2s((int)*length);
     }
 
-    string ClassReader::readString() {
+    string* ClassReader::readString() {
         u2 length = readU2();
-        string s((char*)m_data, 0, length);
+        string *s = new string((char*)m_data, 0, length);
         m_data = &m_data[length];
         return s;
     }

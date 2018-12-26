@@ -11,4 +11,12 @@ namespace cf {
         return NULL;
     }
 
+    void ConstantInfo::print() {
+
+    }
+
+    void ConstantInfo::setType(int type) {
+        m_type = type;
+    }
+
 }

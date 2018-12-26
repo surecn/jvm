@@ -10,9 +10,13 @@ namespace rt {
         return new Stack(maxSize);
     }
 
+    Stack::Stack(int xss):m_maxSize(xss) {
+        m_size = 0;
+    }
+
     void Stack::push(rt::Frame *frame) {
         if (m_size > m_maxSize) {
-            cout << "StrackOverflowError" << endl;
+            logError("StrackOverflowError");
         }
         if (m_top != NULL) {
             frame->lower = m_top;
@@ -23,7 +27,7 @@ namespace rt {
 
     Frame* Stack::pop() {
         if (m_top == NULL) {
-            cout << "jvm strack is empty";
+            logError("jvm strack is empty");
         }
         Frame* temp = m_top;
         m_top = m_top->lower;
@@ -34,7 +38,7 @@ namespace rt {
 
     Frame* Stack::top() {
         if (m_top == NULL) {
-            cout << "jvm strack is empty";
+            logError("jvm strack is empty");
         }
         return m_top;
     }

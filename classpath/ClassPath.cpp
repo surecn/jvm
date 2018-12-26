@@ -4,7 +4,7 @@
 
 #include "ClassPath.h"
 #include <unistd.h>
-
+#include "WildcardEntry.h"
 
 namespace cp {
 
@@ -20,13 +20,14 @@ namespace cp {
     }
 
     string getJreDir(string &jreOption) {
-        if (jreOption != "" && access(jreOption.c_str(), F_OK)) { //TODO 判断目录是否存在
+        if (jreOption != "" && access(jreOption.c_str(), F_OK) != -1) { //TODO 判断目录是否存在
             return jreOption;
         }
-        if (access("./jre", F_OK)) {
+        if (access("./jre", F_OK) != -1) {
             return "./jre";
         }
-        string javaHome(getenv("JAVA_HOME"));
+        char *c_javaHome = getenv("JAVA_HOME");
+        string javaHome(c_javaHome);
         if (javaHome != "") {
             return javaHome + "/jre";
         }
@@ -57,11 +58,11 @@ namespace cp {
     void ClassPath::readClass(string &className, ClassData &data) {
         string str = className + ".class";
         m_bootClassPath->readClass(str, data);
-        if (data.m_error == 0) {
+        if (data.m_error == 1) {
             return;
         }
         this->m_extClassPath->readClass(str, data);
-        if (data.m_error == 0) {
+        if (data.m_error == 1) {
             return;
         }
         this->m_userClassPath->readClass(str, data);

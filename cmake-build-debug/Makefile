@@ -258,6 +258,60 @@ classfile/ConstantInfo.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantInfo.cpp.s
 .PHONY : classfile/ConstantInfo.cpp.s
 
+classfile/ConstantInvokeDynamic.o: classfile/ConstantInvokeDynamic.cpp.o
+
+.PHONY : classfile/ConstantInvokeDynamic.o
+
+# target to build an object file
+classfile/ConstantInvokeDynamic.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantInvokeDynamic.cpp.o
+.PHONY : classfile/ConstantInvokeDynamic.cpp.o
+
+classfile/ConstantInvokeDynamic.i: classfile/ConstantInvokeDynamic.cpp.i
+
+.PHONY : classfile/ConstantInvokeDynamic.i
+
+# target to preprocess a source file
+classfile/ConstantInvokeDynamic.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantInvokeDynamic.cpp.i
+.PHONY : classfile/ConstantInvokeDynamic.cpp.i
+
+classfile/ConstantInvokeDynamic.s: classfile/ConstantInvokeDynamic.cpp.s
+
+.PHONY : classfile/ConstantInvokeDynamic.s
+
+# target to generate assembly for a file
+classfile/ConstantInvokeDynamic.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantInvokeDynamic.cpp.s
+.PHONY : classfile/ConstantInvokeDynamic.cpp.s
+
+classfile/ConstantNumeric.o: classfile/ConstantNumeric.cpp.o
+
+.PHONY : classfile/ConstantNumeric.o
+
+# target to build an object file
+classfile/ConstantNumeric.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantNumeric.cpp.o
+.PHONY : classfile/ConstantNumeric.cpp.o
+
+classfile/ConstantNumeric.i: classfile/ConstantNumeric.cpp.i
+
+.PHONY : classfile/ConstantNumeric.i
+
+# target to preprocess a source file
+classfile/ConstantNumeric.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantNumeric.cpp.i
+.PHONY : classfile/ConstantNumeric.cpp.i
+
+classfile/ConstantNumeric.s: classfile/ConstantNumeric.cpp.s
+
+.PHONY : classfile/ConstantNumeric.s
+
+# target to generate assembly for a file
+classfile/ConstantNumeric.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantNumeric.cpp.s
+.PHONY : classfile/ConstantNumeric.cpp.s
+
 classfile/ConstantPool.o: classfile/ConstantPool.cpp.o
 
 .PHONY : classfile/ConstantPool.o
@@ -339,6 +393,33 @@ classfile/attribute/AttributeInfo.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/AttributeInfo.cpp.s
 .PHONY : classfile/attribute/AttributeInfo.cpp.s
 
+classfile/attribute/BootstrapMethodsAttribute.o: classfile/attribute/BootstrapMethodsAttribute.cpp.o
+
+.PHONY : classfile/attribute/BootstrapMethodsAttribute.o
+
+# target to build an object file
+classfile/attribute/BootstrapMethodsAttribute.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/BootstrapMethodsAttribute.cpp.o
+.PHONY : classfile/attribute/BootstrapMethodsAttribute.cpp.o
+
+classfile/attribute/BootstrapMethodsAttribute.i: classfile/attribute/BootstrapMethodsAttribute.cpp.i
+
+.PHONY : classfile/attribute/BootstrapMethodsAttribute.i
+
+# target to preprocess a source file
+classfile/attribute/BootstrapMethodsAttribute.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/BootstrapMethodsAttribute.cpp.i
+.PHONY : classfile/attribute/BootstrapMethodsAttribute.cpp.i
+
+classfile/attribute/BootstrapMethodsAttribute.s: classfile/attribute/BootstrapMethodsAttribute.cpp.s
+
+.PHONY : classfile/attribute/BootstrapMethodsAttribute.s
+
+# target to generate assembly for a file
+classfile/attribute/BootstrapMethodsAttribute.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/BootstrapMethodsAttribute.cpp.s
+.PHONY : classfile/attribute/BootstrapMethodsAttribute.cpp.s
+
 classfile/attribute/CodeAttribute.o: classfile/attribute/CodeAttribute.cpp.o
 
 .PHONY : classfile/attribute/CodeAttribute.o
@@ -393,6 +474,33 @@ classfile/attribute/ConstantValueAttribute.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/ConstantValueAttribute.cpp.s
 .PHONY : classfile/attribute/ConstantValueAttribute.cpp.s
 
+classfile/attribute/EnclosingMethodAttribute.o: classfile/attribute/EnclosingMethodAttribute.cpp.o
+
+.PHONY : classfile/attribute/EnclosingMethodAttribute.o
+
+# target to build an object file
+classfile/attribute/EnclosingMethodAttribute.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/EnclosingMethodAttribute.cpp.o
+.PHONY : classfile/attribute/EnclosingMethodAttribute.cpp.o
+
+classfile/attribute/EnclosingMethodAttribute.i: classfile/attribute/EnclosingMethodAttribute.cpp.i
+
+.PHONY : classfile/attribute/EnclosingMethodAttribute.i
+
+# target to preprocess a source file
+classfile/attribute/EnclosingMethodAttribute.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/EnclosingMethodAttribute.cpp.i
+.PHONY : classfile/attribute/EnclosingMethodAttribute.cpp.i
+
+classfile/attribute/EnclosingMethodAttribute.s: classfile/attribute/EnclosingMethodAttribute.cpp.s
+
+.PHONY : classfile/attribute/EnclosingMethodAttribute.s
+
+# target to generate assembly for a file
+classfile/attribute/EnclosingMethodAttribute.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/EnclosingMethodAttribute.cpp.s
+.PHONY : classfile/attribute/EnclosingMethodAttribute.cpp.s
+
 classfile/attribute/ExceptionAttribute.o: classfile/attribute/ExceptionAttribute.cpp.o
 
 .PHONY : classfile/attribute/ExceptionAttribute.o
@@ -419,6 +527,33 @@ classfile/attribute/ExceptionAttribute.s: classfile/attribute/ExceptionAttribute
 classfile/attribute/ExceptionAttribute.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/ExceptionAttribute.cpp.s
 .PHONY : classfile/attribute/ExceptionAttribute.cpp.s
+
+classfile/attribute/InnerClassesAttribute.o: classfile/attribute/InnerClassesAttribute.cpp.o
+
+.PHONY : classfile/attribute/InnerClassesAttribute.o
+
+# target to build an object file
+classfile/attribute/InnerClassesAttribute.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/InnerClassesAttribute.cpp.o
+.PHONY : classfile/attribute/InnerClassesAttribute.cpp.o
+
+classfile/attribute/InnerClassesAttribute.i: classfile/attribute/InnerClassesAttribute.cpp.i
+
+.PHONY : classfile/attribute/InnerClassesAttribute.i
+
+# target to preprocess a source file
+classfile/attribute/InnerClassesAttribute.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/InnerClassesAttribute.cpp.i
+.PHONY : classfile/attribute/InnerClassesAttribute.cpp.i
+
+classfile/attribute/InnerClassesAttribute.s: classfile/attribute/InnerClassesAttribute.cpp.s
+
+.PHONY : classfile/attribute/InnerClassesAttribute.s
+
+# target to generate assembly for a file
+classfile/attribute/InnerClassesAttribute.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/InnerClassesAttribute.cpp.s
+.PHONY : classfile/attribute/InnerClassesAttribute.cpp.s
 
 classfile/attribute/LineNumberAttribute.o: classfile/attribute/LineNumberAttribute.cpp.o
 
@@ -473,6 +608,33 @@ classfile/attribute/LocalVariableTableAttribute.s: classfile/attribute/LocalVari
 classfile/attribute/LocalVariableTableAttribute.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/LocalVariableTableAttribute.cpp.s
 .PHONY : classfile/attribute/LocalVariableTableAttribute.cpp.s
+
+classfile/attribute/SignatureAttribute.o: classfile/attribute/SignatureAttribute.cpp.o
+
+.PHONY : classfile/attribute/SignatureAttribute.o
+
+# target to build an object file
+classfile/attribute/SignatureAttribute.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/SignatureAttribute.cpp.o
+.PHONY : classfile/attribute/SignatureAttribute.cpp.o
+
+classfile/attribute/SignatureAttribute.i: classfile/attribute/SignatureAttribute.cpp.i
+
+.PHONY : classfile/attribute/SignatureAttribute.i
+
+# target to preprocess a source file
+classfile/attribute/SignatureAttribute.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/SignatureAttribute.cpp.i
+.PHONY : classfile/attribute/SignatureAttribute.cpp.i
+
+classfile/attribute/SignatureAttribute.s: classfile/attribute/SignatureAttribute.cpp.s
+
+.PHONY : classfile/attribute/SignatureAttribute.s
+
+# target to generate assembly for a file
+classfile/attribute/SignatureAttribute.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/SignatureAttribute.cpp.s
+.PHONY : classfile/attribute/SignatureAttribute.cpp.s
 
 classfile/attribute/SourceFileAttribute.o: classfile/attribute/SourceFileAttribute.cpp.o
 
@@ -555,6 +717,60 @@ classpath/ClassPath.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/ClassPath.cpp.s
 .PHONY : classpath/ClassPath.cpp.s
 
+classpath/CompositeEntry.o: classpath/CompositeEntry.cpp.o
+
+.PHONY : classpath/CompositeEntry.o
+
+# target to build an object file
+classpath/CompositeEntry.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/CompositeEntry.cpp.o
+.PHONY : classpath/CompositeEntry.cpp.o
+
+classpath/CompositeEntry.i: classpath/CompositeEntry.cpp.i
+
+.PHONY : classpath/CompositeEntry.i
+
+# target to preprocess a source file
+classpath/CompositeEntry.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/CompositeEntry.cpp.i
+.PHONY : classpath/CompositeEntry.cpp.i
+
+classpath/CompositeEntry.s: classpath/CompositeEntry.cpp.s
+
+.PHONY : classpath/CompositeEntry.s
+
+# target to generate assembly for a file
+classpath/CompositeEntry.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/CompositeEntry.cpp.s
+.PHONY : classpath/CompositeEntry.cpp.s
+
+classpath/DirEntry.o: classpath/DirEntry.cpp.o
+
+.PHONY : classpath/DirEntry.o
+
+# target to build an object file
+classpath/DirEntry.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/DirEntry.cpp.o
+.PHONY : classpath/DirEntry.cpp.o
+
+classpath/DirEntry.i: classpath/DirEntry.cpp.i
+
+.PHONY : classpath/DirEntry.i
+
+# target to preprocess a source file
+classpath/DirEntry.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/DirEntry.cpp.i
+.PHONY : classpath/DirEntry.cpp.i
+
+classpath/DirEntry.s: classpath/DirEntry.cpp.s
+
+.PHONY : classpath/DirEntry.s
+
+# target to generate assembly for a file
+classpath/DirEntry.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/DirEntry.cpp.s
+.PHONY : classpath/DirEntry.cpp.s
+
 classpath/Entry.o: classpath/Entry.cpp.o
 
 .PHONY : classpath/Entry.o
@@ -581,6 +797,60 @@ classpath/Entry.s: classpath/Entry.cpp.s
 classpath/Entry.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/Entry.cpp.s
 .PHONY : classpath/Entry.cpp.s
+
+classpath/WildcardEntry.o: classpath/WildcardEntry.cpp.o
+
+.PHONY : classpath/WildcardEntry.o
+
+# target to build an object file
+classpath/WildcardEntry.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/WildcardEntry.cpp.o
+.PHONY : classpath/WildcardEntry.cpp.o
+
+classpath/WildcardEntry.i: classpath/WildcardEntry.cpp.i
+
+.PHONY : classpath/WildcardEntry.i
+
+# target to preprocess a source file
+classpath/WildcardEntry.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/WildcardEntry.cpp.i
+.PHONY : classpath/WildcardEntry.cpp.i
+
+classpath/WildcardEntry.s: classpath/WildcardEntry.cpp.s
+
+.PHONY : classpath/WildcardEntry.s
+
+# target to generate assembly for a file
+classpath/WildcardEntry.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/WildcardEntry.cpp.s
+.PHONY : classpath/WildcardEntry.cpp.s
+
+classpath/ZipEntry.o: classpath/ZipEntry.cpp.o
+
+.PHONY : classpath/ZipEntry.o
+
+# target to build an object file
+classpath/ZipEntry.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/ZipEntry.cpp.o
+.PHONY : classpath/ZipEntry.cpp.o
+
+classpath/ZipEntry.i: classpath/ZipEntry.cpp.i
+
+.PHONY : classpath/ZipEntry.i
+
+# target to preprocess a source file
+classpath/ZipEntry.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/ZipEntry.cpp.i
+.PHONY : classpath/ZipEntry.cpp.i
+
+classpath/ZipEntry.s: classpath/ZipEntry.cpp.s
+
+.PHONY : classpath/ZipEntry.s
+
+# target to generate assembly for a file
+classpath/ZipEntry.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/ZipEntry.cpp.s
+.PHONY : classpath/ZipEntry.cpp.s
 
 common/BytesUtils.o: common/BytesUtils.cpp.o
 
@@ -662,6 +932,33 @@ common/StrUtils.s: common/StrUtils.cpp.s
 common/StrUtils.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/common/StrUtils.cpp.s
 .PHONY : common/StrUtils.cpp.s
+
+common/ZipUtils.o: common/ZipUtils.cpp.o
+
+.PHONY : common/ZipUtils.o
+
+# target to build an object file
+common/ZipUtils.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/common/ZipUtils.cpp.o
+.PHONY : common/ZipUtils.cpp.o
+
+common/ZipUtils.i: common/ZipUtils.cpp.i
+
+.PHONY : common/ZipUtils.i
+
+# target to preprocess a source file
+common/ZipUtils.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/common/ZipUtils.cpp.i
+.PHONY : common/ZipUtils.cpp.i
+
+common/ZipUtils.s: common/ZipUtils.cpp.s
+
+.PHONY : common/ZipUtils.s
+
+# target to generate assembly for a file
+common/ZipUtils.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/common/ZipUtils.cpp.s
+.PHONY : common/ZipUtils.cpp.s
 
 instructions/Factory.o: instructions/Factory.cpp.o
 
@@ -1824,32 +2121,86 @@ instructions/references/GET_STATIC.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/GET_STATIC.cpp.s
 .PHONY : instructions/references/GET_STATIC.cpp.s
 
-instructions/references/INSTANCEOF.o: instructions/references/INSTANCEOF.cpp.o
+instructions/references/INSTANCE_OF.o: instructions/references/INSTANCE_OF.cpp.o
 
-.PHONY : instructions/references/INSTANCEOF.o
+.PHONY : instructions/references/INSTANCE_OF.o
 
 # target to build an object file
-instructions/references/INSTANCEOF.cpp.o:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/INSTANCEOF.cpp.o
-.PHONY : instructions/references/INSTANCEOF.cpp.o
+instructions/references/INSTANCE_OF.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/INSTANCE_OF.cpp.o
+.PHONY : instructions/references/INSTANCE_OF.cpp.o
 
-instructions/references/INSTANCEOF.i: instructions/references/INSTANCEOF.cpp.i
+instructions/references/INSTANCE_OF.i: instructions/references/INSTANCE_OF.cpp.i
 
-.PHONY : instructions/references/INSTANCEOF.i
+.PHONY : instructions/references/INSTANCE_OF.i
 
 # target to preprocess a source file
-instructions/references/INSTANCEOF.cpp.i:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/INSTANCEOF.cpp.i
-.PHONY : instructions/references/INSTANCEOF.cpp.i
+instructions/references/INSTANCE_OF.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/INSTANCE_OF.cpp.i
+.PHONY : instructions/references/INSTANCE_OF.cpp.i
 
-instructions/references/INSTANCEOF.s: instructions/references/INSTANCEOF.cpp.s
+instructions/references/INSTANCE_OF.s: instructions/references/INSTANCE_OF.cpp.s
 
-.PHONY : instructions/references/INSTANCEOF.s
+.PHONY : instructions/references/INSTANCE_OF.s
 
 # target to generate assembly for a file
-instructions/references/INSTANCEOF.cpp.s:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/INSTANCEOF.cpp.s
-.PHONY : instructions/references/INSTANCEOF.cpp.s
+instructions/references/INSTANCE_OF.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/INSTANCE_OF.cpp.s
+.PHONY : instructions/references/INSTANCE_OF.cpp.s
+
+instructions/references/INVOKE_SPECIAL.o: instructions/references/INVOKE_SPECIAL.cpp.o
+
+.PHONY : instructions/references/INVOKE_SPECIAL.o
+
+# target to build an object file
+instructions/references/INVOKE_SPECIAL.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/INVOKE_SPECIAL.cpp.o
+.PHONY : instructions/references/INVOKE_SPECIAL.cpp.o
+
+instructions/references/INVOKE_SPECIAL.i: instructions/references/INVOKE_SPECIAL.cpp.i
+
+.PHONY : instructions/references/INVOKE_SPECIAL.i
+
+# target to preprocess a source file
+instructions/references/INVOKE_SPECIAL.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/INVOKE_SPECIAL.cpp.i
+.PHONY : instructions/references/INVOKE_SPECIAL.cpp.i
+
+instructions/references/INVOKE_SPECIAL.s: instructions/references/INVOKE_SPECIAL.cpp.s
+
+.PHONY : instructions/references/INVOKE_SPECIAL.s
+
+# target to generate assembly for a file
+instructions/references/INVOKE_SPECIAL.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/INVOKE_SPECIAL.cpp.s
+.PHONY : instructions/references/INVOKE_SPECIAL.cpp.s
+
+instructions/references/INVOKE_VIRTUAL.o: instructions/references/INVOKE_VIRTUAL.cpp.o
+
+.PHONY : instructions/references/INVOKE_VIRTUAL.o
+
+# target to build an object file
+instructions/references/INVOKE_VIRTUAL.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/INVOKE_VIRTUAL.cpp.o
+.PHONY : instructions/references/INVOKE_VIRTUAL.cpp.o
+
+instructions/references/INVOKE_VIRTUAL.i: instructions/references/INVOKE_VIRTUAL.cpp.i
+
+.PHONY : instructions/references/INVOKE_VIRTUAL.i
+
+# target to preprocess a source file
+instructions/references/INVOKE_VIRTUAL.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/INVOKE_VIRTUAL.cpp.i
+.PHONY : instructions/references/INVOKE_VIRTUAL.cpp.i
+
+instructions/references/INVOKE_VIRTUAL.s: instructions/references/INVOKE_VIRTUAL.cpp.s
+
+.PHONY : instructions/references/INVOKE_VIRTUAL.s
+
+# target to generate assembly for a file
+instructions/references/INVOKE_VIRTUAL.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/INVOKE_VIRTUAL.cpp.s
+.PHONY : instructions/references/INVOKE_VIRTUAL.cpp.s
 
 instructions/references/LDC.o: instructions/references/LDC.cpp.o
 
@@ -2174,6 +2525,60 @@ instructions/stores/LStore.s: instructions/stores/LStore.cpp.s
 instructions/stores/LStore.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stores/LStore.cpp.s
 .PHONY : instructions/stores/LStore.cpp.s
+
+libs/ioapi.o: libs/ioapi.c.o
+
+.PHONY : libs/ioapi.o
+
+# target to build an object file
+libs/ioapi.c.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/libs/ioapi.c.o
+.PHONY : libs/ioapi.c.o
+
+libs/ioapi.i: libs/ioapi.c.i
+
+.PHONY : libs/ioapi.i
+
+# target to preprocess a source file
+libs/ioapi.c.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/libs/ioapi.c.i
+.PHONY : libs/ioapi.c.i
+
+libs/ioapi.s: libs/ioapi.c.s
+
+.PHONY : libs/ioapi.s
+
+# target to generate assembly for a file
+libs/ioapi.c.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/libs/ioapi.c.s
+.PHONY : libs/ioapi.c.s
+
+libs/unzip.o: libs/unzip.c.o
+
+.PHONY : libs/unzip.o
+
+# target to build an object file
+libs/unzip.c.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/libs/unzip.c.o
+.PHONY : libs/unzip.c.o
+
+libs/unzip.i: libs/unzip.c.i
+
+.PHONY : libs/unzip.i
+
+# target to preprocess a source file
+libs/unzip.c.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/libs/unzip.c.i
+.PHONY : libs/unzip.c.i
+
+libs/unzip.s: libs/unzip.c.s
+
+.PHONY : libs/unzip.s
+
+# target to generate assembly for a file
+libs/unzip.c.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/libs/unzip.c.s
+.PHONY : libs/unzip.c.s
 
 main.o: main.cpp.o
 
@@ -2712,6 +3117,12 @@ help:
 	@echo "... classfile/ConstantInfo.o"
 	@echo "... classfile/ConstantInfo.i"
 	@echo "... classfile/ConstantInfo.s"
+	@echo "... classfile/ConstantInvokeDynamic.o"
+	@echo "... classfile/ConstantInvokeDynamic.i"
+	@echo "... classfile/ConstantInvokeDynamic.s"
+	@echo "... classfile/ConstantNumeric.o"
+	@echo "... classfile/ConstantNumeric.i"
+	@echo "... classfile/ConstantNumeric.s"
 	@echo "... classfile/ConstantPool.o"
 	@echo "... classfile/ConstantPool.i"
 	@echo "... classfile/ConstantPool.s"
@@ -2721,21 +3132,33 @@ help:
 	@echo "... classfile/attribute/AttributeInfo.o"
 	@echo "... classfile/attribute/AttributeInfo.i"
 	@echo "... classfile/attribute/AttributeInfo.s"
+	@echo "... classfile/attribute/BootstrapMethodsAttribute.o"
+	@echo "... classfile/attribute/BootstrapMethodsAttribute.i"
+	@echo "... classfile/attribute/BootstrapMethodsAttribute.s"
 	@echo "... classfile/attribute/CodeAttribute.o"
 	@echo "... classfile/attribute/CodeAttribute.i"
 	@echo "... classfile/attribute/CodeAttribute.s"
 	@echo "... classfile/attribute/ConstantValueAttribute.o"
 	@echo "... classfile/attribute/ConstantValueAttribute.i"
 	@echo "... classfile/attribute/ConstantValueAttribute.s"
+	@echo "... classfile/attribute/EnclosingMethodAttribute.o"
+	@echo "... classfile/attribute/EnclosingMethodAttribute.i"
+	@echo "... classfile/attribute/EnclosingMethodAttribute.s"
 	@echo "... classfile/attribute/ExceptionAttribute.o"
 	@echo "... classfile/attribute/ExceptionAttribute.i"
 	@echo "... classfile/attribute/ExceptionAttribute.s"
+	@echo "... classfile/attribute/InnerClassesAttribute.o"
+	@echo "... classfile/attribute/InnerClassesAttribute.i"
+	@echo "... classfile/attribute/InnerClassesAttribute.s"
 	@echo "... classfile/attribute/LineNumberAttribute.o"
 	@echo "... classfile/attribute/LineNumberAttribute.i"
 	@echo "... classfile/attribute/LineNumberAttribute.s"
 	@echo "... classfile/attribute/LocalVariableTableAttribute.o"
 	@echo "... classfile/attribute/LocalVariableTableAttribute.i"
 	@echo "... classfile/attribute/LocalVariableTableAttribute.s"
+	@echo "... classfile/attribute/SignatureAttribute.o"
+	@echo "... classfile/attribute/SignatureAttribute.i"
+	@echo "... classfile/attribute/SignatureAttribute.s"
 	@echo "... classfile/attribute/SourceFileAttribute.o"
 	@echo "... classfile/attribute/SourceFileAttribute.i"
 	@echo "... classfile/attribute/SourceFileAttribute.s"
@@ -2745,9 +3168,21 @@ help:
 	@echo "... classpath/ClassPath.o"
 	@echo "... classpath/ClassPath.i"
 	@echo "... classpath/ClassPath.s"
+	@echo "... classpath/CompositeEntry.o"
+	@echo "... classpath/CompositeEntry.i"
+	@echo "... classpath/CompositeEntry.s"
+	@echo "... classpath/DirEntry.o"
+	@echo "... classpath/DirEntry.i"
+	@echo "... classpath/DirEntry.s"
 	@echo "... classpath/Entry.o"
 	@echo "... classpath/Entry.i"
 	@echo "... classpath/Entry.s"
+	@echo "... classpath/WildcardEntry.o"
+	@echo "... classpath/WildcardEntry.i"
+	@echo "... classpath/WildcardEntry.s"
+	@echo "... classpath/ZipEntry.o"
+	@echo "... classpath/ZipEntry.i"
+	@echo "... classpath/ZipEntry.s"
 	@echo "... common/BytesUtils.o"
 	@echo "... common/BytesUtils.i"
 	@echo "... common/BytesUtils.s"
@@ -2757,6 +3192,9 @@ help:
 	@echo "... common/StrUtils.o"
 	@echo "... common/StrUtils.i"
 	@echo "... common/StrUtils.s"
+	@echo "... common/ZipUtils.o"
+	@echo "... common/ZipUtils.i"
+	@echo "... common/ZipUtils.s"
 	@echo "... instructions/Factory.o"
 	@echo "... instructions/Factory.i"
 	@echo "... instructions/Factory.s"
@@ -2886,9 +3324,15 @@ help:
 	@echo "... instructions/references/GET_STATIC.o"
 	@echo "... instructions/references/GET_STATIC.i"
 	@echo "... instructions/references/GET_STATIC.s"
-	@echo "... instructions/references/INSTANCEOF.o"
-	@echo "... instructions/references/INSTANCEOF.i"
-	@echo "... instructions/references/INSTANCEOF.s"
+	@echo "... instructions/references/INSTANCE_OF.o"
+	@echo "... instructions/references/INSTANCE_OF.i"
+	@echo "... instructions/references/INSTANCE_OF.s"
+	@echo "... instructions/references/INVOKE_SPECIAL.o"
+	@echo "... instructions/references/INVOKE_SPECIAL.i"
+	@echo "... instructions/references/INVOKE_SPECIAL.s"
+	@echo "... instructions/references/INVOKE_VIRTUAL.o"
+	@echo "... instructions/references/INVOKE_VIRTUAL.i"
+	@echo "... instructions/references/INVOKE_VIRTUAL.s"
 	@echo "... instructions/references/LDC.o"
 	@echo "... instructions/references/LDC.i"
 	@echo "... instructions/references/LDC.s"
@@ -2925,6 +3369,12 @@ help:
 	@echo "... instructions/stores/LStore.o"
 	@echo "... instructions/stores/LStore.i"
 	@echo "... instructions/stores/LStore.s"
+	@echo "... libs/ioapi.o"
+	@echo "... libs/ioapi.i"
+	@echo "... libs/ioapi.s"
+	@echo "... libs/unzip.o"
+	@echo "... libs/unzip.i"
+	@echo "... libs/unzip.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

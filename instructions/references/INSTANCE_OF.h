@@ -10,7 +10,7 @@
 
 namespace rt {
 
-    class INSTANCEOF : public Index16Instruction{
+    class INSTANCE_OF : public Index16Instruction{
     public:
         void execute(Frame* frame);
     };

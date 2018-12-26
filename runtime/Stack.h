@@ -16,7 +16,7 @@ namespace rt {
         int m_size;
         Frame *m_top;
     public:
-        Stack(int xss):m_maxSize(xss){}
+        Stack(int xss);
         static Stack *newStack(int maxSize);
         void push(Frame *frame);
         Frame* pop();

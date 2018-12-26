@@ -7,7 +7,8 @@
 
 namespace rt {
 
-    SymRef::SymRef(rt::ConstantPool *cp, cf::ConstantClassInfo *classInfo) : m_cp(cp), m_className(classInfo->getName()) {
+    SymRef::SymRef() {
+        m_class = NULL;
     }
 
     void SymRef::setClassName(string *className) {
@@ -29,7 +30,7 @@ namespace rt {
         Class *cls_d = m_cp->getClass();
         ClassLoader *classLoader = cls_d->getClassLoader();
         Class *cls_c = classLoader->loadClass(m_className);
-        if (cls_c->isAccessibleTo(cls_d)) {
+        if (!cls_c->isAccessibleTo(cls_d)) {
             cout << "java.lang.IllegalAccessError";
         }
         m_class = cls_c;

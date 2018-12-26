@@ -32,6 +32,14 @@ struct NameAndType {
     string *type;
 };
 
+static inline void logError(string s) {
+    cout << "ERROR:" << s << endl;
+}
+
+static inline void logInfo(string s) {
+    cout << "INFO:" << s << endl;
+}
+
 #define PATH_SEPARATOR "/"
 
 #endif //JVM_COMMON_H

@@ -6,10 +6,11 @@
 #define JVM_INTERPERTER_H
 
 #include "classfile/Constants.h"
+#include "runtime/heap/Method.h"
 
 class Interperter {
 public:
-    static void interpret(cf::MemberInfo* memberInfo);
+    static void interpret(rt::Method *method);
 };
 
 

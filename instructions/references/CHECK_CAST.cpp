@@ -19,7 +19,7 @@ namespace rt {
         ConstantPool *cp = frame->getMethod()->getClass()->getConstantPool();
         ClassRef *classRef = (ClassRef *)cp->getConstant(m_index);
         Class *cls = classRef->resolvedClass();
-        if (!ref->isInstanceOf(cls)) {
+        if (!((Object*)ref)->isInstanceOf(cls)) {
             cout << "java.lang.ClassCastException" << endl;
         }
     }

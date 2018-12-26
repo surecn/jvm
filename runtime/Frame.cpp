@@ -10,18 +10,18 @@ namespace rt {
         m_nextPC = 0L;
     }
 
-    Frame::Frame(Thread* th, Method *method) : m_thread(th), m_operandStack(new OperandStack(method->getMaxStack())), m_localVars(new LocalVars(method->getMaxLocals())) {
+    Frame::Frame(Thread* th, Method *method) : m_method(method), m_thread(th), m_operandStack(new OperandStack(method->getMaxStack())), m_localVars(new LocalVars(method->getMaxLocals())) {
         m_nextPC = 0L;
         cout << "frame" << this << "=====" << m_localVars << endl;
     }
 
     Frame::~Frame() {
-        if (m_operandStack != NULL) {
-            delete m_operandStack;
-        }
-        if (m_localVars != NULL) {
-            delete m_localVars;
-        }
+//        if (m_operandStack != NULL) {
+//            delete m_operandStack;
+//        }
+//        if (m_localVars != NULL) {
+//            delete m_localVars;
+//        }
     }
 
     LocalVars* Frame::getLocalVars() {

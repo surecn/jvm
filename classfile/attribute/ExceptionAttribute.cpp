@@ -11,7 +11,7 @@ namespace cf {
     }
 
     void ExceptionAttribute::readInfo(ClassReader *classReader) {
-        m_exceptionIndexTable = classReader->readU2s(m_numberOfException);
+        m_exceptionIndexTable = classReader->readU2s(&m_numberOfException);
     }
 
 }

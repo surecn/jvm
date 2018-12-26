@@ -7,7 +7,9 @@
 
 namespace rt {
 
-    ClassRef::ClassRef(rt::ConstantPool *cp, cf::ConstantClassInfo *classInfo) : SymRef(cp, classInfo) {
+    ClassRef::ClassRef(rt::ConstantPool *cp, cf::ConstantClassInfo *classInfo) {
+        setConstantPool(cp);
+        m_className = classInfo->getName();
     }
 
 }

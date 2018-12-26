@@ -16,6 +16,15 @@
 #include "extended/GotoW.h"
 #include "constants/Ipush.h"
 #include "constants/SIPUSH.h"
+#include "references/GET_STATIC.h"
+#include "references/PUT_STATIC.h"
+#include "references/GET_FIELD.h"
+#include "references/PUT_FIELD.h"
+#include "references/INVOKE_VIRTUAL.h"
+#include "references/INVOKE_SPECIAL.h"
+#include "references/NEW.h"
+#include "references/CHECK_CAST.h"
+#include "references/INSTANCE_OF.h"
 
 namespace rt {
     NOP Factory::nop;
@@ -145,8 +154,88 @@ namespace rt {
     DCMPL Factory::dcmpl;
     DCMPG Factory::dcmpg;
 
+    map<int, string>* Factory::initInstructionNames() {
+        map<int, string>* names = new map<int, string>();
+        (*names)[0x00]="nop";
+        (*names)[0x01]="aconst_null";
+        (*names)[0x02]="iconst_m1";
+        (*names)[0x03]="iconst_0";
+        (*names)[0x04]="iconst_1";
+        (*names)[0x05]="iconst_2";
+        (*names)[0x06]="iconst_3";
+        (*names)[0x07]="iconst_4";
+        (*names)[0x08]="iconst_5";
+        (*names)[0x09]="lconst_0";
+        (*names)[0x0a]="lconst_1";
+        (*names)[0x0b]="fconst_0";
+        (*names)[0x0c]="fconst_1";
+        (*names)[0x0d]="fconst_2";
+        (*names)[0x0e]="dconst_0";
+        (*names)[0x0f]="dconst_1";
+        (*names)[0x10]="BIPUSH";
+        (*names)[0x11]="SIPUSH";
+        (*names)[0x15]="ILOAD";
+        (*names)[0x16]="LLOAD";
+        (*names)[0x17]="FLOAD";
+        (*names)[0x18]="DLOAD";
+        (*names)[0x19]="ALOAD";
+        (*names)[0x1a]="iload_0";
+        (*names)[0x1b]="iload_1";
+        (*names)[0x1c]="iload_2";
+        (*names)[0x1d]="iload_3";
+        (*names)[0x1e]="lload_0";
+        (*names)[0x1f]="lload_1";
+        (*names)[0x20]="lload_2";
+        (*names)[0x21]="lload_3";
+        (*names)[0x22]="fload_0";
+        (*names)[0x23]="fload_1";
+        (*names)[0x24]="fload_2";
+        (*names)[0x25]="fload_3";
+        (*names)[0x26]="dload_0";
+        (*names)[0x27]="dload_1";
+        (*names)[0x28]="dload_2";
+        (*names)[0x29]="dload_3";
+        (*names)[0x2a]="aload_0";
+        (*names)[0x2b]="aload_1";
+        (*names)[0x2c]="aload_2";
+        (*names)[0x2d]="aload_3";
+//        (*names)[0x00]="nop";
+//        (*names)[0x00]="nop";
+//        (*names)[0x00]="nop";
+//        (*names)[0x00]="nop";
+//        (*names)[0x00]="nop";
+//        (*names)[0x00]="nop";
+//        (*names)[0x00]="nop";
+//        (*names)[0x00]="nop";
+//        (*names)[0x00]="nop";
+//        (*names)[0x00]="nop";
+//        (*names)[0x00]="nop";
+//        (*names)[0x00]="nop";
+//        (*names)[0x00]="nop";
+//        (*names)[0x00]="nop";
+//        (*names)[0x00]="nop";
+//        (*names)[0x00]="nop";
+//        (*names)[0x00]="nop";
+//        (*names)[0x00]="nop";
+//        (*names)[0x00]="nop";
+//        (*names)[0x00]="nop";
+//        (*names)[0x00]="nop";
+//        (*names)[0x00]="nop";
+//        (*names)[0x00]="nop";
+//        (*names)[0x00]="nop";
+
+        return names;
+    }
+
+    map<int, string>* Factory::s_instructionNames = initInstructionNames();
+
 
     Instruction* Factory::newInstruction(byte opcode) {
+        string s = (*s_instructionNames)[opcode];
+        if (s != "")
+            cout << "code:" << s << endl;
+        else
+            logError("code not support!");
         switch (opcode) {
             case 0x00:
                 return &nop;
@@ -504,26 +593,26 @@ namespace rt {
                 // 	return areturn
                 // case 0xb1:
                 // 	return _return
-                //	case 0xb2:
-                //		return &GET_STATIC{}
-                // case 0xb3:
-                // 	return &PUT_STATIC{}
-                // case 0xb4:
-                // 	return &GET_FIELD{}
-                // case 0xb5:
-                // 	return &PUT_FIELD{}
-                //	case 0xb6:
-                //		return &INVOKE_VIRTUAL{}
-                // case 0xb7:
-                // 	return &INVOKE_SPECIAL{}
+            case 0xb2:
+                return new GET_STATIC();
+             case 0xb3:
+                return new PUT_STATIC();
+             case 0xb4:
+                return new GET_FIELD();
+             case 0xb5:
+                return new PUT_FIELD();
+            case 0xb6:
+                return new INVOKE_VIRTUAL();
+             case 0xb7:
+                return new INVOKE_SPECIAL();
                 // case 0xb8:
                 // 	return &INVOKE_STATIC{}
                 // case 0xb9:
                 // 	return &INVOKE_INTERFACE{}
                 // case 0xba:
                 // 	return &INVOKE_DYNAMIC{}
-                // case 0xbb:
-                // 	return &NEW{}
+             case 0xbb:
+                return new NEW();
                 // case 0xbc:
                 // 	return &NEW_ARRAY{}
                 // case 0xbd:
@@ -532,10 +621,10 @@ namespace rt {
                 // 	return arraylength
                 // case 0xbf:
                 // 	return athrow
-                // case 0xc0:
-                // 	return &CHECK_CAST{}
-                // case 0xc1:
-                // 	return &INSTANCE_OF{}
+             case 0xc0:
+                return new CHECK_CAST();
+             case 0xc1:
+                return new INSTANCE_OF();
                 // case 0xc2:
                 // 	return monitorenter
                 // case 0xc3:

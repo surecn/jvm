@@ -25,6 +25,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/jvm.dir/instructions/base/BytecodeReader.cpp.o"
   "CMakeFiles/jvm.dir/instructions/constants/Constant.cpp.o"
   "CMakeFiles/jvm.dir/common/BytesUtils.cpp.o"
+  "CMakeFiles/jvm.dir/libs/ioapi.c.o"
+  "CMakeFiles/jvm.dir/libs/unzip.c.o"
   "CMakeFiles/jvm.dir/classfile/Constants.cpp.o"
   "CMakeFiles/jvm.dir/instructions/loads/ILoad.cpp.o"
   "CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.o"
@@ -91,14 +93,27 @@ file(REMOVE_RECURSE
   "CMakeFiles/jvm.dir/instructions/references/GET_STATIC.cpp.o"
   "CMakeFiles/jvm.dir/instructions/references/PUT_FIELD.cpp.o"
   "CMakeFiles/jvm.dir/instructions/references/GET_FIELD.cpp.o"
-  "CMakeFiles/jvm.dir/instructions/references/INSTANCEOF.cpp.o"
+  "CMakeFiles/jvm.dir/instructions/references/INSTANCE_OF.cpp.o"
   "CMakeFiles/jvm.dir/instructions/references/CHECK_CAST.cpp.o"
   "CMakeFiles/jvm.dir/instructions/references/LDC.cpp.o"
+  "CMakeFiles/jvm.dir/common/ZipUtils.cpp.o"
+  "CMakeFiles/jvm.dir/classpath/DirEntry.cpp.o"
+  "CMakeFiles/jvm.dir/classpath/CompositeEntry.cpp.o"
+  "CMakeFiles/jvm.dir/classpath/WildcardEntry.cpp.o"
+  "CMakeFiles/jvm.dir/classpath/ZipEntry.cpp.o"
+  "CMakeFiles/jvm.dir/classfile/attribute/BootstrapMethodsAttribute.cpp.o"
+  "CMakeFiles/jvm.dir/classfile/attribute/EnclosingMethodAttribute.cpp.o"
+  "CMakeFiles/jvm.dir/classfile/attribute/InnerClassesAttribute.cpp.o"
+  "CMakeFiles/jvm.dir/classfile/attribute/SignatureAttribute.cpp.o"
+  "CMakeFiles/jvm.dir/classfile/ConstantNumeric.cpp.o"
+  "CMakeFiles/jvm.dir/classfile/ConstantInvokeDynamic.cpp.o"
+  "CMakeFiles/jvm.dir/instructions/references/INVOKE_VIRTUAL.cpp.o"
+  "CMakeFiles/jvm.dir/instructions/references/INVOKE_SPECIAL.cpp.o"
   "jvm.pdb"
   "jvm"
 )
 
 # Per-language clean rules from dependency scanning.
-foreach(lang CXX)
+foreach(lang C CXX)
   include(CMakeFiles/jvm.dir/cmake_clean_${lang}.cmake OPTIONAL)
 endforeach()

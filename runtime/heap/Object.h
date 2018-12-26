@@ -15,10 +15,9 @@ namespace rt {
         SlotArray *m_slotArray;
     public:
         Object(Class *cls, SlotArray *slotArray);
-
         Class *getClass() const;
-
         SlotArray *getSlotArray() const;
+        bool isInstanceOf(Class *cls);
     };
 
 

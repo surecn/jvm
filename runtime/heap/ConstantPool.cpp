@@ -3,13 +3,18 @@
 //
 
 #include "ConstantPool.h"
+#include "ClassRef.h"
+#include "FieldRef.h"
+#include "MethodRef.h"
+#include "InterfaceMethodRef.h"
 
 namespace rt {
 
     ConstantPool::ConstantPool(rt::Class *cls, cf::ConstantPool *cfCp) {
         m_consts = new Constant[cfCp->getConstantSize()];
+        m_class = cls;
         cf::ConstantInfo *constantInfo;
-        for (int i = 0, len = cfCp->getConstantSize(); i < len; ++i) {
+        for (int i = 1, len = cfCp->getConstantSize(); i < len; ++i) {
             constantInfo = cfCp->getConstantInfo(i);
             switch (constantInfo->m_type) {
                 case cf::CONSTANT_Integer:
@@ -27,17 +32,28 @@ namespace rt {
                 case cf::CONSTANT_String:
                     m_consts[i] = constantInfo->getValue();
                     break;
-                case cf::CONSTANT_Class:
-                    //consts[i] = constantInfo->getValue();
+                case cf::CONSTANT_Class: {
+                    cf::ConstantClassInfo *constantClassInfo = (cf::ConstantClassInfo *) constantInfo;
+                    m_consts[i] = new ClassRef(this, constantClassInfo);
                     break;
-                case cf::CONSTANT_Fieldref:
-                    //consts[i] = constantInfo->getValue();
+                }
+                case cf::CONSTANT_Fieldref: {
+                    cf::ConstantFieldRefInfo *constantFieldRefInfo = (cf::ConstantFieldRefInfo *) constantInfo;
+                    m_consts[i] = new FieldRef(this, constantFieldRefInfo);
                     break;
-                case cf::CONSTANT_Methodref:
-                    //consts[i] = constantInfo->getValue();
+                }
+                case cf::CONSTANT_Methodref: {
+                    cf::ConstantMethodRefInfo *constantMethodRefInfo = (cf::ConstantMethodRefInfo *) constantInfo;
+                    m_consts[i] = new MethodRef(this, constantMethodRefInfo);
                     break;
-                case cf::CONSTANT_InterfaceMethodRef:
-                    //consts[i] = constantInfo->getValue();
+                }
+                case cf::CONSTANT_InterfaceMethodRef: {
+                    cf::ConstantInterfaceMethodRefInfo *interfaceMethodRefInfo = (cf::ConstantInterfaceMethodRefInfo *) constantInfo;
+                    m_consts[i] = new InterfaceMethodRef(this, interfaceMethodRefInfo);
+                    break;
+                }
+                default:
+                    //todo
                     break;
             }
         }

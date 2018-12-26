@@ -7,10 +7,18 @@
 namespace rt {
 
     void MemberRef::copyMemberRefInfo(cf::ConstantMemberInfo *memberInfo) {
-        setClassName(memberInfo->getClassName());
+        m_className = memberInfo->getClassName();
         NameAndType nameAndType = memberInfo->getNameAndType();
         m_name = nameAndType.name;
         m_descriptor = nameAndType.type;
+    }
+
+    string* MemberRef::getName() {
+        return m_name;
+    }
+
+    string* MemberRef::getDescriptor() {
+        return m_descriptor;
     }
 
 }

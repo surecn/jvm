@@ -25,6 +25,7 @@ namespace rt {
         bool isNative();
         bool isAbstract();
         bool isStrict();
+        u1 *getCode();
     };
 }
 

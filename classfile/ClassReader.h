@@ -15,7 +15,6 @@ namespace cf {
         byte *m_data;
     public:
         ClassReader(byte* &_data);
-        ~ClassReader();
         u1 readU1(); //u1
         u2 readU2(); // u2
         u4 readU4(); //u4
@@ -24,7 +23,7 @@ namespace cf {
         u2* readU2s(int length); //u2[]
         u1* readU1s(u2 *length); //u8[]
         u1* readU1s(int length);
-        string readString();
+        string* readString();
     };
 
 }

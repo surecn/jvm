@@ -9,8 +9,16 @@
 #include "ExceptionAttribute.h"
 #include "LocalVariableTableAttribute.h"
 #include "SourceFileAttribute.h"
+#include "UnparsedAttribute.h"
+#include "BootstrapMethodsAttribute.h"
+#include "EnclosingMethodAttribute.h"
+#include "InnerClassesAttribute.h"
+#include "SignatureAttribute.h"
 
 namespace cf {
+
+    DeprecatedAttribute *AttributeInfo::s_attrDeprecated = new DeprecatedAttribute();
+    SyntheticAttribute *AttributeInfo::s_attrSynthetic = new SyntheticAttribute();
 
     string AttributeInfo::getAttributeType() {
         return m_type;
@@ -36,26 +44,42 @@ namespace cf {
     }
 
     AttributeInfo* AttributeInfo::newAttributeInfo(string *attrName, u2 attrLen, ConstantPool *constantPool) {
-        cout << "attribute:" + *attrName << endl;
+        cout << "attribute:" + *attrName << "=" << attrLen << endl;
         AttributeInfo * attributeInfo = NULL;
-        if ("Code" == *attrName) {
+        if ("BootstrapMethods" == *attrName) {
+            attributeInfo = new BootstrapMethodsAttribute();
+        } else if ("Code" == *attrName) {
             attributeInfo = new CodeAttribute(constantPool);
         } else if ("ConstantValue" == *attrName) {
             attributeInfo = new ConstantValueAttribute();
         } else if ("Deprecated" == *attrName) {
-            attributeInfo = new DeprecatedAttribute();
+            attributeInfo = s_attrDeprecated;
+        } else if ("EnclosingMethod" == *attrName) {
+            attributeInfo = new EnclosingMethodAttribute();
         } else if ("Exceptions" == *attrName) {
             attributeInfo = new ExceptionAttribute();
+        } else if ("InnerClasses" == *attrName) {
+            attributeInfo = new InnerClassesAttribute();
         } else if ("LineNumberTable" == *attrName) {
             attributeInfo = new LineNumberTableAttribute();
         } else if ("LocalVariableTable" == *attrName) {
             attributeInfo = new LocalVariableTableAttribute();
+        } else if ("LocalVariableTypeTable" == *attrName) {
+        //} else if ("MethodParameters" == *attrName) {
+        //} else if ("RuntimeInvisibleAnnotations" == *attrName) {
+        //} else if ("RuntimeInvisibleParameterAnnotations" == *attrName) {
+        //} else if ("RuntimeInvisibleTypeAnnotations" == *attrName) {
+        //} else if ("RuntimeVisibleAnnotations" == *attrName) {
+        //} else if ("RuntimeVisibleParameterAnnotations" == *attrName) {
+        //} else if ("RuntimeVisibleTypeAnnotations" == *attrName) {
+        } else if ("Signature" == *attrName) {
+            attributeInfo = new SignatureAttribute();
         } else if ("SourceFile" == *attrName) {
             attributeInfo = new SourceFileAttribute(constantPool);
         } else if ("Synthetic" == *attrName) {
             attributeInfo = new SyntheticAttribute();
         } else {
-            cout << "UnparsedAttribute:" + *attrName;
+            attributeInfo = new UnparsedAttribute(attrName, attrLen);
         }
         if (attributeInfo != NULL) {
             attributeInfo->m_type = *attrName;

@@ -4,6 +4,7 @@
 
 #include "Class.h"
 #include "AccessFlags.h"
+#include "ConstantPool.h"
 
 namespace rt{
 
@@ -15,39 +16,42 @@ namespace rt{
         m_interfaceCount = cf->getInterfaceCount();
         m_cp = new ConstantPool(this, cf->getConstantPool());
         m_fields = Field::newFields(this, cf->getFields(), cf->getFieldCount());
+        m_fieldCount = cf->getFieldCount();
         m_method = Method::newMethods(this, cf->getMethods(), cf->getMethodCount());
+        m_methodCount = cf->getMethodCount();
+        m_superClass = NULL;
     }
 
     bool Class::isPublic() {
-        return 0 != this->m_accessFlags & ACC_PUBLIC;
+        return this->m_accessFlags & ACC_PUBLIC != 0;
     }
 
     bool Class::isFinal() {
-        return 0 != this->m_accessFlags & ACC_FINAL;
+        return this->m_accessFlags & ACC_FINAL != 0;
     }
 
     bool Class::isSuper() {
-        return 0 != this->m_accessFlags & ACC_SUPER;
+        return this->m_accessFlags & ACC_SUPER != 0;
     }
 
     bool Class::isInterface() {
-        return 0 != this->m_accessFlags & ACC_INTERFACE;
+        return this->m_accessFlags & ACC_INTERFACE != 0;
     }
 
     bool Class::isAbstract() {
-        return 0 != this->m_accessFlags & ACC_ABSTRACT;
+        return this->m_accessFlags & ACC_ABSTRACT != 0;
     }
 
     bool Class::isSynthetic() {
-        return 0 != this->m_accessFlags & ACC_SYNTHETIC;
+        return this->m_accessFlags & ACC_SYNTHETIC != 0;
     }
 
     bool Class::isAnnotation() {
-        return 0 != this->m_accessFlags & ACC_ANNOTATION;
+        return this->m_accessFlags & ACC_ANNOTATION != 0;
     }
 
     bool Class::isEnum() {
-        return 0 != this->m_accessFlags & ACC_ENUM;
+        return this->m_accessFlags & ACC_ENUM != 0;
     }
 
     void Class::setClassLoader(rt::ClassLoader *loader) {
@@ -190,6 +194,24 @@ namespace rt{
             }
         }
         return false;
+    }
+
+    Method* Class::getMainMethod() {
+        string name = "main";
+        string descriptor = "([Ljava/lang/String;)V";
+        return getStaticMethod(&name, &descriptor);
+    }
+
+    Method* Class::getStaticMethod(string *name, string *descriptor) {
+        for (int i = 0, len = m_methodCount; i < len; ++i) {
+            Method *method = m_method[i];
+            if (method->isStatic()
+                && *(method->getName()) == *name
+                && *method->getDescriptor() == *descriptor) {
+                return method;
+            }
+        }
+        return NULL;
     }
 
 }

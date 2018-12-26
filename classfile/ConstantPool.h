@@ -22,6 +22,7 @@ namespace cf {
         ConstantInfo* getConstantInfo(u2 index);
         u2 getConstantSize();
         NameAndType getNameAndType(u2 index);
+        void print();
     };
 
 

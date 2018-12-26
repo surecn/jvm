@@ -26,12 +26,16 @@ namespace cf {
     static const int CONSTANT_MethodType = 16;
     static const int CONSTANT_InvokeDynamic = 18;
 
+    extern class ConstantPool;
+
     class ConstantInfo {
     public:
         int m_type;
     public:
-        virtual void print() = 0;
+        virtual void print();
         virtual void* getValue();
+        virtual void readInfo(ClassReader* classReader) = 0;
+        void setType(int type);
     };
 
 }

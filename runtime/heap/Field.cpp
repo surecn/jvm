@@ -21,15 +21,15 @@ namespace rt {
     }
 
     bool Field::isVolatile() {
-        return 0 != m_accessFlags & ACC_VOLATILE;
+        return m_accessFlags & ACC_VOLATILE != 0;
     }
 
     bool Field::isTransient() {
-        return 0 != m_accessFlags & ACC_TRANSIENT;
+        return m_accessFlags & ACC_TRANSIENT != 0;
     }
 
     bool Field::isEnum() {
-        return 0 != m_accessFlags & ACC_ENUM;
+        return m_accessFlags & ACC_ENUM != 0;
     }
 
     bool Field::isLongOrDouble() {

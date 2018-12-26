@@ -10,7 +10,7 @@
 
 namespace rt {
 
-    class GET_STATIC : Index16Instruction {
+    class GET_STATIC : public Index16Instruction {
     public:
         void execute(Frame* frame);
     };

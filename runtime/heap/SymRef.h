@@ -17,8 +17,7 @@ namespace rt {
         Class *m_class;
         void resolveClassRef();
     public:
-        SymRef(){};
-        SymRef(ConstantPool *cp, cf::ConstantClassInfo *classInfo);
+        SymRef();
         void setClassName(string *className);
         void setConstantPool(ConstantPool *constantPool);
         Class* resolvedClass();

@@ -18,7 +18,7 @@ namespace cf {
         u4 m_magic;
         u2 m_minorVersion;//小版本号
         u2 m_majorVersion;//大版本号
-        ConstantPool* m_constantPool;//常量池
+        ConstantPool* m_cp;//常量池
         u2  m_accessFlags;//访问标志
         u2  m_thisClass;
         u2  m_superClass;
@@ -39,7 +39,6 @@ namespace cf {
 
     public:
         ClassFile();
-        ~ClassFile();
         string* getName(MemberInfo* memberInfo);
         string* getDescriptor(MemberInfo* memberInfo);
         void parse(byte *&classData);

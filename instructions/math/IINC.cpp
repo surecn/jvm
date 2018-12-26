@@ -7,23 +7,23 @@
 namespace rt {
 
     void IINC::setIndex(u4 index) {
-        _index = index;
+        m_index = index;
     }
 
     void IINC::setConstant(java_int val) {
-        constant = val;
+        m_const = val;
     }
 
     void IINC::execute(rt::Frame *frame) {
         LocalVars *localVars = frame->getLocalVars();
-        int val = localVars->getInt(_index);
-        val += constant;
-        localVars->setInt(_index, val);
+        int val = localVars->getInt(m_index);
+        val += m_const;
+        localVars->setInt(m_index, val);
     }
 
     void IINC::fetchOperand(rt::BytecodeReader *reader) {
-        _index = uint(reader->readU1());
-        constant = java_int(reader->readU4());
+        m_index = uint(reader->readU1());
+        m_const = java_int(reader->readU1());
     }
 
 

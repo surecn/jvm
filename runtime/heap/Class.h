@@ -70,6 +70,8 @@ namespace rt {
         bool isAssignableFrom(Class *other);
         bool isImplements(Class *other);
         bool isSubInterfaceOf(rt::Class *other);
+        Method* getMainMethod();
+        Method* getStaticMethod(string *name, string *descriptor);
     };
 
 

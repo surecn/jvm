@@ -30,27 +30,27 @@ namespace rt {
     }
 
     bool Method::isSynchronized() {
-        return 0 != m_accessFlags & ACC_SYNCHRONIZED;
+        return m_accessFlags & ACC_SYNCHRONIZED != 0;
     }
 
     bool Method::isBridge() {
-        return 0 != m_accessFlags & ACC_BRIDGE;
+        return m_accessFlags & ACC_BRIDGE != 0;
     }
 
     bool Method::isVarargs() {
-        return 0 != m_accessFlags & ACC_VARARGS;
+        return m_accessFlags & ACC_VARARGS != 0;
     }
 
     bool Method::isNative() {
-        return 0 != m_accessFlags & ACC_NATIVE;
+        return m_accessFlags & ACC_NATIVE != 0;
     }
 
     bool Method::isAbstract() {
-        return 0 != m_accessFlags & ACC_ABSTRACT;
+        return m_accessFlags & ACC_ABSTRACT != 0;
     }
 
     bool Method::isStrict() {
-        return 0 != m_accessFlags & ACC_STRICT;
+        return m_accessFlags & ACC_STRICT != 0;
     }
 
     u4 Method::getMaxStack() const {
@@ -59,6 +59,10 @@ namespace rt {
 
     u4 Method::getMaxLocals() const {
         return m_maxLocals;
+    }
+
+    u1* Method::getCode() {
+        return m_code;
     }
 
 }

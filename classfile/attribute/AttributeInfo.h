@@ -10,6 +10,8 @@
 #include "../ConstantPool.h"
 
 namespace cf {
+    class DeprecatedAttribute;
+    class SyntheticAttribute;
     class AttributeInfo {
     private:
 //        u2 m_nameIndex;
@@ -18,15 +20,13 @@ namespace cf {
         string m_type;
         static AttributeInfo* readAttribute(ClassReader* classReader, cf::ConstantPool* constantPool);
     public:
-
         string getAttributeType();
-
         virtual void readInfo(ClassReader* classReader) = 0;
-
         static AttributeInfo** readAttributes(ClassReader* classReader, ConstantPool* constantPool, u2 count);
-
         static AttributeInfo* newAttributeInfo(string *attrName, u2 attrLen, ConstantPool* constantPool);
 
+        static DeprecatedAttribute *s_attrDeprecated;
+        static SyntheticAttribute *s_attrSynthetic;
     };
 
     class DeprecatedAttribute : public AttributeInfo {

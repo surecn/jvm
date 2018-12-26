@@ -12,8 +12,8 @@ namespace rt {
 
     class IINC : public Instruction {
     private:
-        u4 _index;
-        java_int constant;
+        u4 m_index;
+        java_int m_const;
     public:
         void setIndex(u4 index);
         void setConstant(java_int val);

@@ -8,16 +8,10 @@
 namespace cf {
     ClassFile::ClassFile() {}
 
-    ClassFile::~ClassFile() {
-        delete m_interfaces;
-        delete [] m_methods;
-        delete [] m_fields;
-        delete m_attributes;
-    }
-
     void ClassFile::parse(byte *&classData) {
         ClassReader classReader(classData);
         read(&classReader);
+
     }
 
     ClassFile* ClassFile::read(ClassReader *classReader) {
@@ -27,16 +21,17 @@ namespace cf {
         if (!readAndCheckVersion(classReader)) {
             return NULL;
         }
-        m_constantPool = readConstantPool(classReader);
+        m_cp = readConstantPool(classReader);
         //TODO 类访问标志
         m_accessFlags = classReader->readU2();
         m_thisClass = classReader->readU2();
-        cout << "classFile className:" << *m_constantPool->getClassName(m_thisClass) << endl;
+        cout << "classFile className:" << *m_cp->getClassName(m_thisClass) << endl;
         m_superClass = classReader->readU2();
-        cout << "super className:" << *m_constantPool->getClassName(m_superClass) << endl;
+        //cout << "super className:" << *m_cp->getClassName(m_superClass) << endl;
         m_interfaces = classReader->readU2s(&m_interfacesCount);
         readFields(classReader);
         readMethods(classReader);
+
     }
 
     static ConstantPool* readConstanPool(ClassReader *classReader) {
@@ -74,11 +69,11 @@ namespace cf {
     }
 
     string* ClassFile::getName(MemberInfo *memberInfo) {
-        return m_constantPool->getUtf8(memberInfo->getNameIndex());
+        return m_cp->getUtf8(memberInfo->getNameIndex());
     }
 
     string* ClassFile::getDescriptor(MemberInfo *memberInfo) {
-        return m_constantPool->getUtf8(memberInfo->getDescriptorIndex());
+        return m_cp->getUtf8(memberInfo->getDescriptorIndex());
     }
 
     ConstantPool* ClassFile::readConstantPool(ClassReader *classReader) {
@@ -86,11 +81,11 @@ namespace cf {
     }
 
     void ClassFile::readFields(ClassReader *classReader) {
-        m_fields = MemberInfo::readMembers(m_constantPool, classReader, &m_fieldCount);
+        m_fields = MemberInfo::readMembers(m_cp, classReader, &m_fieldCount);
     }
 
     void ClassFile::readMethods(ClassReader *classReader) {
-        m_methods = MemberInfo::readMembers(m_constantPool, classReader, &m_methodCount);
+        m_methods = MemberInfo::readMembers(m_cp, classReader, &m_methodCount);
     }
 
     ConstantInfo* ClassFile::readConstantInfo(ClassReader *classReader, ConstantPool* cp) {
@@ -106,12 +101,12 @@ namespace cf {
     }
 
     string* ClassFile::getClassName() {
-        m_constantPool->getClassName(this->m_thisClass);
+        return m_cp->getClassName(this->m_thisClass);
     }
 
     string* ClassFile::getSuperClassName() {
         if (m_superClass > 0) {
-            return m_constantPool->getClassName(this->m_superClass);
+            return m_cp->getClassName(this->m_superClass);
         }
         return 0;
     }
@@ -120,7 +115,7 @@ namespace cf {
         if (m_interfaces) {
             string **names = new string*[m_interfacesCount];
             for (int i = 0; i < m_interfacesCount; ++i) {
-                names[i] = m_constantPool->getClassName(this->m_interfaces[i]);
+                names[i] = m_cp->getClassName(this->m_interfaces[i]);
             }
             return names;
         }
@@ -152,7 +147,7 @@ namespace cf {
     }
 
     ConstantPool* ClassFile::getConstantPool() {
-        return m_constantPool;
+        return m_cp;
     }
 
 }

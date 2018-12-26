@@ -22,13 +22,12 @@ namespace cf {
 
     ConstantPool::ConstantPool(ClassReader *classReader) {
         m_constantPoolSize = classReader->readU2();
-        m_listConstant = (ConstantInfo**)(malloc(sizeof(ConstantInfo*) * m_constantPoolSize));
+        m_listConstant = new ConstantInfo*[m_constantPoolSize];
         for (int i = 1; i < m_constantPoolSize; ++i) {
-            byte tag = classReader->readU1();
-            ConstantInfo* con = ConstantFactory::newConstantInfo(tag, this, classReader);
-            m_listConstant[i] = con;
-            con->print();
-            if (tag == CONSTANT_Double || tag == CONSTANT_Long) {
+            m_listConstant[i] = ConstantFactory::readConstantInfo(classReader, this);
+            cout << "index:" << i << endl;
+            m_listConstant[i]->print();
+            if ( m_listConstant[i]->m_type == CONSTANT_Double ||  m_listConstant[i]->m_type  == CONSTANT_Long) {
                 i++;
             }
         }
@@ -44,6 +43,14 @@ namespace cf {
         nameAndType.name = getUtf8(info->getNameIndex());
         nameAndType.type = getUtf8(info->getDescriptorIndex());
         return nameAndType;
+    }
+
+    void ConstantPool::print() {
+        for (int i = 1; i < m_constantPoolSize; ++i) {
+            ConstantInfo *constantInfo = m_listConstant[i];
+            cout << "index:" << i << "    ";
+            constantInfo->print();
+        }
     }
 }
 

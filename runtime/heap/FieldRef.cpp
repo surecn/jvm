@@ -7,6 +7,7 @@
 namespace rt {
 
     FieldRef::FieldRef(rt::ConstantPool *cp, cf::ConstantFieldRefInfo *refInfo) {
+        m_field = NULL;
         setConstantPool(cp);
         copyMemberRefInfo(refInfo);
     }
@@ -18,7 +19,10 @@ namespace rt {
         if (field == NULL) {
             cout << "java.lang.NoSuchFieldError" << endl;
         }
-        if (field->isAccessiableTo())
+        if (!field->isAccessiableTo(cls_d)) {
+            cout << "java.lang.IllegalAccessError" << endl;
+        }
+        m_field = field;
     }
 
     Field* FieldRef::resolvedField() {
@@ -32,7 +36,7 @@ namespace rt {
         Field **fields = cls->getFields();
         u4 fieldCount = cls->getFieldCount();
         for (int i = 0; i < fieldCount; ++i) {
-            if (fields[i]->getName() == name && fields[i]->getDescriptor()) {
+            if (*fields[i]->getName() == *name && *fields[i]->getDescriptor() == *descriptor) {
                 return fields[i];
             }
         }

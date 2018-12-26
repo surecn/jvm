@@ -3,6 +3,8 @@
 #include "classpath/ClassPath.h"
 #include "classfile/ClassFile.h"
 #include "Interperter.h"
+#include "runtime/heap/ClassLoader.h"
+#include "common/ZipUtils.h"
 
 const string PATHSeparter;
 
@@ -17,39 +19,18 @@ void printLoadError(int error) {
     cout << "LoadClass : " << error << endl;
 }
 
-void loadClass(string &className, ClassPath &classPath, ClassFile &classFile) {
-    ClassData classData;
-    classPath.readClass(className, classData);
-    if (classData.m_error != 0) {
-        printLoadError(classData.m_error);
-    }
-
-    classFile.parse(classData.m_data);
-}
-
-MemberInfo* getMainMethod(ClassFile* classFile) {
-    for (int i = 0, len = classFile->getMethodCount(); i < len; ++i) {
-        cf::MemberInfo* member = classFile->getMethods()[i];
-        string *name = classFile->getName(member);
-        string *descriptor = classFile->getDescriptor(member);
-        if (*name == "main" && *descriptor == "([Ljava/lang/String;)V") {
-            return member;
-        }
-    }
-    return NULL;
-}
-
-
 void startVM(struct MainParamater cmd) {
     ClassPath classPath(cmd.m_xjreOption, cmd.m_cpOption);
+    rt::ClassLoader *classLoader = new rt::ClassLoader(&classPath);
+
     string className = cmd.m_className;
     StrUtils::replace(className, ".", "/");
 
-    ClassFile classFile;
-    loadClass(className, classPath, classFile);
-
-    cf::MemberInfo* memberInfo = getMainMethod(&classFile);
-    Interperter::interpret(memberInfo);
+    rt::Class *mainClass = classLoader->loadClass(&className);
+    rt::Method *mainMethod = mainClass->getMainMethod();
+    if (mainMethod != NULL) {
+        Interperter::interpret(mainMethod);
+    }
 
     cout << "startVM" << endl;
 }

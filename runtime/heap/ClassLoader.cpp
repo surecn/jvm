@@ -3,6 +3,7 @@
 //
 
 #include "ClassLoader.h"
+#include "ConstantPool.h"
 
 namespace rt {
 
@@ -21,7 +22,7 @@ namespace rt {
 
     void ClassLoader::readClass(string *name, cp::ClassData &data) {
         m_classPath->readClass(*name, data);
-        if (data.m_error != NULL) {
+        if (data.m_error == 0) {
             cout << "java.lang.ClassNotFoundException: " << *name << endl;
         }
     }
@@ -31,6 +32,7 @@ namespace rt {
         cls->setClassLoader(this);
         resolveSuperClass(cls);
         resolveInterfaces(cls);
+        return cls;
     }
 
     Class* ClassLoader::parseClass(u1 *data) {
@@ -69,7 +71,7 @@ namespace rt {
     void ClassLoader::prepare(rt::Class *cls) {
         calcInstanceFieldSlotIds(cls);
         calcStaticFieldSlotIds(cls);
-
+        allocAndInitStaticVars(cls);
     }
 
     void ClassLoader::calcInstanceFieldSlotIds(rt::Class *cls) {
@@ -122,22 +124,22 @@ namespace rt {
 
     void ClassLoader::initStaticFinalVar(rt::Class *cls, rt::Field *field) {
         SlotArray * slotArray = cls->getStaticVars();
-        cf::ConstantPool *cp = cls->getConstantPool();
+        rt::ConstantPool *cp = cls->getConstantPool();
         u4 cpIndex = field->getConstValueIndex();
         u4 slotId = field->getSlotId();
         if (cpIndex > 0) {
             string *s = field->getDescriptor();
             if (*s == "Z" || *s == "B" || *s == "C" || *s == "S" || *s == "I") {
-                java_int *val = (java_int *)cp->getConstantInfo(cpIndex)->getValue();
+                java_int *val = (java_int *)cp->getConstant(cpIndex);
                 slotArray->setInt(slotId, *val);
             } else if (*s == "J") {
-                java_long *val = (java_long *)cp->getConstantInfo(cpIndex)->getValue();
+                java_long *val = (java_long *)cp->getConstant(cpIndex);
                 slotArray->setLong(slotId, *val);
             } else if (*s == "F") {
-                java_float *val = (java_float *)cp->getConstantInfo(cpIndex)->getValue();
+                java_float *val = (java_float *)cp->getConstant(cpIndex);
                 slotArray->setFloat(slotId, *val);
             } else if (*s == "D") {
-                java_double *val = (java_double *)cp->getConstantInfo(cpIndex)->getValue();
+                java_double *val = (java_double *)cp->getConstant(cpIndex);
                 slotArray->setDouble(slotId, *val);
             } else if (*s == "Ljava/lang/String;") {
                 cout << "todo" << endl;//TODO 第八章实现

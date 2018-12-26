@@ -23,24 +23,19 @@ static void loop(rt::Thread *thread, byte *bytecode) {
         rt::Instruction *instruction = rt::Factory::newInstruction(opcode);
         instruction->fetchOperand(&reader);
         frame->setNextPc(reader.PC());
-
         //execute
-        printf("pc:%2d inst:%T %v\n", pc, instruction, instruction);
+        cout << "pc:" << pc << hex << "=" << opcode << endl;
+        //printf("pc:%2d inst:%T %v\n", pc, instruction, instruction);
         instruction->execute(frame);
     }
 }
 
 
-void Interperter::interpret(cf::MemberInfo *memberInfo) {
-    cf::CodeAttribute* attribute = memberInfo->getCodeAttribute();
-    u2 maxLocals = attribute->getMaxLocals();
-    u2 maxStack = attribute->getMaxStack();
-    u1* code = attribute->getCode();
-    u4 codeLength = attribute->getCodeLength();
+void Interperter::interpret(rt::Method *method) {
     rt::Thread* thread = rt::Thread::newThread();
-    rt::Frame* frame = thread->newFrame(maxLocals, maxStack);
+    rt::Frame *frame = thread->newFrame(method);
     thread->pushFrame(frame);
-    loop(thread, code);
+    loop(thread, method->getCode());
 }
 
 

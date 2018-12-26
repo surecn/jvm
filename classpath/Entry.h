@@ -15,7 +15,7 @@ namespace cp {
     struct ClassData {
         byte *m_data;
         Entry *m_entry;
-        int m_error = 1;
+        int m_error = 0;
         ~ClassData();
     };
 
@@ -25,41 +25,6 @@ namespace cp {
         string toString();
         static Entry* create(string &path);
     };
-
-    class DirEntry : public Entry {
-    private:
-        string m_path;
-    public:
-        DirEntry(string &s);
-        void readClass(string &path, ClassData &data);
-        string toString();
-        string apply(string &fileName);
-
-    };
-
-    class CompositeEntry : public Entry {
-    private:
-        list<Entry*> m_entryList;/*析构函数释放*/
-    public:
-        CompositeEntry(string &path);
-        ~CompositeEntry();
-        virtual void readClass(string &path, ClassData &data);
-    };
-
-    class WildcardEntry : public CompositeEntry {
-    private:
-        string m_parentPath;
-    public:
-        WildcardEntry(string &path);
-    };
-
-    class ZipEntry : public Entry {
-    public:
-        ZipEntry(string &path){}
-        void readClass(string &path, ClassData &data);
-
-    };
-
 
 }
 

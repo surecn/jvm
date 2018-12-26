@@ -9,27 +9,27 @@
 namespace rt {
 
     bool ClassMember::isPublic() {
-        return 0 != m_accessFlags & ACC_PUBLIC;
+        return m_accessFlags & ACC_PUBLIC != 0;
     }
 
     bool ClassMember::isPrivate() {
-        return 0 != m_accessFlags & ACC_PRIVATE;
+        return m_accessFlags & ACC_PRIVATE != 0;
     }
 
     bool ClassMember::isProtected() {
-        return 0 != m_accessFlags & ACC_PROTECTED;
+        return m_accessFlags & ACC_PROTECTED != 0;
     }
 
     bool ClassMember::isStatic() {
-        return 0 != m_accessFlags & ACC_STATIC;
+        return m_accessFlags & ACC_STATIC != 0;
     }
 
     bool ClassMember::isFinal() {
-        return  0 != m_accessFlags & ACC_FINAL;
+        return  m_accessFlags & ACC_FINAL != 0;
     }
 
     bool ClassMember::isSynthetic() {
-        return 0 != m_accessFlags & ACC_SYNTHETIC;
+        return m_accessFlags & ACC_SYNTHETIC != 0;
     }
 
     string *ClassMember::getDescriptor() const {

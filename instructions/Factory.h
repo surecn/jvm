@@ -39,6 +39,7 @@
 #include "comparisons/Lcmp.h"
 #include "comparisons/Fcmp.h"
 #include "comparisons/Dcmp.h"
+#include <map>
 
 namespace rt {
 
@@ -172,10 +173,11 @@ namespace rt {
         static DCMPL dcmpl;
         static DCMPG dcmpg;
 
-
+        static map<int, string>* s_instructionNames;
 
     public:
         static Instruction *newInstruction(byte opcode);
+        static map<int, string>* initInstructionNames();
     };
 
 }
