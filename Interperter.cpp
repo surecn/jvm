@@ -24,7 +24,7 @@ static void loop(rt::Thread *thread, byte *bytecode) {
         instruction->fetchOperand(&reader);
         frame->setNextPc(reader.PC());
         //execute
-        cout << "pc:" << pc << hex << "=" << opcode << endl;
+        //cout << "pc:" << pc << hex << "=" << opcode << endl;
         //printf("pc:%2d inst:%T %v\n", pc, instruction, instruction);
         instruction->execute(frame);
     }

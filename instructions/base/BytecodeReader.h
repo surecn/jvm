@@ -17,6 +17,7 @@ namespace rt {
         void reset(u1 *_code, int _pc);
         u1 readU1();
         u2 readU2();
+        short readC2();
         u4 readU4();
         u4* readU4s(u4 length);
         u4* readU4s(u4* length);

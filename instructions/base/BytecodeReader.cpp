@@ -23,6 +23,12 @@ namespace rt {
         return ch;
     }
 
+    short BytecodeReader::readC2() {
+        short ch = (((char)(code[pc])) << 8) | short(code[pc + 1]);
+        pc+= 2;
+        return ch;
+    }
+
     u4 BytecodeReader::readU4() {
         u4 ch = (u1)(code[pc]) << 24 | (u1)(code[pc + 1]) << 16 | (u1)(code[pc + 2]) < 8 | (u1)(code[pc]);
         pc+= 4;

@@ -12,7 +12,12 @@
 namespace rt {
 
     class Instruction {
+    private:
+        int m_refCount;
     public:
+        Instruction();
+        void alloc();
+        void release();
         virtual void fetchOperand(BytecodeReader* reader) = 0;
         virtual void execute(Frame* frame) = 0;
     };
@@ -24,7 +29,7 @@ namespace rt {
 
     class BranchInstruction : public Instruction {
     protected:
-        u2 m_offset;
+        int m_offset;
     public:
         void fetchOperand(BytecodeReader* reader);
         void branch(Frame *frame, int offset);

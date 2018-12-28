@@ -13,23 +13,23 @@ namespace rt {
         MethodRef *methodRef = (MethodRef*)cp->getConstant(m_index);
         if (*(methodRef->getName()) == "println") {
             OperandStack *stack = frame->getOperandStack();
-            if (*(methodRef->getName()) == "(Z)V") {
+            if (*(methodRef->getDescriptor()) == "(Z)V") {
                 cout << stack->popInt() << endl;
-            } else if (*(methodRef->getName()) == "(C)V") {
+            } else if (*(methodRef->getDescriptor()) == "(C)V") {
                 cout << stack->popInt() << endl;
-            } else if (*(methodRef->getName()) == "(C)V") {
+            } else if (*(methodRef->getDescriptor()) == "(C)V") {
                 cout << stack->popInt() << endl;
-            } else if (*(methodRef->getName()) == "(I)V") {
+            } else if (*(methodRef->getDescriptor()) == "(I)V") {
                 cout << stack->popInt() << endl;
-            } else if (*(methodRef->getName()) == "(B)V") {
+            } else if (*(methodRef->getDescriptor()) == "(B)V") {
                 cout << stack->popInt() << endl;
-            } else if (*(methodRef->getName()) == "(S)V") {
+            } else if (*(methodRef->getDescriptor()) == "(S)V") {
                 cout << stack->popInt() << endl;
-            } else if (*(methodRef->getName()) == "(F)V") {
+            } else if (*(methodRef->getDescriptor()) == "(F)V") {
                 cout << stack->popFloat() << endl;
-            } else if (*(methodRef->getName()) == "(J)V") {
+            } else if (*(methodRef->getDescriptor()) == "(J)V") {
                 cout << stack->popLong() << endl;
-            } else if (*(methodRef->getName()) == "(D)V") {
+            } else if (*(methodRef->getDescriptor()) == "(D)V") {
                 cout << stack->popDouble() << endl;
             } else {
                 cout << "println: " << *methodRef->getDescriptor() << endl;

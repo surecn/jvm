@@ -32,6 +32,7 @@ namespace rt {
         cls->setClassLoader(this);
         resolveSuperClass(cls);
         resolveInterfaces(cls);
+        m_classMap[*cls->getName()] = cls;
         return cls;
     }
 

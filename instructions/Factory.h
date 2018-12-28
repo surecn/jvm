@@ -176,7 +176,7 @@ namespace rt {
         static map<int, string>* s_instructionNames;
 
     public:
-        static Instruction *newInstruction(byte opcode);
+        static shared_ptr<Instruction> *newInstruction(byte opcode);
         static map<int, string>* initInstructionNames();
     };
 

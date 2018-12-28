@@ -6,12 +6,20 @@
 
 namespace rt {
 
+    Instruction::Instruction() {
+        m_refCount = 0;
+    }
+
+    void Instruction::alloc() {
+        m_refCount++;
+    }
+
     void NoOperandsInstruction::fetchOperand(BytecodeReader *reader) {
 
     }
 
     void BranchInstruction::fetchOperand(BytecodeReader *reader) {
-        m_offset = reader->readU2();
+        m_offset = (int)reader->readC2();
     }
 
     void BranchInstruction::branch(rt::Frame *frame, int offset) {
