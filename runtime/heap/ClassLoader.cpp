@@ -16,7 +16,7 @@ namespace rt {
         readClass(name, data);
         Class *cls = defineClass(data.m_data);
         link(cls);
-        cout << "[Loaded " << name << " from " << endl;
+        cout << "[Loaded " << *name << " from " << endl;
         return cls;
     }
 

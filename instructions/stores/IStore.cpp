@@ -8,7 +8,7 @@ namespace rt {
 
     static void _istore(Frame* frame, u1 index) {
         java_int val = frame->getOperandStack()->popInt();
-        frame->getLocalVars()->setInt(index, val);
+        frame->getLocalVars()->setInt((int)index, val);
     }
 
     void ISTORE::execute(rt::Frame *frame) {

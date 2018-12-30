@@ -28,7 +28,7 @@ namespace cp {
         //string filepath = apply(className);
 
         long size;
-        data.m_error = !GetFileSizeAndContent(className, size, &data.m_data);
+        data.m_error = GetFileSizeAndContent(className, size, &data.m_data);
     }
 
     string DirEntry::toString() {

@@ -12,7 +12,6 @@ namespace rt {
 
     Frame::Frame(Thread* th, Method *method) : m_method(method), m_thread(th), m_operandStack(new OperandStack(method->getMaxStack())), m_localVars(new LocalVars(method->getMaxLocals())) {
         m_nextPC = 0L;
-        cout << "frame" << this << "=====" << m_localVars << endl;
     }
 
     Frame::~Frame() {

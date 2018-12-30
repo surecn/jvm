@@ -7,6 +7,7 @@
 
 
 #include "../common.h"
+#include "../common/SlotArray.h"
 
 namespace rt {
     class OperandStack {

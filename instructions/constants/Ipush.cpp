@@ -7,11 +7,11 @@
 namespace rt {
 
     void BIPUSH::fetchOperand(rt::BytecodeReader *reader) {
-        _val = reader->readU1();
+        _val = reader->readC1();
     }
 
     void BIPUSH::execute(rt::Frame *frame) {
-        int i = (int)this->_val;
+        java_int i = (java_int)this->_val;
         frame->getOperandStack()->pushInt(i);
     }
 

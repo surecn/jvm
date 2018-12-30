@@ -16,6 +16,7 @@ namespace rt {
     public:
         void reset(u1 *_code, int _pc);
         u1 readU1();
+        char readC1();
         u2 readU2();
         short readC2();
         u4 readU4();

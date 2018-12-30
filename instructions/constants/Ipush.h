@@ -16,6 +16,9 @@ namespace rt {
     public:
         void fetchOperand(BytecodeReader* reader);
         void execute(rt::Frame* frame);
+        ~BIPUSH() {
+            cout << "~BIPUSH:" << _val << endl;
+        }
     };
 
 }

@@ -17,7 +17,7 @@ namespace cf {
     }
 
     void ConstantClassInfo::print() {
-        cout << "Class:" + std::to_string(m_nameIndex) << endl;
+        //cout << "Class:" + std::to_string(m_nameIndex) << endl;
     }
 
     void* ConstantClassInfo::getValue() {
@@ -70,7 +70,7 @@ namespace cf {
     }
 
     void ConstantNameAndTypeInfo::print() {
-        cout << "NameAndType:" + std::to_string(m_name_index) << endl;
+        //cout << "NameAndType:" + std::to_string(m_name_index) << endl;
     }
 
     void* ConstantNameAndTypeInfo::getValue() {
@@ -113,7 +113,7 @@ namespace cf {
     }
 
     void ConstantUtf8Info::print() {
-        cout << "UTF8:" << *m_utf8 << endl;
+        //cout << "UTF8:" << *m_utf8 << endl;
     }
 
     u2 MemberInfo::getNameIndex() {

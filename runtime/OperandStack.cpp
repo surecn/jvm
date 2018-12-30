@@ -26,7 +26,7 @@ namespace rt {
     void OperandStack::pushLong(java_long val) {
         m_slots[m_size] = (long)val;
         m_slots[m_size + 1] = (long)(val >> 32);
-        m_slots+=2;
+        m_size+=2;
     }
 
     java_long OperandStack::popLong() {
@@ -46,6 +46,7 @@ namespace rt {
         u1 data[SIZE_INT];
         BytesUtils::floatToBytes(val, data);
         m_slots[m_size] = BytesUtils::bytesToInt(data);
+        m_size++;
     }
 
     void OperandStack::pushDouble(java_double val) {
@@ -53,6 +54,7 @@ namespace rt {
         BytesUtils::doubleToBytes(val, data);
         m_slots[m_size] = BytesUtils::bytesToInt(data);
         m_slots[m_size + 1] = BytesUtils::bytesToInt(data + SIZE_INT);
+        m_size+=2;
     }
 
     java_double OperandStack::popDouble() {

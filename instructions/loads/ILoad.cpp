@@ -7,7 +7,7 @@
 namespace rt {
 
     static void _iload(Frame* frame, u1 index) {
-        java_int val = frame->getLocalVars()->getInt(index);
+        java_int val = frame->getLocalVars()->getInt((int)index);
         frame->getOperandStack()->pushInt(val);
     }
 

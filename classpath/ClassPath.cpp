@@ -36,13 +36,12 @@ namespace cp {
 
     void ClassPath::parseBootAndExtClassPath(string &jreOption) {
         string jreDir = getJreDir(jreOption);
-
         // jre/lib/*
-        string jreLibPath = jreDir.append("/lib/*");
+        string jreLibPath = (string(jreDir)).append("/lib/*");
         m_bootClassPath = new WildcardEntry(jreLibPath);
 
         // jre/lib/ext/*
-        string jreExtPath = jreDir.append("/lib/ext/*");
+        string jreExtPath = (string(jreDir)).append("/lib/ext/*");
         m_extClassPath = new WildcardEntry(jreExtPath);
     }
 

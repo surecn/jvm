@@ -44,7 +44,7 @@ namespace cf {
     }
 
     AttributeInfo* AttributeInfo::newAttributeInfo(string *attrName, u2 attrLen, ConstantPool *constantPool) {
-        cout << "attribute:" + *attrName << "=" << attrLen << endl;
+//        cout << "attribute:" + *attrName << "=" << attrLen << endl;
         AttributeInfo * attributeInfo = NULL;
         if ("BootstrapMethods" == *attrName) {
             attributeInfo = new BootstrapMethodsAttribute();

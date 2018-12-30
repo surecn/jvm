@@ -6,14 +6,6 @@
 
 namespace rt {
 
-    Instruction::Instruction() {
-        m_refCount = 0;
-    }
-
-    void Instruction::alloc() {
-        m_refCount++;
-    }
-
     void NoOperandsInstruction::fetchOperand(BytecodeReader *reader) {
 
     }

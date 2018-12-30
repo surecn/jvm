@@ -13,11 +13,7 @@ namespace rt {
 
     class Instruction {
     private:
-        int m_refCount;
     public:
-        Instruction();
-        void alloc();
-        void release();
         virtual void fetchOperand(BytecodeReader* reader) = 0;
         virtual void execute(Frame* frame) = 0;
     };

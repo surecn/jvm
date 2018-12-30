@@ -1820,6 +1820,7 @@ CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o
 CMakeFiles/jvm.dir/runtime/OperandStack.cpp.o
  /Users/surecn/Code/CLionProjects/jvm/common.h
  /Users/surecn/Code/CLionProjects/jvm/common/BytesUtils.h
+ /Users/surecn/Code/CLionProjects/jvm/common/SlotArray.h
  /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h
  /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStack.cpp
  /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStack.h

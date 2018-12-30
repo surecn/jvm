@@ -1819,6 +1819,7 @@ CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o: ../runtime/LocalVars.h
 
 CMakeFiles/jvm.dir/runtime/OperandStack.cpp.o: ../common.h
 CMakeFiles/jvm.dir/runtime/OperandStack.cpp.o: ../common/BytesUtils.h
+CMakeFiles/jvm.dir/runtime/OperandStack.cpp.o: ../common/SlotArray.h
 CMakeFiles/jvm.dir/runtime/OperandStack.cpp.o: ../common/StrUtils.h
 CMakeFiles/jvm.dir/runtime/OperandStack.cpp.o: ../runtime/OperandStack.cpp
 CMakeFiles/jvm.dir/runtime/OperandStack.cpp.o: ../runtime/OperandStack.h

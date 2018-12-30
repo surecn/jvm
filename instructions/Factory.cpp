@@ -28,7 +28,7 @@
 #include <memory>
 
 namespace rt {
-    shared_ptr<Instruction> Factory::nop = make_shared<Instruction>(new NOP());
+    NOP Factory::nop;
     ACONST_NULL Factory::aconst_null;
     ICONST_M1 Factory::iconst_m1;
     ICONST_0 Factory::iconst_0;
@@ -353,7 +353,7 @@ namespace rt {
     map<int, string>* Factory::s_instructionNames = initInstructionNames();
 
 
-    shared_ptr<Instruction> Factory::newInstruction(byte opcode) {
+    Instruction* Factory::newInstruction(byte opcode) {
         string s = (*s_instructionNames)[opcode];
         if (s != "")
             cout << "code:" << s << endl;
@@ -771,6 +771,68 @@ namespace rt {
                 cout << "Unsupported opcode:" << hex << (int)opcode << endl;
                 break;
                 //panic(fmt.Errorf("Unsupported opcode: 0x%x!", opcode))
+        }
+    }
+
+    void Factory::releaseInstruction(rt::Instruction *ptr, int opCode) {
+        switch (opCode) {
+            case 0x10:
+            case 0x11:
+            case 0x12:
+            case 0x13:
+            case 0x14:
+            case 0x15:
+            case 0x16:
+            case 0x17:
+            case 0x18:
+            case 0x19:
+            case 0x36:
+            case 0x37:
+            case 0x38:
+            case 0x39:
+            case 0x3a:
+            case 0x84:
+            case 0x99:
+            case 0x9a:
+            case 0x9b:
+            case 0x9c:
+            case 0x9d:
+            case 0x9e:
+            case 0x9f:
+            case 0xa0:
+            case 0xa1:
+            case 0xa2:
+            case 0xa3:
+            case 0xa4:
+            case 0xa5:
+            case 0xa6:
+            case 0xa7:
+            case 0xa8:
+            case 0xa9:
+            case 0xaa:
+            case 0xab:
+            case 0xb2:
+            case 0xb3:
+            case 0xb4:
+            case 0xb5:
+            case 0xb6:
+            case 0xb7:
+            case 0xb8:
+            case 0xb9:
+            case 0xba:
+            case 0xbb:
+            case 0xbc:
+            case 0xbd:
+            case 0xc0:
+            case 0xc1:
+            case 0xc4:
+            case 0xc5:
+            case 0xc6:
+            case 0xc7:
+            case 0xc8:
+            case 0xc9:
+                delete ptr;
+                break;
         }
     }
 

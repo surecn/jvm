@@ -17,6 +17,12 @@ namespace rt {
         return ch;
     }
 
+    char BytecodeReader::readC1() {
+        char ch = (char)code[pc];
+        pc++;
+        return ch;
+    }
+
     u2 BytecodeReader::readU2() {
         u2 ch = (u1)(code[pc]) << 8 | u1(code[pc + 1]);
         pc+= 2;
@@ -24,7 +30,7 @@ namespace rt {
     }
 
     short BytecodeReader::readC2() {
-        short ch = (((char)(code[pc])) << 8) | short(code[pc + 1]);
+        short ch = (((short)(code[pc])) << 8) | short(code[pc + 1]);
         pc+= 2;
         return ch;
     }
