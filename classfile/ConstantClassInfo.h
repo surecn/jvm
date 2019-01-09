@@ -12,16 +12,19 @@
 namespace cls {
     class ConstantClassInfo : public ConstantInfo {
 
-    private:
+    public:
         ConstantPool *constantPool;
         u2 nameIndex;
 
     public:
-        ConstantClassInfo(ConstantPool* cp):constantPool(cp){}
-
-        ConstantInfo* readInfo(ClassReader* classReader);
-
+        ConstantClassInfo(ClassReader* classReader, ConstantPool* cp):constantPool(cp){
+            nameIndex = classReader->readU2();
+        }
         string* getName();
+
+        string toString() {
+            return "Class:" + std::to_string(nameIndex);
+        }
     };
 }
 

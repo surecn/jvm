@@ -67,11 +67,17 @@ namespace StrUtils
 
     static bool startsWith(const std::string& str, const std::string& substr)
     {
+        if (str.length() < substr.length()) {
+            return false;
+        }
         return str.find(substr) == 0;
     }
 
     static bool endsWith(const std::string& str, const std::string& substr)
     {
+        if (str.length() < substr.length()) {
+            return false;
+        }
         return str.rfind(substr) == (str.length() - substr.length());
     }
 

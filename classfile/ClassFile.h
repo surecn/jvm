@@ -7,15 +7,15 @@
 
 
 #include "../common.h"
-#include "MemberInfo.h"
 #include "ClassReader.h"
 #include "ConstantPool.h"
 #include "ConstantInfo.h"
+#include "Constants.h"
 
-namespace cls {
-
+namespace cf {
     class ClassFile {
     private:
+<<<<<<< HEAD
 
 //    u4                  magic;
 //    u2                  minor_version;
@@ -42,26 +42,53 @@ namespace cls {
         u2  thisClass;
         u2  superClass;
         u2*  interfaces;
-        cls::MemberInfo* methods;
-        cls::MemberInfo* fields;
+        cls::MemberInfo** methods;
+        cls::MemberInfo** fields;
         AttributeInfo* attributes;
 
-        void readAndCheckMagic(ClassReader *classReader);
+        bool readAndCheckMagic(ClassReader *classReader);
 
-        void readAndCheckVersion(ClassReader *classReader);
+        bool readAndCheckVersion(ClassReader *classReader);
 
-        cls::MemberInfo* readMemebers(ClassReader *classReader);
+        void readFields(ClassReader *classReader);
 
+        void readMethods(ClassReader *classReader);
+
+=======
+        u4 m_magic;
+        u2 m_minorVersion;//小版本号
+        u2 m_majorVersion;//大版本号
+        ConstantPool* m_cp;//常量池
+        u2  m_accessFlags;//访问标志
+        u2  m_thisClass;
+        u2  m_superClass;
+        u2*  m_interfaces;
+        u2 m_interfacesCount;
+        u2 m_methodCount;
+        u2 m_fieldCount;
+        MemberInfo** m_methods;
+        MemberInfo** m_fields;
+        AttributeInfo* m_attributes;
+        bool readAndCheckMagic(ClassReader *classReader);
+        bool readAndCheckVersion(ClassReader *classReader);
+        void readFields(ClassReader *classReader);
+        void readMethods(ClassReader *classReader);
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
         AttributeInfo* readAttributes(ClassReader *classReader);
-
         ConstantPool* readConstantPool(ClassReader *classReader);
-
         ConstantInfo* readConstantInfo(ClassReader *classReader, ConstantPool* cp);
 
-        string* getName(MemberInfo* memberInfo);
-
-        string* getDescriptor(MemberInfo* memberInfo);
     public:
+        ClassFile();
+        string* getName(MemberInfo* memberInfo);
+        string* getDescriptor(MemberInfo* memberInfo);
+<<<<<<< HEAD
+    public:
+
+        ClassFile(byte* &classData){
+            ClassReader classReader(classData);
+            read(&classReader);
+        }
 
         ClassFile* read(ClassReader* classReader);
 
@@ -91,11 +118,22 @@ namespace cls {
             return 0;
         }
 
-        static void ParseClassFile(byte* &classData, ClassFile* classFile) {
-            ClassReader classReader(classData);
-            classFile->read(&classReader);
-        }
-
+=======
+        void parse(byte *&classData);
+        ClassFile* read(ClassReader* classReader);
+        u2 getMinorVersion();
+        u2 getMajorVersion();
+        string* getClassName();
+        string* getSuperClassName();
+        string** getInterfacesNames();
+        u2 getInterfaceCount();
+        MemberInfo** getMethods();
+        u2 getMethodCount();
+        u2 getFieldCount();
+        u2 getAccessFlags();
+        ConstantPool* getConstantPool();
+        MemberInfo **getFields() const;
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
     };
 
 }

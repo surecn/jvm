@@ -5,25 +5,34 @@
 #ifndef JVM_ENTRY_H
 #define JVM_ENTRY_H
 
+#include <list>
 #include "../common.h"
 
-namespace classpath {
+namespace cp {
     class DirEntry;
     class Entry;
 
     struct ClassData {
+<<<<<<< HEAD
         byte *data;
         Entry *entry;
-        int error;
+        int error = 1;
+=======
+        byte *m_data;
+        Entry *m_entry;
+        int m_error = 0;
+        ~ClassData();
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
     };
 
     class Entry {
     public:
-         void readClass(string, ClassData &data);
+        virtual void readClass(string &path, ClassData &data) = 0;
+<<<<<<< HEAD
 
-         string toString();
+        string toString();
 
-         Entry* newEntry(string);
+        static Entry* create(string &path);
     };
 
     class DirEntry : public Entry {
@@ -32,48 +41,50 @@ namespace classpath {
 
     public:
 
-        DirEntry(string s) : path(s)
+        DirEntry(string &s) : path(s)
         {}
 
-        void readClass(string, ClassData &data);
+        void readClass(string &path, ClassData &data);
 
         string toString();
 
-        inline string apply(string fileName) {
-            return path + "/" + fileName;
+        inline string apply(string &fileName) {
+            return path + PATH_SEPARATOR + fileName;
         }
 
     };
 
     class CompositeEntry : public Entry {
 
+    private:
+        list<Entry*> entryList;
     public:
-        static CompositeEntry* newCompositeEntry(string path) {
-            std::vector<string> list = StrUtils::split(path, "/");
-            for (int i = 0, len = list.size(); i < len; ++i) {
-                string item = list[i];
+        CompositeEntry(string &path);
 
-            }
-        }
+        virtual void readClass(string &path, classpath::ClassData &data);
     };
 
-    class WildcardEntry : public Entry {
-
+    class WildcardEntry : public CompositeEntry {
+    private:
+        string parentPath;
     public:
-        static CompositeEntry* newWildcardEntry() {
-
-        }
+        WildcardEntry(string &path);
     };
 
     class ZipEntry : public Entry {
     public:
-        static ZipEntry* newZipEntry(string path) {
-
-        }
+        ZipEntry(string &path){}
+        void readClass(string &path, ClassData &data);
 
     };
 
 
+=======
+        string toString();
+        static Entry* create(string &path);
+    };
+
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 }
 
 #endif //JVM_ENTRY_H

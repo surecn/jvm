@@ -47,6 +47,7 @@
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
@@ -67,6 +68,7 @@
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.0/include"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include"/>
 					<Add directory="/System/Library/Frameworks"/>
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
@@ -78,16 +80,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/Interperter.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/Interperter.h">
+			<Option target="jvm"/>
+		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/MainParamater.cpp">
 			<Option target="jvm"/>
 		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/MainParamater.h">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/attribute/AttributeInfo.cpp">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/attribute/AttributeInfo.h">
 			<Option target="jvm"/>
 		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ClassFile.cpp">
@@ -102,64 +104,32 @@
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ClassReader.h">
 			<Option target="jvm"/>
 		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantClassInfo.cpp">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantClassInfo.h">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantDoubleInfo.cpp">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantDoubleInfo.h">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFieldRefInfo.cpp">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFieldRefInfo.h">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFloatInfo.cpp">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFloatInfo.h">
-			<Option target="jvm"/>
-		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.cpp">
 			<Option target="jvm"/>
 		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h">
 			<Option target="jvm"/>
 		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantIntegerInfo.cpp">
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInvokeDynamic.cpp">
 			<Option target="jvm"/>
 		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantIntegerInfo.h">
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInvokeDynamic.h">
 			<Option target="jvm"/>
 		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantLongInfo.cpp">
+<<<<<<< HEAD
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFactory.cpp">
 			<Option target="jvm"/>
 		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantLongInfo.h">
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFactory.h">
 			<Option target="jvm"/>
 		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantMemberInfo.cpp">
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFieldRefInfo.cpp">
+=======
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantNumeric.cpp">
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 			<Option target="jvm"/>
 		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantMemberInfo.h">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantMethodInfo.cpp">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantMethodInfo.h">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantNameAndTypeInfo.cpp">
-			<Option target="jvm"/>
-		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantNameAndTypeInfo.h">
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantNumeric.h">
 			<Option target="jvm"/>
 		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.cpp">
@@ -168,28 +138,82 @@
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.h">
 			<Option target="jvm"/>
 		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantStringInfo.cpp">
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/Constants.cpp">
 			<Option target="jvm"/>
 		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantStringInfo.h">
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/Constants.h">
 			<Option target="jvm"/>
 		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantUtf8Info.cpp">
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/AttributeInfo.cpp">
 			<Option target="jvm"/>
 		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantUtf8Info.h">
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/AttributeInfo.h">
 			<Option target="jvm"/>
 		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/FieldInfo.cpp">
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/BootstrapMethodsAttribute.cpp">
 			<Option target="jvm"/>
 		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/FieldInfo.h">
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/BootstrapMethodsAttribute.h">
 			<Option target="jvm"/>
 		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/MemberInfo.cpp">
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/CodeAttribute.cpp">
 			<Option target="jvm"/>
 		</Unit>
-		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/MemberInfo.h">
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/CodeAttribute.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/ConstantValueAttribute.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/ConstantValueAttribute.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/EnclosingMethodAttribute.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/EnclosingMethodAttribute.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/ExceptionAttribute.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/ExceptionAttribute.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/InnerClassesAttribute.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/InnerClassesAttribute.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/LineNumberAttribute.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/LineNumberAttribute.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/LocalVariableTableAttribute.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/LocalVariableTableAttribute.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/SignatureAttribute.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/SignatureAttribute.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/SourceFileAttribute.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/SourceFileAttribute.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/UnparsedAttribute.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/UnparsedAttribute.h">
 			<Option target="jvm"/>
 		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classpath/ClassPath.cpp">
@@ -198,13 +222,49 @@
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classpath/ClassPath.h">
 			<Option target="jvm"/>
 		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classpath/CompositeEntry.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classpath/CompositeEntry.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classpath/DirEntry.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classpath/DirEntry.h">
+			<Option target="jvm"/>
+		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classpath/Entry.cpp">
 			<Option target="jvm"/>
 		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classpath/Entry.h">
 			<Option target="jvm"/>
 		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classpath/WildcardEntry.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classpath/WildcardEntry.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classpath/ZipEntry.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classpath/ZipEntry.h">
+			<Option target="jvm"/>
+		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/common.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/common/BytesUtils.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/common/BytesUtils.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/common/SlotArray.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/common/SlotArray.h">
 			<Option target="jvm"/>
 		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/common/StrUtils.cpp">
@@ -213,7 +273,484 @@
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/common/StrUtils.h">
 			<Option target="jvm"/>
 		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/common/ZipUtils.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/common/ZipUtils.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/Factory.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/Factory.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/base/BytecodeReader.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/base/BytecodeReader.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/base/Instruction.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/base/Instruction.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/comparisons/Dcmp.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/comparisons/Dcmp.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/comparisons/Fcmp.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/comparisons/Fcmp.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/comparisons/IF_ACMP.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/comparisons/IF_ACMP.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/comparisons/IF_ICMP.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/comparisons/IF_ICMP.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/comparisons/Icmp.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/comparisons/Icmp.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/comparisons/Ifcond.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/comparisons/Ifcond.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/comparisons/Lcmp.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/comparisons/Lcmp.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/constants/Constant.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/constants/Constant.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/constants/Ipush.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/constants/Ipush.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/constants/SIPUSH.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/constants/SIPUSH.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/control/Goto.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/control/Goto.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/control/LookupSwitch.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/control/LookupSwitch.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/control/TableSwitch.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/control/TableSwitch.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/conversions/D2x.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/conversions/D2x.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/conversions/F2x.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/conversions/F2x.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/conversions/I2x.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/conversions/I2x.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/conversions/L2x.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/conversions/L2x.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/extended/GotoW.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/extended/GotoW.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/extended/IFNonNull.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/extended/IFNonNull.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/extended/IFNull.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/extended/IFNull.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/extended/Wide.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/extended/Wide.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/loads/ALoad.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/loads/ALoad.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/loads/DLoad.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/loads/DLoad.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/loads/FLoad.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/loads/FLoad.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/loads/ILoad.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/loads/ILoad.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/loads/LLoad.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/loads/LLoad.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/math/Add.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/math/Add.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/math/And.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/math/And.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/math/Div.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/math/Div.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/math/IINC.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/math/IINC.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/math/Mul.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/math/Mul.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/math/Neg.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/math/Neg.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/math/Or.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/math/Or.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/math/Rem.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/math/Rem.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/math/Sh.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/math/Sh.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/math/Sub.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/math/Sub.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/math/Xor.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/math/Xor.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/references/CHECK_CAST.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/references/CHECK_CAST.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/references/GET_FIELD.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/references/GET_FIELD.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/references/GET_STATIC.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/references/GET_STATIC.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/references/INSTANCE_OF.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/references/INSTANCE_OF.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/references/INVOKE_SPECIAL.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/references/INVOKE_SPECIAL.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/references/INVOKE_VIRTUAL.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/references/INVOKE_VIRTUAL.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/references/LDC.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/references/LDC.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/references/NEW.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/references/NEW.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/references/PUT_FIELD.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/references/PUT_FIELD.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/references/PUT_STATIC.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/references/PUT_STATIC.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/stack/Dup.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/stack/Dup.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/stack/Pop.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/stack/Pop.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/stack/Swap.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/stack/Swap.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/stores/AStore.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/stores/AStore.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/stores/DStore.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/stores/DStore.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/stores/FStore.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/stores/FStore.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/stores/IStore.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/stores/IStore.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/stores/LStore.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/instructions/stores/LStore.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/libs/ioapi.c">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/libs/ioapi.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/libs/unzip.c">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/libs/unzip.h">
+			<Option target="jvm"/>
+		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/main.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/Frame.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/Frame.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/LocalVars.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/OperandStack.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/OperandStack.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/Stack.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/Stack.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/Thread.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/Thread.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/AccessFlags.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/Class.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/Class.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/ClassLoader.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/ClassLoader.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/ClassMember.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/ClassMember.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/ClassRef.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/ClassRef.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/ConstantPool.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/ConstantPool.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/Field.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/Field.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/FieldRef.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/FieldRef.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/InterfaceMethodRef.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/InterfaceMethodRef.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/MemberRef.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/MemberRef.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/Method.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/Method.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/MethodRef.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/MethodRef.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/Object.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/Object.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/SymRef.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/runtime/heap/SymRef.h">
 			<Option target="jvm"/>
 		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/CMakeLists.txt">

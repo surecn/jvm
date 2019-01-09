@@ -5,8 +5,3 @@
 #include "ConstantMemberInfo.h"
 
 using namespace cls;
-
-ConstantInfo* ConstantMemberInfo::readInfo(ClassReader *classReader) {
-    classIndex = classReader->readU2();
-    nameAndTypeIndex = classReader->readU2();
-}

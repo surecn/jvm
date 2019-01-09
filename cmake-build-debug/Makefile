@@ -123,6 +123,33 @@ jvm/fast:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/build
 .PHONY : jvm/fast
 
+Interperter.o: Interperter.cpp.o
+
+.PHONY : Interperter.o
+
+# target to build an object file
+Interperter.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/Interperter.cpp.o
+.PHONY : Interperter.cpp.o
+
+Interperter.i: Interperter.cpp.i
+
+.PHONY : Interperter.i
+
+# target to preprocess a source file
+Interperter.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/Interperter.cpp.i
+.PHONY : Interperter.cpp.i
+
+Interperter.s: Interperter.cpp.s
+
+.PHONY : Interperter.s
+
+# target to generate assembly for a file
+Interperter.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/Interperter.cpp.s
+.PHONY : Interperter.cpp.s
+
 MainParamater.o: MainParamater.cpp.o
 
 .PHONY : MainParamater.o
@@ -149,33 +176,6 @@ MainParamater.s: MainParamater.cpp.s
 MainParamater.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/MainParamater.cpp.s
 .PHONY : MainParamater.cpp.s
-
-attribute/AttributeInfo.o: attribute/AttributeInfo.cpp.o
-
-.PHONY : attribute/AttributeInfo.o
-
-# target to build an object file
-attribute/AttributeInfo.cpp.o:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.o
-.PHONY : attribute/AttributeInfo.cpp.o
-
-attribute/AttributeInfo.i: attribute/AttributeInfo.cpp.i
-
-.PHONY : attribute/AttributeInfo.i
-
-# target to preprocess a source file
-attribute/AttributeInfo.cpp.i:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.i
-.PHONY : attribute/AttributeInfo.cpp.i
-
-attribute/AttributeInfo.s: attribute/AttributeInfo.cpp.s
-
-.PHONY : attribute/AttributeInfo.s
-
-# target to generate assembly for a file
-attribute/AttributeInfo.cpp.s:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.s
-.PHONY : attribute/AttributeInfo.cpp.s
 
 classfile/ClassFile.o: classfile/ClassFile.cpp.o
 
@@ -231,114 +231,6 @@ classfile/ClassReader.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ClassReader.cpp.s
 .PHONY : classfile/ClassReader.cpp.s
 
-classfile/ConstantClassInfo.o: classfile/ConstantClassInfo.cpp.o
-
-.PHONY : classfile/ConstantClassInfo.o
-
-# target to build an object file
-classfile/ConstantClassInfo.cpp.o:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantClassInfo.cpp.o
-.PHONY : classfile/ConstantClassInfo.cpp.o
-
-classfile/ConstantClassInfo.i: classfile/ConstantClassInfo.cpp.i
-
-.PHONY : classfile/ConstantClassInfo.i
-
-# target to preprocess a source file
-classfile/ConstantClassInfo.cpp.i:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantClassInfo.cpp.i
-.PHONY : classfile/ConstantClassInfo.cpp.i
-
-classfile/ConstantClassInfo.s: classfile/ConstantClassInfo.cpp.s
-
-.PHONY : classfile/ConstantClassInfo.s
-
-# target to generate assembly for a file
-classfile/ConstantClassInfo.cpp.s:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantClassInfo.cpp.s
-.PHONY : classfile/ConstantClassInfo.cpp.s
-
-classfile/ConstantDoubleInfo.o: classfile/ConstantDoubleInfo.cpp.o
-
-.PHONY : classfile/ConstantDoubleInfo.o
-
-# target to build an object file
-classfile/ConstantDoubleInfo.cpp.o:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantDoubleInfo.cpp.o
-.PHONY : classfile/ConstantDoubleInfo.cpp.o
-
-classfile/ConstantDoubleInfo.i: classfile/ConstantDoubleInfo.cpp.i
-
-.PHONY : classfile/ConstantDoubleInfo.i
-
-# target to preprocess a source file
-classfile/ConstantDoubleInfo.cpp.i:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantDoubleInfo.cpp.i
-.PHONY : classfile/ConstantDoubleInfo.cpp.i
-
-classfile/ConstantDoubleInfo.s: classfile/ConstantDoubleInfo.cpp.s
-
-.PHONY : classfile/ConstantDoubleInfo.s
-
-# target to generate assembly for a file
-classfile/ConstantDoubleInfo.cpp.s:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantDoubleInfo.cpp.s
-.PHONY : classfile/ConstantDoubleInfo.cpp.s
-
-classfile/ConstantFieldRefInfo.o: classfile/ConstantFieldRefInfo.cpp.o
-
-.PHONY : classfile/ConstantFieldRefInfo.o
-
-# target to build an object file
-classfile/ConstantFieldRefInfo.cpp.o:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantFieldRefInfo.cpp.o
-.PHONY : classfile/ConstantFieldRefInfo.cpp.o
-
-classfile/ConstantFieldRefInfo.i: classfile/ConstantFieldRefInfo.cpp.i
-
-.PHONY : classfile/ConstantFieldRefInfo.i
-
-# target to preprocess a source file
-classfile/ConstantFieldRefInfo.cpp.i:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantFieldRefInfo.cpp.i
-.PHONY : classfile/ConstantFieldRefInfo.cpp.i
-
-classfile/ConstantFieldRefInfo.s: classfile/ConstantFieldRefInfo.cpp.s
-
-.PHONY : classfile/ConstantFieldRefInfo.s
-
-# target to generate assembly for a file
-classfile/ConstantFieldRefInfo.cpp.s:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantFieldRefInfo.cpp.s
-.PHONY : classfile/ConstantFieldRefInfo.cpp.s
-
-classfile/ConstantFloatInfo.o: classfile/ConstantFloatInfo.cpp.o
-
-.PHONY : classfile/ConstantFloatInfo.o
-
-# target to build an object file
-classfile/ConstantFloatInfo.cpp.o:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantFloatInfo.cpp.o
-.PHONY : classfile/ConstantFloatInfo.cpp.o
-
-classfile/ConstantFloatInfo.i: classfile/ConstantFloatInfo.cpp.i
-
-.PHONY : classfile/ConstantFloatInfo.i
-
-# target to preprocess a source file
-classfile/ConstantFloatInfo.cpp.i:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantFloatInfo.cpp.i
-.PHONY : classfile/ConstantFloatInfo.cpp.i
-
-classfile/ConstantFloatInfo.s: classfile/ConstantFloatInfo.cpp.s
-
-.PHONY : classfile/ConstantFloatInfo.s
-
-# target to generate assembly for a file
-classfile/ConstantFloatInfo.cpp.s:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantFloatInfo.cpp.s
-.PHONY : classfile/ConstantFloatInfo.cpp.s
-
 classfile/ConstantInfo.o: classfile/ConstantInfo.cpp.o
 
 .PHONY : classfile/ConstantInfo.o
@@ -366,140 +258,90 @@ classfile/ConstantInfo.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantInfo.cpp.s
 .PHONY : classfile/ConstantInfo.cpp.s
 
-classfile/ConstantIntegerInfo.o: classfile/ConstantIntegerInfo.cpp.o
+classfile/ConstantInvokeDynamic.o: classfile/ConstantInvokeDynamic.cpp.o
 
-.PHONY : classfile/ConstantIntegerInfo.o
-
-# target to build an object file
-classfile/ConstantIntegerInfo.cpp.o:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantIntegerInfo.cpp.o
-.PHONY : classfile/ConstantIntegerInfo.cpp.o
-
-classfile/ConstantIntegerInfo.i: classfile/ConstantIntegerInfo.cpp.i
-
-.PHONY : classfile/ConstantIntegerInfo.i
-
-# target to preprocess a source file
-classfile/ConstantIntegerInfo.cpp.i:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantIntegerInfo.cpp.i
-.PHONY : classfile/ConstantIntegerInfo.cpp.i
-
-classfile/ConstantIntegerInfo.s: classfile/ConstantIntegerInfo.cpp.s
-
-.PHONY : classfile/ConstantIntegerInfo.s
-
-# target to generate assembly for a file
-classfile/ConstantIntegerInfo.cpp.s:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantIntegerInfo.cpp.s
-.PHONY : classfile/ConstantIntegerInfo.cpp.s
-
-classfile/ConstantLongInfo.o: classfile/ConstantLongInfo.cpp.o
-
-.PHONY : classfile/ConstantLongInfo.o
+.PHONY : classfile/ConstantInvokeDynamic.o
 
 # target to build an object file
-classfile/ConstantLongInfo.cpp.o:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantLongInfo.cpp.o
-.PHONY : classfile/ConstantLongInfo.cpp.o
+classfile/ConstantInvokeDynamic.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantInvokeDynamic.cpp.o
+.PHONY : classfile/ConstantInvokeDynamic.cpp.o
 
-classfile/ConstantLongInfo.i: classfile/ConstantLongInfo.cpp.i
+classfile/ConstantInvokeDynamic.i: classfile/ConstantInvokeDynamic.cpp.i
 
-.PHONY : classfile/ConstantLongInfo.i
+.PHONY : classfile/ConstantInvokeDynamic.i
 
 # target to preprocess a source file
-classfile/ConstantLongInfo.cpp.i:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantLongInfo.cpp.i
-.PHONY : classfile/ConstantLongInfo.cpp.i
+classfile/ConstantInvokeDynamic.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantInvokeDynamic.cpp.i
+.PHONY : classfile/ConstantInvokeDynamic.cpp.i
 
-classfile/ConstantLongInfo.s: classfile/ConstantLongInfo.cpp.s
+classfile/ConstantInvokeDynamic.s: classfile/ConstantInvokeDynamic.cpp.s
 
-.PHONY : classfile/ConstantLongInfo.s
+.PHONY : classfile/ConstantInvokeDynamic.s
 
 # target to generate assembly for a file
-classfile/ConstantLongInfo.cpp.s:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantLongInfo.cpp.s
-.PHONY : classfile/ConstantLongInfo.cpp.s
+classfile/ConstantInvokeDynamic.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantInvokeDynamic.cpp.s
+.PHONY : classfile/ConstantInvokeDynamic.cpp.s
 
-classfile/ConstantMemberInfo.o: classfile/ConstantMemberInfo.cpp.o
+<<<<<<< HEAD
+classfile/ConstantFactory.o: classfile/ConstantFactory.cpp.o
 
-.PHONY : classfile/ConstantMemberInfo.o
+.PHONY : classfile/ConstantFactory.o
 
 # target to build an object file
-classfile/ConstantMemberInfo.cpp.o:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantMemberInfo.cpp.o
-.PHONY : classfile/ConstantMemberInfo.cpp.o
+classfile/ConstantFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o
+.PHONY : classfile/ConstantFactory.cpp.o
 
-classfile/ConstantMemberInfo.i: classfile/ConstantMemberInfo.cpp.i
+classfile/ConstantFactory.i: classfile/ConstantFactory.cpp.i
 
-.PHONY : classfile/ConstantMemberInfo.i
+.PHONY : classfile/ConstantFactory.i
 
 # target to preprocess a source file
-classfile/ConstantMemberInfo.cpp.i:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantMemberInfo.cpp.i
-.PHONY : classfile/ConstantMemberInfo.cpp.i
+classfile/ConstantFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.i
+.PHONY : classfile/ConstantFactory.cpp.i
 
-classfile/ConstantMemberInfo.s: classfile/ConstantMemberInfo.cpp.s
+classfile/ConstantFactory.s: classfile/ConstantFactory.cpp.s
 
-.PHONY : classfile/ConstantMemberInfo.s
+.PHONY : classfile/ConstantFactory.s
 
 # target to generate assembly for a file
-classfile/ConstantMemberInfo.cpp.s:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantMemberInfo.cpp.s
-.PHONY : classfile/ConstantMemberInfo.cpp.s
+classfile/ConstantFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.s
+.PHONY : classfile/ConstantFactory.cpp.s
 
-classfile/ConstantMethodInfo.o: classfile/ConstantMethodInfo.cpp.o
+classfile/ConstantFieldRefInfo.o: classfile/ConstantFieldRefInfo.cpp.o
+=======
+classfile/ConstantNumeric.o: classfile/ConstantNumeric.cpp.o
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 
-.PHONY : classfile/ConstantMethodInfo.o
+.PHONY : classfile/ConstantNumeric.o
 
 # target to build an object file
-classfile/ConstantMethodInfo.cpp.o:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantMethodInfo.cpp.o
-.PHONY : classfile/ConstantMethodInfo.cpp.o
+classfile/ConstantNumeric.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantNumeric.cpp.o
+.PHONY : classfile/ConstantNumeric.cpp.o
 
-classfile/ConstantMethodInfo.i: classfile/ConstantMethodInfo.cpp.i
+classfile/ConstantNumeric.i: classfile/ConstantNumeric.cpp.i
 
-.PHONY : classfile/ConstantMethodInfo.i
-
-# target to preprocess a source file
-classfile/ConstantMethodInfo.cpp.i:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantMethodInfo.cpp.i
-.PHONY : classfile/ConstantMethodInfo.cpp.i
-
-classfile/ConstantMethodInfo.s: classfile/ConstantMethodInfo.cpp.s
-
-.PHONY : classfile/ConstantMethodInfo.s
-
-# target to generate assembly for a file
-classfile/ConstantMethodInfo.cpp.s:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantMethodInfo.cpp.s
-.PHONY : classfile/ConstantMethodInfo.cpp.s
-
-classfile/ConstantNameAndTypeInfo.o: classfile/ConstantNameAndTypeInfo.cpp.o
-
-.PHONY : classfile/ConstantNameAndTypeInfo.o
-
-# target to build an object file
-classfile/ConstantNameAndTypeInfo.cpp.o:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantNameAndTypeInfo.cpp.o
-.PHONY : classfile/ConstantNameAndTypeInfo.cpp.o
-
-classfile/ConstantNameAndTypeInfo.i: classfile/ConstantNameAndTypeInfo.cpp.i
-
-.PHONY : classfile/ConstantNameAndTypeInfo.i
+.PHONY : classfile/ConstantNumeric.i
 
 # target to preprocess a source file
-classfile/ConstantNameAndTypeInfo.cpp.i:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantNameAndTypeInfo.cpp.i
-.PHONY : classfile/ConstantNameAndTypeInfo.cpp.i
+classfile/ConstantNumeric.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantNumeric.cpp.i
+.PHONY : classfile/ConstantNumeric.cpp.i
 
-classfile/ConstantNameAndTypeInfo.s: classfile/ConstantNameAndTypeInfo.cpp.s
+classfile/ConstantNumeric.s: classfile/ConstantNumeric.cpp.s
 
-.PHONY : classfile/ConstantNameAndTypeInfo.s
+.PHONY : classfile/ConstantNumeric.s
 
 # target to generate assembly for a file
-classfile/ConstantNameAndTypeInfo.cpp.s:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantNameAndTypeInfo.cpp.s
-.PHONY : classfile/ConstantNameAndTypeInfo.cpp.s
+classfile/ConstantNumeric.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantNumeric.cpp.s
+.PHONY : classfile/ConstantNumeric.cpp.s
 
 classfile/ConstantPool.o: classfile/ConstantPool.cpp.o
 
@@ -528,113 +370,356 @@ classfile/ConstantPool.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.s
 .PHONY : classfile/ConstantPool.cpp.s
 
-classfile/ConstantStringInfo.o: classfile/ConstantStringInfo.cpp.o
+classfile/Constants.o: classfile/Constants.cpp.o
 
-.PHONY : classfile/ConstantStringInfo.o
-
-# target to build an object file
-classfile/ConstantStringInfo.cpp.o:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantStringInfo.cpp.o
-.PHONY : classfile/ConstantStringInfo.cpp.o
-
-classfile/ConstantStringInfo.i: classfile/ConstantStringInfo.cpp.i
-
-.PHONY : classfile/ConstantStringInfo.i
-
-# target to preprocess a source file
-classfile/ConstantStringInfo.cpp.i:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantStringInfo.cpp.i
-.PHONY : classfile/ConstantStringInfo.cpp.i
-
-classfile/ConstantStringInfo.s: classfile/ConstantStringInfo.cpp.s
-
-.PHONY : classfile/ConstantStringInfo.s
-
-# target to generate assembly for a file
-classfile/ConstantStringInfo.cpp.s:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantStringInfo.cpp.s
-.PHONY : classfile/ConstantStringInfo.cpp.s
-
-classfile/ConstantUtf8Info.o: classfile/ConstantUtf8Info.cpp.o
-
-.PHONY : classfile/ConstantUtf8Info.o
+.PHONY : classfile/Constants.o
 
 # target to build an object file
-classfile/ConstantUtf8Info.cpp.o:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantUtf8Info.cpp.o
-.PHONY : classfile/ConstantUtf8Info.cpp.o
+classfile/Constants.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/Constants.cpp.o
+.PHONY : classfile/Constants.cpp.o
 
-classfile/ConstantUtf8Info.i: classfile/ConstantUtf8Info.cpp.i
+classfile/Constants.i: classfile/Constants.cpp.i
 
-.PHONY : classfile/ConstantUtf8Info.i
+.PHONY : classfile/Constants.i
 
 # target to preprocess a source file
-classfile/ConstantUtf8Info.cpp.i:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantUtf8Info.cpp.i
-.PHONY : classfile/ConstantUtf8Info.cpp.i
+classfile/Constants.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/Constants.cpp.i
+.PHONY : classfile/Constants.cpp.i
 
-classfile/ConstantUtf8Info.s: classfile/ConstantUtf8Info.cpp.s
+classfile/Constants.s: classfile/Constants.cpp.s
 
-.PHONY : classfile/ConstantUtf8Info.s
+.PHONY : classfile/Constants.s
 
 # target to generate assembly for a file
-classfile/ConstantUtf8Info.cpp.s:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantUtf8Info.cpp.s
-.PHONY : classfile/ConstantUtf8Info.cpp.s
+classfile/Constants.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/Constants.cpp.s
+.PHONY : classfile/Constants.cpp.s
 
-classfile/FieldInfo.o: classfile/FieldInfo.cpp.o
+classfile/attribute/AttributeInfo.o: classfile/attribute/AttributeInfo.cpp.o
 
-.PHONY : classfile/FieldInfo.o
+.PHONY : classfile/attribute/AttributeInfo.o
 
 # target to build an object file
-classfile/FieldInfo.cpp.o:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/FieldInfo.cpp.o
-.PHONY : classfile/FieldInfo.cpp.o
+classfile/attribute/AttributeInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/AttributeInfo.cpp.o
+.PHONY : classfile/attribute/AttributeInfo.cpp.o
 
-classfile/FieldInfo.i: classfile/FieldInfo.cpp.i
+classfile/attribute/AttributeInfo.i: classfile/attribute/AttributeInfo.cpp.i
 
-.PHONY : classfile/FieldInfo.i
+.PHONY : classfile/attribute/AttributeInfo.i
 
 # target to preprocess a source file
-classfile/FieldInfo.cpp.i:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/FieldInfo.cpp.i
-.PHONY : classfile/FieldInfo.cpp.i
+classfile/attribute/AttributeInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/AttributeInfo.cpp.i
+.PHONY : classfile/attribute/AttributeInfo.cpp.i
 
-classfile/FieldInfo.s: classfile/FieldInfo.cpp.s
+classfile/attribute/AttributeInfo.s: classfile/attribute/AttributeInfo.cpp.s
 
-.PHONY : classfile/FieldInfo.s
+.PHONY : classfile/attribute/AttributeInfo.s
 
 # target to generate assembly for a file
-classfile/FieldInfo.cpp.s:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/FieldInfo.cpp.s
-.PHONY : classfile/FieldInfo.cpp.s
+classfile/attribute/AttributeInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/AttributeInfo.cpp.s
+.PHONY : classfile/attribute/AttributeInfo.cpp.s
 
-classfile/MemberInfo.o: classfile/MemberInfo.cpp.o
+classfile/attribute/BootstrapMethodsAttribute.o: classfile/attribute/BootstrapMethodsAttribute.cpp.o
 
-.PHONY : classfile/MemberInfo.o
+.PHONY : classfile/attribute/BootstrapMethodsAttribute.o
 
 # target to build an object file
-classfile/MemberInfo.cpp.o:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/MemberInfo.cpp.o
-.PHONY : classfile/MemberInfo.cpp.o
+classfile/attribute/BootstrapMethodsAttribute.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/BootstrapMethodsAttribute.cpp.o
+.PHONY : classfile/attribute/BootstrapMethodsAttribute.cpp.o
 
-classfile/MemberInfo.i: classfile/MemberInfo.cpp.i
+classfile/attribute/BootstrapMethodsAttribute.i: classfile/attribute/BootstrapMethodsAttribute.cpp.i
 
-.PHONY : classfile/MemberInfo.i
+.PHONY : classfile/attribute/BootstrapMethodsAttribute.i
 
 # target to preprocess a source file
-classfile/MemberInfo.cpp.i:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/MemberInfo.cpp.i
-.PHONY : classfile/MemberInfo.cpp.i
+classfile/attribute/BootstrapMethodsAttribute.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/BootstrapMethodsAttribute.cpp.i
+.PHONY : classfile/attribute/BootstrapMethodsAttribute.cpp.i
 
-classfile/MemberInfo.s: classfile/MemberInfo.cpp.s
+classfile/attribute/BootstrapMethodsAttribute.s: classfile/attribute/BootstrapMethodsAttribute.cpp.s
 
-.PHONY : classfile/MemberInfo.s
+.PHONY : classfile/attribute/BootstrapMethodsAttribute.s
 
 # target to generate assembly for a file
-classfile/MemberInfo.cpp.s:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/MemberInfo.cpp.s
-.PHONY : classfile/MemberInfo.cpp.s
+classfile/attribute/BootstrapMethodsAttribute.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/BootstrapMethodsAttribute.cpp.s
+.PHONY : classfile/attribute/BootstrapMethodsAttribute.cpp.s
+
+classfile/attribute/CodeAttribute.o: classfile/attribute/CodeAttribute.cpp.o
+
+.PHONY : classfile/attribute/CodeAttribute.o
+
+# target to build an object file
+classfile/attribute/CodeAttribute.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/CodeAttribute.cpp.o
+.PHONY : classfile/attribute/CodeAttribute.cpp.o
+
+classfile/attribute/CodeAttribute.i: classfile/attribute/CodeAttribute.cpp.i
+
+.PHONY : classfile/attribute/CodeAttribute.i
+
+# target to preprocess a source file
+classfile/attribute/CodeAttribute.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/CodeAttribute.cpp.i
+.PHONY : classfile/attribute/CodeAttribute.cpp.i
+
+classfile/attribute/CodeAttribute.s: classfile/attribute/CodeAttribute.cpp.s
+
+.PHONY : classfile/attribute/CodeAttribute.s
+
+# target to generate assembly for a file
+classfile/attribute/CodeAttribute.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/CodeAttribute.cpp.s
+.PHONY : classfile/attribute/CodeAttribute.cpp.s
+
+classfile/attribute/ConstantValueAttribute.o: classfile/attribute/ConstantValueAttribute.cpp.o
+
+.PHONY : classfile/attribute/ConstantValueAttribute.o
+
+# target to build an object file
+classfile/attribute/ConstantValueAttribute.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/ConstantValueAttribute.cpp.o
+.PHONY : classfile/attribute/ConstantValueAttribute.cpp.o
+
+classfile/attribute/ConstantValueAttribute.i: classfile/attribute/ConstantValueAttribute.cpp.i
+
+.PHONY : classfile/attribute/ConstantValueAttribute.i
+
+# target to preprocess a source file
+classfile/attribute/ConstantValueAttribute.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/ConstantValueAttribute.cpp.i
+.PHONY : classfile/attribute/ConstantValueAttribute.cpp.i
+
+classfile/attribute/ConstantValueAttribute.s: classfile/attribute/ConstantValueAttribute.cpp.s
+
+.PHONY : classfile/attribute/ConstantValueAttribute.s
+
+# target to generate assembly for a file
+classfile/attribute/ConstantValueAttribute.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/ConstantValueAttribute.cpp.s
+.PHONY : classfile/attribute/ConstantValueAttribute.cpp.s
+
+classfile/attribute/EnclosingMethodAttribute.o: classfile/attribute/EnclosingMethodAttribute.cpp.o
+
+.PHONY : classfile/attribute/EnclosingMethodAttribute.o
+
+# target to build an object file
+classfile/attribute/EnclosingMethodAttribute.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/EnclosingMethodAttribute.cpp.o
+.PHONY : classfile/attribute/EnclosingMethodAttribute.cpp.o
+
+classfile/attribute/EnclosingMethodAttribute.i: classfile/attribute/EnclosingMethodAttribute.cpp.i
+
+.PHONY : classfile/attribute/EnclosingMethodAttribute.i
+
+# target to preprocess a source file
+classfile/attribute/EnclosingMethodAttribute.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/EnclosingMethodAttribute.cpp.i
+.PHONY : classfile/attribute/EnclosingMethodAttribute.cpp.i
+
+classfile/attribute/EnclosingMethodAttribute.s: classfile/attribute/EnclosingMethodAttribute.cpp.s
+
+.PHONY : classfile/attribute/EnclosingMethodAttribute.s
+
+# target to generate assembly for a file
+classfile/attribute/EnclosingMethodAttribute.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/EnclosingMethodAttribute.cpp.s
+.PHONY : classfile/attribute/EnclosingMethodAttribute.cpp.s
+
+classfile/attribute/ExceptionAttribute.o: classfile/attribute/ExceptionAttribute.cpp.o
+
+.PHONY : classfile/attribute/ExceptionAttribute.o
+
+# target to build an object file
+classfile/attribute/ExceptionAttribute.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/ExceptionAttribute.cpp.o
+.PHONY : classfile/attribute/ExceptionAttribute.cpp.o
+
+classfile/attribute/ExceptionAttribute.i: classfile/attribute/ExceptionAttribute.cpp.i
+
+.PHONY : classfile/attribute/ExceptionAttribute.i
+
+# target to preprocess a source file
+classfile/attribute/ExceptionAttribute.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/ExceptionAttribute.cpp.i
+.PHONY : classfile/attribute/ExceptionAttribute.cpp.i
+
+classfile/attribute/ExceptionAttribute.s: classfile/attribute/ExceptionAttribute.cpp.s
+
+.PHONY : classfile/attribute/ExceptionAttribute.s
+
+# target to generate assembly for a file
+classfile/attribute/ExceptionAttribute.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/ExceptionAttribute.cpp.s
+.PHONY : classfile/attribute/ExceptionAttribute.cpp.s
+
+classfile/attribute/InnerClassesAttribute.o: classfile/attribute/InnerClassesAttribute.cpp.o
+
+.PHONY : classfile/attribute/InnerClassesAttribute.o
+
+# target to build an object file
+classfile/attribute/InnerClassesAttribute.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/InnerClassesAttribute.cpp.o
+.PHONY : classfile/attribute/InnerClassesAttribute.cpp.o
+
+classfile/attribute/InnerClassesAttribute.i: classfile/attribute/InnerClassesAttribute.cpp.i
+
+.PHONY : classfile/attribute/InnerClassesAttribute.i
+
+# target to preprocess a source file
+classfile/attribute/InnerClassesAttribute.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/InnerClassesAttribute.cpp.i
+.PHONY : classfile/attribute/InnerClassesAttribute.cpp.i
+
+classfile/attribute/InnerClassesAttribute.s: classfile/attribute/InnerClassesAttribute.cpp.s
+
+.PHONY : classfile/attribute/InnerClassesAttribute.s
+
+# target to generate assembly for a file
+classfile/attribute/InnerClassesAttribute.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/InnerClassesAttribute.cpp.s
+.PHONY : classfile/attribute/InnerClassesAttribute.cpp.s
+
+classfile/attribute/LineNumberAttribute.o: classfile/attribute/LineNumberAttribute.cpp.o
+
+.PHONY : classfile/attribute/LineNumberAttribute.o
+
+# target to build an object file
+classfile/attribute/LineNumberAttribute.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/LineNumberAttribute.cpp.o
+.PHONY : classfile/attribute/LineNumberAttribute.cpp.o
+
+classfile/attribute/LineNumberAttribute.i: classfile/attribute/LineNumberAttribute.cpp.i
+
+.PHONY : classfile/attribute/LineNumberAttribute.i
+
+# target to preprocess a source file
+classfile/attribute/LineNumberAttribute.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/LineNumberAttribute.cpp.i
+.PHONY : classfile/attribute/LineNumberAttribute.cpp.i
+
+classfile/attribute/LineNumberAttribute.s: classfile/attribute/LineNumberAttribute.cpp.s
+
+.PHONY : classfile/attribute/LineNumberAttribute.s
+
+# target to generate assembly for a file
+classfile/attribute/LineNumberAttribute.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/LineNumberAttribute.cpp.s
+.PHONY : classfile/attribute/LineNumberAttribute.cpp.s
+
+classfile/attribute/LocalVariableTableAttribute.o: classfile/attribute/LocalVariableTableAttribute.cpp.o
+
+.PHONY : classfile/attribute/LocalVariableTableAttribute.o
+
+# target to build an object file
+classfile/attribute/LocalVariableTableAttribute.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/LocalVariableTableAttribute.cpp.o
+.PHONY : classfile/attribute/LocalVariableTableAttribute.cpp.o
+
+classfile/attribute/LocalVariableTableAttribute.i: classfile/attribute/LocalVariableTableAttribute.cpp.i
+
+.PHONY : classfile/attribute/LocalVariableTableAttribute.i
+
+# target to preprocess a source file
+classfile/attribute/LocalVariableTableAttribute.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/LocalVariableTableAttribute.cpp.i
+.PHONY : classfile/attribute/LocalVariableTableAttribute.cpp.i
+
+classfile/attribute/LocalVariableTableAttribute.s: classfile/attribute/LocalVariableTableAttribute.cpp.s
+
+.PHONY : classfile/attribute/LocalVariableTableAttribute.s
+
+# target to generate assembly for a file
+classfile/attribute/LocalVariableTableAttribute.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/LocalVariableTableAttribute.cpp.s
+.PHONY : classfile/attribute/LocalVariableTableAttribute.cpp.s
+
+classfile/attribute/SignatureAttribute.o: classfile/attribute/SignatureAttribute.cpp.o
+
+.PHONY : classfile/attribute/SignatureAttribute.o
+
+# target to build an object file
+classfile/attribute/SignatureAttribute.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/SignatureAttribute.cpp.o
+.PHONY : classfile/attribute/SignatureAttribute.cpp.o
+
+classfile/attribute/SignatureAttribute.i: classfile/attribute/SignatureAttribute.cpp.i
+
+.PHONY : classfile/attribute/SignatureAttribute.i
+
+# target to preprocess a source file
+classfile/attribute/SignatureAttribute.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/SignatureAttribute.cpp.i
+.PHONY : classfile/attribute/SignatureAttribute.cpp.i
+
+classfile/attribute/SignatureAttribute.s: classfile/attribute/SignatureAttribute.cpp.s
+
+.PHONY : classfile/attribute/SignatureAttribute.s
+
+# target to generate assembly for a file
+classfile/attribute/SignatureAttribute.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/SignatureAttribute.cpp.s
+.PHONY : classfile/attribute/SignatureAttribute.cpp.s
+
+classfile/attribute/SourceFileAttribute.o: classfile/attribute/SourceFileAttribute.cpp.o
+
+.PHONY : classfile/attribute/SourceFileAttribute.o
+
+# target to build an object file
+classfile/attribute/SourceFileAttribute.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/SourceFileAttribute.cpp.o
+.PHONY : classfile/attribute/SourceFileAttribute.cpp.o
+
+classfile/attribute/SourceFileAttribute.i: classfile/attribute/SourceFileAttribute.cpp.i
+
+.PHONY : classfile/attribute/SourceFileAttribute.i
+
+# target to preprocess a source file
+classfile/attribute/SourceFileAttribute.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/SourceFileAttribute.cpp.i
+.PHONY : classfile/attribute/SourceFileAttribute.cpp.i
+
+classfile/attribute/SourceFileAttribute.s: classfile/attribute/SourceFileAttribute.cpp.s
+
+.PHONY : classfile/attribute/SourceFileAttribute.s
+
+# target to generate assembly for a file
+classfile/attribute/SourceFileAttribute.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/SourceFileAttribute.cpp.s
+.PHONY : classfile/attribute/SourceFileAttribute.cpp.s
+
+classfile/attribute/UnparsedAttribute.o: classfile/attribute/UnparsedAttribute.cpp.o
+
+.PHONY : classfile/attribute/UnparsedAttribute.o
+
+# target to build an object file
+classfile/attribute/UnparsedAttribute.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/UnparsedAttribute.cpp.o
+.PHONY : classfile/attribute/UnparsedAttribute.cpp.o
+
+classfile/attribute/UnparsedAttribute.i: classfile/attribute/UnparsedAttribute.cpp.i
+
+.PHONY : classfile/attribute/UnparsedAttribute.i
+
+# target to preprocess a source file
+classfile/attribute/UnparsedAttribute.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/UnparsedAttribute.cpp.i
+.PHONY : classfile/attribute/UnparsedAttribute.cpp.i
+
+classfile/attribute/UnparsedAttribute.s: classfile/attribute/UnparsedAttribute.cpp.s
+
+.PHONY : classfile/attribute/UnparsedAttribute.s
+
+# target to generate assembly for a file
+classfile/attribute/UnparsedAttribute.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/attribute/UnparsedAttribute.cpp.s
+.PHONY : classfile/attribute/UnparsedAttribute.cpp.s
 
 classpath/ClassPath.o: classpath/ClassPath.cpp.o
 
@@ -663,6 +748,60 @@ classpath/ClassPath.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/ClassPath.cpp.s
 .PHONY : classpath/ClassPath.cpp.s
 
+classpath/CompositeEntry.o: classpath/CompositeEntry.cpp.o
+
+.PHONY : classpath/CompositeEntry.o
+
+# target to build an object file
+classpath/CompositeEntry.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/CompositeEntry.cpp.o
+.PHONY : classpath/CompositeEntry.cpp.o
+
+classpath/CompositeEntry.i: classpath/CompositeEntry.cpp.i
+
+.PHONY : classpath/CompositeEntry.i
+
+# target to preprocess a source file
+classpath/CompositeEntry.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/CompositeEntry.cpp.i
+.PHONY : classpath/CompositeEntry.cpp.i
+
+classpath/CompositeEntry.s: classpath/CompositeEntry.cpp.s
+
+.PHONY : classpath/CompositeEntry.s
+
+# target to generate assembly for a file
+classpath/CompositeEntry.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/CompositeEntry.cpp.s
+.PHONY : classpath/CompositeEntry.cpp.s
+
+classpath/DirEntry.o: classpath/DirEntry.cpp.o
+
+.PHONY : classpath/DirEntry.o
+
+# target to build an object file
+classpath/DirEntry.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/DirEntry.cpp.o
+.PHONY : classpath/DirEntry.cpp.o
+
+classpath/DirEntry.i: classpath/DirEntry.cpp.i
+
+.PHONY : classpath/DirEntry.i
+
+# target to preprocess a source file
+classpath/DirEntry.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/DirEntry.cpp.i
+.PHONY : classpath/DirEntry.cpp.i
+
+classpath/DirEntry.s: classpath/DirEntry.cpp.s
+
+.PHONY : classpath/DirEntry.s
+
+# target to generate assembly for a file
+classpath/DirEntry.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/DirEntry.cpp.s
+.PHONY : classpath/DirEntry.cpp.s
+
 classpath/Entry.o: classpath/Entry.cpp.o
 
 .PHONY : classpath/Entry.o
@@ -689,6 +828,114 @@ classpath/Entry.s: classpath/Entry.cpp.s
 classpath/Entry.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/Entry.cpp.s
 .PHONY : classpath/Entry.cpp.s
+
+classpath/WildcardEntry.o: classpath/WildcardEntry.cpp.o
+
+.PHONY : classpath/WildcardEntry.o
+
+# target to build an object file
+classpath/WildcardEntry.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/WildcardEntry.cpp.o
+.PHONY : classpath/WildcardEntry.cpp.o
+
+classpath/WildcardEntry.i: classpath/WildcardEntry.cpp.i
+
+.PHONY : classpath/WildcardEntry.i
+
+# target to preprocess a source file
+classpath/WildcardEntry.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/WildcardEntry.cpp.i
+.PHONY : classpath/WildcardEntry.cpp.i
+
+classpath/WildcardEntry.s: classpath/WildcardEntry.cpp.s
+
+.PHONY : classpath/WildcardEntry.s
+
+# target to generate assembly for a file
+classpath/WildcardEntry.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/WildcardEntry.cpp.s
+.PHONY : classpath/WildcardEntry.cpp.s
+
+classpath/ZipEntry.o: classpath/ZipEntry.cpp.o
+
+.PHONY : classpath/ZipEntry.o
+
+# target to build an object file
+classpath/ZipEntry.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/ZipEntry.cpp.o
+.PHONY : classpath/ZipEntry.cpp.o
+
+classpath/ZipEntry.i: classpath/ZipEntry.cpp.i
+
+.PHONY : classpath/ZipEntry.i
+
+# target to preprocess a source file
+classpath/ZipEntry.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/ZipEntry.cpp.i
+.PHONY : classpath/ZipEntry.cpp.i
+
+classpath/ZipEntry.s: classpath/ZipEntry.cpp.s
+
+.PHONY : classpath/ZipEntry.s
+
+# target to generate assembly for a file
+classpath/ZipEntry.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classpath/ZipEntry.cpp.s
+.PHONY : classpath/ZipEntry.cpp.s
+
+common/BytesUtils.o: common/BytesUtils.cpp.o
+
+.PHONY : common/BytesUtils.o
+
+# target to build an object file
+common/BytesUtils.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/common/BytesUtils.cpp.o
+.PHONY : common/BytesUtils.cpp.o
+
+common/BytesUtils.i: common/BytesUtils.cpp.i
+
+.PHONY : common/BytesUtils.i
+
+# target to preprocess a source file
+common/BytesUtils.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/common/BytesUtils.cpp.i
+.PHONY : common/BytesUtils.cpp.i
+
+common/BytesUtils.s: common/BytesUtils.cpp.s
+
+.PHONY : common/BytesUtils.s
+
+# target to generate assembly for a file
+common/BytesUtils.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/common/BytesUtils.cpp.s
+.PHONY : common/BytesUtils.cpp.s
+
+common/SlotArray.o: common/SlotArray.cpp.o
+
+.PHONY : common/SlotArray.o
+
+# target to build an object file
+common/SlotArray.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/common/SlotArray.cpp.o
+.PHONY : common/SlotArray.cpp.o
+
+common/SlotArray.i: common/SlotArray.cpp.i
+
+.PHONY : common/SlotArray.i
+
+# target to preprocess a source file
+common/SlotArray.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/common/SlotArray.cpp.i
+.PHONY : common/SlotArray.cpp.i
+
+common/SlotArray.s: common/SlotArray.cpp.s
+
+.PHONY : common/SlotArray.s
+
+# target to generate assembly for a file
+common/SlotArray.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/common/SlotArray.cpp.s
+.PHONY : common/SlotArray.cpp.s
 
 common/StrUtils.o: common/StrUtils.cpp.o
 
@@ -717,6 +964,1653 @@ common/StrUtils.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/common/StrUtils.cpp.s
 .PHONY : common/StrUtils.cpp.s
 
+common/ZipUtils.o: common/ZipUtils.cpp.o
+
+.PHONY : common/ZipUtils.o
+
+# target to build an object file
+common/ZipUtils.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/common/ZipUtils.cpp.o
+.PHONY : common/ZipUtils.cpp.o
+
+common/ZipUtils.i: common/ZipUtils.cpp.i
+
+.PHONY : common/ZipUtils.i
+
+# target to preprocess a source file
+common/ZipUtils.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/common/ZipUtils.cpp.i
+.PHONY : common/ZipUtils.cpp.i
+
+common/ZipUtils.s: common/ZipUtils.cpp.s
+
+.PHONY : common/ZipUtils.s
+
+# target to generate assembly for a file
+common/ZipUtils.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/common/ZipUtils.cpp.s
+.PHONY : common/ZipUtils.cpp.s
+
+instructions/Factory.o: instructions/Factory.cpp.o
+
+.PHONY : instructions/Factory.o
+
+# target to build an object file
+instructions/Factory.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/Factory.cpp.o
+.PHONY : instructions/Factory.cpp.o
+
+instructions/Factory.i: instructions/Factory.cpp.i
+
+.PHONY : instructions/Factory.i
+
+# target to preprocess a source file
+instructions/Factory.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/Factory.cpp.i
+.PHONY : instructions/Factory.cpp.i
+
+instructions/Factory.s: instructions/Factory.cpp.s
+
+.PHONY : instructions/Factory.s
+
+# target to generate assembly for a file
+instructions/Factory.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/Factory.cpp.s
+.PHONY : instructions/Factory.cpp.s
+
+instructions/base/BytecodeReader.o: instructions/base/BytecodeReader.cpp.o
+
+.PHONY : instructions/base/BytecodeReader.o
+
+# target to build an object file
+instructions/base/BytecodeReader.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/base/BytecodeReader.cpp.o
+.PHONY : instructions/base/BytecodeReader.cpp.o
+
+instructions/base/BytecodeReader.i: instructions/base/BytecodeReader.cpp.i
+
+.PHONY : instructions/base/BytecodeReader.i
+
+# target to preprocess a source file
+instructions/base/BytecodeReader.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/base/BytecodeReader.cpp.i
+.PHONY : instructions/base/BytecodeReader.cpp.i
+
+instructions/base/BytecodeReader.s: instructions/base/BytecodeReader.cpp.s
+
+.PHONY : instructions/base/BytecodeReader.s
+
+# target to generate assembly for a file
+instructions/base/BytecodeReader.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/base/BytecodeReader.cpp.s
+.PHONY : instructions/base/BytecodeReader.cpp.s
+
+instructions/base/Instruction.o: instructions/base/Instruction.cpp.o
+
+.PHONY : instructions/base/Instruction.o
+
+# target to build an object file
+instructions/base/Instruction.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/base/Instruction.cpp.o
+.PHONY : instructions/base/Instruction.cpp.o
+
+instructions/base/Instruction.i: instructions/base/Instruction.cpp.i
+
+.PHONY : instructions/base/Instruction.i
+
+# target to preprocess a source file
+instructions/base/Instruction.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/base/Instruction.cpp.i
+.PHONY : instructions/base/Instruction.cpp.i
+
+instructions/base/Instruction.s: instructions/base/Instruction.cpp.s
+
+.PHONY : instructions/base/Instruction.s
+
+# target to generate assembly for a file
+instructions/base/Instruction.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/base/Instruction.cpp.s
+.PHONY : instructions/base/Instruction.cpp.s
+
+instructions/comparisons/Dcmp.o: instructions/comparisons/Dcmp.cpp.o
+
+.PHONY : instructions/comparisons/Dcmp.o
+
+# target to build an object file
+instructions/comparisons/Dcmp.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/comparisons/Dcmp.cpp.o
+.PHONY : instructions/comparisons/Dcmp.cpp.o
+
+instructions/comparisons/Dcmp.i: instructions/comparisons/Dcmp.cpp.i
+
+.PHONY : instructions/comparisons/Dcmp.i
+
+# target to preprocess a source file
+instructions/comparisons/Dcmp.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/comparisons/Dcmp.cpp.i
+.PHONY : instructions/comparisons/Dcmp.cpp.i
+
+instructions/comparisons/Dcmp.s: instructions/comparisons/Dcmp.cpp.s
+
+.PHONY : instructions/comparisons/Dcmp.s
+
+# target to generate assembly for a file
+instructions/comparisons/Dcmp.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/comparisons/Dcmp.cpp.s
+.PHONY : instructions/comparisons/Dcmp.cpp.s
+
+instructions/comparisons/Fcmp.o: instructions/comparisons/Fcmp.cpp.o
+
+.PHONY : instructions/comparisons/Fcmp.o
+
+# target to build an object file
+instructions/comparisons/Fcmp.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/comparisons/Fcmp.cpp.o
+.PHONY : instructions/comparisons/Fcmp.cpp.o
+
+instructions/comparisons/Fcmp.i: instructions/comparisons/Fcmp.cpp.i
+
+.PHONY : instructions/comparisons/Fcmp.i
+
+# target to preprocess a source file
+instructions/comparisons/Fcmp.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/comparisons/Fcmp.cpp.i
+.PHONY : instructions/comparisons/Fcmp.cpp.i
+
+instructions/comparisons/Fcmp.s: instructions/comparisons/Fcmp.cpp.s
+
+.PHONY : instructions/comparisons/Fcmp.s
+
+# target to generate assembly for a file
+instructions/comparisons/Fcmp.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/comparisons/Fcmp.cpp.s
+.PHONY : instructions/comparisons/Fcmp.cpp.s
+
+instructions/comparisons/IF_ACMP.o: instructions/comparisons/IF_ACMP.cpp.o
+
+.PHONY : instructions/comparisons/IF_ACMP.o
+
+# target to build an object file
+instructions/comparisons/IF_ACMP.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/comparisons/IF_ACMP.cpp.o
+.PHONY : instructions/comparisons/IF_ACMP.cpp.o
+
+instructions/comparisons/IF_ACMP.i: instructions/comparisons/IF_ACMP.cpp.i
+
+.PHONY : instructions/comparisons/IF_ACMP.i
+
+# target to preprocess a source file
+instructions/comparisons/IF_ACMP.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/comparisons/IF_ACMP.cpp.i
+.PHONY : instructions/comparisons/IF_ACMP.cpp.i
+
+instructions/comparisons/IF_ACMP.s: instructions/comparisons/IF_ACMP.cpp.s
+
+.PHONY : instructions/comparisons/IF_ACMP.s
+
+# target to generate assembly for a file
+instructions/comparisons/IF_ACMP.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/comparisons/IF_ACMP.cpp.s
+.PHONY : instructions/comparisons/IF_ACMP.cpp.s
+
+instructions/comparisons/IF_ICMP.o: instructions/comparisons/IF_ICMP.cpp.o
+
+.PHONY : instructions/comparisons/IF_ICMP.o
+
+# target to build an object file
+instructions/comparisons/IF_ICMP.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/comparisons/IF_ICMP.cpp.o
+.PHONY : instructions/comparisons/IF_ICMP.cpp.o
+
+instructions/comparisons/IF_ICMP.i: instructions/comparisons/IF_ICMP.cpp.i
+
+.PHONY : instructions/comparisons/IF_ICMP.i
+
+# target to preprocess a source file
+instructions/comparisons/IF_ICMP.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/comparisons/IF_ICMP.cpp.i
+.PHONY : instructions/comparisons/IF_ICMP.cpp.i
+
+instructions/comparisons/IF_ICMP.s: instructions/comparisons/IF_ICMP.cpp.s
+
+.PHONY : instructions/comparisons/IF_ICMP.s
+
+# target to generate assembly for a file
+instructions/comparisons/IF_ICMP.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/comparisons/IF_ICMP.cpp.s
+.PHONY : instructions/comparisons/IF_ICMP.cpp.s
+
+instructions/comparisons/Icmp.o: instructions/comparisons/Icmp.cpp.o
+
+.PHONY : instructions/comparisons/Icmp.o
+
+# target to build an object file
+instructions/comparisons/Icmp.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/comparisons/Icmp.cpp.o
+.PHONY : instructions/comparisons/Icmp.cpp.o
+
+instructions/comparisons/Icmp.i: instructions/comparisons/Icmp.cpp.i
+
+.PHONY : instructions/comparisons/Icmp.i
+
+# target to preprocess a source file
+instructions/comparisons/Icmp.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/comparisons/Icmp.cpp.i
+.PHONY : instructions/comparisons/Icmp.cpp.i
+
+instructions/comparisons/Icmp.s: instructions/comparisons/Icmp.cpp.s
+
+.PHONY : instructions/comparisons/Icmp.s
+
+# target to generate assembly for a file
+instructions/comparisons/Icmp.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/comparisons/Icmp.cpp.s
+.PHONY : instructions/comparisons/Icmp.cpp.s
+
+instructions/comparisons/Ifcond.o: instructions/comparisons/Ifcond.cpp.o
+
+.PHONY : instructions/comparisons/Ifcond.o
+
+# target to build an object file
+instructions/comparisons/Ifcond.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/comparisons/Ifcond.cpp.o
+.PHONY : instructions/comparisons/Ifcond.cpp.o
+
+instructions/comparisons/Ifcond.i: instructions/comparisons/Ifcond.cpp.i
+
+.PHONY : instructions/comparisons/Ifcond.i
+
+# target to preprocess a source file
+instructions/comparisons/Ifcond.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/comparisons/Ifcond.cpp.i
+.PHONY : instructions/comparisons/Ifcond.cpp.i
+
+instructions/comparisons/Ifcond.s: instructions/comparisons/Ifcond.cpp.s
+
+.PHONY : instructions/comparisons/Ifcond.s
+
+# target to generate assembly for a file
+instructions/comparisons/Ifcond.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/comparisons/Ifcond.cpp.s
+.PHONY : instructions/comparisons/Ifcond.cpp.s
+
+instructions/comparisons/Lcmp.o: instructions/comparisons/Lcmp.cpp.o
+
+.PHONY : instructions/comparisons/Lcmp.o
+
+# target to build an object file
+instructions/comparisons/Lcmp.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/comparisons/Lcmp.cpp.o
+.PHONY : instructions/comparisons/Lcmp.cpp.o
+
+instructions/comparisons/Lcmp.i: instructions/comparisons/Lcmp.cpp.i
+
+.PHONY : instructions/comparisons/Lcmp.i
+
+# target to preprocess a source file
+instructions/comparisons/Lcmp.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/comparisons/Lcmp.cpp.i
+.PHONY : instructions/comparisons/Lcmp.cpp.i
+
+instructions/comparisons/Lcmp.s: instructions/comparisons/Lcmp.cpp.s
+
+.PHONY : instructions/comparisons/Lcmp.s
+
+# target to generate assembly for a file
+instructions/comparisons/Lcmp.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/comparisons/Lcmp.cpp.s
+.PHONY : instructions/comparisons/Lcmp.cpp.s
+
+instructions/constants/Constant.o: instructions/constants/Constant.cpp.o
+
+.PHONY : instructions/constants/Constant.o
+
+# target to build an object file
+instructions/constants/Constant.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/constants/Constant.cpp.o
+.PHONY : instructions/constants/Constant.cpp.o
+
+instructions/constants/Constant.i: instructions/constants/Constant.cpp.i
+
+.PHONY : instructions/constants/Constant.i
+
+# target to preprocess a source file
+instructions/constants/Constant.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/constants/Constant.cpp.i
+.PHONY : instructions/constants/Constant.cpp.i
+
+instructions/constants/Constant.s: instructions/constants/Constant.cpp.s
+
+.PHONY : instructions/constants/Constant.s
+
+# target to generate assembly for a file
+instructions/constants/Constant.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/constants/Constant.cpp.s
+.PHONY : instructions/constants/Constant.cpp.s
+
+instructions/constants/Ipush.o: instructions/constants/Ipush.cpp.o
+
+.PHONY : instructions/constants/Ipush.o
+
+# target to build an object file
+instructions/constants/Ipush.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/constants/Ipush.cpp.o
+.PHONY : instructions/constants/Ipush.cpp.o
+
+instructions/constants/Ipush.i: instructions/constants/Ipush.cpp.i
+
+.PHONY : instructions/constants/Ipush.i
+
+# target to preprocess a source file
+instructions/constants/Ipush.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/constants/Ipush.cpp.i
+.PHONY : instructions/constants/Ipush.cpp.i
+
+instructions/constants/Ipush.s: instructions/constants/Ipush.cpp.s
+
+.PHONY : instructions/constants/Ipush.s
+
+# target to generate assembly for a file
+instructions/constants/Ipush.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/constants/Ipush.cpp.s
+.PHONY : instructions/constants/Ipush.cpp.s
+
+instructions/constants/SIPUSH.o: instructions/constants/SIPUSH.cpp.o
+
+.PHONY : instructions/constants/SIPUSH.o
+
+# target to build an object file
+instructions/constants/SIPUSH.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/constants/SIPUSH.cpp.o
+.PHONY : instructions/constants/SIPUSH.cpp.o
+
+instructions/constants/SIPUSH.i: instructions/constants/SIPUSH.cpp.i
+
+.PHONY : instructions/constants/SIPUSH.i
+
+# target to preprocess a source file
+instructions/constants/SIPUSH.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/constants/SIPUSH.cpp.i
+.PHONY : instructions/constants/SIPUSH.cpp.i
+
+instructions/constants/SIPUSH.s: instructions/constants/SIPUSH.cpp.s
+
+.PHONY : instructions/constants/SIPUSH.s
+
+# target to generate assembly for a file
+instructions/constants/SIPUSH.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/constants/SIPUSH.cpp.s
+.PHONY : instructions/constants/SIPUSH.cpp.s
+
+instructions/control/Goto.o: instructions/control/Goto.cpp.o
+
+.PHONY : instructions/control/Goto.o
+
+# target to build an object file
+instructions/control/Goto.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/control/Goto.cpp.o
+.PHONY : instructions/control/Goto.cpp.o
+
+instructions/control/Goto.i: instructions/control/Goto.cpp.i
+
+.PHONY : instructions/control/Goto.i
+
+# target to preprocess a source file
+instructions/control/Goto.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/control/Goto.cpp.i
+.PHONY : instructions/control/Goto.cpp.i
+
+instructions/control/Goto.s: instructions/control/Goto.cpp.s
+
+.PHONY : instructions/control/Goto.s
+
+# target to generate assembly for a file
+instructions/control/Goto.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/control/Goto.cpp.s
+.PHONY : instructions/control/Goto.cpp.s
+
+instructions/control/LookupSwitch.o: instructions/control/LookupSwitch.cpp.o
+
+.PHONY : instructions/control/LookupSwitch.o
+
+# target to build an object file
+instructions/control/LookupSwitch.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/control/LookupSwitch.cpp.o
+.PHONY : instructions/control/LookupSwitch.cpp.o
+
+instructions/control/LookupSwitch.i: instructions/control/LookupSwitch.cpp.i
+
+.PHONY : instructions/control/LookupSwitch.i
+
+# target to preprocess a source file
+instructions/control/LookupSwitch.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/control/LookupSwitch.cpp.i
+.PHONY : instructions/control/LookupSwitch.cpp.i
+
+instructions/control/LookupSwitch.s: instructions/control/LookupSwitch.cpp.s
+
+.PHONY : instructions/control/LookupSwitch.s
+
+# target to generate assembly for a file
+instructions/control/LookupSwitch.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/control/LookupSwitch.cpp.s
+.PHONY : instructions/control/LookupSwitch.cpp.s
+
+instructions/control/TableSwitch.o: instructions/control/TableSwitch.cpp.o
+
+.PHONY : instructions/control/TableSwitch.o
+
+# target to build an object file
+instructions/control/TableSwitch.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/control/TableSwitch.cpp.o
+.PHONY : instructions/control/TableSwitch.cpp.o
+
+instructions/control/TableSwitch.i: instructions/control/TableSwitch.cpp.i
+
+.PHONY : instructions/control/TableSwitch.i
+
+# target to preprocess a source file
+instructions/control/TableSwitch.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/control/TableSwitch.cpp.i
+.PHONY : instructions/control/TableSwitch.cpp.i
+
+instructions/control/TableSwitch.s: instructions/control/TableSwitch.cpp.s
+
+.PHONY : instructions/control/TableSwitch.s
+
+# target to generate assembly for a file
+instructions/control/TableSwitch.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/control/TableSwitch.cpp.s
+.PHONY : instructions/control/TableSwitch.cpp.s
+
+instructions/conversions/D2x.o: instructions/conversions/D2x.cpp.o
+
+.PHONY : instructions/conversions/D2x.o
+
+# target to build an object file
+instructions/conversions/D2x.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/conversions/D2x.cpp.o
+.PHONY : instructions/conversions/D2x.cpp.o
+
+instructions/conversions/D2x.i: instructions/conversions/D2x.cpp.i
+
+.PHONY : instructions/conversions/D2x.i
+
+# target to preprocess a source file
+instructions/conversions/D2x.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/conversions/D2x.cpp.i
+.PHONY : instructions/conversions/D2x.cpp.i
+
+instructions/conversions/D2x.s: instructions/conversions/D2x.cpp.s
+
+.PHONY : instructions/conversions/D2x.s
+
+# target to generate assembly for a file
+instructions/conversions/D2x.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/conversions/D2x.cpp.s
+.PHONY : instructions/conversions/D2x.cpp.s
+
+instructions/conversions/F2x.o: instructions/conversions/F2x.cpp.o
+
+.PHONY : instructions/conversions/F2x.o
+
+# target to build an object file
+instructions/conversions/F2x.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/conversions/F2x.cpp.o
+.PHONY : instructions/conversions/F2x.cpp.o
+
+instructions/conversions/F2x.i: instructions/conversions/F2x.cpp.i
+
+.PHONY : instructions/conversions/F2x.i
+
+# target to preprocess a source file
+instructions/conversions/F2x.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/conversions/F2x.cpp.i
+.PHONY : instructions/conversions/F2x.cpp.i
+
+instructions/conversions/F2x.s: instructions/conversions/F2x.cpp.s
+
+.PHONY : instructions/conversions/F2x.s
+
+# target to generate assembly for a file
+instructions/conversions/F2x.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/conversions/F2x.cpp.s
+.PHONY : instructions/conversions/F2x.cpp.s
+
+instructions/conversions/I2x.o: instructions/conversions/I2x.cpp.o
+
+.PHONY : instructions/conversions/I2x.o
+
+# target to build an object file
+instructions/conversions/I2x.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/conversions/I2x.cpp.o
+.PHONY : instructions/conversions/I2x.cpp.o
+
+instructions/conversions/I2x.i: instructions/conversions/I2x.cpp.i
+
+.PHONY : instructions/conversions/I2x.i
+
+# target to preprocess a source file
+instructions/conversions/I2x.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/conversions/I2x.cpp.i
+.PHONY : instructions/conversions/I2x.cpp.i
+
+instructions/conversions/I2x.s: instructions/conversions/I2x.cpp.s
+
+.PHONY : instructions/conversions/I2x.s
+
+# target to generate assembly for a file
+instructions/conversions/I2x.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/conversions/I2x.cpp.s
+.PHONY : instructions/conversions/I2x.cpp.s
+
+instructions/conversions/L2x.o: instructions/conversions/L2x.cpp.o
+
+.PHONY : instructions/conversions/L2x.o
+
+# target to build an object file
+instructions/conversions/L2x.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/conversions/L2x.cpp.o
+.PHONY : instructions/conversions/L2x.cpp.o
+
+instructions/conversions/L2x.i: instructions/conversions/L2x.cpp.i
+
+.PHONY : instructions/conversions/L2x.i
+
+# target to preprocess a source file
+instructions/conversions/L2x.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/conversions/L2x.cpp.i
+.PHONY : instructions/conversions/L2x.cpp.i
+
+instructions/conversions/L2x.s: instructions/conversions/L2x.cpp.s
+
+.PHONY : instructions/conversions/L2x.s
+
+# target to generate assembly for a file
+instructions/conversions/L2x.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/conversions/L2x.cpp.s
+.PHONY : instructions/conversions/L2x.cpp.s
+
+instructions/extended/GotoW.o: instructions/extended/GotoW.cpp.o
+
+.PHONY : instructions/extended/GotoW.o
+
+# target to build an object file
+instructions/extended/GotoW.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/extended/GotoW.cpp.o
+.PHONY : instructions/extended/GotoW.cpp.o
+
+instructions/extended/GotoW.i: instructions/extended/GotoW.cpp.i
+
+.PHONY : instructions/extended/GotoW.i
+
+# target to preprocess a source file
+instructions/extended/GotoW.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/extended/GotoW.cpp.i
+.PHONY : instructions/extended/GotoW.cpp.i
+
+instructions/extended/GotoW.s: instructions/extended/GotoW.cpp.s
+
+.PHONY : instructions/extended/GotoW.s
+
+# target to generate assembly for a file
+instructions/extended/GotoW.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/extended/GotoW.cpp.s
+.PHONY : instructions/extended/GotoW.cpp.s
+
+instructions/extended/IFNonNull.o: instructions/extended/IFNonNull.cpp.o
+
+.PHONY : instructions/extended/IFNonNull.o
+
+# target to build an object file
+instructions/extended/IFNonNull.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/extended/IFNonNull.cpp.o
+.PHONY : instructions/extended/IFNonNull.cpp.o
+
+instructions/extended/IFNonNull.i: instructions/extended/IFNonNull.cpp.i
+
+.PHONY : instructions/extended/IFNonNull.i
+
+# target to preprocess a source file
+instructions/extended/IFNonNull.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/extended/IFNonNull.cpp.i
+.PHONY : instructions/extended/IFNonNull.cpp.i
+
+instructions/extended/IFNonNull.s: instructions/extended/IFNonNull.cpp.s
+
+.PHONY : instructions/extended/IFNonNull.s
+
+# target to generate assembly for a file
+instructions/extended/IFNonNull.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/extended/IFNonNull.cpp.s
+.PHONY : instructions/extended/IFNonNull.cpp.s
+
+instructions/extended/IFNull.o: instructions/extended/IFNull.cpp.o
+
+.PHONY : instructions/extended/IFNull.o
+
+# target to build an object file
+instructions/extended/IFNull.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/extended/IFNull.cpp.o
+.PHONY : instructions/extended/IFNull.cpp.o
+
+instructions/extended/IFNull.i: instructions/extended/IFNull.cpp.i
+
+.PHONY : instructions/extended/IFNull.i
+
+# target to preprocess a source file
+instructions/extended/IFNull.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/extended/IFNull.cpp.i
+.PHONY : instructions/extended/IFNull.cpp.i
+
+instructions/extended/IFNull.s: instructions/extended/IFNull.cpp.s
+
+.PHONY : instructions/extended/IFNull.s
+
+# target to generate assembly for a file
+instructions/extended/IFNull.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/extended/IFNull.cpp.s
+.PHONY : instructions/extended/IFNull.cpp.s
+
+instructions/extended/Wide.o: instructions/extended/Wide.cpp.o
+
+.PHONY : instructions/extended/Wide.o
+
+# target to build an object file
+instructions/extended/Wide.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/extended/Wide.cpp.o
+.PHONY : instructions/extended/Wide.cpp.o
+
+instructions/extended/Wide.i: instructions/extended/Wide.cpp.i
+
+.PHONY : instructions/extended/Wide.i
+
+# target to preprocess a source file
+instructions/extended/Wide.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/extended/Wide.cpp.i
+.PHONY : instructions/extended/Wide.cpp.i
+
+instructions/extended/Wide.s: instructions/extended/Wide.cpp.s
+
+.PHONY : instructions/extended/Wide.s
+
+# target to generate assembly for a file
+instructions/extended/Wide.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/extended/Wide.cpp.s
+.PHONY : instructions/extended/Wide.cpp.s
+
+instructions/loads/ALoad.o: instructions/loads/ALoad.cpp.o
+
+.PHONY : instructions/loads/ALoad.o
+
+# target to build an object file
+instructions/loads/ALoad.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/loads/ALoad.cpp.o
+.PHONY : instructions/loads/ALoad.cpp.o
+
+instructions/loads/ALoad.i: instructions/loads/ALoad.cpp.i
+
+.PHONY : instructions/loads/ALoad.i
+
+# target to preprocess a source file
+instructions/loads/ALoad.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/loads/ALoad.cpp.i
+.PHONY : instructions/loads/ALoad.cpp.i
+
+instructions/loads/ALoad.s: instructions/loads/ALoad.cpp.s
+
+.PHONY : instructions/loads/ALoad.s
+
+# target to generate assembly for a file
+instructions/loads/ALoad.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/loads/ALoad.cpp.s
+.PHONY : instructions/loads/ALoad.cpp.s
+
+instructions/loads/DLoad.o: instructions/loads/DLoad.cpp.o
+
+.PHONY : instructions/loads/DLoad.o
+
+# target to build an object file
+instructions/loads/DLoad.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/loads/DLoad.cpp.o
+.PHONY : instructions/loads/DLoad.cpp.o
+
+instructions/loads/DLoad.i: instructions/loads/DLoad.cpp.i
+
+.PHONY : instructions/loads/DLoad.i
+
+# target to preprocess a source file
+instructions/loads/DLoad.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/loads/DLoad.cpp.i
+.PHONY : instructions/loads/DLoad.cpp.i
+
+instructions/loads/DLoad.s: instructions/loads/DLoad.cpp.s
+
+.PHONY : instructions/loads/DLoad.s
+
+# target to generate assembly for a file
+instructions/loads/DLoad.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/loads/DLoad.cpp.s
+.PHONY : instructions/loads/DLoad.cpp.s
+
+instructions/loads/FLoad.o: instructions/loads/FLoad.cpp.o
+
+.PHONY : instructions/loads/FLoad.o
+
+# target to build an object file
+instructions/loads/FLoad.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/loads/FLoad.cpp.o
+.PHONY : instructions/loads/FLoad.cpp.o
+
+instructions/loads/FLoad.i: instructions/loads/FLoad.cpp.i
+
+.PHONY : instructions/loads/FLoad.i
+
+# target to preprocess a source file
+instructions/loads/FLoad.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/loads/FLoad.cpp.i
+.PHONY : instructions/loads/FLoad.cpp.i
+
+instructions/loads/FLoad.s: instructions/loads/FLoad.cpp.s
+
+.PHONY : instructions/loads/FLoad.s
+
+# target to generate assembly for a file
+instructions/loads/FLoad.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/loads/FLoad.cpp.s
+.PHONY : instructions/loads/FLoad.cpp.s
+
+instructions/loads/ILoad.o: instructions/loads/ILoad.cpp.o
+
+.PHONY : instructions/loads/ILoad.o
+
+# target to build an object file
+instructions/loads/ILoad.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/loads/ILoad.cpp.o
+.PHONY : instructions/loads/ILoad.cpp.o
+
+instructions/loads/ILoad.i: instructions/loads/ILoad.cpp.i
+
+.PHONY : instructions/loads/ILoad.i
+
+# target to preprocess a source file
+instructions/loads/ILoad.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/loads/ILoad.cpp.i
+.PHONY : instructions/loads/ILoad.cpp.i
+
+instructions/loads/ILoad.s: instructions/loads/ILoad.cpp.s
+
+.PHONY : instructions/loads/ILoad.s
+
+# target to generate assembly for a file
+instructions/loads/ILoad.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/loads/ILoad.cpp.s
+.PHONY : instructions/loads/ILoad.cpp.s
+
+instructions/loads/LLoad.o: instructions/loads/LLoad.cpp.o
+
+.PHONY : instructions/loads/LLoad.o
+
+# target to build an object file
+instructions/loads/LLoad.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/loads/LLoad.cpp.o
+.PHONY : instructions/loads/LLoad.cpp.o
+
+instructions/loads/LLoad.i: instructions/loads/LLoad.cpp.i
+
+.PHONY : instructions/loads/LLoad.i
+
+# target to preprocess a source file
+instructions/loads/LLoad.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/loads/LLoad.cpp.i
+.PHONY : instructions/loads/LLoad.cpp.i
+
+instructions/loads/LLoad.s: instructions/loads/LLoad.cpp.s
+
+.PHONY : instructions/loads/LLoad.s
+
+# target to generate assembly for a file
+instructions/loads/LLoad.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/loads/LLoad.cpp.s
+.PHONY : instructions/loads/LLoad.cpp.s
+
+instructions/math/Add.o: instructions/math/Add.cpp.o
+
+.PHONY : instructions/math/Add.o
+
+# target to build an object file
+instructions/math/Add.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/Add.cpp.o
+.PHONY : instructions/math/Add.cpp.o
+
+instructions/math/Add.i: instructions/math/Add.cpp.i
+
+.PHONY : instructions/math/Add.i
+
+# target to preprocess a source file
+instructions/math/Add.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/Add.cpp.i
+.PHONY : instructions/math/Add.cpp.i
+
+instructions/math/Add.s: instructions/math/Add.cpp.s
+
+.PHONY : instructions/math/Add.s
+
+# target to generate assembly for a file
+instructions/math/Add.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/Add.cpp.s
+.PHONY : instructions/math/Add.cpp.s
+
+instructions/math/And.o: instructions/math/And.cpp.o
+
+.PHONY : instructions/math/And.o
+
+# target to build an object file
+instructions/math/And.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/And.cpp.o
+.PHONY : instructions/math/And.cpp.o
+
+instructions/math/And.i: instructions/math/And.cpp.i
+
+.PHONY : instructions/math/And.i
+
+# target to preprocess a source file
+instructions/math/And.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/And.cpp.i
+.PHONY : instructions/math/And.cpp.i
+
+instructions/math/And.s: instructions/math/And.cpp.s
+
+.PHONY : instructions/math/And.s
+
+# target to generate assembly for a file
+instructions/math/And.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/And.cpp.s
+.PHONY : instructions/math/And.cpp.s
+
+instructions/math/Div.o: instructions/math/Div.cpp.o
+
+.PHONY : instructions/math/Div.o
+
+# target to build an object file
+instructions/math/Div.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/Div.cpp.o
+.PHONY : instructions/math/Div.cpp.o
+
+instructions/math/Div.i: instructions/math/Div.cpp.i
+
+.PHONY : instructions/math/Div.i
+
+# target to preprocess a source file
+instructions/math/Div.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/Div.cpp.i
+.PHONY : instructions/math/Div.cpp.i
+
+instructions/math/Div.s: instructions/math/Div.cpp.s
+
+.PHONY : instructions/math/Div.s
+
+# target to generate assembly for a file
+instructions/math/Div.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/Div.cpp.s
+.PHONY : instructions/math/Div.cpp.s
+
+instructions/math/IINC.o: instructions/math/IINC.cpp.o
+
+.PHONY : instructions/math/IINC.o
+
+# target to build an object file
+instructions/math/IINC.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/IINC.cpp.o
+.PHONY : instructions/math/IINC.cpp.o
+
+instructions/math/IINC.i: instructions/math/IINC.cpp.i
+
+.PHONY : instructions/math/IINC.i
+
+# target to preprocess a source file
+instructions/math/IINC.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/IINC.cpp.i
+.PHONY : instructions/math/IINC.cpp.i
+
+instructions/math/IINC.s: instructions/math/IINC.cpp.s
+
+.PHONY : instructions/math/IINC.s
+
+# target to generate assembly for a file
+instructions/math/IINC.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/IINC.cpp.s
+.PHONY : instructions/math/IINC.cpp.s
+
+instructions/math/Mul.o: instructions/math/Mul.cpp.o
+
+.PHONY : instructions/math/Mul.o
+
+# target to build an object file
+instructions/math/Mul.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/Mul.cpp.o
+.PHONY : instructions/math/Mul.cpp.o
+
+instructions/math/Mul.i: instructions/math/Mul.cpp.i
+
+.PHONY : instructions/math/Mul.i
+
+# target to preprocess a source file
+instructions/math/Mul.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/Mul.cpp.i
+.PHONY : instructions/math/Mul.cpp.i
+
+instructions/math/Mul.s: instructions/math/Mul.cpp.s
+
+.PHONY : instructions/math/Mul.s
+
+# target to generate assembly for a file
+instructions/math/Mul.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/Mul.cpp.s
+.PHONY : instructions/math/Mul.cpp.s
+
+instructions/math/Neg.o: instructions/math/Neg.cpp.o
+
+.PHONY : instructions/math/Neg.o
+
+# target to build an object file
+instructions/math/Neg.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/Neg.cpp.o
+.PHONY : instructions/math/Neg.cpp.o
+
+instructions/math/Neg.i: instructions/math/Neg.cpp.i
+
+.PHONY : instructions/math/Neg.i
+
+# target to preprocess a source file
+instructions/math/Neg.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/Neg.cpp.i
+.PHONY : instructions/math/Neg.cpp.i
+
+instructions/math/Neg.s: instructions/math/Neg.cpp.s
+
+.PHONY : instructions/math/Neg.s
+
+# target to generate assembly for a file
+instructions/math/Neg.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/Neg.cpp.s
+.PHONY : instructions/math/Neg.cpp.s
+
+instructions/math/Or.o: instructions/math/Or.cpp.o
+
+.PHONY : instructions/math/Or.o
+
+# target to build an object file
+instructions/math/Or.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/Or.cpp.o
+.PHONY : instructions/math/Or.cpp.o
+
+instructions/math/Or.i: instructions/math/Or.cpp.i
+
+.PHONY : instructions/math/Or.i
+
+# target to preprocess a source file
+instructions/math/Or.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/Or.cpp.i
+.PHONY : instructions/math/Or.cpp.i
+
+instructions/math/Or.s: instructions/math/Or.cpp.s
+
+.PHONY : instructions/math/Or.s
+
+# target to generate assembly for a file
+instructions/math/Or.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/Or.cpp.s
+.PHONY : instructions/math/Or.cpp.s
+
+instructions/math/Rem.o: instructions/math/Rem.cpp.o
+
+.PHONY : instructions/math/Rem.o
+
+# target to build an object file
+instructions/math/Rem.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/Rem.cpp.o
+.PHONY : instructions/math/Rem.cpp.o
+
+instructions/math/Rem.i: instructions/math/Rem.cpp.i
+
+.PHONY : instructions/math/Rem.i
+
+# target to preprocess a source file
+instructions/math/Rem.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/Rem.cpp.i
+.PHONY : instructions/math/Rem.cpp.i
+
+instructions/math/Rem.s: instructions/math/Rem.cpp.s
+
+.PHONY : instructions/math/Rem.s
+
+# target to generate assembly for a file
+instructions/math/Rem.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/Rem.cpp.s
+.PHONY : instructions/math/Rem.cpp.s
+
+instructions/math/Sh.o: instructions/math/Sh.cpp.o
+
+.PHONY : instructions/math/Sh.o
+
+# target to build an object file
+instructions/math/Sh.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/Sh.cpp.o
+.PHONY : instructions/math/Sh.cpp.o
+
+instructions/math/Sh.i: instructions/math/Sh.cpp.i
+
+.PHONY : instructions/math/Sh.i
+
+# target to preprocess a source file
+instructions/math/Sh.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/Sh.cpp.i
+.PHONY : instructions/math/Sh.cpp.i
+
+instructions/math/Sh.s: instructions/math/Sh.cpp.s
+
+.PHONY : instructions/math/Sh.s
+
+# target to generate assembly for a file
+instructions/math/Sh.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/Sh.cpp.s
+.PHONY : instructions/math/Sh.cpp.s
+
+instructions/math/Sub.o: instructions/math/Sub.cpp.o
+
+.PHONY : instructions/math/Sub.o
+
+# target to build an object file
+instructions/math/Sub.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/Sub.cpp.o
+.PHONY : instructions/math/Sub.cpp.o
+
+instructions/math/Sub.i: instructions/math/Sub.cpp.i
+
+.PHONY : instructions/math/Sub.i
+
+# target to preprocess a source file
+instructions/math/Sub.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/Sub.cpp.i
+.PHONY : instructions/math/Sub.cpp.i
+
+instructions/math/Sub.s: instructions/math/Sub.cpp.s
+
+.PHONY : instructions/math/Sub.s
+
+# target to generate assembly for a file
+instructions/math/Sub.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/Sub.cpp.s
+.PHONY : instructions/math/Sub.cpp.s
+
+instructions/math/Xor.o: instructions/math/Xor.cpp.o
+
+.PHONY : instructions/math/Xor.o
+
+# target to build an object file
+instructions/math/Xor.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/Xor.cpp.o
+.PHONY : instructions/math/Xor.cpp.o
+
+instructions/math/Xor.i: instructions/math/Xor.cpp.i
+
+.PHONY : instructions/math/Xor.i
+
+# target to preprocess a source file
+instructions/math/Xor.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/Xor.cpp.i
+.PHONY : instructions/math/Xor.cpp.i
+
+instructions/math/Xor.s: instructions/math/Xor.cpp.s
+
+.PHONY : instructions/math/Xor.s
+
+# target to generate assembly for a file
+instructions/math/Xor.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/math/Xor.cpp.s
+.PHONY : instructions/math/Xor.cpp.s
+
+instructions/references/CHECK_CAST.o: instructions/references/CHECK_CAST.cpp.o
+
+.PHONY : instructions/references/CHECK_CAST.o
+
+# target to build an object file
+instructions/references/CHECK_CAST.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/CHECK_CAST.cpp.o
+.PHONY : instructions/references/CHECK_CAST.cpp.o
+
+instructions/references/CHECK_CAST.i: instructions/references/CHECK_CAST.cpp.i
+
+.PHONY : instructions/references/CHECK_CAST.i
+
+# target to preprocess a source file
+instructions/references/CHECK_CAST.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/CHECK_CAST.cpp.i
+.PHONY : instructions/references/CHECK_CAST.cpp.i
+
+instructions/references/CHECK_CAST.s: instructions/references/CHECK_CAST.cpp.s
+
+.PHONY : instructions/references/CHECK_CAST.s
+
+# target to generate assembly for a file
+instructions/references/CHECK_CAST.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/CHECK_CAST.cpp.s
+.PHONY : instructions/references/CHECK_CAST.cpp.s
+
+instructions/references/GET_FIELD.o: instructions/references/GET_FIELD.cpp.o
+
+.PHONY : instructions/references/GET_FIELD.o
+
+# target to build an object file
+instructions/references/GET_FIELD.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/GET_FIELD.cpp.o
+.PHONY : instructions/references/GET_FIELD.cpp.o
+
+instructions/references/GET_FIELD.i: instructions/references/GET_FIELD.cpp.i
+
+.PHONY : instructions/references/GET_FIELD.i
+
+# target to preprocess a source file
+instructions/references/GET_FIELD.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/GET_FIELD.cpp.i
+.PHONY : instructions/references/GET_FIELD.cpp.i
+
+instructions/references/GET_FIELD.s: instructions/references/GET_FIELD.cpp.s
+
+.PHONY : instructions/references/GET_FIELD.s
+
+# target to generate assembly for a file
+instructions/references/GET_FIELD.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/GET_FIELD.cpp.s
+.PHONY : instructions/references/GET_FIELD.cpp.s
+
+instructions/references/GET_STATIC.o: instructions/references/GET_STATIC.cpp.o
+
+.PHONY : instructions/references/GET_STATIC.o
+
+# target to build an object file
+instructions/references/GET_STATIC.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/GET_STATIC.cpp.o
+.PHONY : instructions/references/GET_STATIC.cpp.o
+
+instructions/references/GET_STATIC.i: instructions/references/GET_STATIC.cpp.i
+
+.PHONY : instructions/references/GET_STATIC.i
+
+# target to preprocess a source file
+instructions/references/GET_STATIC.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/GET_STATIC.cpp.i
+.PHONY : instructions/references/GET_STATIC.cpp.i
+
+instructions/references/GET_STATIC.s: instructions/references/GET_STATIC.cpp.s
+
+.PHONY : instructions/references/GET_STATIC.s
+
+# target to generate assembly for a file
+instructions/references/GET_STATIC.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/GET_STATIC.cpp.s
+.PHONY : instructions/references/GET_STATIC.cpp.s
+
+instructions/references/INSTANCE_OF.o: instructions/references/INSTANCE_OF.cpp.o
+
+.PHONY : instructions/references/INSTANCE_OF.o
+
+# target to build an object file
+instructions/references/INSTANCE_OF.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/INSTANCE_OF.cpp.o
+.PHONY : instructions/references/INSTANCE_OF.cpp.o
+
+instructions/references/INSTANCE_OF.i: instructions/references/INSTANCE_OF.cpp.i
+
+.PHONY : instructions/references/INSTANCE_OF.i
+
+# target to preprocess a source file
+instructions/references/INSTANCE_OF.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/INSTANCE_OF.cpp.i
+.PHONY : instructions/references/INSTANCE_OF.cpp.i
+
+instructions/references/INSTANCE_OF.s: instructions/references/INSTANCE_OF.cpp.s
+
+.PHONY : instructions/references/INSTANCE_OF.s
+
+# target to generate assembly for a file
+instructions/references/INSTANCE_OF.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/INSTANCE_OF.cpp.s
+.PHONY : instructions/references/INSTANCE_OF.cpp.s
+
+instructions/references/INVOKE_SPECIAL.o: instructions/references/INVOKE_SPECIAL.cpp.o
+
+.PHONY : instructions/references/INVOKE_SPECIAL.o
+
+# target to build an object file
+instructions/references/INVOKE_SPECIAL.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/INVOKE_SPECIAL.cpp.o
+.PHONY : instructions/references/INVOKE_SPECIAL.cpp.o
+
+instructions/references/INVOKE_SPECIAL.i: instructions/references/INVOKE_SPECIAL.cpp.i
+
+.PHONY : instructions/references/INVOKE_SPECIAL.i
+
+# target to preprocess a source file
+instructions/references/INVOKE_SPECIAL.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/INVOKE_SPECIAL.cpp.i
+.PHONY : instructions/references/INVOKE_SPECIAL.cpp.i
+
+instructions/references/INVOKE_SPECIAL.s: instructions/references/INVOKE_SPECIAL.cpp.s
+
+.PHONY : instructions/references/INVOKE_SPECIAL.s
+
+# target to generate assembly for a file
+instructions/references/INVOKE_SPECIAL.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/INVOKE_SPECIAL.cpp.s
+.PHONY : instructions/references/INVOKE_SPECIAL.cpp.s
+
+instructions/references/INVOKE_VIRTUAL.o: instructions/references/INVOKE_VIRTUAL.cpp.o
+
+.PHONY : instructions/references/INVOKE_VIRTUAL.o
+
+# target to build an object file
+instructions/references/INVOKE_VIRTUAL.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/INVOKE_VIRTUAL.cpp.o
+.PHONY : instructions/references/INVOKE_VIRTUAL.cpp.o
+
+instructions/references/INVOKE_VIRTUAL.i: instructions/references/INVOKE_VIRTUAL.cpp.i
+
+.PHONY : instructions/references/INVOKE_VIRTUAL.i
+
+# target to preprocess a source file
+instructions/references/INVOKE_VIRTUAL.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/INVOKE_VIRTUAL.cpp.i
+.PHONY : instructions/references/INVOKE_VIRTUAL.cpp.i
+
+instructions/references/INVOKE_VIRTUAL.s: instructions/references/INVOKE_VIRTUAL.cpp.s
+
+.PHONY : instructions/references/INVOKE_VIRTUAL.s
+
+# target to generate assembly for a file
+instructions/references/INVOKE_VIRTUAL.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/INVOKE_VIRTUAL.cpp.s
+.PHONY : instructions/references/INVOKE_VIRTUAL.cpp.s
+
+instructions/references/LDC.o: instructions/references/LDC.cpp.o
+
+.PHONY : instructions/references/LDC.o
+
+# target to build an object file
+instructions/references/LDC.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/LDC.cpp.o
+.PHONY : instructions/references/LDC.cpp.o
+
+instructions/references/LDC.i: instructions/references/LDC.cpp.i
+
+.PHONY : instructions/references/LDC.i
+
+# target to preprocess a source file
+instructions/references/LDC.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/LDC.cpp.i
+.PHONY : instructions/references/LDC.cpp.i
+
+instructions/references/LDC.s: instructions/references/LDC.cpp.s
+
+.PHONY : instructions/references/LDC.s
+
+# target to generate assembly for a file
+instructions/references/LDC.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/LDC.cpp.s
+.PHONY : instructions/references/LDC.cpp.s
+
+instructions/references/NEW.o: instructions/references/NEW.cpp.o
+
+.PHONY : instructions/references/NEW.o
+
+# target to build an object file
+instructions/references/NEW.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/NEW.cpp.o
+.PHONY : instructions/references/NEW.cpp.o
+
+instructions/references/NEW.i: instructions/references/NEW.cpp.i
+
+.PHONY : instructions/references/NEW.i
+
+# target to preprocess a source file
+instructions/references/NEW.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/NEW.cpp.i
+.PHONY : instructions/references/NEW.cpp.i
+
+instructions/references/NEW.s: instructions/references/NEW.cpp.s
+
+.PHONY : instructions/references/NEW.s
+
+# target to generate assembly for a file
+instructions/references/NEW.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/NEW.cpp.s
+.PHONY : instructions/references/NEW.cpp.s
+
+instructions/references/PUT_FIELD.o: instructions/references/PUT_FIELD.cpp.o
+
+.PHONY : instructions/references/PUT_FIELD.o
+
+# target to build an object file
+instructions/references/PUT_FIELD.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/PUT_FIELD.cpp.o
+.PHONY : instructions/references/PUT_FIELD.cpp.o
+
+instructions/references/PUT_FIELD.i: instructions/references/PUT_FIELD.cpp.i
+
+.PHONY : instructions/references/PUT_FIELD.i
+
+# target to preprocess a source file
+instructions/references/PUT_FIELD.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/PUT_FIELD.cpp.i
+.PHONY : instructions/references/PUT_FIELD.cpp.i
+
+instructions/references/PUT_FIELD.s: instructions/references/PUT_FIELD.cpp.s
+
+.PHONY : instructions/references/PUT_FIELD.s
+
+# target to generate assembly for a file
+instructions/references/PUT_FIELD.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/PUT_FIELD.cpp.s
+.PHONY : instructions/references/PUT_FIELD.cpp.s
+
+instructions/references/PUT_STATIC.o: instructions/references/PUT_STATIC.cpp.o
+
+.PHONY : instructions/references/PUT_STATIC.o
+
+# target to build an object file
+instructions/references/PUT_STATIC.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/PUT_STATIC.cpp.o
+.PHONY : instructions/references/PUT_STATIC.cpp.o
+
+instructions/references/PUT_STATIC.i: instructions/references/PUT_STATIC.cpp.i
+
+.PHONY : instructions/references/PUT_STATIC.i
+
+# target to preprocess a source file
+instructions/references/PUT_STATIC.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/PUT_STATIC.cpp.i
+.PHONY : instructions/references/PUT_STATIC.cpp.i
+
+instructions/references/PUT_STATIC.s: instructions/references/PUT_STATIC.cpp.s
+
+.PHONY : instructions/references/PUT_STATIC.s
+
+# target to generate assembly for a file
+instructions/references/PUT_STATIC.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/PUT_STATIC.cpp.s
+.PHONY : instructions/references/PUT_STATIC.cpp.s
+
+instructions/stack/Dup.o: instructions/stack/Dup.cpp.o
+
+.PHONY : instructions/stack/Dup.o
+
+# target to build an object file
+instructions/stack/Dup.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.o
+.PHONY : instructions/stack/Dup.cpp.o
+
+instructions/stack/Dup.i: instructions/stack/Dup.cpp.i
+
+.PHONY : instructions/stack/Dup.i
+
+# target to preprocess a source file
+instructions/stack/Dup.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.i
+.PHONY : instructions/stack/Dup.cpp.i
+
+instructions/stack/Dup.s: instructions/stack/Dup.cpp.s
+
+.PHONY : instructions/stack/Dup.s
+
+# target to generate assembly for a file
+instructions/stack/Dup.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stack/Dup.cpp.s
+.PHONY : instructions/stack/Dup.cpp.s
+
+instructions/stack/Pop.o: instructions/stack/Pop.cpp.o
+
+.PHONY : instructions/stack/Pop.o
+
+# target to build an object file
+instructions/stack/Pop.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.o
+.PHONY : instructions/stack/Pop.cpp.o
+
+instructions/stack/Pop.i: instructions/stack/Pop.cpp.i
+
+.PHONY : instructions/stack/Pop.i
+
+# target to preprocess a source file
+instructions/stack/Pop.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.i
+.PHONY : instructions/stack/Pop.cpp.i
+
+instructions/stack/Pop.s: instructions/stack/Pop.cpp.s
+
+.PHONY : instructions/stack/Pop.s
+
+# target to generate assembly for a file
+instructions/stack/Pop.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stack/Pop.cpp.s
+.PHONY : instructions/stack/Pop.cpp.s
+
+instructions/stack/Swap.o: instructions/stack/Swap.cpp.o
+
+.PHONY : instructions/stack/Swap.o
+
+# target to build an object file
+instructions/stack/Swap.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.o
+.PHONY : instructions/stack/Swap.cpp.o
+
+instructions/stack/Swap.i: instructions/stack/Swap.cpp.i
+
+.PHONY : instructions/stack/Swap.i
+
+# target to preprocess a source file
+instructions/stack/Swap.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.i
+.PHONY : instructions/stack/Swap.cpp.i
+
+instructions/stack/Swap.s: instructions/stack/Swap.cpp.s
+
+.PHONY : instructions/stack/Swap.s
+
+# target to generate assembly for a file
+instructions/stack/Swap.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stack/Swap.cpp.s
+.PHONY : instructions/stack/Swap.cpp.s
+
+instructions/stores/AStore.o: instructions/stores/AStore.cpp.o
+
+.PHONY : instructions/stores/AStore.o
+
+# target to build an object file
+instructions/stores/AStore.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stores/AStore.cpp.o
+.PHONY : instructions/stores/AStore.cpp.o
+
+instructions/stores/AStore.i: instructions/stores/AStore.cpp.i
+
+.PHONY : instructions/stores/AStore.i
+
+# target to preprocess a source file
+instructions/stores/AStore.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stores/AStore.cpp.i
+.PHONY : instructions/stores/AStore.cpp.i
+
+instructions/stores/AStore.s: instructions/stores/AStore.cpp.s
+
+.PHONY : instructions/stores/AStore.s
+
+# target to generate assembly for a file
+instructions/stores/AStore.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stores/AStore.cpp.s
+.PHONY : instructions/stores/AStore.cpp.s
+
+instructions/stores/DStore.o: instructions/stores/DStore.cpp.o
+
+.PHONY : instructions/stores/DStore.o
+
+# target to build an object file
+instructions/stores/DStore.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stores/DStore.cpp.o
+.PHONY : instructions/stores/DStore.cpp.o
+
+instructions/stores/DStore.i: instructions/stores/DStore.cpp.i
+
+.PHONY : instructions/stores/DStore.i
+
+# target to preprocess a source file
+instructions/stores/DStore.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stores/DStore.cpp.i
+.PHONY : instructions/stores/DStore.cpp.i
+
+instructions/stores/DStore.s: instructions/stores/DStore.cpp.s
+
+.PHONY : instructions/stores/DStore.s
+
+# target to generate assembly for a file
+instructions/stores/DStore.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stores/DStore.cpp.s
+.PHONY : instructions/stores/DStore.cpp.s
+
+instructions/stores/FStore.o: instructions/stores/FStore.cpp.o
+
+.PHONY : instructions/stores/FStore.o
+
+# target to build an object file
+instructions/stores/FStore.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stores/FStore.cpp.o
+.PHONY : instructions/stores/FStore.cpp.o
+
+instructions/stores/FStore.i: instructions/stores/FStore.cpp.i
+
+.PHONY : instructions/stores/FStore.i
+
+# target to preprocess a source file
+instructions/stores/FStore.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stores/FStore.cpp.i
+.PHONY : instructions/stores/FStore.cpp.i
+
+instructions/stores/FStore.s: instructions/stores/FStore.cpp.s
+
+.PHONY : instructions/stores/FStore.s
+
+# target to generate assembly for a file
+instructions/stores/FStore.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stores/FStore.cpp.s
+.PHONY : instructions/stores/FStore.cpp.s
+
+instructions/stores/IStore.o: instructions/stores/IStore.cpp.o
+
+.PHONY : instructions/stores/IStore.o
+
+# target to build an object file
+instructions/stores/IStore.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stores/IStore.cpp.o
+.PHONY : instructions/stores/IStore.cpp.o
+
+instructions/stores/IStore.i: instructions/stores/IStore.cpp.i
+
+.PHONY : instructions/stores/IStore.i
+
+# target to preprocess a source file
+instructions/stores/IStore.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stores/IStore.cpp.i
+.PHONY : instructions/stores/IStore.cpp.i
+
+instructions/stores/IStore.s: instructions/stores/IStore.cpp.s
+
+.PHONY : instructions/stores/IStore.s
+
+# target to generate assembly for a file
+instructions/stores/IStore.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stores/IStore.cpp.s
+.PHONY : instructions/stores/IStore.cpp.s
+
+instructions/stores/LStore.o: instructions/stores/LStore.cpp.o
+
+.PHONY : instructions/stores/LStore.o
+
+# target to build an object file
+instructions/stores/LStore.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stores/LStore.cpp.o
+.PHONY : instructions/stores/LStore.cpp.o
+
+instructions/stores/LStore.i: instructions/stores/LStore.cpp.i
+
+.PHONY : instructions/stores/LStore.i
+
+# target to preprocess a source file
+instructions/stores/LStore.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stores/LStore.cpp.i
+.PHONY : instructions/stores/LStore.cpp.i
+
+instructions/stores/LStore.s: instructions/stores/LStore.cpp.s
+
+.PHONY : instructions/stores/LStore.s
+
+# target to generate assembly for a file
+instructions/stores/LStore.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/stores/LStore.cpp.s
+.PHONY : instructions/stores/LStore.cpp.s
+
+libs/ioapi.o: libs/ioapi.c.o
+
+.PHONY : libs/ioapi.o
+
+# target to build an object file
+libs/ioapi.c.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/libs/ioapi.c.o
+.PHONY : libs/ioapi.c.o
+
+libs/ioapi.i: libs/ioapi.c.i
+
+.PHONY : libs/ioapi.i
+
+# target to preprocess a source file
+libs/ioapi.c.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/libs/ioapi.c.i
+.PHONY : libs/ioapi.c.i
+
+libs/ioapi.s: libs/ioapi.c.s
+
+.PHONY : libs/ioapi.s
+
+# target to generate assembly for a file
+libs/ioapi.c.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/libs/ioapi.c.s
+.PHONY : libs/ioapi.c.s
+
+libs/unzip.o: libs/unzip.c.o
+
+.PHONY : libs/unzip.o
+
+# target to build an object file
+libs/unzip.c.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/libs/unzip.c.o
+.PHONY : libs/unzip.c.o
+
+libs/unzip.i: libs/unzip.c.i
+
+.PHONY : libs/unzip.i
+
+# target to preprocess a source file
+libs/unzip.c.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/libs/unzip.c.i
+.PHONY : libs/unzip.c.i
+
+libs/unzip.s: libs/unzip.c.s
+
+.PHONY : libs/unzip.s
+
+# target to generate assembly for a file
+libs/unzip.c.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/libs/unzip.c.s
+.PHONY : libs/unzip.c.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -744,6 +2638,492 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+runtime/Frame.o: runtime/Frame.cpp.o
+
+.PHONY : runtime/Frame.o
+
+# target to build an object file
+runtime/Frame.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/Frame.cpp.o
+.PHONY : runtime/Frame.cpp.o
+
+runtime/Frame.i: runtime/Frame.cpp.i
+
+.PHONY : runtime/Frame.i
+
+# target to preprocess a source file
+runtime/Frame.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/Frame.cpp.i
+.PHONY : runtime/Frame.cpp.i
+
+runtime/Frame.s: runtime/Frame.cpp.s
+
+.PHONY : runtime/Frame.s
+
+# target to generate assembly for a file
+runtime/Frame.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/Frame.cpp.s
+.PHONY : runtime/Frame.cpp.s
+
+runtime/LocalVars.o: runtime/LocalVars.cpp.o
+
+.PHONY : runtime/LocalVars.o
+
+# target to build an object file
+runtime/LocalVars.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/LocalVars.cpp.o
+.PHONY : runtime/LocalVars.cpp.o
+
+runtime/LocalVars.i: runtime/LocalVars.cpp.i
+
+.PHONY : runtime/LocalVars.i
+
+# target to preprocess a source file
+runtime/LocalVars.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/LocalVars.cpp.i
+.PHONY : runtime/LocalVars.cpp.i
+
+runtime/LocalVars.s: runtime/LocalVars.cpp.s
+
+.PHONY : runtime/LocalVars.s
+
+# target to generate assembly for a file
+runtime/LocalVars.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/LocalVars.cpp.s
+.PHONY : runtime/LocalVars.cpp.s
+
+runtime/OperandStack.o: runtime/OperandStack.cpp.o
+
+.PHONY : runtime/OperandStack.o
+
+# target to build an object file
+runtime/OperandStack.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/OperandStack.cpp.o
+.PHONY : runtime/OperandStack.cpp.o
+
+runtime/OperandStack.i: runtime/OperandStack.cpp.i
+
+.PHONY : runtime/OperandStack.i
+
+# target to preprocess a source file
+runtime/OperandStack.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/OperandStack.cpp.i
+.PHONY : runtime/OperandStack.cpp.i
+
+runtime/OperandStack.s: runtime/OperandStack.cpp.s
+
+.PHONY : runtime/OperandStack.s
+
+# target to generate assembly for a file
+runtime/OperandStack.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/OperandStack.cpp.s
+.PHONY : runtime/OperandStack.cpp.s
+
+runtime/Stack.o: runtime/Stack.cpp.o
+
+.PHONY : runtime/Stack.o
+
+# target to build an object file
+runtime/Stack.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/Stack.cpp.o
+.PHONY : runtime/Stack.cpp.o
+
+runtime/Stack.i: runtime/Stack.cpp.i
+
+.PHONY : runtime/Stack.i
+
+# target to preprocess a source file
+runtime/Stack.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/Stack.cpp.i
+.PHONY : runtime/Stack.cpp.i
+
+runtime/Stack.s: runtime/Stack.cpp.s
+
+.PHONY : runtime/Stack.s
+
+# target to generate assembly for a file
+runtime/Stack.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/Stack.cpp.s
+.PHONY : runtime/Stack.cpp.s
+
+runtime/Thread.o: runtime/Thread.cpp.o
+
+.PHONY : runtime/Thread.o
+
+# target to build an object file
+runtime/Thread.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/Thread.cpp.o
+.PHONY : runtime/Thread.cpp.o
+
+runtime/Thread.i: runtime/Thread.cpp.i
+
+.PHONY : runtime/Thread.i
+
+# target to preprocess a source file
+runtime/Thread.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/Thread.cpp.i
+.PHONY : runtime/Thread.cpp.i
+
+runtime/Thread.s: runtime/Thread.cpp.s
+
+.PHONY : runtime/Thread.s
+
+# target to generate assembly for a file
+runtime/Thread.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/Thread.cpp.s
+.PHONY : runtime/Thread.cpp.s
+
+runtime/heap/Class.o: runtime/heap/Class.cpp.o
+
+.PHONY : runtime/heap/Class.o
+
+# target to build an object file
+runtime/heap/Class.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/Class.cpp.o
+.PHONY : runtime/heap/Class.cpp.o
+
+runtime/heap/Class.i: runtime/heap/Class.cpp.i
+
+.PHONY : runtime/heap/Class.i
+
+# target to preprocess a source file
+runtime/heap/Class.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/Class.cpp.i
+.PHONY : runtime/heap/Class.cpp.i
+
+runtime/heap/Class.s: runtime/heap/Class.cpp.s
+
+.PHONY : runtime/heap/Class.s
+
+# target to generate assembly for a file
+runtime/heap/Class.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/Class.cpp.s
+.PHONY : runtime/heap/Class.cpp.s
+
+runtime/heap/ClassLoader.o: runtime/heap/ClassLoader.cpp.o
+
+.PHONY : runtime/heap/ClassLoader.o
+
+# target to build an object file
+runtime/heap/ClassLoader.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/ClassLoader.cpp.o
+.PHONY : runtime/heap/ClassLoader.cpp.o
+
+runtime/heap/ClassLoader.i: runtime/heap/ClassLoader.cpp.i
+
+.PHONY : runtime/heap/ClassLoader.i
+
+# target to preprocess a source file
+runtime/heap/ClassLoader.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/ClassLoader.cpp.i
+.PHONY : runtime/heap/ClassLoader.cpp.i
+
+runtime/heap/ClassLoader.s: runtime/heap/ClassLoader.cpp.s
+
+.PHONY : runtime/heap/ClassLoader.s
+
+# target to generate assembly for a file
+runtime/heap/ClassLoader.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/ClassLoader.cpp.s
+.PHONY : runtime/heap/ClassLoader.cpp.s
+
+runtime/heap/ClassMember.o: runtime/heap/ClassMember.cpp.o
+
+.PHONY : runtime/heap/ClassMember.o
+
+# target to build an object file
+runtime/heap/ClassMember.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/ClassMember.cpp.o
+.PHONY : runtime/heap/ClassMember.cpp.o
+
+runtime/heap/ClassMember.i: runtime/heap/ClassMember.cpp.i
+
+.PHONY : runtime/heap/ClassMember.i
+
+# target to preprocess a source file
+runtime/heap/ClassMember.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/ClassMember.cpp.i
+.PHONY : runtime/heap/ClassMember.cpp.i
+
+runtime/heap/ClassMember.s: runtime/heap/ClassMember.cpp.s
+
+.PHONY : runtime/heap/ClassMember.s
+
+# target to generate assembly for a file
+runtime/heap/ClassMember.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/ClassMember.cpp.s
+.PHONY : runtime/heap/ClassMember.cpp.s
+
+runtime/heap/ClassRef.o: runtime/heap/ClassRef.cpp.o
+
+.PHONY : runtime/heap/ClassRef.o
+
+# target to build an object file
+runtime/heap/ClassRef.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/ClassRef.cpp.o
+.PHONY : runtime/heap/ClassRef.cpp.o
+
+runtime/heap/ClassRef.i: runtime/heap/ClassRef.cpp.i
+
+.PHONY : runtime/heap/ClassRef.i
+
+# target to preprocess a source file
+runtime/heap/ClassRef.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/ClassRef.cpp.i
+.PHONY : runtime/heap/ClassRef.cpp.i
+
+runtime/heap/ClassRef.s: runtime/heap/ClassRef.cpp.s
+
+.PHONY : runtime/heap/ClassRef.s
+
+# target to generate assembly for a file
+runtime/heap/ClassRef.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/ClassRef.cpp.s
+.PHONY : runtime/heap/ClassRef.cpp.s
+
+runtime/heap/ConstantPool.o: runtime/heap/ConstantPool.cpp.o
+
+.PHONY : runtime/heap/ConstantPool.o
+
+# target to build an object file
+runtime/heap/ConstantPool.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/ConstantPool.cpp.o
+.PHONY : runtime/heap/ConstantPool.cpp.o
+
+runtime/heap/ConstantPool.i: runtime/heap/ConstantPool.cpp.i
+
+.PHONY : runtime/heap/ConstantPool.i
+
+# target to preprocess a source file
+runtime/heap/ConstantPool.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/ConstantPool.cpp.i
+.PHONY : runtime/heap/ConstantPool.cpp.i
+
+runtime/heap/ConstantPool.s: runtime/heap/ConstantPool.cpp.s
+
+.PHONY : runtime/heap/ConstantPool.s
+
+# target to generate assembly for a file
+runtime/heap/ConstantPool.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/ConstantPool.cpp.s
+.PHONY : runtime/heap/ConstantPool.cpp.s
+
+runtime/heap/Field.o: runtime/heap/Field.cpp.o
+
+.PHONY : runtime/heap/Field.o
+
+# target to build an object file
+runtime/heap/Field.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/Field.cpp.o
+.PHONY : runtime/heap/Field.cpp.o
+
+runtime/heap/Field.i: runtime/heap/Field.cpp.i
+
+.PHONY : runtime/heap/Field.i
+
+# target to preprocess a source file
+runtime/heap/Field.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/Field.cpp.i
+.PHONY : runtime/heap/Field.cpp.i
+
+runtime/heap/Field.s: runtime/heap/Field.cpp.s
+
+.PHONY : runtime/heap/Field.s
+
+# target to generate assembly for a file
+runtime/heap/Field.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/Field.cpp.s
+.PHONY : runtime/heap/Field.cpp.s
+
+runtime/heap/FieldRef.o: runtime/heap/FieldRef.cpp.o
+
+.PHONY : runtime/heap/FieldRef.o
+
+# target to build an object file
+runtime/heap/FieldRef.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/FieldRef.cpp.o
+.PHONY : runtime/heap/FieldRef.cpp.o
+
+runtime/heap/FieldRef.i: runtime/heap/FieldRef.cpp.i
+
+.PHONY : runtime/heap/FieldRef.i
+
+# target to preprocess a source file
+runtime/heap/FieldRef.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/FieldRef.cpp.i
+.PHONY : runtime/heap/FieldRef.cpp.i
+
+runtime/heap/FieldRef.s: runtime/heap/FieldRef.cpp.s
+
+.PHONY : runtime/heap/FieldRef.s
+
+# target to generate assembly for a file
+runtime/heap/FieldRef.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/FieldRef.cpp.s
+.PHONY : runtime/heap/FieldRef.cpp.s
+
+runtime/heap/InterfaceMethodRef.o: runtime/heap/InterfaceMethodRef.cpp.o
+
+.PHONY : runtime/heap/InterfaceMethodRef.o
+
+# target to build an object file
+runtime/heap/InterfaceMethodRef.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/InterfaceMethodRef.cpp.o
+.PHONY : runtime/heap/InterfaceMethodRef.cpp.o
+
+runtime/heap/InterfaceMethodRef.i: runtime/heap/InterfaceMethodRef.cpp.i
+
+.PHONY : runtime/heap/InterfaceMethodRef.i
+
+# target to preprocess a source file
+runtime/heap/InterfaceMethodRef.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/InterfaceMethodRef.cpp.i
+.PHONY : runtime/heap/InterfaceMethodRef.cpp.i
+
+runtime/heap/InterfaceMethodRef.s: runtime/heap/InterfaceMethodRef.cpp.s
+
+.PHONY : runtime/heap/InterfaceMethodRef.s
+
+# target to generate assembly for a file
+runtime/heap/InterfaceMethodRef.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/InterfaceMethodRef.cpp.s
+.PHONY : runtime/heap/InterfaceMethodRef.cpp.s
+
+runtime/heap/MemberRef.o: runtime/heap/MemberRef.cpp.o
+
+.PHONY : runtime/heap/MemberRef.o
+
+# target to build an object file
+runtime/heap/MemberRef.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/MemberRef.cpp.o
+.PHONY : runtime/heap/MemberRef.cpp.o
+
+runtime/heap/MemberRef.i: runtime/heap/MemberRef.cpp.i
+
+.PHONY : runtime/heap/MemberRef.i
+
+# target to preprocess a source file
+runtime/heap/MemberRef.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/MemberRef.cpp.i
+.PHONY : runtime/heap/MemberRef.cpp.i
+
+runtime/heap/MemberRef.s: runtime/heap/MemberRef.cpp.s
+
+.PHONY : runtime/heap/MemberRef.s
+
+# target to generate assembly for a file
+runtime/heap/MemberRef.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/MemberRef.cpp.s
+.PHONY : runtime/heap/MemberRef.cpp.s
+
+runtime/heap/Method.o: runtime/heap/Method.cpp.o
+
+.PHONY : runtime/heap/Method.o
+
+# target to build an object file
+runtime/heap/Method.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/Method.cpp.o
+.PHONY : runtime/heap/Method.cpp.o
+
+runtime/heap/Method.i: runtime/heap/Method.cpp.i
+
+.PHONY : runtime/heap/Method.i
+
+# target to preprocess a source file
+runtime/heap/Method.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/Method.cpp.i
+.PHONY : runtime/heap/Method.cpp.i
+
+runtime/heap/Method.s: runtime/heap/Method.cpp.s
+
+.PHONY : runtime/heap/Method.s
+
+# target to generate assembly for a file
+runtime/heap/Method.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/Method.cpp.s
+.PHONY : runtime/heap/Method.cpp.s
+
+runtime/heap/MethodRef.o: runtime/heap/MethodRef.cpp.o
+
+.PHONY : runtime/heap/MethodRef.o
+
+# target to build an object file
+runtime/heap/MethodRef.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/MethodRef.cpp.o
+.PHONY : runtime/heap/MethodRef.cpp.o
+
+runtime/heap/MethodRef.i: runtime/heap/MethodRef.cpp.i
+
+.PHONY : runtime/heap/MethodRef.i
+
+# target to preprocess a source file
+runtime/heap/MethodRef.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/MethodRef.cpp.i
+.PHONY : runtime/heap/MethodRef.cpp.i
+
+runtime/heap/MethodRef.s: runtime/heap/MethodRef.cpp.s
+
+.PHONY : runtime/heap/MethodRef.s
+
+# target to generate assembly for a file
+runtime/heap/MethodRef.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/MethodRef.cpp.s
+.PHONY : runtime/heap/MethodRef.cpp.s
+
+runtime/heap/Object.o: runtime/heap/Object.cpp.o
+
+.PHONY : runtime/heap/Object.o
+
+# target to build an object file
+runtime/heap/Object.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/Object.cpp.o
+.PHONY : runtime/heap/Object.cpp.o
+
+runtime/heap/Object.i: runtime/heap/Object.cpp.i
+
+.PHONY : runtime/heap/Object.i
+
+# target to preprocess a source file
+runtime/heap/Object.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/Object.cpp.i
+.PHONY : runtime/heap/Object.cpp.i
+
+runtime/heap/Object.s: runtime/heap/Object.cpp.s
+
+.PHONY : runtime/heap/Object.s
+
+# target to generate assembly for a file
+runtime/heap/Object.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/Object.cpp.s
+.PHONY : runtime/heap/Object.cpp.s
+
+runtime/heap/SymRef.o: runtime/heap/SymRef.cpp.o
+
+.PHONY : runtime/heap/SymRef.o
+
+# target to build an object file
+runtime/heap/SymRef.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/SymRef.cpp.o
+.PHONY : runtime/heap/SymRef.cpp.o
+
+runtime/heap/SymRef.i: runtime/heap/SymRef.cpp.i
+
+.PHONY : runtime/heap/SymRef.i
+
+# target to preprocess a source file
+runtime/heap/SymRef.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/SymRef.cpp.i
+.PHONY : runtime/heap/SymRef.cpp.i
+
+runtime/heap/SymRef.s: runtime/heap/SymRef.cpp.s
+
+.PHONY : runtime/heap/SymRef.s
+
+# target to generate assembly for a file
+runtime/heap/SymRef.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/SymRef.cpp.s
+.PHONY : runtime/heap/SymRef.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -753,75 +3133,354 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... jvm"
+	@echo "... Interperter.o"
+	@echo "... Interperter.i"
+	@echo "... Interperter.s"
 	@echo "... MainParamater.o"
 	@echo "... MainParamater.i"
 	@echo "... MainParamater.s"
-	@echo "... attribute/AttributeInfo.o"
-	@echo "... attribute/AttributeInfo.i"
-	@echo "... attribute/AttributeInfo.s"
 	@echo "... classfile/ClassFile.o"
 	@echo "... classfile/ClassFile.i"
 	@echo "... classfile/ClassFile.s"
 	@echo "... classfile/ClassReader.o"
 	@echo "... classfile/ClassReader.i"
 	@echo "... classfile/ClassReader.s"
+<<<<<<< HEAD
 	@echo "... classfile/ConstantClassInfo.o"
 	@echo "... classfile/ConstantClassInfo.i"
 	@echo "... classfile/ConstantClassInfo.s"
 	@echo "... classfile/ConstantDoubleInfo.o"
 	@echo "... classfile/ConstantDoubleInfo.i"
 	@echo "... classfile/ConstantDoubleInfo.s"
+	@echo "... classfile/ConstantFactory.o"
+	@echo "... classfile/ConstantFactory.i"
+	@echo "... classfile/ConstantFactory.s"
 	@echo "... classfile/ConstantFieldRefInfo.o"
 	@echo "... classfile/ConstantFieldRefInfo.i"
 	@echo "... classfile/ConstantFieldRefInfo.s"
 	@echo "... classfile/ConstantFloatInfo.o"
 	@echo "... classfile/ConstantFloatInfo.i"
 	@echo "... classfile/ConstantFloatInfo.s"
+=======
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 	@echo "... classfile/ConstantInfo.o"
 	@echo "... classfile/ConstantInfo.i"
 	@echo "... classfile/ConstantInfo.s"
-	@echo "... classfile/ConstantIntegerInfo.o"
-	@echo "... classfile/ConstantIntegerInfo.i"
-	@echo "... classfile/ConstantIntegerInfo.s"
-	@echo "... classfile/ConstantLongInfo.o"
-	@echo "... classfile/ConstantLongInfo.i"
-	@echo "... classfile/ConstantLongInfo.s"
-	@echo "... classfile/ConstantMemberInfo.o"
-	@echo "... classfile/ConstantMemberInfo.i"
-	@echo "... classfile/ConstantMemberInfo.s"
-	@echo "... classfile/ConstantMethodInfo.o"
-	@echo "... classfile/ConstantMethodInfo.i"
-	@echo "... classfile/ConstantMethodInfo.s"
-	@echo "... classfile/ConstantNameAndTypeInfo.o"
-	@echo "... classfile/ConstantNameAndTypeInfo.i"
-	@echo "... classfile/ConstantNameAndTypeInfo.s"
+	@echo "... classfile/ConstantInvokeDynamic.o"
+	@echo "... classfile/ConstantInvokeDynamic.i"
+	@echo "... classfile/ConstantInvokeDynamic.s"
+	@echo "... classfile/ConstantNumeric.o"
+	@echo "... classfile/ConstantNumeric.i"
+	@echo "... classfile/ConstantNumeric.s"
 	@echo "... classfile/ConstantPool.o"
 	@echo "... classfile/ConstantPool.i"
 	@echo "... classfile/ConstantPool.s"
-	@echo "... classfile/ConstantStringInfo.o"
-	@echo "... classfile/ConstantStringInfo.i"
-	@echo "... classfile/ConstantStringInfo.s"
-	@echo "... classfile/ConstantUtf8Info.o"
-	@echo "... classfile/ConstantUtf8Info.i"
-	@echo "... classfile/ConstantUtf8Info.s"
-	@echo "... classfile/FieldInfo.o"
-	@echo "... classfile/FieldInfo.i"
-	@echo "... classfile/FieldInfo.s"
-	@echo "... classfile/MemberInfo.o"
-	@echo "... classfile/MemberInfo.i"
-	@echo "... classfile/MemberInfo.s"
+	@echo "... classfile/Constants.o"
+	@echo "... classfile/Constants.i"
+	@echo "... classfile/Constants.s"
+	@echo "... classfile/attribute/AttributeInfo.o"
+	@echo "... classfile/attribute/AttributeInfo.i"
+	@echo "... classfile/attribute/AttributeInfo.s"
+	@echo "... classfile/attribute/BootstrapMethodsAttribute.o"
+	@echo "... classfile/attribute/BootstrapMethodsAttribute.i"
+	@echo "... classfile/attribute/BootstrapMethodsAttribute.s"
+	@echo "... classfile/attribute/CodeAttribute.o"
+	@echo "... classfile/attribute/CodeAttribute.i"
+	@echo "... classfile/attribute/CodeAttribute.s"
+	@echo "... classfile/attribute/ConstantValueAttribute.o"
+	@echo "... classfile/attribute/ConstantValueAttribute.i"
+	@echo "... classfile/attribute/ConstantValueAttribute.s"
+	@echo "... classfile/attribute/EnclosingMethodAttribute.o"
+	@echo "... classfile/attribute/EnclosingMethodAttribute.i"
+	@echo "... classfile/attribute/EnclosingMethodAttribute.s"
+	@echo "... classfile/attribute/ExceptionAttribute.o"
+	@echo "... classfile/attribute/ExceptionAttribute.i"
+	@echo "... classfile/attribute/ExceptionAttribute.s"
+	@echo "... classfile/attribute/InnerClassesAttribute.o"
+	@echo "... classfile/attribute/InnerClassesAttribute.i"
+	@echo "... classfile/attribute/InnerClassesAttribute.s"
+	@echo "... classfile/attribute/LineNumberAttribute.o"
+	@echo "... classfile/attribute/LineNumberAttribute.i"
+	@echo "... classfile/attribute/LineNumberAttribute.s"
+	@echo "... classfile/attribute/LocalVariableTableAttribute.o"
+	@echo "... classfile/attribute/LocalVariableTableAttribute.i"
+	@echo "... classfile/attribute/LocalVariableTableAttribute.s"
+	@echo "... classfile/attribute/SignatureAttribute.o"
+	@echo "... classfile/attribute/SignatureAttribute.i"
+	@echo "... classfile/attribute/SignatureAttribute.s"
+	@echo "... classfile/attribute/SourceFileAttribute.o"
+	@echo "... classfile/attribute/SourceFileAttribute.i"
+	@echo "... classfile/attribute/SourceFileAttribute.s"
+	@echo "... classfile/attribute/UnparsedAttribute.o"
+	@echo "... classfile/attribute/UnparsedAttribute.i"
+	@echo "... classfile/attribute/UnparsedAttribute.s"
 	@echo "... classpath/ClassPath.o"
 	@echo "... classpath/ClassPath.i"
 	@echo "... classpath/ClassPath.s"
+	@echo "... classpath/CompositeEntry.o"
+	@echo "... classpath/CompositeEntry.i"
+	@echo "... classpath/CompositeEntry.s"
+	@echo "... classpath/DirEntry.o"
+	@echo "... classpath/DirEntry.i"
+	@echo "... classpath/DirEntry.s"
 	@echo "... classpath/Entry.o"
 	@echo "... classpath/Entry.i"
 	@echo "... classpath/Entry.s"
+	@echo "... classpath/WildcardEntry.o"
+	@echo "... classpath/WildcardEntry.i"
+	@echo "... classpath/WildcardEntry.s"
+	@echo "... classpath/ZipEntry.o"
+	@echo "... classpath/ZipEntry.i"
+	@echo "... classpath/ZipEntry.s"
+	@echo "... common/BytesUtils.o"
+	@echo "... common/BytesUtils.i"
+	@echo "... common/BytesUtils.s"
+	@echo "... common/SlotArray.o"
+	@echo "... common/SlotArray.i"
+	@echo "... common/SlotArray.s"
 	@echo "... common/StrUtils.o"
 	@echo "... common/StrUtils.i"
 	@echo "... common/StrUtils.s"
+	@echo "... common/ZipUtils.o"
+	@echo "... common/ZipUtils.i"
+	@echo "... common/ZipUtils.s"
+	@echo "... instructions/Factory.o"
+	@echo "... instructions/Factory.i"
+	@echo "... instructions/Factory.s"
+	@echo "... instructions/base/BytecodeReader.o"
+	@echo "... instructions/base/BytecodeReader.i"
+	@echo "... instructions/base/BytecodeReader.s"
+	@echo "... instructions/base/Instruction.o"
+	@echo "... instructions/base/Instruction.i"
+	@echo "... instructions/base/Instruction.s"
+	@echo "... instructions/comparisons/Dcmp.o"
+	@echo "... instructions/comparisons/Dcmp.i"
+	@echo "... instructions/comparisons/Dcmp.s"
+	@echo "... instructions/comparisons/Fcmp.o"
+	@echo "... instructions/comparisons/Fcmp.i"
+	@echo "... instructions/comparisons/Fcmp.s"
+	@echo "... instructions/comparisons/IF_ACMP.o"
+	@echo "... instructions/comparisons/IF_ACMP.i"
+	@echo "... instructions/comparisons/IF_ACMP.s"
+	@echo "... instructions/comparisons/IF_ICMP.o"
+	@echo "... instructions/comparisons/IF_ICMP.i"
+	@echo "... instructions/comparisons/IF_ICMP.s"
+	@echo "... instructions/comparisons/Icmp.o"
+	@echo "... instructions/comparisons/Icmp.i"
+	@echo "... instructions/comparisons/Icmp.s"
+	@echo "... instructions/comparisons/Ifcond.o"
+	@echo "... instructions/comparisons/Ifcond.i"
+	@echo "... instructions/comparisons/Ifcond.s"
+	@echo "... instructions/comparisons/Lcmp.o"
+	@echo "... instructions/comparisons/Lcmp.i"
+	@echo "... instructions/comparisons/Lcmp.s"
+	@echo "... instructions/constants/Constant.o"
+	@echo "... instructions/constants/Constant.i"
+	@echo "... instructions/constants/Constant.s"
+	@echo "... instructions/constants/Ipush.o"
+	@echo "... instructions/constants/Ipush.i"
+	@echo "... instructions/constants/Ipush.s"
+	@echo "... instructions/constants/SIPUSH.o"
+	@echo "... instructions/constants/SIPUSH.i"
+	@echo "... instructions/constants/SIPUSH.s"
+	@echo "... instructions/control/Goto.o"
+	@echo "... instructions/control/Goto.i"
+	@echo "... instructions/control/Goto.s"
+	@echo "... instructions/control/LookupSwitch.o"
+	@echo "... instructions/control/LookupSwitch.i"
+	@echo "... instructions/control/LookupSwitch.s"
+	@echo "... instructions/control/TableSwitch.o"
+	@echo "... instructions/control/TableSwitch.i"
+	@echo "... instructions/control/TableSwitch.s"
+	@echo "... instructions/conversions/D2x.o"
+	@echo "... instructions/conversions/D2x.i"
+	@echo "... instructions/conversions/D2x.s"
+	@echo "... instructions/conversions/F2x.o"
+	@echo "... instructions/conversions/F2x.i"
+	@echo "... instructions/conversions/F2x.s"
+	@echo "... instructions/conversions/I2x.o"
+	@echo "... instructions/conversions/I2x.i"
+	@echo "... instructions/conversions/I2x.s"
+	@echo "... instructions/conversions/L2x.o"
+	@echo "... instructions/conversions/L2x.i"
+	@echo "... instructions/conversions/L2x.s"
+	@echo "... instructions/extended/GotoW.o"
+	@echo "... instructions/extended/GotoW.i"
+	@echo "... instructions/extended/GotoW.s"
+	@echo "... instructions/extended/IFNonNull.o"
+	@echo "... instructions/extended/IFNonNull.i"
+	@echo "... instructions/extended/IFNonNull.s"
+	@echo "... instructions/extended/IFNull.o"
+	@echo "... instructions/extended/IFNull.i"
+	@echo "... instructions/extended/IFNull.s"
+	@echo "... instructions/extended/Wide.o"
+	@echo "... instructions/extended/Wide.i"
+	@echo "... instructions/extended/Wide.s"
+	@echo "... instructions/loads/ALoad.o"
+	@echo "... instructions/loads/ALoad.i"
+	@echo "... instructions/loads/ALoad.s"
+	@echo "... instructions/loads/DLoad.o"
+	@echo "... instructions/loads/DLoad.i"
+	@echo "... instructions/loads/DLoad.s"
+	@echo "... instructions/loads/FLoad.o"
+	@echo "... instructions/loads/FLoad.i"
+	@echo "... instructions/loads/FLoad.s"
+	@echo "... instructions/loads/ILoad.o"
+	@echo "... instructions/loads/ILoad.i"
+	@echo "... instructions/loads/ILoad.s"
+	@echo "... instructions/loads/LLoad.o"
+	@echo "... instructions/loads/LLoad.i"
+	@echo "... instructions/loads/LLoad.s"
+	@echo "... instructions/math/Add.o"
+	@echo "... instructions/math/Add.i"
+	@echo "... instructions/math/Add.s"
+	@echo "... instructions/math/And.o"
+	@echo "... instructions/math/And.i"
+	@echo "... instructions/math/And.s"
+	@echo "... instructions/math/Div.o"
+	@echo "... instructions/math/Div.i"
+	@echo "... instructions/math/Div.s"
+	@echo "... instructions/math/IINC.o"
+	@echo "... instructions/math/IINC.i"
+	@echo "... instructions/math/IINC.s"
+	@echo "... instructions/math/Mul.o"
+	@echo "... instructions/math/Mul.i"
+	@echo "... instructions/math/Mul.s"
+	@echo "... instructions/math/Neg.o"
+	@echo "... instructions/math/Neg.i"
+	@echo "... instructions/math/Neg.s"
+	@echo "... instructions/math/Or.o"
+	@echo "... instructions/math/Or.i"
+	@echo "... instructions/math/Or.s"
+	@echo "... instructions/math/Rem.o"
+	@echo "... instructions/math/Rem.i"
+	@echo "... instructions/math/Rem.s"
+	@echo "... instructions/math/Sh.o"
+	@echo "... instructions/math/Sh.i"
+	@echo "... instructions/math/Sh.s"
+	@echo "... instructions/math/Sub.o"
+	@echo "... instructions/math/Sub.i"
+	@echo "... instructions/math/Sub.s"
+	@echo "... instructions/math/Xor.o"
+	@echo "... instructions/math/Xor.i"
+	@echo "... instructions/math/Xor.s"
+	@echo "... instructions/references/CHECK_CAST.o"
+	@echo "... instructions/references/CHECK_CAST.i"
+	@echo "... instructions/references/CHECK_CAST.s"
+	@echo "... instructions/references/GET_FIELD.o"
+	@echo "... instructions/references/GET_FIELD.i"
+	@echo "... instructions/references/GET_FIELD.s"
+	@echo "... instructions/references/GET_STATIC.o"
+	@echo "... instructions/references/GET_STATIC.i"
+	@echo "... instructions/references/GET_STATIC.s"
+	@echo "... instructions/references/INSTANCE_OF.o"
+	@echo "... instructions/references/INSTANCE_OF.i"
+	@echo "... instructions/references/INSTANCE_OF.s"
+	@echo "... instructions/references/INVOKE_SPECIAL.o"
+	@echo "... instructions/references/INVOKE_SPECIAL.i"
+	@echo "... instructions/references/INVOKE_SPECIAL.s"
+	@echo "... instructions/references/INVOKE_VIRTUAL.o"
+	@echo "... instructions/references/INVOKE_VIRTUAL.i"
+	@echo "... instructions/references/INVOKE_VIRTUAL.s"
+	@echo "... instructions/references/LDC.o"
+	@echo "... instructions/references/LDC.i"
+	@echo "... instructions/references/LDC.s"
+	@echo "... instructions/references/NEW.o"
+	@echo "... instructions/references/NEW.i"
+	@echo "... instructions/references/NEW.s"
+	@echo "... instructions/references/PUT_FIELD.o"
+	@echo "... instructions/references/PUT_FIELD.i"
+	@echo "... instructions/references/PUT_FIELD.s"
+	@echo "... instructions/references/PUT_STATIC.o"
+	@echo "... instructions/references/PUT_STATIC.i"
+	@echo "... instructions/references/PUT_STATIC.s"
+	@echo "... instructions/stack/Dup.o"
+	@echo "... instructions/stack/Dup.i"
+	@echo "... instructions/stack/Dup.s"
+	@echo "... instructions/stack/Pop.o"
+	@echo "... instructions/stack/Pop.i"
+	@echo "... instructions/stack/Pop.s"
+	@echo "... instructions/stack/Swap.o"
+	@echo "... instructions/stack/Swap.i"
+	@echo "... instructions/stack/Swap.s"
+	@echo "... instructions/stores/AStore.o"
+	@echo "... instructions/stores/AStore.i"
+	@echo "... instructions/stores/AStore.s"
+	@echo "... instructions/stores/DStore.o"
+	@echo "... instructions/stores/DStore.i"
+	@echo "... instructions/stores/DStore.s"
+	@echo "... instructions/stores/FStore.o"
+	@echo "... instructions/stores/FStore.i"
+	@echo "... instructions/stores/FStore.s"
+	@echo "... instructions/stores/IStore.o"
+	@echo "... instructions/stores/IStore.i"
+	@echo "... instructions/stores/IStore.s"
+	@echo "... instructions/stores/LStore.o"
+	@echo "... instructions/stores/LStore.i"
+	@echo "... instructions/stores/LStore.s"
+	@echo "... libs/ioapi.o"
+	@echo "... libs/ioapi.i"
+	@echo "... libs/ioapi.s"
+	@echo "... libs/unzip.o"
+	@echo "... libs/unzip.i"
+	@echo "... libs/unzip.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... runtime/Frame.o"
+	@echo "... runtime/Frame.i"
+	@echo "... runtime/Frame.s"
+	@echo "... runtime/LocalVars.o"
+	@echo "... runtime/LocalVars.i"
+	@echo "... runtime/LocalVars.s"
+	@echo "... runtime/OperandStack.o"
+	@echo "... runtime/OperandStack.i"
+	@echo "... runtime/OperandStack.s"
+	@echo "... runtime/Stack.o"
+	@echo "... runtime/Stack.i"
+	@echo "... runtime/Stack.s"
+	@echo "... runtime/Thread.o"
+	@echo "... runtime/Thread.i"
+	@echo "... runtime/Thread.s"
+	@echo "... runtime/heap/Class.o"
+	@echo "... runtime/heap/Class.i"
+	@echo "... runtime/heap/Class.s"
+	@echo "... runtime/heap/ClassLoader.o"
+	@echo "... runtime/heap/ClassLoader.i"
+	@echo "... runtime/heap/ClassLoader.s"
+	@echo "... runtime/heap/ClassMember.o"
+	@echo "... runtime/heap/ClassMember.i"
+	@echo "... runtime/heap/ClassMember.s"
+	@echo "... runtime/heap/ClassRef.o"
+	@echo "... runtime/heap/ClassRef.i"
+	@echo "... runtime/heap/ClassRef.s"
+	@echo "... runtime/heap/ConstantPool.o"
+	@echo "... runtime/heap/ConstantPool.i"
+	@echo "... runtime/heap/ConstantPool.s"
+	@echo "... runtime/heap/Field.o"
+	@echo "... runtime/heap/Field.i"
+	@echo "... runtime/heap/Field.s"
+	@echo "... runtime/heap/FieldRef.o"
+	@echo "... runtime/heap/FieldRef.i"
+	@echo "... runtime/heap/FieldRef.s"
+	@echo "... runtime/heap/InterfaceMethodRef.o"
+	@echo "... runtime/heap/InterfaceMethodRef.i"
+	@echo "... runtime/heap/InterfaceMethodRef.s"
+	@echo "... runtime/heap/MemberRef.o"
+	@echo "... runtime/heap/MemberRef.i"
+	@echo "... runtime/heap/MemberRef.s"
+	@echo "... runtime/heap/Method.o"
+	@echo "... runtime/heap/Method.i"
+	@echo "... runtime/heap/Method.s"
+	@echo "... runtime/heap/MethodRef.o"
+	@echo "... runtime/heap/MethodRef.i"
+	@echo "... runtime/heap/MethodRef.s"
+	@echo "... runtime/heap/Object.o"
+	@echo "... runtime/heap/Object.i"
+	@echo "... runtime/heap/Object.s"
+	@echo "... runtime/heap/SymRef.o"
+	@echo "... runtime/heap/SymRef.i"
+	@echo "... runtime/heap/SymRef.s"
 .PHONY : help
 
 

@@ -36,3 +36,7 @@ local.properties
 
 # Log Files
 *.log
+
+cmake-build-debug/
+cmake-build-debug/CMakeFiles
+cmake-build-release/

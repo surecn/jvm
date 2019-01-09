@@ -17,18 +17,19 @@ namespace cls {
         u2  accessFlags;
         u2  nameIndex;
         u2  descriptorIndex;
-        AttributeInfo*  attributeInfos;
+        AttributeInfo**  attributeInfos;
     public:
-        MemberInfo(ConstantPool *cp, u2 af, u2 ni, u2 di, AttributeInfo* ai)
-                :constantPool(cp),accessFlags(af),nameIndex(ni),descriptorIndex(di),attributeInfos(ai) {}
+        MemberInfo(ConstantPool *cp, ClassReader* classReader);
 
         u2 getNameIndex() {
             return nameIndex;
-        }
+        };
 
         u2 getDescriptorIndex() {
             return descriptorIndex;
-        }
+        };
+
+        static MemberInfo** readMembers(ConstantPool *constantPool, ClassReader *reader);
     };
 }
 

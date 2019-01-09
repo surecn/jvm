@@ -14,38 +14,38 @@ class MainParamater {
 private:
 
 public:
-    string className;
-    bool helpFlag;
-    bool versionFlag;
-    string XjreOption;
-    string cpOption;
-    string* args[];
+    string m_className;
+    bool m_helpFlag;
+    bool m_versionFlag;
+    string m_xjreOption;
+    string m_cpOption;
+    string* m_args[];
 
     MainParamater(int argc, char *argv[]) {
-        className = argv[1];
-        cout << "argc:" << argc << " className:" << className << endl;
+        m_className = argv[1];
+        cout << "argc:" << argc << " className:" << m_className << endl;
         for (int i = 2; i < argc; ++i) {
             char * ch = argv[i];
             printf("argc:%s   \n", ch);
             string sKey(ch);
             if (sKey == "-h") {
-                helpFlag = true;
+                m_helpFlag = true;
                 return;
             } else if (sKey == "-v") {
-                versionFlag = true;
+                m_versionFlag = true;
                 return;
             } else if (sKey == "-cp" || sKey == "-classpath") {
                 i++;
                 char * ch = argv[i];
                 string sValue(ch);
-                cpOption = sValue;
+                m_cpOption = sValue;
             } else if (sKey == "Xjre") {
                 i++;
                 char * ch = argv[i];
                 string sValue(ch);
-                XjreOption = sValue;
+                m_xjreOption = sValue;
             } else {
-                helpFlag = true;
+                m_helpFlag = true;
             }
         }
     }

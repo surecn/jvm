@@ -10,14 +10,46 @@
 #include <iostream>
 #include <string>
 #include "common/StrUtils.h"
+#include "common/BytesUtils.h"
 
 using namespace std;
 
+<<<<<<< HEAD
+typedef char byte;
+=======
+typedef float java_float;
+typedef long java_int;
+typedef long long java_long;
+typedef double java_double;
+typedef void* java_ref;
+
 typedef unsigned char byte;
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 
 typedef unsigned char u1;    //uint8
 typedef unsigned short u2;   //uint16
 typedef unsigned int u4;     //uint32
 typedef unsigned long u8;    //uint64
 
+<<<<<<< HEAD
+#define PATH_SEPARATOR "/"
+
 #endif //JVM_COMMON_H
+=======
+struct NameAndType {
+    string *name;
+    string *type;
+};
+
+static inline void logError(string s) {
+    cout << "ERROR:" << s << endl;
+}
+
+static inline void logInfo(string s) {
+    cout << "INFO:" << s << endl;
+}
+
+#define PATH_SEPARATOR "/"
+
+#endif //JVM_COMMON_H
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e

@@ -20,11 +20,11 @@ private:
 public:
     void readInfo(ClassReader* classReader);
 
-//    static AttributeInfo** readAttributes(ClassReader* classReader, ConstantPool* constantPool);
-//
-//    static AttributeInfo* readAttribute(ClassReader* classReader, ConstantPool* constantPool);
-//
-//    static AttributeInfo* newAttributeInfo(string attrName, u2 attrLen, ConstantPool* constantPool);
+    static AttributeInfo** readAttributes(ClassReader* classReader, ConstantPool* constantPool);
+
+    static AttributeInfo* readAttribute(ClassReader* classReader, ConstantPool* constantPool);
+
+    static AttributeInfo* newAttributeInfo(string attrName, u2 attrLen, ConstantPool* constantPool);
 
 };
 

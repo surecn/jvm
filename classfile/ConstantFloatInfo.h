@@ -15,7 +15,13 @@ namespace cls {
     private:
         float value;
     public:
-        ConstantInfo *readInfo(ClassReader *classReader);
+        ConstantFloatInfo(ClassReader *classReader) {
+            value = classReader->readU4();
+        }
+
+        string toString() {
+            return "float:" + std::to_string(value);
+        }
     };
 
 }

@@ -14,7 +14,13 @@ namespace cls {
         u2 length;
         u1* bytes;
     public:
-        ConstantInfo* readInfo(ClassReader* classReader);
+        ConstantUtf8Info(ClassReader* classReader) {
+            bytes = classReader->readU1s();
+        }
+
+        string toString() {
+            return (char*)bytes;
+        }
     };
 
 }

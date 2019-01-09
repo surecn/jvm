@@ -3,8 +3,3 @@
 //
 
 #include "ConstantIntegerInfo.h"
-
-ConstantInfo* ConstantIntegerInfo::readInfo(ClassReader *classReader) {
-    value = classReader->readU4();
-    return NULL;
-}

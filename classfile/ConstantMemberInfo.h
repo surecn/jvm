@@ -7,14 +7,23 @@
 
 
 #include "../classfile/ConstantInfo.h"
+#include "ConstantPool.h"
 
 namespace cls {
     class ConstantMemberInfo : public ConstantInfo {
     private:
         u2 classIndex;
         u2 nameAndTypeIndex;
+        ConstantPool *constantPool;
     public:
-        ConstantInfo* readInfo(ClassReader* classReader);
+        ConstantMemberInfo(ClassReader* classReader, ConstantPool *cp) : constantPool(cp) {
+            classIndex = classReader->readU2();
+            nameAndTypeIndex = classReader->readU2();
+        }
+
+        string toString() {
+            return "Member:" + std::to_string(nameAndTypeIndex);
+        }
     };
 }
 

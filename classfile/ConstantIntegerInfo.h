@@ -14,10 +14,14 @@ using namespace cls;
 
 class ConstantIntegerInfo : public ConstantInfo {
 public:
-    u1 tag;
     int value;
+    ConstantIntegerInfo(ClassReader *classReader) {
+        value = classReader->readU4();
+    }
 
-    ConstantInfo* readInfo(ClassReader *classReader);
+    string toString() {
+        return "integer:" + std::to_string(value);
+    }
 };
 
 

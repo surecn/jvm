@@ -3,9 +3,24 @@
 //
 
 #include "ConstantInfo.h"
+#include "attribute/AttributeInfo.h"
 
+<<<<<<< HEAD
 using namespace cls;
+=======
+namespace cf {
 
-ConstantInfo* ConstantInfo::readInfo(ClassReader *classReader) {
-    return NULL;
+    void* ConstantInfo::getValue() {
+        return NULL;
+    }
+
+    void ConstantInfo::print() {
+
+    }
+
+    void ConstantInfo::setType(int type) {
+        m_type = type;
+    }
+
 }
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e

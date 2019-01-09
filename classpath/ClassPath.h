@@ -10,28 +10,34 @@
 #include "Entry.h"
 
 
-namespace classpath {
+namespace cp {
 
     class ClassPath {
     private:
-        Entry *bootClassPath;
-        Entry *extClassPath;
-        Entry *userClassPath;
+        Entry *m_bootClassPath;
+        Entry *m_extClassPath;
+        Entry *m_userClassPath;
     public:
+        ClassPath(string &jreOption, string &cpOption);
+        void parseBootAndExtClassPath(string &jreOption);
+        void parseUserClassPath(string &cpOption);
+        void readClass(string &className, struct ClassData &data);
+        ~ClassPath();
 
-
-        void parseBootAndExtClassPath(string jreOption);
-
-        void parseUserClassPath(string cpOption);
-
-        void readClass(string className, struct ClassData &data);
-
-        static ClassPath* parse(string jreOption, string cpOption) {
-            ClassPath* classPath = new ClassPath();
-            classPath->parseBootAndExtClassPath(jreOption);
-            classPath->parseBootAndExtClassPath(cpOption);
-            return classPath;
+<<<<<<< HEAD
+        ClassPath(string &jreOption, string &cpOption) {
+            parseBootAndExtClassPath(jreOption);
+            parseUserClassPath(cpOption);
         }
+
+        void parseBootAndExtClassPath(string &jreOption);
+
+        void parseUserClassPath(string &cpOption);
+
+        void readClass(string &className, struct ClassData &data);
+
+=======
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
     };
 
 };
