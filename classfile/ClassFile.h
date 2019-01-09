@@ -16,6 +16,7 @@ namespace cf {
     class ClassFile {
     private:
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 //    u4                  magic;
 //    u2                  minor_version;
@@ -55,6 +56,8 @@ namespace cf {
         void readMethods(ClassReader *classReader);
 
 =======
+=======
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
         u4 m_magic;
         u2 m_minorVersion;//小版本号
         u2 m_majorVersion;//大版本号
@@ -73,6 +76,9 @@ namespace cf {
         bool readAndCheckVersion(ClassReader *classReader);
         void readFields(ClassReader *classReader);
         void readMethods(ClassReader *classReader);
+<<<<<<< HEAD
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
+=======
 >>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
         AttributeInfo* readAttributes(ClassReader *classReader);
         ConstantPool* readConstantPool(ClassReader *classReader);
@@ -82,6 +88,7 @@ namespace cf {
         ClassFile();
         string* getName(MemberInfo* memberInfo);
         string* getDescriptor(MemberInfo* memberInfo);
+<<<<<<< HEAD
 <<<<<<< HEAD
     public:
 
@@ -121,6 +128,10 @@ namespace cf {
 =======
         void parse(byte *&classData);
         ClassFile* read(ClassReader* classReader);
+=======
+        void parse(byte *&classData);
+        ClassFile* read(ClassReader* classReader);
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
         u2 getMinorVersion();
         u2 getMajorVersion();
         string* getClassName();
@@ -133,6 +144,9 @@ namespace cf {
         u2 getAccessFlags();
         ConstantPool* getConstantPool();
         MemberInfo **getFields() const;
+<<<<<<< HEAD
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
+=======
 >>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
     };
 

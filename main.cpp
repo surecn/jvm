@@ -9,7 +9,12 @@
 const string PATHSeparter;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 using namespace classpath;
+=======
+using namespace cp;
+using namespace cf;
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 =======
 using namespace cp;
 using namespace cf;
@@ -20,6 +25,7 @@ void printUsage() {
 }
 
 void printLoadError(int error) {
+<<<<<<< HEAD
 <<<<<<< HEAD
     cout << "LoadClass : " << error;
 }
@@ -46,6 +52,12 @@ void startVM(struct MainParamater cmd) {
 
     cls::ClassFile* classFile = loadClass(className, classPath);
 =======
+=======
+    cout << "LoadClass : " << error << endl;
+}
+
+void startVM(struct MainParamater cmd) {
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
     ClassPath classPath(cmd.m_xjreOption, cmd.m_cpOption);
     rt::ClassLoader *classLoader = new rt::ClassLoader(&classPath);
 
@@ -57,6 +69,9 @@ void startVM(struct MainParamater cmd) {
     if (mainMethod != NULL) {
         Interperter::interpret(mainMethod);
     }
+<<<<<<< HEAD
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
+=======
 >>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 
     cout << "startVM" << endl;

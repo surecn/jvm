@@ -14,20 +14,27 @@ namespace cp {
 
     struct ClassData {
 <<<<<<< HEAD
+<<<<<<< HEAD
         byte *data;
         Entry *entry;
         int error = 1;
 =======
+=======
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
         byte *m_data;
         Entry *m_entry;
         int m_error = 0;
         ~ClassData();
+<<<<<<< HEAD
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
+=======
 >>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
     };
 
     class Entry {
     public:
         virtual void readClass(string &path, ClassData &data) = 0;
+<<<<<<< HEAD
 <<<<<<< HEAD
 
         string toString();
@@ -79,6 +86,12 @@ namespace cp {
     };
 
 
+=======
+        string toString();
+        static Entry* create(string &path);
+    };
+
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 =======
         string toString();
         static Entry* create(string &path);

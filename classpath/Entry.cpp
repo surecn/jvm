@@ -13,6 +13,7 @@
 #include "ZipEntry.h"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 namespace classpath {
 
     Entry *Entry::create(string &path) {
@@ -105,6 +106,34 @@ namespace classpath {
 
 }
 
+=======
+namespace cp {
+
+    ClassData::~ClassData() {
+        delete m_data;
+    }
+
+    Entry *Entry::create(string &path) {
+        if (path.find_first_of(PATH_SEPARATOR, 0) != string::npos) {
+            return new CompositeEntry(path);
+        }
+        if (path.find_first_of("*", 0) != string::npos) {
+            return new WildcardEntry(path);
+        }
+        if (StrUtils::endsWith(path, "*")) {
+            return new WildcardEntry(path);
+        }
+        if (StrUtils::endsWith(path, ".jar") || StrUtils::endsWith(path, ".JAR")
+            || StrUtils::endsWith(path, ".zip") || StrUtils::endsWith(path, ".ZIP")) {
+            return new ZipEntry(path);
+        }
+        return new DirEntry(path);
+    }
+
+
+}
+
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 =======
 namespace cp {
 

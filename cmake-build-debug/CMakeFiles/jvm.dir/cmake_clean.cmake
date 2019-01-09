@@ -10,8 +10,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/jvm.dir/classfile/attribute/AttributeInfo.cpp.o"
   "CMakeFiles/jvm.dir/common/StrUtils.cpp.o"
 <<<<<<< HEAD
+<<<<<<< HEAD
   "CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o"
 =======
+=======
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
   "CMakeFiles/jvm.dir/classfile/attribute/CodeAttribute.cpp.o"
   "CMakeFiles/jvm.dir/classfile/attribute/ConstantValueAttribute.cpp.o"
   "CMakeFiles/jvm.dir/classfile/attribute/LineNumberAttribute.cpp.o"
@@ -112,6 +115,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/jvm.dir/classfile/ConstantInvokeDynamic.cpp.o"
   "CMakeFiles/jvm.dir/instructions/references/INVOKE_VIRTUAL.cpp.o"
   "CMakeFiles/jvm.dir/instructions/references/INVOKE_SPECIAL.cpp.o"
+<<<<<<< HEAD
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
+=======
 >>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
   "jvm.pdb"
   "jvm"

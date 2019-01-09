@@ -23,6 +23,7 @@ namespace cp {
         void parseUserClassPath(string &cpOption);
         void readClass(string &className, struct ClassData &data);
         ~ClassPath();
+<<<<<<< HEAD
 
 <<<<<<< HEAD
         ClassPath(string &jreOption, string &cpOption) {
@@ -37,6 +38,9 @@ namespace cp {
         void readClass(string &className, struct ClassData &data);
 
 =======
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
+=======
+
 >>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
     };
 

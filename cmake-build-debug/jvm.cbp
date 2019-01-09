@@ -105,6 +105,7 @@
 			<Option target="jvm"/>
 		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.cpp">
+<<<<<<< HEAD
 			<Option target="jvm"/>
 		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h">
@@ -125,6 +126,20 @@
 		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFieldRefInfo.cpp">
 =======
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantNumeric.cpp">
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
+=======
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInvokeDynamic.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInvokeDynamic.h">
+			<Option target="jvm"/>
+		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantNumeric.cpp">
 >>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 			<Option target="jvm"/>
@@ -178,6 +193,7 @@
 			<Option target="jvm"/>
 		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/ExceptionAttribute.h">
+<<<<<<< HEAD
 			<Option target="jvm"/>
 		</Unit>
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/InnerClassesAttribute.cpp">
@@ -213,6 +229,43 @@
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/UnparsedAttribute.cpp">
 			<Option target="jvm"/>
 		</Unit>
+=======
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/InnerClassesAttribute.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/InnerClassesAttribute.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/LineNumberAttribute.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/LineNumberAttribute.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/LocalVariableTableAttribute.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/LocalVariableTableAttribute.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/SignatureAttribute.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/SignatureAttribute.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/SourceFileAttribute.cpp">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/SourceFileAttribute.h">
+			<Option target="jvm"/>
+		</Unit>
+		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/UnparsedAttribute.cpp">
+			<Option target="jvm"/>
+		</Unit>
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 		<Unit filename="/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/UnparsedAttribute.h">
 			<Option target="jvm"/>
 		</Unit>

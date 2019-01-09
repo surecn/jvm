@@ -15,8 +15,11 @@
 using namespace std;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 typedef char byte;
 =======
+=======
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 typedef float java_float;
 typedef long java_int;
 typedef long long java_long;
@@ -32,10 +35,13 @@ typedef unsigned int u4;     //uint32
 typedef unsigned long u8;    //uint64
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #define PATH_SEPARATOR "/"
 
 #endif //JVM_COMMON_H
 =======
+=======
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 struct NameAndType {
     string *name;
     string *type;
@@ -52,4 +58,7 @@ static inline void logInfo(string s) {
 #define PATH_SEPARATOR "/"
 
 #endif //JVM_COMMON_H
+<<<<<<< HEAD
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
+=======
 >>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e

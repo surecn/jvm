@@ -4,6 +4,7 @@
 
 #include "ConstantPool.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 #include "ConstantFactory.h"
 
 using namespace cls;
@@ -37,6 +38,8 @@ ConstantPool::ConstantPool(ClassReader *classReader) {
     for (int j = 0; j < constantPoolSize; ++j) {
         cout << constantInfos[j]->toString() << endl;
 =======
+=======
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 #include "Constants.h"
 
 namespace cf {
@@ -85,6 +88,9 @@ namespace cf {
             cout << "index:" << i << "    ";
             constantInfo->print();
         }
+<<<<<<< HEAD
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
+=======
 >>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
     }
 }
