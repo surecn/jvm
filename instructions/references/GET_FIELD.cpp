@@ -10,9 +10,10 @@ namespace rt {
 
     void GET_FIELD::execute(rt::Frame *frame) {
         ConstantPool *cp = frame->getMethod()->getClass()->getConstantPool();
-        FieldRef *fieldRef = (FieldRef *)cp->getConstant(m_index);
+        FieldRef *fieldRef = cp->getFieldRef(m_index);
+        cout << "GET_FIELD :" << *fieldRef->getName() << endl;
         Field *field = fieldRef->resolvedField();
-        if (!field->isStatic()) {
+        if (field->isStatic()) {
             cout << "java.lang.IncompatibleClassChangeError" << endl;
         }
         OperandStack *stack = frame->getOperandStack();
@@ -23,7 +24,7 @@ namespace rt {
         string *descriptor = field->getDescriptor();
         u4 slotId = field->getSlotId();
         Object *object = (Object *)ref;
-        SlotArray *slotArray = object->getSlotArray();
+        SlotArray *slotArray = object->getFields();
         switch ((*descriptor)[0]) {
             case 'Z':
             case 'B':
@@ -41,6 +42,7 @@ namespace rt {
             case 'D':
                 stack->pushDouble(slotArray->getDouble(slotId));
                 break;
+            case '[':
             case 'L':
                 stack->pushRef(slotArray->getRef(slotId));
                 break;

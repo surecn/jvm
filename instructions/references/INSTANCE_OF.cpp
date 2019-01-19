@@ -17,7 +17,7 @@ namespace rt {
             return;
         }
         ConstantPool *cp = frame->getMethod()->getClass()->getConstantPool();
-        ClassRef *classRef = (ClassRef *)cp->getConstant(m_index);
+        ClassRef *classRef = cp->getClassRef(m_index);
         Class *cls = classRef->resolvedClass();
         if (((Object*)ref)->isInstanceOf(cls)) {
             stack->pushInt(1);

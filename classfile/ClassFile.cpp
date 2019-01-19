@@ -8,6 +8,13 @@
 namespace cf {
     ClassFile::ClassFile() {}
 
+    ClassFile::~ClassFile() {
+        delete m_cp;
+        delete m_interfaces;
+        delete [] m_methods;
+        delete [] m_fields;
+    }
+
     void ClassFile::parse(byte *&classData) {
         ClassReader classReader(classData);
         read(&classReader);

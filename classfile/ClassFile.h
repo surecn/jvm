@@ -22,13 +22,13 @@ namespace cf {
         u2  m_accessFlags;//访问标志
         u2  m_thisClass;
         u2  m_superClass;
-        u2*  m_interfaces;
+        u2* m_interfaces;
         u2 m_interfacesCount;
         u2 m_methodCount;
         u2 m_fieldCount;
         MemberInfo** m_methods;
         MemberInfo** m_fields;
-        AttributeInfo* m_attributes;
+        //AttributeInfo* m_attributes;
         bool readAndCheckMagic(ClassReader *classReader);
         bool readAndCheckVersion(ClassReader *classReader);
         void readFields(ClassReader *classReader);
@@ -39,6 +39,7 @@ namespace cf {
 
     public:
         ClassFile();
+        ~ClassFile();
         string* getName(MemberInfo* memberInfo);
         string* getDescriptor(MemberInfo* memberInfo);
         void parse(byte *&classData);

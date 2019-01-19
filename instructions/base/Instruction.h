@@ -7,7 +7,6 @@
 
 #include "../../runtime/Frame.h"
 #include "BytecodeReader.h"
-#include "../../runtime/Thread.h"
 
 namespace rt {
 

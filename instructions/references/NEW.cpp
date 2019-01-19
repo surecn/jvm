@@ -11,12 +11,19 @@ namespace rt {
 
     void NEW::execute(rt::Frame *frame) {
         ConstantPool *cp = frame->getMethod()->getClass()->getConstantPool();
-        ClassRef *classRef = (ClassRef*)cp->getConstant(m_index);
+        ClassRef *classRef = cp->getClassRef(m_index);
         Class *cls = classRef->resolvedClass();
+
+        if (!cls->isInitStarted()) {
+            frame->revertNextPC();
+            cls->initClass(frame->getThread());
+            return;
+        }
+
         if (cls->isInterface() || cls->isAbstract()) {
             cout << "java.lang.InstantiationError" << endl;
         }
-        java_ref ref = cls->newObject();
+        java_ref ref = new Object(cls);
         frame->getOperandStack()->pushRef(ref);
     }
 

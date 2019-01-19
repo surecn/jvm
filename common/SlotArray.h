@@ -8,6 +8,9 @@
 
 #include "../common.h"
 
+namespace rt {
+    extern class Object;
+}
 class SlotArray {
 private:
     java_int *m_slots;
@@ -28,6 +31,10 @@ public:
 
     void setRef(int index, java_ref val);
     java_ref getRef(int index);
+
+    void setSlot(int index, java_int slot);
+
+    rt::Object *getThis();
 };
 
 

@@ -6,6 +6,9 @@
 
 SlotArray::SlotArray(u4 size) {
     m_slots = new java_int[size];
+    for (int i = 0; i < size; ++i) {
+        m_slots[i] = 0;
+    }
 }
 
 java_int SlotArray::getInt(int index) {
@@ -57,9 +60,17 @@ void SlotArray::setDouble(int index, java_double val) {
 }
 
 java_ref SlotArray::getRef(int index) {
-    return (java_int*)m_slots[index];
+    return (java_ref)m_slots[index];
 }
 
 void SlotArray::setRef(int index, java_ref val) {
     m_slots[index] = (java_int)val;
+}
+
+void SlotArray::setSlot(int index, java_int slot) {
+    m_slots[index] = slot;
+}
+
+rt::Object * SlotArray::getThis() {
+    return (rt::Object*)getRef(0);
 }

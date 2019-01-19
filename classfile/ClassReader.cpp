@@ -47,8 +47,9 @@ namespace cf {
 
     u2* ClassReader::readU2s(int length) {
         u2 *ch = new u2[length];
-        memcpy(ch, m_data, length * 2);
-        m_data = &m_data[length * 2];
+        for (int i = 0; i < length; ++i) {
+            ch[i] = readU2();
+        }
         return ch;
     }
 

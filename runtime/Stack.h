@@ -21,6 +21,7 @@ namespace rt {
         void push(Frame *frame);
         Frame* pop();
         Frame* top();
+        bool isEmpty();
     };
 }
 

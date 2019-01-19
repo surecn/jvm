@@ -13,8 +13,11 @@ namespace rt {
     class InterfaceMethodRef : public MemberRef {
     private:
         Method *m_method;
+        Method *resolvedInterfaceMethodRef();
     public:
         InterfaceMethodRef(ConstantPool *cp, cf::ConstantInterfaceMethodRefInfo *refInfo);
+        Method *resolvedInterfaceMethod();
+
     };
 
 }

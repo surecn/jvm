@@ -14,7 +14,10 @@ namespace rt {
         u4 m_maxStack;
         u4 m_maxLocals;
         u1 *m_code;
+        u4 m_argSlotCount;
         void copyAttributes(cf::MemberInfo *memberInfo);
+        void calcArgSlotCount(const vector<char> paramTypes);
+        Method();
     public:
         static Method** newMethods(Class *cls, cf::MemberInfo **cfMembers, int count);
         u4 getMaxStack() const;
@@ -26,6 +29,8 @@ namespace rt {
         bool isAbstract();
         bool isStrict();
         u1 *getCode();
+        u4 getArgSlotCount();
+        void injectCodeAttribute(char returnType);
     };
 }
 

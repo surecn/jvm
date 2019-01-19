@@ -116,6 +116,10 @@ namespace cf {
         //cout << "UTF8:" << *m_utf8 << endl;
     }
 
+    MemberInfo::~MemberInfo() {
+        delete [] m_attributeInfos;
+    }
+
     u2 MemberInfo::getNameIndex() {
         return m_nameIndex;
     };
@@ -169,6 +173,7 @@ namespace cf {
                 return (ConstantValueAttribute*)m_attributeInfos[i];
             }
         }
+        return NULL;
     }
 
     ConstantInfo* ConstantFactory::readConstantInfo(ClassReader *classReader, ConstantPool *constantPool) {
@@ -180,7 +185,7 @@ namespace cf {
     }
 
     ConstantInfo* ConstantFactory::newConstantInfo(u1 tag, ConstantPool *constantPool) {
-        //cout << "attribute:" << tag << endl;
+        //cout << "attribute:" << (int)tag << endl;
         switch (tag) {
             case CONSTANT_Integer:
                 return new ConstantIntegerInfo();

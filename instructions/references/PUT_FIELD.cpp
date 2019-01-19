@@ -12,7 +12,7 @@ namespace rt {
         Method *currentMethod = frame->getMethod();
         Class *currentClass = currentMethod->getClass();
         ConstantPool *cp = currentClass->getConstantPool();
-        FieldRef *fieldRef = (FieldRef *)cp->getConstant(m_index);
+        FieldRef *fieldRef = cp->getFieldRef(m_index);
         Field *field = fieldRef->resolvedField();
         if (field->isStatic()) {
             cout << "java.lang.IncompactibleClassChangeError" << endl;
@@ -37,7 +37,7 @@ namespace rt {
                     cout << "java.lang.NullPointerException" << endl;
                 }
                 Object *object = (Object *) ref;
-                object->getSlotArray()->setInt(slotId, val);
+                object->getFields()->setInt(slotId, val);
                 break;
             }
             case 'F': {
@@ -47,7 +47,7 @@ namespace rt {
                     cout << "java.lang.NullPointerException" << endl;
                 }
                 Object *object = (Object *) ref;
-                object->getSlotArray()->setFloat(slotId, val);
+                object->getFields()->setFloat(slotId, val);
                 break;
             }
             case 'J': {
@@ -57,7 +57,7 @@ namespace rt {
                     cout << "java.lang.NullPointerException" << endl;
                 }
                 Object *object = (Object *) ref;
-                object->getSlotArray()->setLong(slotId, val);
+                object->getFields()->setLong(slotId, val);
                 break;
             }
             case 'D': {
@@ -67,9 +67,10 @@ namespace rt {
                     cout << "java.lang.NullPointerException" << endl;
                 }
                 Object *object = (Object *) ref;
-                object->getSlotArray()->setDouble(slotId, val);
+                object->getFields()->setDouble(slotId, val);
                 break;
             }
+            case '[':
             case 'L': {
                 java_ref val = stack->popRef();
                 java_ref ref = stack->popRef();
@@ -77,7 +78,7 @@ namespace rt {
                     cout << "java.lang.NullPointerException" << endl;
                 }
                 Object *object = (Object *) ref;
-                object->getSlotArray()->setRef(slotId, val);
+                object->getFields()->setRef(slotId, val);
                 break;
             }
         }

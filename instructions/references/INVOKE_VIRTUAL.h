@@ -13,6 +13,7 @@ namespace rt {
     class INVOKE_VIRTUAL : public Index16Instruction {
     public:
         void execute(Frame* frame);
+        void println(OperandStack *stack, string *descriptor);
     };
 
 }

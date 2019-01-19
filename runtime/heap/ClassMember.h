@@ -8,6 +8,7 @@
 
 #include "../../common.h"
 #include "../../classfile/Constants.h"
+#include "Object.h"
 
 namespace rt{
     extern class Class;
@@ -30,6 +31,7 @@ namespace rt{
         string *getDescriptor() const;
         string *getName() const;
         bool isAccessiableTo(Class *cls);
+
     };
 }
 

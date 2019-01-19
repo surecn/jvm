@@ -4,17 +4,17 @@
 
 #include "Factory.h"
 #include "math/IINC.h"
-#include "comparisons/Ifcond.h"
+#include "comparisons/IFCOND.h"
 #include "comparisons/IF_ICMP.h"
 #include "comparisons/IF_ACMP.h"
-#include "control/Goto.h"
-#include "control/LookupSwitch.h"
-#include "control/TableSwitch.h"
-#include "extended/Wide.h"
-#include "extended/IFNull.h"
-#include "extended/IFNonNull.h"
-#include "extended/GotoW.h"
-#include "constants/Ipush.h"
+#include "control/GOTO.h"
+#include "control/LOOKUP_SWITCH.h"
+#include "control/TABLE_SWITCH.h"
+#include "extended/WIDE.h"
+#include "extended/IFNULL.h"
+#include "extended/IFNONNULL.h"
+#include "extended/GOTOW.h"
+#include "constants/IPUSH.h"
 #include "constants/SIPUSH.h"
 #include "references/GET_STATIC.h"
 #include "references/PUT_STATIC.h"
@@ -25,6 +25,12 @@
 #include "references/NEW.h"
 #include "references/CHECK_CAST.h"
 #include "references/INSTANCE_OF.h"
+#include "references/INVOKE_STATIC.h"
+#include "references/INVOKE_INTERFACE.h"
+#include "references/NEW_ARRAY.h"
+#include "references/ANEW_ARRAY.h"
+#include "references/MULTI_ANEW_ARRAY.h"
+#include "constants/LDC.h"
 #include <memory>
 
 namespace rt {
@@ -155,6 +161,35 @@ namespace rt {
     DCMPL Factory::dcmpl;
     DCMPG Factory::dcmpg;
 
+    IRETURN Factory::ireturn;
+    LRETURN Factory::lreturn;
+    FRETURN Factory::freturn;
+    DRETURN Factory::dreturn;
+    ARETURN Factory::areturn;
+    RETURN Factory::_return;
+
+    ARRAY_LENGTH Factory::array_length;
+    IALOAD Factory::iaload;
+    LALOAD Factory::laload;
+    FALOAD Factory::faload;
+    DALOAD Factory::daload;
+    AALOAD Factory::aaload;
+    BALOAD Factory::baload;
+    CALOAD Factory::caload;
+    SALOAD Factory::saload;
+
+    IASTORE Factory::iastore;
+    LASTORE Factory::lastore;
+    FASTORE Factory::fastore;
+    DASTORE Factory::dastore;
+    AASTORE Factory::aastore;
+    BASTORE Factory::bastore;
+    CASTORE Factory::castore;
+    SASTORE Factory::sastore;
+
+    INVOKE_NATIVE Factory::invoke_native;
+
+
     map<int, string>* Factory::initInstructionNames() {
         map<int, string>* names = new map<int, string>();
         (*names)[0x00]="nop";
@@ -175,6 +210,9 @@ namespace rt {
         (*names)[0x0f]="dconst_1";
         (*names)[0x10]="BIPUSH";
         (*names)[0x11]="SIPUSH";
+        (*names)[0x12]="LDC";
+        (*names)[0x13]="LDC_W";
+        (*names)[0x14]="LDC2_W";
         (*names)[0x15]="ILOAD";
         (*names)[0x16]="LLOAD";
         (*names)[0x17]="FLOAD";
@@ -200,6 +238,15 @@ namespace rt {
         (*names)[0x2b]="aload_1";
         (*names)[0x2c]="aload_2";
         (*names)[0x2d]="aload_3";
+        (*names)[0x2e]="iaload";
+        (*names)[0x2f]="laload";
+        (*names)[0x30]="faload";
+        (*names)[0x31]="daload";
+        (*names)[0x32]="aaload";
+        (*names)[0x33]="baload";
+        (*names)[0x34]="caload";
+        (*names)[0x35]="saload";
+
         (*names)[0x36]="ISTORE";
         (*names)[0x37]="LSTORE";
         (*names)[0x38]="FSTORE";
@@ -225,14 +272,14 @@ namespace rt {
         (*names)[0x4c]="astore_1";
         (*names)[0x4d]="astore_2";
         (*names)[0x4e]="astore_3";
-//        (*names)[0x4f]="nop";
-//        (*names)[0x50]="nop";
-//        (*names)[0x51]="nop";
-//        (*names)[0x52]="nop";
-//        (*names)[0x53]="nop";
-//        (*names)[0x54]="nop";
-//        (*names)[0x55]="nop";
-//        (*names)[0x56]="nop";
+        (*names)[0x4f]="iastore";
+        (*names)[0x50]="lastore";
+        (*names)[0x51]="fastore";
+        (*names)[0x52]="dastore";
+        (*names)[0x53]="aastore";
+        (*names)[0x54]="bastore";
+        (*names)[0x55]="castore";
+        (*names)[0x56]="sastore";
         (*names)[0x57]="pop";
         (*names)[0x58]="pop2";
         (*names)[0x59]="dup";
@@ -318,35 +365,37 @@ namespace rt {
 //        (*names)[0xa9]="nop";
         (*names)[0xaa]="TABLE_SWITCH";
         (*names)[0xab]="LOOKUP_SWITCH";
-//        (*names)[0xac]="nop";
-//        (*names)[0xad]="nop";
-//        (*names)[0xae]="nop";
-//        (*names)[0xaf]="nop";
-//        (*names)[0xb0]="nop";
-//        (*names)[0xb1]="nop";
+        (*names)[0xac]="ireturn";
+        (*names)[0xad]="lreturn";
+        (*names)[0xae]="freturn";
+        (*names)[0xaf]="dreturn";
+        (*names)[0xb0]="areturn";
+        (*names)[0xb1]="return";
         (*names)[0xb2]="GET_STATIC";
         (*names)[0xb3]="PUT_STATIC";
         (*names)[0xb4]="GET_FIELD";
         (*names)[0xb5]="PUT_FIELD";
         (*names)[0xb6]="INVOKE_VIRTUAL";
         (*names)[0xb7]="INVOKE_SPECIAL";
-//        (*names)[0xb8]="nop";
-//        (*names)[0xb9]="nop";
+        (*names)[0xb8]="INVOKE_STATIC";
+        (*names)[0xb9]="INVOKE_INTERFACE";
 //        (*names)[0xba]="nop";
-//        (*names)[0xbb]="NEW";
-//        (*names)[0xbc]="nop";
-//        (*names)[0xbd]="nop";
-//        (*names)[0xbe]="nop";
+        (*names)[0xbb]="NEW";
+        (*names)[0xbc]="NEW_ARRAY";
+        (*names)[0xbd]="ANEW_ARRAY";
+        (*names)[0xbe]="array_length";
 //        (*names)[0xbf]="nop";
         (*names)[0xc0]="CHECK_CAST";
         (*names)[0xc1]="INSTANCE_OF";
 //        (*names)[0xc2]="nop";
 //        (*names)[0xc3]="nop";
         (*names)[0xc4]="WIDE";
-//        (*names)[0xc5]="nop";
+        (*names)[0xc5]="MULTI_ANEW_ARRAY";
         (*names)[0xc6]="IFNULL";
         (*names)[0xc7]="IFNONNULL";
         (*names)[0xc8]="GOTO_W";
+        (*names)[0xfe]="invoke_native";
+
         return names;
     }
 
@@ -396,12 +445,12 @@ namespace rt {
                 return new BIPUSH();
             case 0x11:
                 return new SIPUSH();
-                // case 0x12:
-                // 	return &LDC{}
-                // case 0x13:
-                // 	return &LDC_W{}
-                // case 0x14:
-                // 	return &LDC2_W{}
+            case 0x12:
+                return new LDC();
+             case 0x13:
+                return new LDC_W();
+             case 0x14:
+                return new LDC2_W();
             case 0x15:
                 return new ILOAD();
             case 0x16:
@@ -452,22 +501,22 @@ namespace rt {
                 return &aload_2;
             case 0x2d:
                 return &aload_3;
-                // case 0x2e:
-                // 	return iaload
-                // case 0x2f:
-                // 	return laload
-                // case 0x30:
-                // 	return faload
-                // case 0x31:
-                // 	return daload
-                // case 0x32:
-                // 	return aaload
-                // case 0x33:
-                // 	return baload
-                // case 0x34:
-                // 	return caload
-                // case 0x35:
-                // 	return saload
+             case 0x2e:
+                return &iaload;
+             case 0x2f:
+                return &laload;
+             case 0x30:
+                return &faload;
+             case 0x31:
+                return &daload;
+             case 0x32:
+                return &aaload;
+             case 0x33:
+                return &baload;
+             case 0x34:
+                return &caload;
+             case 0x35:
+                return &saload;
             case 0x36:
                 return new ISTORE();
             case 0x37:
@@ -518,22 +567,22 @@ namespace rt {
                 return &astore_2;
             case 0x4e:
                 return &astore_3;
-                // case 0x4f:
-                // 	return iastore
-                // case 0x50:
-                // 	return lastore
-                // case 0x51:
-                // 	return fastore
-                // case 0x52:
-                // 	return dastore
-                // case 0x53:
-                // 	return aastore
-                // case 0x54:
-                // 	return bastore
-                // case 0x55:
-                // 	return castore
-                // case 0x56:
-                // 	return sastore
+             case 0x4f:
+                return &iastore;
+             case 0x50:
+                return &lastore;
+             case 0x51:
+                return &fastore;
+             case 0x52:
+                return &dastore;
+             case 0x53:
+                return &aastore;
+             case 0x54:
+                return &bastore;
+             case 0x55:
+                return &castore;
+             case 0x56:
+                return &sastore;
             case 0x57:
                 return &pop;
             case 0x58:
@@ -704,18 +753,18 @@ namespace rt {
                 return new TABLE_SWITCH();
             case 0xab:
                 return new LOOKUP_SWITCH();
-                // case 0xac:
-                // 	return ireturn
-                // case 0xad:
-                // 	return lreturn
-                // case 0xae:
-                // 	return freturn
-                // case 0xaf:
-                // 	return dreturn
-                // case 0xb0:
-                // 	return areturn
-                // case 0xb1:
-                // 	return _return
+             case 0xac:
+                return &ireturn;
+             case 0xad:
+                return &lreturn;
+             case 0xae:
+                return &freturn;
+             case 0xaf:
+                return &dreturn;
+             case 0xb0:
+                return &areturn;
+             case 0xb1:
+                return &_return;
             case 0xb2:
                 return new GET_STATIC();
              case 0xb3:
@@ -724,24 +773,24 @@ namespace rt {
                 return new GET_FIELD();
              case 0xb5:
                 return new PUT_FIELD();
-            case 0xb6:
+             case 0xb6:
                 return new INVOKE_VIRTUAL();
              case 0xb7:
                 return new INVOKE_SPECIAL();
-                // case 0xb8:
-                // 	return &INVOKE_STATIC{}
-                // case 0xb9:
-                // 	return &INVOKE_INTERFACE{}
+             case 0xb8:
+                return new INVOKE_STATIC();
+             case 0xb9:
+                return new INVOKE_INTERFACE();
                 // case 0xba:
                 // 	return &INVOKE_DYNAMIC{}
              case 0xbb:
                 return new NEW();
-                // case 0xbc:
-                // 	return &NEW_ARRAY{}
-                // case 0xbd:
-                // 	return &ANEW_ARRAY{}
-                // case 0xbe:
-                // 	return arraylength
+             case 0xbc:
+                return new NEW_ARRAY();
+             case 0xbd:
+                return new ANEW_ARRAY();
+             case 0xbe:
+                return &array_length;
                 // case 0xbf:
                 // 	return athrow
              case 0xc0:
@@ -754,8 +803,8 @@ namespace rt {
                 // 	return monitorexit
             case 0xc4:
                 return new WIDE();
-                // case 0xc5:
-                // 	return &MULTI_ANEW_ARRAY{}
+            case 0xc5:
+                return new MULTI_ANEW_ARRAY();
             case 0xc6:
                 return new IFNULL();
             case 0xc7:
@@ -765,7 +814,8 @@ namespace rt {
                 // case 0xc9:
                 // 	return &JSR_W{}
                 // case 0xca: breakpoint
-                // case 0xfe: impdep1
+            case 0xfe:
+                return &invoke_native;
                 // case 0xff: impdep2
             default:
                 cout << "Unsupported opcode:" << hex << (int)opcode << endl;
@@ -832,7 +882,9 @@ namespace rt {
             case 0xc8:
             case 0xc9:
                 delete ptr;
-                break;
+                return;
+            default:
+                return;
         }
     }
 

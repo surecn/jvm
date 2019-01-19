@@ -12,9 +12,14 @@ namespace rt {
         Method *currentMethod = frame->getMethod();
         Class *currentClass = currentMethod->getClass();
         ConstantPool *cp = currentClass->getConstantPool();
-        FieldRef *fieldRef = (FieldRef *)cp->getConstant(m_index);
+        FieldRef *fieldRef = cp->getFieldRef(m_index);
         Field *field = fieldRef->resolvedField();
         Class *cls = field->getClass();
+        if (!cls->isInitStarted()) {
+            frame->revertNextPC();
+            cls->initClass(frame->getThread());
+            return;
+        }
         if (!field->isStatic()) {
             cout << "java.lang.IncompatibleClassChangeError" << endl;
         }
@@ -45,7 +50,11 @@ namespace rt {
                 slotArray->setDouble(slotId, stack->popDouble());
                 break;
             case 'L':
+            case '[':
                 slotArray->setRef(slotId, stack->popRef());
+                break;
+            default:
+                logError("PUT_STATIC NotSupport >> " + (*descriptor)[0]);
                 break;
         }
     }

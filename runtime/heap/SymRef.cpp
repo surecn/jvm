@@ -4,6 +4,7 @@
 
 #include "SymRef.h"
 #include "ClassLoader.h"
+#include "ConstantPool.h"
 
 namespace rt {
 

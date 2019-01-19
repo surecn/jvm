@@ -36,6 +36,14 @@ namespace rt {
         return m_stack->top();
     }
 
+    Frame* Thread::topFrame() {
+        return m_stack->top();
+    }
+
+    bool Thread::isStackEmpty() {
+        return m_stack->isEmpty();
+    }
+
     Frame* Thread::newFrame(Method *method) {
         return new Frame(this, method);
     }

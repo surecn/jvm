@@ -24,13 +24,17 @@ namespace cf {
         m_constantPoolSize = classReader->readU2();
         m_listConstant = new ConstantInfo*[m_constantPoolSize];
         for (int i = 1; i < m_constantPoolSize; ++i) {
-            m_listConstant[i] = ConstantFactory::readConstantInfo(classReader, this);
             //cout << "index:" << i << endl;
+            m_listConstant[i] = ConstantFactory::readConstantInfo(classReader, this);
             //m_listConstant[i]->print();
             if ( m_listConstant[i]->m_type == CONSTANT_Double ||  m_listConstant[i]->m_type  == CONSTANT_Long) {
                 i++;
             }
         }
+    }
+
+    ConstantPool::~ConstantPool() {
+        delete  [] m_listConstant;
     }
 
     u2 ConstantPool::getConstantSize() {

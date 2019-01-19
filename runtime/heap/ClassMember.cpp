@@ -9,27 +9,27 @@
 namespace rt {
 
     bool ClassMember::isPublic() {
-        return m_accessFlags & ACC_PUBLIC != 0;
+        return (m_accessFlags & ACC_PUBLIC) != 0;
     }
 
     bool ClassMember::isPrivate() {
-        return m_accessFlags & ACC_PRIVATE != 0;
+        return (m_accessFlags & ACC_PRIVATE) != 0;
     }
 
     bool ClassMember::isProtected() {
-        return m_accessFlags & ACC_PROTECTED != 0;
+        return (m_accessFlags & ACC_PROTECTED) != 0;
     }
 
     bool ClassMember::isStatic() {
-        return m_accessFlags & ACC_STATIC != 0;
+        return (m_accessFlags & ACC_STATIC) != 0;
     }
 
     bool ClassMember::isFinal() {
-        return  m_accessFlags & ACC_FINAL != 0;
+        return (m_accessFlags & ACC_FINAL) != 0;
     }
 
     bool ClassMember::isSynthetic() {
-        return m_accessFlags & ACC_SYNTHETIC != 0;
+        return (m_accessFlags & ACC_SYNTHETIC) != 0;
     }
 
     string *ClassMember::getDescriptor() const {
@@ -67,4 +67,5 @@ namespace rt {
     void ClassMember::setClass(Class *cls) {
         ClassMember::m_class = cls;
     }
+
 }

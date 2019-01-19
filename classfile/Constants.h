@@ -14,7 +14,6 @@
 
 namespace cf {
 
-
     class ConstantClassInfo : public ConstantInfo {
     private:
         ConstantPool *m_cp;
@@ -107,6 +106,7 @@ namespace cf {
         AttributeInfo**  m_attributeInfos;
     public:
         MemberInfo(ConstantPool *cp, ClassReader* classReader);
+        ~MemberInfo();
         u2 getNameIndex();
         u2 getDescriptorIndex();
         CodeAttribute* getCodeAttribute();

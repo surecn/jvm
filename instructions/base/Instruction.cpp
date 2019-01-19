@@ -3,6 +3,7 @@
 //
 
 #include "Instruction.h"
+#include "../../runtime/Thread.h"
 
 namespace rt {
 

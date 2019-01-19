@@ -3,6 +3,7 @@
 //
 
 #include "FieldRef.h"
+#include "ConstantPool.h"
 
 namespace rt {
 
@@ -33,6 +34,7 @@ namespace rt {
     }
 
     Field* FieldRef::lookupField(rt::Class *cls, string *name, string *descriptor) {
+        cout << "lookupField :" << *cls->getName() << " " << *name << " " << *descriptor << endl;
         Field **fields = cls->getFields();
         u4 fieldCount = cls->getFieldCount();
         for (int i = 0; i < fieldCount; ++i) {
@@ -49,7 +51,7 @@ namespace rt {
             }
         }
         if (cls->getSuperClass() != NULL) {
-            lookupField(cls->getSuperClass(), name, descriptor);
+            return lookupField(cls->getSuperClass(), name, descriptor);
         }
         return NULL;
     }

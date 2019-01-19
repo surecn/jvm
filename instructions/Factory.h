@@ -8,37 +8,42 @@
 
 #include "../common.h"
 #include "base/Instruction.h"
-#include "constants/Constant.h"
-#include "loads/ILoad.h"
-#include "loads/LLoad.h"
-#include "loads/FLoad.h"
-#include "loads/DLoad.h"
-#include "loads/ALoad.h"
-#include "stores/IStore.h"
-#include "stores/LStore.h"
-#include "stores/FStore.h"
-#include "stores/DStore.h"
-#include "stores/AStore.h"
-#include "stack/Pop.h"
-#include "stack/Dup.h"
-#include "stack/Swap.h"
-#include "math/Add.h"
-#include "math/Sub.h"
-#include "math/Mul.h"
-#include "math/Div.h"
-#include "math/Rem.h"
-#include "math/Neg.h"
-#include "math/Sh.h"
-#include "math/And.h"
-#include "math/Or.h"
-#include "math/Xor.h"
-#include "conversions/I2x.h"
-#include "conversions/L2x.h"
-#include "conversions/F2x.h"
-#include "conversions/D2x.h"
-#include "comparisons/Lcmp.h"
-#include "comparisons/Fcmp.h"
-#include "comparisons/Dcmp.h"
+#include "constants/CONSTANT.h"
+#include "loads/ILOAD.h"
+#include "loads/LLOAD.h"
+#include "loads/FLOAD.h"
+#include "loads/DLOAD.h"
+#include "loads/ALOAD.h"
+#include "stores/ISTORE.h"
+#include "stores/LSTORE.h"
+#include "stores/FSTORE.h"
+#include "stores/DSTORE.h"
+#include "stores/ASTORE.h"
+#include "stack/POP.h"
+#include "stack/DUP.h"
+#include "stack/SWAP.h"
+#include "math/ADD.h"
+#include "math/SUB.h"
+#include "math/MUL.h"
+#include "math/DIV.h"
+#include "math/REM.h"
+#include "math/NEG.h"
+#include "math/SH.h"
+#include "math/AND.h"
+#include "math/OR.h"
+#include "math/XOR.h"
+#include "conversions/I2X.h"
+#include "conversions/L2X.h"
+#include "conversions/F2X.h"
+#include "conversions/D2X.h"
+#include "comparisons/LCMP.h"
+#include "comparisons/FCMP.h"
+#include "comparisons/DCMP.h"
+#include "control/RETURN.h"
+#include "references/ARRAY_LENGTH.h"
+#include "loads/XALOAD.h"
+#include "stores/XASTORE.h"
+#include "reserved/INVOKE_NATIVE.h"
 #include <map>
 
 namespace rt {
@@ -172,6 +177,34 @@ namespace rt {
         static FCMPG fcmpg;
         static DCMPL dcmpl;
         static DCMPG dcmpg;
+
+        static IRETURN ireturn;
+        static LRETURN lreturn;
+        static FRETURN freturn;
+        static DRETURN dreturn;
+        static ARETURN areturn;
+        static RETURN _return;
+
+        static ARRAY_LENGTH array_length;
+        static IALOAD iaload;
+        static LALOAD laload;
+        static FALOAD faload;
+        static DALOAD daload;
+        static AALOAD aaload;
+        static BALOAD baload;
+        static CALOAD caload;
+        static SALOAD saload;
+
+        static IASTORE iastore;
+        static LASTORE lastore;
+        static FASTORE fastore;
+        static DASTORE dastore;
+        static AASTORE aastore;
+        static BASTORE bastore;
+        static CASTORE castore;
+        static SASTORE sastore;
+
+        static INVOKE_NATIVE invoke_native;
 
         static map<int, string>* s_instructionNames;
 

@@ -5,11 +5,11 @@
 #ifndef JVM_SYMREF_H
 #define JVM_SYMREF_H
 
-
-#include "ConstantPool.h"
+#include "../../common.h"
+#include "Class.h"
 
 namespace rt {
-
+    extern class ConstantPool;
     class SymRef {
     protected:
         ConstantPool *m_cp;

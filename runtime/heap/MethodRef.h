@@ -13,8 +13,13 @@ namespace rt {
     class MethodRef : public MemberRef {
     private:
         Method *m_method;
+        void resolvedMethodRef();
+        Method* lookupMethod(Class *cls, string *name, string *descriptor);
+
     public:
         MethodRef(ConstantPool* cp, cf::ConstantMethodRefInfo *refInfo);
+        Method* resolvedMethod();
+
     };
 
 

@@ -3,24 +3,27 @@
 //
 
 #include "Frame.h"
+#include "Thread.h"
 
 namespace rt {
 
     Frame::Frame() {
         m_nextPC = 0L;
+        m_lower = NULL;
     }
 
-    Frame::Frame(Thread* th, Method *method) : m_method(method), m_thread(th), m_operandStack(new OperandStack(method->getMaxStack())), m_localVars(new LocalVars(method->getMaxLocals())) {
+    Frame::Frame(Thread* th, Method *method) : m_method(method), m_thread(th), m_operandStack(new OperandStack(method->getMaxStack(), *method->getName())), m_localVars(new LocalVars(method->getMaxLocals())) {
         m_nextPC = 0L;
+        m_lower = NULL;
     }
 
     Frame::~Frame() {
-//        if (m_operandStack != NULL) {
-//            delete m_operandStack;
-//        }
-//        if (m_localVars != NULL) {
-//            delete m_localVars;
-//        }
+        if (m_operandStack != NULL) {
+            delete m_operandStack;
+        }
+        if (m_localVars != NULL) {
+            delete m_localVars;
+        }
     }
 
     LocalVars* Frame::getLocalVars() {
@@ -45,5 +48,9 @@ namespace rt {
 
     Method *Frame::getMethod() const {
         return m_method;
+    }
+
+    void Frame::revertNextPC() {
+        m_nextPC = m_thread->getPC();
     }
 }

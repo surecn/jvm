@@ -14,8 +14,11 @@ namespace cp {
 
     struct ClassData {
         byte *m_data;
-        Entry *m_entry;
         int m_error = 0;
+        ClassData() {
+            m_data = NULL;
+            m_error = 0;
+        }
         ~ClassData();
     };
 

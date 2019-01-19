@@ -12,10 +12,11 @@
 namespace rt {
     class OperandStack {
     private:
+        string method;
         int m_size;
         java_int *m_slots;//win64位除外
     public:
-        OperandStack(java_int val);
+        OperandStack(java_int val, string method);
         void pushInt(java_int val); //java int
         long popInt();
         void pushLong(java_long val); //java long
@@ -28,6 +29,10 @@ namespace rt {
         java_ref popRef();
         void pushSlot(java_int slot);
         java_int popSlot();
+        java_int getRefFromTop(int n);
+        void pushBoolean(bool val);
+        bool popBoolean();
+        void println(string method);
     };
 }
 

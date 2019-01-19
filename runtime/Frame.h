@@ -20,7 +20,7 @@ namespace rt {
         java_int m_nextPC;
         Method *m_method;
     public:
-        Frame* lower;
+        Frame* m_lower;
         Frame();
         Frame(Thread* th, Method *method);
         ~Frame();
@@ -30,6 +30,7 @@ namespace rt {
         java_int getNextPc();
         void setNextPc(java_int _nextPc);
         Method *getMethod() const;
+        void revertNextPC();
     };
 
 }

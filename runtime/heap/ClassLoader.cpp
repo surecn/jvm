@@ -4,11 +4,49 @@
 
 #include "ClassLoader.h"
 #include "ConstantPool.h"
+#include "AccessFlags.h"
+#include "StringPool.h"
+#include "ConstantPool.h"
 
 namespace rt {
 
-    ClassLoader::ClassLoader(cp::ClassPath *classPath) {
+    map<string,Class*> ClassLoader::s_classMap;
+
+    ClassLoader::ClassLoader(cp::ClassPath *classPath, bool verboseFlag) {
         m_classPath = classPath;
+        m_verboseFlag = verboseFlag;
+        loadBasicClasses();
+        loadPrimitiveClasses();
+    }
+
+    void ClassLoader::loadBasicClasses() {
+        string s("java/lang/Class");
+        Class *jClass = loadClass(&s);
+        map<string, Class*>::iterator iter = s_classMap.begin();
+        while (iter != s_classMap.end()) {
+            Object *obj = new Object(jClass);
+            obj->setExtra(jClass);
+            iter->second->setJClass(obj);
+            iter++;
+        }
+    }
+
+    void ClassLoader::loadPrimitiveClasses() {
+        map<string, string>* types = Class::getPrimitiveTypes();
+        map<string, string>::iterator iter = types->begin();
+        while (iter != types->end()) {
+            string s = iter->first;
+            loadPrimitiveClass(&s);
+            iter++;
+        }
+    }
+
+    void ClassLoader::loadPrimitiveClass(string *className) {
+        string *newClsName = new string(*className);
+        Class *cls = new Class(ACC_PUBLIC, newClsName, this, true, NULL, NULL, 0);
+        cls->setJClass(new Object(s_classMap["java/lang/Class"]));
+        cls->getJClass()->setExtra(cls);
+        s_classMap[*newClsName] = cls;
     }
 
     Class* ClassLoader::loadNonArrayClass(string *name) {
@@ -16,7 +54,9 @@ namespace rt {
         readClass(name, data);
         Class *cls = defineClass(data.m_data);
         link(cls);
-        cout << "[Loaded " << *name << " from " << endl;
+        if (m_verboseFlag) {
+            cout << "[Loaded " << *name << " from " << endl;
+        }
         return cls;
     }
 
@@ -32,7 +72,7 @@ namespace rt {
         cls->setClassLoader(this);
         resolveSuperClass(cls);
         resolveInterfaces(cls);
-        m_classMap[*cls->getName()] = cls;
+        s_classMap[*cls->getName()] = cls;
         return cls;
     }
 
@@ -131,29 +171,64 @@ namespace rt {
         if (cpIndex > 0) {
             string *s = field->getDescriptor();
             if (*s == "Z" || *s == "B" || *s == "C" || *s == "S" || *s == "I") {
-                java_int *val = (java_int *)cp->getConstant(cpIndex);
-                slotArray->setInt(slotId, *val);
+                java_int val = cp->getInteger(cpIndex);
+                slotArray->setInt(slotId, val);
             } else if (*s == "J") {
-                java_long *val = (java_long *)cp->getConstant(cpIndex);
-                slotArray->setLong(slotId, *val);
+                java_long val =  cp->getLong(cpIndex);
+                slotArray->setLong(slotId, val);
             } else if (*s == "F") {
-                java_float *val = (java_float *)cp->getConstant(cpIndex);
-                slotArray->setFloat(slotId, *val);
+                java_float val = cp->getFloat(cpIndex);
+                slotArray->setFloat(slotId, val);
             } else if (*s == "D") {
-                java_double *val = (java_double *)cp->getConstant(cpIndex);
-                slotArray->setDouble(slotId, *val);
+                java_double val = cp->getDouble(cpIndex);
+                slotArray->setDouble(slotId, val);
             } else if (*s == "Ljava/lang/String;") {
-                cout << "todo" << endl;//TODO 第八章实现
+                string *str = cp->getString(cpIndex);
+                Object *jStr = StringPool::getJString(cls->getClassLoader(), *str);
+                slotArray->setRef(slotId, jStr);
+            } else {
+                slotArray->setRef(slotId, NULL);
             }
         }
     }
 
     Class* ClassLoader::loadClass(string *name) {
-        Class *cls =m_classMap[*name];
+        Class *cls = s_classMap[*name];
         if(cls != NULL) {
             return cls;
         }
-        return loadNonArrayClass(name);
+        if ((*name)[0] == '[') {
+            cls = loadArrayClass(name);
+        } else {
+            cls = loadNonArrayClass(name);
+        }
+        Class *clsClass = s_classMap["java/lang/Class"];
+        if (clsClass != NULL) {
+            Object * jobj = new Object(clsClass);
+            jobj->setExtra(cls);
+            cls->setJClass(jobj);
+        }
+        return cls;
+    }
+
+
+    Class* ClassLoader::loadArrayClass(string *name) {
+        string sObj("java/lang/Object");
+        string sCloneable("java/lang/Cloneable");
+        string sSerializable("java/io/Serializable");
+        Class *superClass = loadClass(&sObj);
+        Class *clsCloneable = loadClass(&sCloneable);
+        Class *clsSerializable = loadClass(&sSerializable);
+        string *newName = new string(*name);
+        Class* cls = new Class(ACC_PUBLIC, newName, this, true, superClass, new Class*[2]{clsCloneable, clsSerializable}, 2);
+        s_classMap[*newName] = cls;
+        return cls;
+    }
+
+    void ClassLoader::loadLibrary(Class *cls) {
+        if (*cls->getName() == "java/lang/ClassLoader") {
+
+        }
     }
 
 

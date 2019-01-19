@@ -17,6 +17,7 @@ namespace cf {
         u2 m_constantPoolSize;
     public:
         ConstantPool(ClassReader *classReader);
+        ~ConstantPool();
         string *getClassName(u2 index);
         string *getUtf8(u2 index);
         ConstantInfo* getConstantInfo(u2 index);

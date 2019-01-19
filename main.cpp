@@ -5,6 +5,7 @@
 #include "Interperter.h"
 #include "runtime/heap/ClassLoader.h"
 #include "common/ZipUtils.h"
+#include "runtime/heap/StringPool.h"
 
 const string PATHSeparter;
 
@@ -21,15 +22,15 @@ void printLoadError(int error) {
 
 void startVM(struct MainParamater cmd) {
     ClassPath classPath(cmd.m_xjreOption, cmd.m_cpOption);
-    rt::ClassLoader *classLoader = new rt::ClassLoader(&classPath);
+    rt::ClassLoader classLoader(&classPath, cmd.m_verboseClassFlag);
 
     string className = cmd.m_className;
     StrUtils::replace(className, ".", "/");
 
-    rt::Class *mainClass = classLoader->loadClass(&className);
+    rt::Class *mainClass = classLoader.loadClass(&className);
     rt::Method *mainMethod = mainClass->getMainMethod();
     if (mainMethod != NULL) {
-        Interperter::interpret(mainMethod);
+        Interperter::interpret(mainMethod, cmd.m_verboseInstFlag, cmd.m_args);
     }
 
     cout << "startVM" << endl;

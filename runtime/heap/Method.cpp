@@ -4,9 +4,13 @@
 
 #include "Method.h"
 #include "AccessFlags.h"
+#include "MethodDescriptor.h"
 
 namespace rt {
 
+    Method::Method() {
+        m_argSlotCount = 0;
+    }
 
     void Method::copyAttributes(cf::MemberInfo *memberInfo) {
         cf::CodeAttribute *codeAttribute = memberInfo->getCodeAttribute();
@@ -17,7 +21,21 @@ namespace rt {
         }
     }
 
+    void Method::calcArgSlotCount(const vector<char> paramTypes) {
+        for (int i = 0, len = paramTypes.size(); i < len; ++i) {
+            char ch = paramTypes[i];
+            m_argSlotCount++;
+            if (ch == 'J' || ch == 'D') {
+                m_argSlotCount++;
+            }
+        }
+        if (!isStatic()) {
+            m_argSlotCount++;
+        }
+    }
+
     Method** Method::newMethods(rt::Class *cls, cf::MemberInfo **cfMembers, int count) {
+        MethodDescriptorParser methodDescriptorParser;
         Method **pMethods = new Method*[count];
         for (int i = 0; i < count; ++i) {
             cf::MemberInfo *memberInfo = cfMembers[i];
@@ -25,32 +43,39 @@ namespace rt {
             pMethods[i]->setClass(cls);
             pMethods[i]->copyMemberInfo(memberInfo);
             pMethods[i]->copyAttributes(memberInfo);
+            MethodDescriptor *methodDescriptor = methodDescriptorParser.parseMethodDescriptor(pMethods[i]->getDescriptor());
+            pMethods[i]->calcArgSlotCount(methodDescriptor->getParamaterType());
+            if (pMethods[i]->isNative()) {
+                pMethods[i]->injectCodeAttribute(methodDescriptor->getReturnType());
+            }
+            delete methodDescriptor;
+            methodDescriptorParser.reset();
         }
         return pMethods;
     }
 
     bool Method::isSynchronized() {
-        return m_accessFlags & ACC_SYNCHRONIZED != 0;
+        return (m_accessFlags & ACC_SYNCHRONIZED) != 0;
     }
 
     bool Method::isBridge() {
-        return m_accessFlags & ACC_BRIDGE != 0;
+        return (m_accessFlags & ACC_BRIDGE) != 0;
     }
 
     bool Method::isVarargs() {
-        return m_accessFlags & ACC_VARARGS != 0;
+        return (m_accessFlags & ACC_VARARGS) != 0;
     }
 
     bool Method::isNative() {
-        return m_accessFlags & ACC_NATIVE != 0;
+        return (m_accessFlags & ACC_NATIVE) != 0;
     }
 
     bool Method::isAbstract() {
-        return m_accessFlags & ACC_ABSTRACT != 0;
+        return (m_accessFlags & ACC_ABSTRACT) != 0;
     }
 
     bool Method::isStrict() {
-        return m_accessFlags & ACC_STRICT != 0;
+        return (m_accessFlags & ACC_STRICT) != 0;
     }
 
     u4 Method::getMaxStack() const {
@@ -64,5 +89,37 @@ namespace rt {
     u1* Method::getCode() {
         return m_code;
     }
+
+    u4 Method::getArgSlotCount() {
+        return m_argSlotCount;
+    }
+
+    void Method::injectCodeAttribute(char returnType) {
+        m_maxStack = 4;
+        m_maxLocals = m_argSlotCount;
+        switch (returnType) {
+            case 'V':
+                m_code = new byte[2]{0xfe, 0xb1};//return
+                break;
+            case 'D':
+                m_code = new byte[2]{0xfe, 0xaf};//dreturn
+                break;
+            case 'F':
+                m_code = new byte[2]{0xfe, 0xae};//rreturn
+                break;
+            case 'J':
+                m_code = new byte[2]{0xfe, 0xad};//lreturn
+                break;
+            case 'L':
+            case '[':
+                m_code = new byte[2]{0xfe, 0xb0};//areturn
+                break;
+            default:
+                m_code = new byte[2]{0xfe, 0xac};//ireturn
+                break;
+        }
+    }
+
+
 
 }

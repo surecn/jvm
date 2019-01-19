@@ -21,7 +21,9 @@ namespace rt {
         void pushFrame(Frame* frame);
         Frame* popFrame();
         Frame* currentFrame();
+        Frame* topFrame();
         Frame* newFrame(Method *method);
+        bool isStackEmpty();
         static Thread *newThread();
     };
 
