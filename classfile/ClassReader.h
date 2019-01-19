@@ -19,11 +19,23 @@ namespace cf {
         u2 readU2(); // u2
         u4 readU4(); //u4
         u8 readU8(); //u8
+<<<<<<< HEAD
+<<<<<<< HEAD
+        u2* readU2s(); //u2[]
+        u1* readU1s(); //u8[]
+        u1* readU1s(int length);
+=======
+=======
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
         u2* readU2s(u2 *length);
         u2* readU2s(int length); //u2[]
         u1* readU1s(u2 *length); //u8[]
         u1* readU1s(int length);
         string* readString();
+<<<<<<< HEAD
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
+=======
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
     };
 
 }

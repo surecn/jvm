@@ -83,12 +83,32 @@ CMakeFiles/jvm.dir/MainParamater.cpp.o: ../MainParamater.h
 CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../classfile/ClassFile.cpp
 CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../classfile/ClassFile.h
 CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../classfile/ConstantClassInfo.h
+CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../classfile/ConstantDoubleInfo.h
+CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../classfile/ConstantFactory.h
+CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../classfile/ConstantFloatInfo.h
 CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../classfile/ConstantIntegerInfo.h
+CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../classfile/ConstantLongInfo.h
+CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../classfile/ConstantMemberInfo.h
+CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../classfile/ConstantNameAndTypeInfo.h
 CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../classfile/ConstantPool.h
+<<<<<<< HEAD
+<<<<<<< HEAD
+CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../classfile/ConstantStringInfo.h
+CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../classfile/ConstantUtf8Info.h
+CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../classfile/MemberInfo.h
+=======
+=======
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../classfile/Constants.h
 CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../classfile/attribute/AttributeInfo.h
 CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../classfile/attribute/CodeAttribute.h
 CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../classfile/attribute/ConstantValueAttribute.h
+<<<<<<< HEAD
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
+=======
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../common.h
 CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../common/BytesUtils.h
 CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o: ../common/StrUtils.h
@@ -99,6 +119,59 @@ CMakeFiles/jvm.dir/classfile/ClassReader.cpp.o: ../common.h
 CMakeFiles/jvm.dir/classfile/ClassReader.cpp.o: ../common/BytesUtils.h
 CMakeFiles/jvm.dir/classfile/ClassReader.cpp.o: ../common/StrUtils.h
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+CMakeFiles/jvm.dir/classfile/ConstantClassInfo.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/classfile/ConstantClassInfo.cpp.o: ../classfile/ConstantClassInfo.cpp
+CMakeFiles/jvm.dir/classfile/ConstantClassInfo.cpp.o: ../classfile/ConstantClassInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantClassInfo.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantClassInfo.cpp.o: ../classfile/ConstantPool.h
+CMakeFiles/jvm.dir/classfile/ConstantClassInfo.cpp.o: ../common.h
+CMakeFiles/jvm.dir/classfile/ConstantClassInfo.cpp.o: ../common/StrUtils.h
+
+CMakeFiles/jvm.dir/classfile/ConstantDoubleInfo.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/classfile/ConstantDoubleInfo.cpp.o: ../classfile/ConstantDoubleInfo.cpp
+CMakeFiles/jvm.dir/classfile/ConstantDoubleInfo.cpp.o: ../classfile/ConstantDoubleInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantDoubleInfo.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantDoubleInfo.cpp.o: ../common.h
+CMakeFiles/jvm.dir/classfile/ConstantDoubleInfo.cpp.o: ../common/StrUtils.h
+
+CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o: ../classfile/ConstantClassInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o: ../classfile/ConstantDoubleInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o: ../classfile/ConstantFactory.cpp
+CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o: ../classfile/ConstantFactory.h
+CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o: ../classfile/ConstantFloatInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o: ../classfile/ConstantIntegerInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o: ../classfile/ConstantLongInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o: ../classfile/ConstantMemberInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o: ../classfile/ConstantNameAndTypeInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o: ../classfile/ConstantPool.h
+CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o: ../classfile/ConstantStringInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o: ../classfile/ConstantUtf8Info.h
+CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o: ../common.h
+CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o: ../common/StrUtils.h
+
+CMakeFiles/jvm.dir/classfile/ConstantFieldRefInfo.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/classfile/ConstantFieldRefInfo.cpp.o: ../classfile/ConstantFieldRefInfo.cpp
+CMakeFiles/jvm.dir/classfile/ConstantFieldRefInfo.cpp.o: ../classfile/ConstantFieldRefInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantFieldRefInfo.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantFieldRefInfo.cpp.o: ../classfile/ConstantPool.h
+CMakeFiles/jvm.dir/classfile/ConstantFieldRefInfo.cpp.o: ../common.h
+CMakeFiles/jvm.dir/classfile/ConstantFieldRefInfo.cpp.o: ../common/StrUtils.h
+
+CMakeFiles/jvm.dir/classfile/ConstantFloatInfo.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/classfile/ConstantFloatInfo.cpp.o: ../classfile/ConstantFloatInfo.cpp
+CMakeFiles/jvm.dir/classfile/ConstantFloatInfo.cpp.o: ../classfile/ConstantFloatInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantFloatInfo.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantFloatInfo.cpp.o: ../common.h
+CMakeFiles/jvm.dir/classfile/ConstantFloatInfo.cpp.o: ../common/StrUtils.h
+
+=======
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
+=======
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 CMakeFiles/jvm.dir/classfile/ConstantInfo.cpp.o: ../classfile/ClassReader.h
 CMakeFiles/jvm.dir/classfile/ConstantInfo.cpp.o: ../classfile/ConstantInfo.cpp
 CMakeFiles/jvm.dir/classfile/ConstantInfo.cpp.o: ../classfile/ConstantInfo.h
@@ -108,6 +181,47 @@ CMakeFiles/jvm.dir/classfile/ConstantInfo.cpp.o: ../common.h
 CMakeFiles/jvm.dir/classfile/ConstantInfo.cpp.o: ../common/BytesUtils.h
 CMakeFiles/jvm.dir/classfile/ConstantInfo.cpp.o: ../common/StrUtils.h
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+CMakeFiles/jvm.dir/classfile/ConstantIntegerInfo.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/classfile/ConstantIntegerInfo.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantIntegerInfo.cpp.o: ../classfile/ConstantIntegerInfo.cpp
+CMakeFiles/jvm.dir/classfile/ConstantIntegerInfo.cpp.o: ../classfile/ConstantIntegerInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantIntegerInfo.cpp.o: ../common.h
+CMakeFiles/jvm.dir/classfile/ConstantIntegerInfo.cpp.o: ../common/StrUtils.h
+
+CMakeFiles/jvm.dir/classfile/ConstantLongInfo.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/classfile/ConstantLongInfo.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantLongInfo.cpp.o: ../classfile/ConstantLongInfo.cpp
+CMakeFiles/jvm.dir/classfile/ConstantLongInfo.cpp.o: ../classfile/ConstantLongInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantLongInfo.cpp.o: ../common.h
+CMakeFiles/jvm.dir/classfile/ConstantLongInfo.cpp.o: ../common/StrUtils.h
+
+CMakeFiles/jvm.dir/classfile/ConstantMemberInfo.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/classfile/ConstantMemberInfo.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantMemberInfo.cpp.o: ../classfile/ConstantMemberInfo.cpp
+CMakeFiles/jvm.dir/classfile/ConstantMemberInfo.cpp.o: ../classfile/ConstantMemberInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantMemberInfo.cpp.o: ../classfile/ConstantPool.h
+CMakeFiles/jvm.dir/classfile/ConstantMemberInfo.cpp.o: ../common.h
+CMakeFiles/jvm.dir/classfile/ConstantMemberInfo.cpp.o: ../common/StrUtils.h
+
+CMakeFiles/jvm.dir/classfile/ConstantMethodInfo.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/classfile/ConstantMethodInfo.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantMethodInfo.cpp.o: ../classfile/ConstantMethodInfo.cpp
+CMakeFiles/jvm.dir/classfile/ConstantMethodInfo.cpp.o: ../classfile/ConstantMethodInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantMethodInfo.cpp.o: ../common.h
+CMakeFiles/jvm.dir/classfile/ConstantMethodInfo.cpp.o: ../common/StrUtils.h
+
+CMakeFiles/jvm.dir/classfile/ConstantNameAndTypeInfo.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/classfile/ConstantNameAndTypeInfo.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantNameAndTypeInfo.cpp.o: ../classfile/ConstantNameAndTypeInfo.cpp
+CMakeFiles/jvm.dir/classfile/ConstantNameAndTypeInfo.cpp.o: ../classfile/ConstantNameAndTypeInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantNameAndTypeInfo.cpp.o: ../classfile/ConstantPool.h
+CMakeFiles/jvm.dir/classfile/ConstantNameAndTypeInfo.cpp.o: ../common.h
+CMakeFiles/jvm.dir/classfile/ConstantNameAndTypeInfo.cpp.o: ../common/StrUtils.h
+=======
+=======
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 CMakeFiles/jvm.dir/classfile/ConstantInvokeDynamic.cpp.o: ../classfile/ClassReader.h
 CMakeFiles/jvm.dir/classfile/ConstantInvokeDynamic.cpp.o: ../classfile/ConstantInfo.h
 CMakeFiles/jvm.dir/classfile/ConstantInvokeDynamic.cpp.o: ../classfile/ConstantInvokeDynamic.cpp
@@ -123,15 +237,38 @@ CMakeFiles/jvm.dir/classfile/ConstantNumeric.cpp.o: ../classfile/ConstantNumeric
 CMakeFiles/jvm.dir/classfile/ConstantNumeric.cpp.o: ../common.h
 CMakeFiles/jvm.dir/classfile/ConstantNumeric.cpp.o: ../common/BytesUtils.h
 CMakeFiles/jvm.dir/classfile/ConstantNumeric.cpp.o: ../common/StrUtils.h
+<<<<<<< HEAD
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
+=======
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 
 CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../classfile/ClassReader.h
+CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../classfile/ConstantClassInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../classfile/ConstantDoubleInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../classfile/ConstantFactory.h
+CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../classfile/ConstantFloatInfo.h
 CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../classfile/ConstantInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../classfile/ConstantIntegerInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../classfile/ConstantLongInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../classfile/ConstantMemberInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../classfile/ConstantNameAndTypeInfo.h
 CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../classfile/ConstantPool.cpp
 CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../classfile/ConstantPool.h
+<<<<<<< HEAD
+<<<<<<< HEAD
+CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../classfile/ConstantStringInfo.h
+CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../classfile/ConstantUtf8Info.h
+=======
+=======
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../classfile/Constants.h
 CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../classfile/attribute/AttributeInfo.h
 CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../classfile/attribute/CodeAttribute.h
 CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../classfile/attribute/ConstantValueAttribute.h
+<<<<<<< HEAD
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
+=======
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../common.h
 CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../common/BytesUtils.h
 CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o: ../common/StrUtils.h

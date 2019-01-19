@@ -36,6 +36,20 @@ ClassReader.h
 ConstantInfo.h
 /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantStringInfo.cpp
+ConstantStringInfo.h
+/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantStringInfo.h
+
+/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantStringInfo.h
+../common.h
+/Users/surecn/Code/CLionProjects/jvm/common.h
+../classfile/ConstantInfo.h
+/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
+ConstantPool.h
+/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.h
+=======
 /Users/surecn/Code/CLionProjects/jvm/classfile/Constants.h
 ../common.h
 /Users/surecn/Code/CLionProjects/jvm/common.h
@@ -53,6 +67,25 @@ attribute/ConstantValueAttribute.h
 /Users/surecn/Code/CLionProjects/jvm/classfile/attribute/AttributeInfo.h
 ../../common.h
 /Users/surecn/Code/CLionProjects/jvm/common.h
+=======
+/Users/surecn/Code/CLionProjects/jvm/classfile/Constants.h
+../common.h
+/Users/surecn/Code/CLionProjects/jvm/common.h
+ConstantInfo.h
+/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantInfo.h
+ConstantPool.h
+/Users/surecn/Code/CLionProjects/jvm/classfile/ConstantPool.h
+attribute/AttributeInfo.h
+/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/AttributeInfo.h
+attribute/CodeAttribute.h
+/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/CodeAttribute.h
+attribute/ConstantValueAttribute.h
+/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/ConstantValueAttribute.h
+
+/Users/surecn/Code/CLionProjects/jvm/classfile/attribute/AttributeInfo.h
+../../common.h
+/Users/surecn/Code/CLionProjects/jvm/common.h
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 ../ClassReader.h
 /Users/surecn/Code/CLionProjects/jvm/classfile/ClassReader.h
 ../ConstantPool.h
@@ -65,6 +98,10 @@ AttributeInfo.h
 /Users/surecn/Code/CLionProjects/jvm/classfile/attribute/ConstantValueAttribute.h
 AttributeInfo.h
 /Users/surecn/Code/CLionProjects/jvm/classfile/attribute/AttributeInfo.h
+<<<<<<< HEAD
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
+=======
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 
 /Users/surecn/Code/CLionProjects/jvm/classpath/ClassPath.h
 ../common.h
@@ -108,6 +145,34 @@ iostream
 algorithm
 -
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
+/Users/surecn/Code/CLionProjects/jvm/instructions/base/BytecodeReader.h
+../../common.h
+/Users/surecn/Code/CLionProjects/jvm/common.h
+
+/Users/surecn/Code/CLionProjects/jvm/instructions/base/Instruction.h
+../../runtime/Frame.h
+/Users/surecn/Code/CLionProjects/jvm/runtime/Frame.h
+BytecodeReader.h
+/Users/surecn/Code/CLionProjects/jvm/instructions/base/BytecodeReader.h
+../../runtime/Thread.h
+/Users/surecn/Code/CLionProjects/jvm/runtime/Thread.h
+
+/Users/surecn/Code/CLionProjects/jvm/instructions/constants/Ipush.cpp
+Ipush.h
+/Users/surecn/Code/CLionProjects/jvm/instructions/constants/Ipush.h
+
+/Users/surecn/Code/CLionProjects/jvm/instructions/constants/Ipush.h
+../base/Instruction.h
+/Users/surecn/Code/CLionProjects/jvm/instructions/base/Instruction.h
+
+>>>>>>> 3c002f4e01bd429415751bcd95ea973067c7babf
 /Users/surecn/Code/CLionProjects/jvm/runtime/Frame.h
 OperandStack.h
 /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStack.h
@@ -124,6 +189,25 @@ heap/Method.h
 
 /Users/surecn/Code/CLionProjects/jvm/runtime/OperandStack.h
 ../common.h
+<<<<<<< HEAD
+/Users/surecn/Code/CLionProjects/jvm/common.h
+../common/SlotArray.h
+/Users/surecn/Code/CLionProjects/jvm/common/SlotArray.h
+
+/Users/surecn/Code/CLionProjects/jvm/runtime/Stack.h
+../common.h
+/Users/surecn/Code/CLionProjects/jvm/common.h
+Frame.h
+/Users/surecn/Code/CLionProjects/jvm/runtime/Frame.h
+
+/Users/surecn/Code/CLionProjects/jvm/runtime/Thread.h
+Stack.h
+/Users/surecn/Code/CLionProjects/jvm/runtime/Stack.h
+
+/Users/surecn/Code/CLionProjects/jvm/runtime/heap/ClassMember.h
+../../common.h
+/Users/surecn/Code/CLionProjects/jvm/common.h
+=======
 /Users/surecn/Code/CLionProjects/jvm/common.h
 ../common/SlotArray.h
 /Users/surecn/Code/CLionProjects/jvm/common/SlotArray.h
@@ -173,6 +257,7 @@ map
 /Users/surecn/Code/CLionProjects/jvm/runtime/heap/ClassMember.h
 ../../common.h
 /Users/surecn/Code/CLionProjects/jvm/common.h
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 ../../classfile/Constants.h
 /Users/surecn/Code/CLionProjects/jvm/classfile/Constants.h
 Object.h
@@ -186,7 +271,11 @@ ClassMember.h
 ClassMember.h
 /Users/surecn/Code/CLionProjects/jvm/runtime/heap/ClassMember.h
 
+<<<<<<< HEAD
 /Users/surecn/Code/CLionProjects/jvm/runtime/heap/Object.h
 ../../common/SlotArray.h
 /Users/surecn/Code/CLionProjects/jvm/common/SlotArray.h
 
+=======
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
+>>>>>>> 3c002f4e01bd429415751bcd95ea973067c7babf

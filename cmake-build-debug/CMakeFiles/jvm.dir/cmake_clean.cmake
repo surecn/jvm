@@ -9,6 +9,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/jvm.dir/classfile/ConstantInfo.cpp.o"
   "CMakeFiles/jvm.dir/classfile/attribute/AttributeInfo.cpp.o"
   "CMakeFiles/jvm.dir/common/StrUtils.cpp.o"
+<<<<<<< HEAD
+<<<<<<< HEAD
+  "CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o"
+=======
+=======
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
   "CMakeFiles/jvm.dir/classfile/attribute/CodeAttribute.cpp.o"
   "CMakeFiles/jvm.dir/classfile/attribute/ConstantValueAttribute.cpp.o"
   "CMakeFiles/jvm.dir/classfile/attribute/LineNumberAttribute.cpp.o"
@@ -109,6 +115,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/jvm.dir/classfile/ConstantInvokeDynamic.cpp.o"
   "CMakeFiles/jvm.dir/instructions/references/INVOKE_VIRTUAL.cpp.o"
   "CMakeFiles/jvm.dir/instructions/references/INVOKE_SPECIAL.cpp.o"
+<<<<<<< HEAD
   "CMakeFiles/jvm.dir/runtime/heap/MethodLookup.cpp.o"
   "CMakeFiles/jvm.dir/instructions/base/MethodInvokeLogic.cpp.o"
   "CMakeFiles/jvm.dir/runtime/heap/MethodDescriptor.cpp.o"
@@ -134,6 +141,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/jvm.dir/native/java/lang/JDouble.cpp.o"
   "CMakeFiles/jvm.dir/native/java/lang/JString.cpp.o"
   "CMakeFiles/jvm.dir/native/sun/misc/JVM.cpp.o"
+=======
+<<<<<<< HEAD
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
+=======
+>>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
+>>>>>>> 3c002f4e01bd429415751bcd95ea973067c7babf
   "jvm.pdb"
   "jvm"
 )

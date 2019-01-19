@@ -1,4 +1,9 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/surecn/Code/CLionProjects/jvm
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/surecn/Code/CLionProjects/jvm/cmake-build-debug
+CMake Error at CMakeLists.txt:32:
+  Parse error.  Expected a command name, got unquoted argument with text
+  "=======".
+
+
+-- Configuring incomplete, errors occurred!
+See also "/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+Cannot read project file /Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/jvm.cbp
