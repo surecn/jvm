@@ -32,21 +32,10 @@ namespace cf {
     public:
         int m_type;
     public:
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-        virtual string toString() = 0;
-=======
-=======
->>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
         virtual void print();
         virtual void* getValue();
         virtual void readInfo(ClassReader* classReader) = 0;
         void setType(int type);
-<<<<<<< HEAD
->>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
-=======
->>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
     };
 
 }

@@ -187,23 +187,6 @@ CMakeFiles/jvm.dir/common/StrUtils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/common/StrUtils.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/common/StrUtils.cpp -o CMakeFiles/jvm.dir/common/StrUtils.cpp.s
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o: CMakeFiles/jvm.dir/flags.make
-CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o: ../classfile/ConstantFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o -c /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFactory.cpp
-
-CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFactory.cpp > CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.i
-
-CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/classfile/ConstantFactory.cpp -o CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.s
-=======
-=======
->>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 CMakeFiles/jvm.dir/classfile/attribute/CodeAttribute.cpp.o: CMakeFiles/jvm.dir/flags.make
 CMakeFiles/jvm.dir/classfile/attribute/CodeAttribute.cpp.o: ../classfile/attribute/CodeAttribute.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/jvm.dir/classfile/attribute/CodeAttribute.cpp.o"
@@ -1503,10 +1486,6 @@ CMakeFiles/jvm.dir/instructions/references/INVOKE_SPECIAL.cpp.i: cmake_force
 CMakeFiles/jvm.dir/instructions/references/INVOKE_SPECIAL.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/jvm.dir/instructions/references/INVOKE_SPECIAL.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/surecn/Code/CLionProjects/jvm/instructions/references/INVOKE_SPECIAL.cpp -o CMakeFiles/jvm.dir/instructions/references/INVOKE_SPECIAL.cpp.s
-<<<<<<< HEAD
->>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
-=======
->>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 
 CMakeFiles/jvm.dir/runtime/heap/MethodLookup.cpp.o: CMakeFiles/jvm.dir/flags.make
 CMakeFiles/jvm.dir/runtime/heap/MethodLookup.cpp.o: ../runtime/heap/MethodLookup.cpp
@@ -1843,25 +1822,6 @@ jvm_OBJECTS = \
 "CMakeFiles/jvm.dir/classfile/ClassFile.cpp.o" \
 "CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o" \
 "CMakeFiles/jvm.dir/classfile/ConstantInfo.cpp.o" \
-<<<<<<< HEAD
-<<<<<<< HEAD
-"CMakeFiles/jvm.dir/classfile/ConstantIntegerInfo.cpp.o" \
-"CMakeFiles/jvm.dir/classfile/ConstantLongInfo.cpp.o" \
-"CMakeFiles/jvm.dir/classfile/ConstantFloatInfo.cpp.o" \
-"CMakeFiles/jvm.dir/classfile/ConstantDoubleInfo.cpp.o" \
-"CMakeFiles/jvm.dir/classfile/ConstantUtf8Info.cpp.o" \
-"CMakeFiles/jvm.dir/classfile/ConstantStringInfo.cpp.o" \
-"CMakeFiles/jvm.dir/classfile/ConstantClassInfo.cpp.o" \
-"CMakeFiles/jvm.dir/classfile/ConstantNameAndTypeInfo.cpp.o" \
-"CMakeFiles/jvm.dir/classfile/ConstantFieldRefInfo.cpp.o" \
-"CMakeFiles/jvm.dir/classfile/ConstantMethodInfo.cpp.o" \
-"CMakeFiles/jvm.dir/classfile/ConstantMemberInfo.cpp.o" \
-"CMakeFiles/jvm.dir/attribute/AttributeInfo.cpp.o" \
-"CMakeFiles/jvm.dir/common/StrUtils.cpp.o" \
-"CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o"
-=======
-=======
->>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 "CMakeFiles/jvm.dir/classfile/attribute/AttributeInfo.cpp.o" \
 "CMakeFiles/jvm.dir/common/StrUtils.cpp.o" \
 "CMakeFiles/jvm.dir/classfile/attribute/CodeAttribute.cpp.o" \
@@ -1963,7 +1923,6 @@ jvm_OBJECTS = \
 "CMakeFiles/jvm.dir/classfile/ConstantNumeric.cpp.o" \
 "CMakeFiles/jvm.dir/classfile/ConstantInvokeDynamic.cpp.o" \
 "CMakeFiles/jvm.dir/instructions/references/INVOKE_VIRTUAL.cpp.o" \
-<<<<<<< HEAD
 "CMakeFiles/jvm.dir/instructions/references/INVOKE_SPECIAL.cpp.o" \
 "CMakeFiles/jvm.dir/runtime/heap/MethodLookup.cpp.o" \
 "CMakeFiles/jvm.dir/instructions/base/MethodInvokeLogic.cpp.o" \
@@ -1990,13 +1949,6 @@ jvm_OBJECTS = \
 "CMakeFiles/jvm.dir/native/java/lang/JDouble.cpp.o" \
 "CMakeFiles/jvm.dir/native/java/lang/JString.cpp.o" \
 "CMakeFiles/jvm.dir/native/sun/misc/JVM.cpp.o"
-=======
-"CMakeFiles/jvm.dir/instructions/references/INVOKE_SPECIAL.cpp.o"
-<<<<<<< HEAD
->>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
-=======
->>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
->>>>>>> 3c002f4e01bd429415751bcd95ea973067c7babf
 
 # External object files for target jvm
 jvm_EXTERNAL_OBJECTS =
@@ -2011,15 +1963,6 @@ jvm: CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.o
 jvm: CMakeFiles/jvm.dir/classfile/ConstantInfo.cpp.o
 jvm: CMakeFiles/jvm.dir/classfile/attribute/AttributeInfo.cpp.o
 jvm: CMakeFiles/jvm.dir/common/StrUtils.cpp.o
-<<<<<<< HEAD
-<<<<<<< HEAD
-jvm: CMakeFiles/jvm.dir/classfile/ConstantFactory.cpp.o
-jvm: CMakeFiles/jvm.dir/build.make
-jvm: CMakeFiles/jvm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX executable jvm"
-=======
-=======
->>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 jvm: CMakeFiles/jvm.dir/classfile/attribute/CodeAttribute.cpp.o
 jvm: CMakeFiles/jvm.dir/classfile/attribute/ConstantValueAttribute.cpp.o
 jvm: CMakeFiles/jvm.dir/classfile/attribute/LineNumberAttribute.cpp.o
@@ -2147,15 +2090,7 @@ jvm: CMakeFiles/jvm.dir/native/java/lang/JString.cpp.o
 jvm: CMakeFiles/jvm.dir/native/sun/misc/JVM.cpp.o
 jvm: CMakeFiles/jvm.dir/build.make
 jvm: CMakeFiles/jvm.dir/link.txt
-<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_136) "Linking CXX executable jvm"
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/surecn/Code/CLionProjects/jvm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_111) "Linking CXX executable jvm"
-<<<<<<< HEAD
->>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
-=======
->>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
->>>>>>> 3c002f4e01bd429415751bcd95ea973067c7babf
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/jvm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

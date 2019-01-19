@@ -5,12 +5,6 @@
 #include "ConstantInfo.h"
 #include "attribute/AttributeInfo.h"
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-using namespace cls;
-=======
-=======
->>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
 namespace cf {
 
     void* ConstantInfo::getValue() {
@@ -26,4 +20,3 @@ namespace cf {
     }
 
 }
->>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e

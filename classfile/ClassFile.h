@@ -15,49 +15,6 @@
 namespace cf {
     class ClassFile {
     private:
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-//    u4                  magic;
-//    u2                  minor_version;
-//    u2                  major_version;
-//    u2                  constant_pool_count;
-//    cp_info             constant_pool[constan_pool_count - 1];
-//    u2                  access_flags;
-//    u2                  this_class;
-//    u2                  super_class;
-//    u2                  interfaces_count;
-//    u2                  interfaces[interfaces_count];
-//    u2                  fields_count;
-//    field_info          fields[fields_count];
-//    u2                  methods_count;
-//    method_info         methods[methods_count];
-//    u2                  attributes_count;
-//    attribute_info      attributes[attributes_count];
-
-        u4 magic;
-        u2  minorVersion;
-        u2  majorVersion;
-        ConstantPool* constantPool;
-        u2  accessFlags;
-        u2  thisClass;
-        u2  superClass;
-        u2*  interfaces;
-        cls::MemberInfo** methods;
-        cls::MemberInfo** fields;
-        AttributeInfo* attributes;
-
-        bool readAndCheckMagic(ClassReader *classReader);
-
-        bool readAndCheckVersion(ClassReader *classReader);
-
-        void readFields(ClassReader *classReader);
-
-        void readMethods(ClassReader *classReader);
-
-=======
-=======
->>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
         u4 m_magic;
         u2 m_minorVersion;//小版本号
         u2 m_majorVersion;//大版本号
@@ -76,10 +33,6 @@ namespace cf {
         bool readAndCheckVersion(ClassReader *classReader);
         void readFields(ClassReader *classReader);
         void readMethods(ClassReader *classReader);
-<<<<<<< HEAD
->>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
-=======
->>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
         AttributeInfo* readAttributes(ClassReader *classReader);
         ConstantPool* readConstantPool(ClassReader *classReader);
         ConstantInfo* readConstantInfo(ClassReader *classReader, ConstantPool* cp);
@@ -89,50 +42,8 @@ namespace cf {
         ~ClassFile();
         string* getName(MemberInfo* memberInfo);
         string* getDescriptor(MemberInfo* memberInfo);
-<<<<<<< HEAD
-<<<<<<< HEAD
-    public:
-
-        ClassFile(byte* &classData){
-            ClassReader classReader(classData);
-            read(&classReader);
-        }
-
-        ClassFile* read(ClassReader* classReader);
-
-        inline u2 getMinorVersion() {
-            return minorVersion;
-        }
-
-        inline u2 getMajorVersion() {
-            return majorVersion;
-        }
-
-        inline string* getClassName() {
-            constantPool->getClassName(this->thisClass);
-        }
-
-        inline string* getSuperClassName() {
-            if (superClass > 0) {
-                return constantPool->getClassName(this->superClass);
-            }
-            return 0;
-        }
-
-        inline string* getInterfacesNames() {
-            if (interfaces) {
-                return constantPool->getClassName(*this->interfaces);
-            }
-            return 0;
-        }
-
-=======
         void parse(byte *&classData);
         ClassFile* read(ClassReader* classReader);
-=======
-        void parse(byte *&classData);
-        ClassFile* read(ClassReader* classReader);
->>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
         u2 getMinorVersion();
         u2 getMajorVersion();
         string* getClassName();
@@ -145,10 +56,6 @@ namespace cf {
         u2 getAccessFlags();
         ConstantPool* getConstantPool();
         MemberInfo **getFields() const;
-<<<<<<< HEAD
->>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
-=======
->>>>>>> f421e90f969fa8cd9d8d4aaa8d2536e048152b7e
     };
 
 }
