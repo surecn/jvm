@@ -17,6 +17,7 @@ namespace rt {
         java_int length = arrRef->getArrayLength();
         if (index < 0 || index >= length) {
             logError("java.lang.ArrayIndexOutOfBoundsException");
+            return;
         }
         refArray array = arrRef->getRefs();
         stack->pushRef(array[index]);

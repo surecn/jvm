@@ -8,19 +8,20 @@
 
 #include "../classfile/ConstantInfo.h"
 
-namespace cls {
+namespace cf {
+
     class ConstantUtf8Info : public ConstantInfo {
     private:
-        u2 length;
-        u1* bytes;
+        u2 m_length;
+        u1 *m_bytes;
+        string m_str;
+        ConstantPool *m_cp;
+        void decodeMUTF8(u1 *bytearr, int utflen);
     public:
-        ConstantUtf8Info(ClassReader* classReader) {
-            bytes = classReader->readU1s();
-        }
-
-        string toString() {
-            return (char*)bytes;
-        }
+        string *value();
+        void print();
+        void* getValue();
+        void readInfo(ClassReader* classReader);
     };
 
 }

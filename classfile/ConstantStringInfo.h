@@ -9,24 +9,16 @@
 #include "../classfile/ConstantInfo.h"
 #include "ConstantPool.h"
 
-namespace cls {
+namespace cf {
     class ConstantStringInfo : public ConstantInfo {
-
     private:
-
-        u2 stringIndex;
-
-        ConstantPool *constantPool;
-
+        u2 m_stringIndex;
+        ConstantPool *m_cp;
     public:
-
-        ConstantStringInfo(ClassReader* classReader, ConstantPool *cp) : constantPool(cp) {
-            stringIndex = classReader->readU2();
-        }
-
-        string toString() {
-            return "string:" + stringIndex;
-        }
+        ConstantStringInfo(ConstantPool *cp);
+        void print();
+        void* getValue();
+        void readInfo(ClassReader* classReader);
     };
 }
 

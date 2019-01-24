@@ -7,6 +7,8 @@
 
 
 #include "AttributeInfo.h"
+#include "LineNumberAttribute.h"
+
 
 namespace cf {
     class ExceptionTableEntry;
@@ -26,9 +28,11 @@ namespace cf {
 
         u2 m_exceptionTableLength;
 
-        ExceptionTableEntry *m_exceptionTable;
+        ExceptionTableEntry **m_exceptionTable;
 
         AttributeInfo** m_attributes;
+
+        u2 m_attributeCount;
 
         ConstantPool *m_constantPool;
 
@@ -40,6 +44,10 @@ namespace cf {
         u2 getMaxLocals();
         u1* getCode();
         u4 getCodeLength();
+
+        ExceptionTableEntry **getExceptionTable() const;
+        u2 getExceptionTableLength() const;
+        LineNumberTableAttribute * getLineNumberTableAttribute();
 
     };
 
@@ -61,7 +69,16 @@ namespace cf {
             m_catchType = classReader->readU2();
         }
 
-        static ExceptionTableEntry* readExceptionTable(ClassReader *reader, u2 length);
+        int getStartPc() const;
+
+        int getEndPc() const;
+
+        int getHandlerPc() const;
+
+        int getCatchType() const;
+
+
+        static ExceptionTableEntry** readExceptionTable(ClassReader *reader, u2 length);
     };
 
 }

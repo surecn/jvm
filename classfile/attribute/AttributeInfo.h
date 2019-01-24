@@ -22,7 +22,7 @@ namespace cf {
     public:
         string getAttributeType();
         virtual void readInfo(ClassReader* classReader) = 0;
-        static AttributeInfo** readAttributes(ClassReader* classReader, ConstantPool* constantPool, u2 count);
+        static AttributeInfo** readAttributes(ClassReader* classReader, ConstantPool* constantPool, u2 *count);
         static AttributeInfo* newAttributeInfo(string *attrName, u2 attrLen, ConstantPool* constantPool);
 
         static DeprecatedAttribute *s_attrDeprecated;

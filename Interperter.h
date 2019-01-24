@@ -6,7 +6,6 @@
 #define JVM_INTERPERTER_H
 
 
-#include "classfile/Constants.h"
 #include "runtime/Frame.h"
 #include "instructions/base/Instruction.h"
 
@@ -15,7 +14,7 @@ public:
     static void catchError(rt::Thread *thread);
     static void logInstruction(rt::Frame *frame, rt::Instruction *instruction);
     static void loop(rt::Thread *thread, bool logInst);
-    static void interpret(rt::Method *method, bool logInst, string args[]);
+    static void interpret(rt::Thread *thread, bool logInst);
 };
 
 

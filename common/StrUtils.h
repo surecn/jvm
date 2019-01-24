@@ -12,12 +12,13 @@
 #include <string.h>
 #include <iostream>
 #include <algorithm>
+#include <codecvt>
 
 namespace StrUtils
 {
     static const std::string tag = "[StrUtils] ";
 
-    inline static void replace(std::string&srcstr,const std::string&oldstr,const std::string&newstr)
+    static void replace(std::string&srcstr,const std::string&oldstr,const std::string&newstr)
     {
         std::string::size_type pos=0;
         std::string::size_type a=oldstr.size();
@@ -29,7 +30,7 @@ namespace StrUtils
         }
     }
 
-    inline static std::string trimLeft(const std::string& str, const std::string& token = " ")
+    static std::string trimLeft(const std::string& str, const std::string& token = " ")
     {
         std::string t = str;
         t.erase(0, t.find_first_not_of(token));
@@ -54,14 +55,14 @@ namespace StrUtils
     static std::string toLower(const std::string& str)
     {
         std::string t = str;
-        std::transform(t.begin(), t.end(), t.begin(), tolower);
+        std::transform(t.begin(), t.end(), t.begin(), ::tolower);
         return t;
     }
 
     static std::string toUpper(const std::string& str)
     {
         std::string t = str;
-        std::transform(t.begin(), t.end(), t.begin(), toupper);
+        std::transform(t.begin(), t.end(), t.begin(), ::toupper);
         return t;
     }
 
@@ -99,6 +100,15 @@ namespace StrUtils
         return result;
     }
 
+    static std::u16string stringToWString(char* s) {
+        std::wstring_convert<std::codecvt_utf8<char16_t>, char16_t > converter;
+        return converter.from_bytes(s);
+    }
+
+    static std::string wstringToString(char16_t * s) {
+        std::wstring_convert<std::codecvt_utf8<char16_t>, char16_t> converter;
+        return converter.to_bytes(s);
+    }
 
 };
 

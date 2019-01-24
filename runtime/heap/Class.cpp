@@ -55,7 +55,20 @@ namespace rt{
         m_fieldCount = cf->getFieldCount();
         m_methods = Method::newMethods(this, cf->getMethods(), cf->getMethodCount());
         m_methodCount = cf->getMethodCount();
+        m_sourceFile = getSourceFile(cf);
         m_superClass = NULL;
+    }
+
+    string Class::getSourceFile(cf::ClassFile *classFile) {
+        cf::SourceFileAttribute *attrs = classFile->getSourceFileAttribute();
+        if (attrs != NULL) {
+            return *attrs->getSourceFile();
+        }
+        return "Unknown";
+    }
+
+    string Class::getSourceFile() {
+        return m_sourceFile;
     }
 
     Class::~Class() {
@@ -207,8 +220,6 @@ namespace rt{
         return other->isSubClassOf(this);
     }
 
-
-
     bool Class::isAssignableFrom(rt::Class *other) {
         Class *s = other, *t = this;
         if (s == t) {
@@ -331,13 +342,13 @@ namespace rt{
         return iface->isSubInterfaceOf(this);
     }
 
-    Method* Class::getMethod(string *name, string *descriptor, bool isStatic) {
+    Method* Class::getMethod(string &name, string &descriptor, bool isStatic) {
         for (Class *cls = this; cls != NULL; cls = cls->getSuperClass()) {
             Method **pMethod = cls->getMethods();
             for (int i = 0, len = cls->getMethodCount(); i < len; ++i) {
                 if (pMethod[i]->isStatic() == isStatic &&
-                    *pMethod[i]->getName() == *name &&
-                        *pMethod[i]->getDescriptor() == *descriptor) {
+                    *pMethod[i]->getName() == name &&
+                        *pMethod[i]->getDescriptor() == descriptor) {
                     return pMethod[i];
                 }
             }
@@ -345,13 +356,13 @@ namespace rt{
         return NULL;
     }
 
-    Field* Class::getField(string *name, string *descriptor, bool isStatic) {
+    Field* Class::getField(string &name, string &descriptor, bool isStatic) {
         for (Class *cls = this; cls != NULL; cls = cls->getSuperClass()) {
             Field **pField = cls->getFields();
             for (int i = 0, len = cls->getFieldCount(); i < len; ++i) {
                 if (pField[i]->isStatic() == isStatic &&
-                    *pField[i]->getName() == *name &&
-                    *pField[i]->getDescriptor() == *descriptor) {
+                    *pField[i]->getName() == name &&
+                    *pField[i]->getDescriptor() == descriptor) {
                     return pField[i];
                 }
             }
@@ -409,17 +420,17 @@ namespace rt{
     }
 
     Object* Class::getRefVar(string &fieldName, string &descriptor) {
-        Field *field = getField(&fieldName, &descriptor, true);
+        Field *field = getField(fieldName, descriptor, true);
         return (Object *)m_staticVars->getRef(field->getSlotId());
     }
 
     void Class::setRefVar(string &fieldName, string &descriptor, rt::Object *ref) {
-        Field *field = getField(&fieldName, &descriptor, true);
+        Field *field = getField(fieldName, descriptor, true);
         m_staticVars->setRef(field->getSlotId(), ref);
     }
 
     Method* Class::getInstanceMethod(string &field, string &descriptor) {
-        return getMethod(&field, &descriptor, false);
+        return getMethod(field, descriptor, false);
     }
 
 }

@@ -10,7 +10,8 @@
 #include "ClassReader.h"
 #include "ConstantPool.h"
 #include "ConstantInfo.h"
-#include "Constants.h"
+#include "attribute/SourceFileAttribute.h"
+#include "MemberInfo.h"
 
 namespace cf {
     class ClassFile {
@@ -26,14 +27,15 @@ namespace cf {
         u2 m_interfacesCount;
         u2 m_methodCount;
         u2 m_fieldCount;
+        u2 m_attributeCount;
         MemberInfo** m_methods;
         MemberInfo** m_fields;
-        //AttributeInfo* m_attributes;
+        AttributeInfo** m_attributes;
         bool readAndCheckMagic(ClassReader *classReader);
         bool readAndCheckVersion(ClassReader *classReader);
         void readFields(ClassReader *classReader);
         void readMethods(ClassReader *classReader);
-        AttributeInfo* readAttributes(ClassReader *classReader);
+        void readAttributes(ClassReader *classReader);
         ConstantPool* readConstantPool(ClassReader *classReader);
         ConstantInfo* readConstantInfo(ClassReader *classReader, ConstantPool* cp);
 
@@ -56,6 +58,8 @@ namespace cf {
         u2 getAccessFlags();
         ConstantPool* getConstantPool();
         MemberInfo **getFields() const;
+        SourceFileAttribute *getSourceFileAttribute();
+
     };
 
 }

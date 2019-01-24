@@ -7,7 +7,7 @@
 SlotArray::SlotArray(u4 size) {
     m_slots = new java_int[size];
     for (int i = 0; i < size; ++i) {
-        m_slots[i] = 0;
+        m_slots[i] = NULL;
     }
 }
 

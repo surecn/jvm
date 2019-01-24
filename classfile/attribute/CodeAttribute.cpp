@@ -22,18 +22,52 @@ namespace cf {
 
         m_exceptionTableLength = classReader->readU2();
         if (m_exceptionTableLength > 0) {
-            ExceptionTableEntry::readExceptionTable(classReader, m_exceptionTableLength);
+            m_exceptionTable = ExceptionTableEntry::readExceptionTable(classReader, m_exceptionTableLength);
         }
-        u2 count = classReader->readU2();
-        m_attributes = AttributeInfo::readAttributes(classReader, m_constantPool, count);
+        m_attributes = AttributeInfo::readAttributes(classReader, m_constantPool, &m_attributeCount);
     }
 
-    ExceptionTableEntry* ExceptionTableEntry::readExceptionTable(ClassReader *reader, u2 length) {
-        ExceptionTableEntry *exceptionTableEntry = (ExceptionTableEntry*)malloc(sizeof(ExceptionTableEntry) * length);
+    ExceptionTableEntry **CodeAttribute::getExceptionTable() const {
+        return m_exceptionTable;
+    }
+
+    u2 CodeAttribute::getExceptionTableLength() const {
+        return m_exceptionTableLength;
+    }
+
+    LineNumberTableAttribute * CodeAttribute::getLineNumberTableAttribute() {
+        for (int i = 0; i < m_attributeCount; ++i) {
+            AttributeInfo* attributeInfo = m_attributes[i];
+            if (attributeInfo->getAttributeType() == "LineNumberTable") {
+                return (LineNumberTableAttribute*)attributeInfo;
+            }
+        }
+        return NULL;
+    }
+
+    ExceptionTableEntry** ExceptionTableEntry::readExceptionTable(ClassReader *reader, u2 length) {
+        ExceptionTableEntry **exceptionTableEntry = (ExceptionTableEntry**)malloc(sizeof(ExceptionTableEntry) * length);
         for (int i = 0; i < length; ++i) {
-            exceptionTableEntry[i].read(reader);
+            exceptionTableEntry[i] = new ExceptionTableEntry();
+            exceptionTableEntry[i]->read(reader);
         }
         return exceptionTableEntry;
+    }
+
+    int ExceptionTableEntry::getStartPc() const {
+        return m_startPc;
+    }
+
+    int ExceptionTableEntry::getEndPc() const {
+        return m_endPc;
+    }
+
+    int ExceptionTableEntry::getHandlerPc() const {
+        return m_handlerPc;
+    }
+
+    int ExceptionTableEntry::getCatchType() const {
+        return m_catchType;
     }
 
     u1* CodeAttribute::getCode() {
@@ -51,8 +85,6 @@ namespace cf {
     u2 CodeAttribute::getMaxStack() {
         return m_maxStack;
     }
-
-
 
 
 }

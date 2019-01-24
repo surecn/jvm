@@ -15,10 +15,12 @@ namespace cf {
 
     class LineNumberTableAttribute : public AttributeInfo {
     private:
-        LineNumberTableEntry **m_pLineNumberTableEntry;
+        LineNumberTableEntry **m_lineNumberTableEntry;
+        int m_lineNumberCount;
 
     public:
         void readInfo(ClassReader *classReader);
+        int getLineNumber(int pc);
     };
 
     class LineNumberTableEntry {
@@ -27,6 +29,10 @@ namespace cf {
         u2 m_lineNumber;
     public:
         LineNumberTableEntry(ClassReader *classReader);
+
+        u2 getStartPc() const;
+
+        u2 getLineNumber() const;
     };
 }
 

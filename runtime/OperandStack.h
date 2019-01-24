@@ -33,6 +33,7 @@ namespace rt {
         void pushBoolean(bool val);
         bool popBoolean();
         void println(string method);
+        void clear();
     };
 }
 

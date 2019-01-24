@@ -3,6 +3,8 @@
 //
 
 #include "ClassReader.h"
+#include <codecvt>
+
 
 namespace cf {
     ClassReader::ClassReader(byte* &_data):m_data(_data) {
@@ -60,6 +62,10 @@ namespace cf {
 
     string* ClassReader::readString() {
         u2 length = readU2();
+        //std::wstring_convert<std::codecvt_utf8<char16_t>, char16_t > converter;
+        //char ch[length];
+        //memcpy(ch, m_data, length);
+        //u16string *s = new u16string(converter.from_bytes((const char *)ch));
         string *s = new string((char*)m_data, 0, length);
         m_data = &m_data[length];
         return s;

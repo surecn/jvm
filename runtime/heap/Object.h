@@ -41,8 +41,9 @@ namespace rt {
         void *getData() const;
 
         //reflection
-        Object* getRefVar(string *name, string *descriptor);
-        Object* setRefVar(string *name, string *descriptor, Object *ref);
+        Object* getRefVar(string &name, string &descriptor);
+        Object* setRefVar(string &name, string &descriptor, Object *ref);
+        Object* setIntVar(string &name, string &descriptor, java_int val);
 
         Object* clone();
         void* cloneData(int *length);

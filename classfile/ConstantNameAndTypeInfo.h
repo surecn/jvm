@@ -9,22 +9,20 @@
 #include "../classfile/ConstantInfo.h"
 #include "ConstantPool.h"
 
-namespace cls {
+namespace cf {
+
     class ConstantNameAndTypeInfo : public ConstantInfo{
-
     private:
-        u2 nameIndex;
-        u2 desciptorIndex;
-        ConstantPool *constantPool;
+        u2 m_name_index;
+        u2 m_desciptor_index;
+        ConstantPool *m_cp;
     public:
-        ConstantNameAndTypeInfo(ClassReader* classReader, ConstantPool *cp) : constantPool(cp) {
-            nameIndex = classReader->readU2();
-            desciptorIndex = classReader->readU2();
-        }
-
-        string toString() {
-            return "NameAndType:" + std::to_string(nameIndex);
-        }
+        ConstantNameAndTypeInfo(ConstantPool *cp);
+        void print();
+        void* getValue();
+        u2 getNameIndex();
+        u2 getDescriptorIndex();
+        void readInfo(ClassReader* classReader);
     };
 }
 

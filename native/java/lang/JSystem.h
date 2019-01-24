@@ -14,6 +14,7 @@ namespace native {
     public:
         static void init();
         static void arraycopy(rt::Frame* frame);
+        static void initProperties(rt::Frame *frame);
     };
 
 }

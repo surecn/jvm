@@ -10,6 +10,7 @@ namespace rt {
     Object::Object(rt::Class *cls) {
         m_class = cls;
         m_data = new SlotArray(cls->getInstanceSlotCount());
+
     }
 
     Object::Object(rt::Class *cls, void* data, int count) {
@@ -66,16 +67,22 @@ namespace rt {
          return m_length;
     }
 
-    Object* Object::getRefVar(string *name, string *descriptor) {
+    Object* Object::getRefVar(string &name, string &descriptor) {
         Field *field = m_class->getField(name, descriptor, false);
         SlotArray *slotArray = (SlotArray*)m_data;
         return (Object *)slotArray->getRef(field->getSlotId());
     }
 
-    Object* Object::setRefVar(string *name, string *descriptor, rt::Object *ref) {
+    Object* Object::setRefVar(string &name, string &descriptor, rt::Object *ref) {
         Field *field = m_class->getField(name, descriptor, false);
         SlotArray *slotArray = (SlotArray*)m_data;
         slotArray->setRef(field->getSlotId(), ref);
+    }
+
+    Object* Object::setIntVar(string &name, string &descriptor, java_int val) {
+        Field *field = m_class->getField(name, descriptor, false);
+        SlotArray *slotArray = (SlotArray*)m_data;
+        slotArray->setInt(field->getSlotId(), val);
     }
 
     void *Object::getExtra() const {

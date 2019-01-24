@@ -44,6 +44,7 @@
 #include "loads/XALOAD.h"
 #include "stores/XASTORE.h"
 #include "reserved/INVOKE_NATIVE.h"
+#include "references/ATHROW.h"
 #include <map>
 
 namespace rt {
@@ -205,6 +206,8 @@ namespace rt {
         static SASTORE sastore;
 
         static INVOKE_NATIVE invoke_native;
+
+        static ATHROW athrow;
 
         static map<int, string>* s_instructionNames;
 

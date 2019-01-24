@@ -55,27 +55,10 @@ void Interperter::loop(rt::Thread *thread, bool logInst) {
     }
 }
 
-static rt::Object* createArgsArray(rt::ClassLoader *classLoader, string args[]) {
-    string clsName("java/lang/String");
-    rt::Class *clsString = classLoader->loadClass(&clsName);
-    rt::Object *argsArr = clsString->getArrayClass()->newArrayObject(3);
-    refArray slotArray = (refArray)argsArr->getRefs();
-    for (int i = 0; i < 3; ++i) {
-        rt::Object* obj = rt::StringPool::getJString(classLoader, args[i]);
-        slotArray[i] = obj;
-    }
-    return argsArr;
-}
 
-
-void Interperter::interpret(rt::Method *method, bool logInst, string args[]) {
-    rt::Thread* thread = rt::Thread::newThread();
-    rt::Frame *frame = thread->newFrame(method);
-    thread->pushFrame(frame);
-    rt::Object * object = createArgsArray(method->getClass()->getClassLoader(), args);
-    frame->getLocalVars()->setRef(0, object);
+void Interperter::interpret(rt::Thread *thread, bool logInst) {
     catchError(thread);
-    loop(thread, method->getCode());
+    loop(thread, logInst);
 }
 
 

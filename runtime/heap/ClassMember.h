@@ -7,8 +7,8 @@
 
 
 #include "../../common.h"
-#include "../../classfile/Constants.h"
 #include "Object.h"
+#include "../../classfile/MemberInfo.h"
 
 namespace rt{
     extern class Class;

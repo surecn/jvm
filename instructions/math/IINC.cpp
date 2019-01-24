@@ -16,14 +16,15 @@ namespace rt {
 
     void IINC::execute(rt::Frame *frame) {
         LocalVars *localVars = frame->getLocalVars();
-        int val = localVars->getInt(m_index);
+        java_int val = localVars->getInt(m_index);
         val += m_const;
+        cout << "IINC:" << val << "  const " << m_const << endl;
         localVars->setInt(m_index, val);
     }
 
     void IINC::fetchOperand(rt::BytecodeReader *reader) {
         m_index = uint(reader->readU1());
-        m_const = java_int(reader->readU1());
+        m_const = java_int(reader->readC1());
     }
 
 

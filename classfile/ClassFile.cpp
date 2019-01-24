@@ -38,7 +38,7 @@ namespace cf {
         m_interfaces = classReader->readU2s(&m_interfacesCount);
         readFields(classReader);
         readMethods(classReader);
-
+        readAttributes(classReader);
     }
 
     static ConstantPool* readConstanPool(ClassReader *classReader) {
@@ -88,11 +88,15 @@ namespace cf {
     }
 
     void ClassFile::readFields(ClassReader *classReader) {
-        m_fields = MemberInfo::readMembers(m_cp, classReader, &m_fieldCount);
+        m_fields = MemberInfo::readMembers(classReader, m_cp, &m_fieldCount);
     }
 
     void ClassFile::readMethods(ClassReader *classReader) {
-        m_methods = MemberInfo::readMembers(m_cp, classReader, &m_methodCount);
+        m_methods = MemberInfo::readMembers(classReader, m_cp, &m_methodCount);
+    }
+
+    void ClassFile::readAttributes(cf::ClassReader *classReader) {
+        m_attributes = AttributeInfo::readAttributes(classReader, m_cp, &m_attributeCount);
     }
 
     ConstantInfo* ClassFile::readConstantInfo(ClassReader *classReader, ConstantPool* cp) {
@@ -155,6 +159,16 @@ namespace cf {
 
     ConstantPool* ClassFile::getConstantPool() {
         return m_cp;
+    }
+
+    SourceFileAttribute* ClassFile::getSourceFileAttribute() {
+        for (int i = 0; i < m_attributeCount; ++i) {
+            AttributeInfo* attributeInfo = m_attributes[i];
+            if (attributeInfo->getAttributeType() == "SourceFile") {
+                return (SourceFileAttribute*)attributeInfo;
+            }
+        }
+        return NULL;
     }
 
 }

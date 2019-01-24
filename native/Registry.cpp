@@ -6,18 +6,25 @@
 #include "Registry.h"
 #include "../native/java/lang/JClass.h"
 #include "../native/java/lang/JObject.h"
+#include "../native/java/lang/JThrowable.h"
+#include "../native/java/io/JFileOutputStream.h"
+#include "../native/java/io/JFileInputStream.h"
+#include "../native/java/io/JFileDescriptor.h"
 #include "java/lang/JSystem.h"
 #include "java/lang/JFloat.h"
 #include "java/lang/JDouble.h"
 #include "java/lang/JString.h"
-#include "sun/misc/JVM.h"
+#include "java/lang/JThread.h"
+#include "java/security/AccessController.h"
+#include "sun/misc/VM.h"
+#include "sun/misc/JUnsafe.h"
+#include "sun/reflect/JReflection.h"
 
 namespace native {
 
     map<string, void(*)(rt::Frame*)>* Registry::s_registry;
 
     Fun Registry::s_emptyNativeMethod;
-
 
     int Registry::initData = init();
 
@@ -31,7 +38,38 @@ namespace native {
         JFloat::init();
         JDouble::init();
         JString::init();
-        JVM::init();
+        VM::init();
+        StackTraceElement::init();
+        JFileOutputStream::init();
+        JFileInputStream::init();
+        JFileDescriptor::init();
+        JUnsafe::init();
+        JReflection::init();
+        AccessController::init();
+        JThread::init();
+
+
+//        rt::Class *_shimClass  = new rt::Class("~shim");
+//        _returnCode = []byte{0xb1} // return
+//        _athrowCode = []byte{0xbf} // athrow
+//
+//        _returnMethod = &Method{
+//                ClassMember: ClassMember{
+//                        accessFlags: ACC_STATIC,
+//                        name:        "<return>",
+//                        class:       _shimClass,
+//                },
+//                code: _returnCode,
+//        }
+//
+//        _athrowMethod = &Method{
+//                ClassMember: ClassMember{
+//                        accessFlags: ACC_STATIC,
+//                        name:        "<athrow>",
+//                        class:       _shimClass,
+//                },
+//                code: _athrowCode,
+//        }
         return 1;
     }
 

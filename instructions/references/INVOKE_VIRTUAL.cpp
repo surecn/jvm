@@ -26,10 +26,10 @@ namespace rt {
         }
         Object* ref = (Object*)frame->getOperandStack()->getRefFromTop(resolvedMethod->getArgSlotCount() - 1);
         if (ref == NULL) {
-            // hack !
-            if (*methodRef->getName() == "println") {
-                println(frame->getOperandStack(), methodRef->getDescriptor());
-            }
+//            // hack !
+//            if (*methodRef->getName() == "println") {
+//                println(frame->getOperandStack(), methodRef->getDescriptor());
+//            }
             logError("java.lang.NullPointerException");
             return;
         }

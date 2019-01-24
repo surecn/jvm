@@ -23,7 +23,7 @@ namespace rt {
         Class *clsString = loader->loadClass(&clsStringName);
         Object *objStr = new Object(clsString);
         string fieldName("value");
-        objStr->setRefVar(&fieldName, &clsCArrayName, obj);
+        objStr->setRefVar(fieldName, clsCArrayName, obj);
         m_internedStrings[str] = objStr;
 
         cout << "getJString:" << str << "  " << objStr << obj << chars << endl;
@@ -33,7 +33,7 @@ namespace rt {
     string StringPool::getCString(rt::Object *jstr) {
         string name("value");
         string descriptor("[C");
-        Object *charArray = jstr->getRefVar(&name, &descriptor);
+        Object *charArray = jstr->getRefVar(name, descriptor);
         const char16_t* chars  = (const char16_t*)charArray->getRefs();
         u16string str(chars);
         return wstringToString(str);

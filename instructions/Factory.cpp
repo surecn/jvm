@@ -189,6 +189,8 @@ namespace rt {
 
     INVOKE_NATIVE Factory::invoke_native;
 
+    ATHROW Factory::athrow;
+
 
     map<int, string>* Factory::initInstructionNames() {
         map<int, string>* names = new map<int, string>();
@@ -791,8 +793,8 @@ namespace rt {
                 return new ANEW_ARRAY();
              case 0xbe:
                 return &array_length;
-                // case 0xbf:
-                // 	return athrow
+             case 0xbf:
+                return &athrow;
              case 0xc0:
                 return new CHECK_CAST();
              case 0xc1:

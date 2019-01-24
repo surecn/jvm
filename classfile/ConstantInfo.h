@@ -38,6 +38,12 @@ namespace cf {
         void setType(int type);
     };
 
+    class ConstantFactory {
+    public:
+        static ConstantInfo *readConstantInfo(ClassReader *classReader, ConstantPool *constantPool);
+        static ConstantInfo *newConstantInfo(u1 tag, ConstantPool *constantPool);
+    };
+
 }
 
 #endif //JVM_CONSTANTINFO_H

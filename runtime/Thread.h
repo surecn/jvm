@@ -9,7 +9,7 @@
 #include "Stack.h"
 
 namespace rt {
-
+    extern class Method;
     class Thread {
     private:
         java_int m_pc;
@@ -24,6 +24,8 @@ namespace rt {
         Frame* topFrame();
         Frame* newFrame(Method *method);
         bool isStackEmpty();
+        void clearStack();
+        Stack* getFrames();
         static Thread *newThread();
     };
 

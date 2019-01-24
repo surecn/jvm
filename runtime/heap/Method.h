@@ -7,6 +7,7 @@
 
 
 #include "ClassMember.h"
+#include "ExceptionTable.h"
 
 namespace rt {
     class Method : public ClassMember {
@@ -15,6 +16,8 @@ namespace rt {
         u4 m_maxLocals;
         u1 *m_code;
         u4 m_argSlotCount;
+        ExceptionTable *m_exceptionTable;
+        cf::LineNumberTableAttribute *m_lineNumberTable;
         void copyAttributes(cf::MemberInfo *memberInfo);
         void calcArgSlotCount(const vector<char> paramTypes);
         Method();
@@ -31,6 +34,8 @@ namespace rt {
         u1 *getCode();
         u4 getArgSlotCount();
         void injectCodeAttribute(char returnType);
+        int findExceptionHandler(Class* exClass, int pc);
+        int getLineNumber(int pc);
     };
 }
 

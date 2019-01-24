@@ -76,14 +76,15 @@ namespace rt {
     }
 
     void OperandStack::pushRef(java_ref ptr) {
-        println("pushRef");
+        println("pushRef"); cout << (java_int)ptr << endl;
         m_slots[m_size] = (java_int)ptr;
         m_size++;
     }
 
     java_ref OperandStack::popRef() {
-        println("popRef");
         m_size--;
+        println("popRef");
+        cout << (java_int)(m_slots[m_size]) << endl;
         return (void*)m_slots[m_size];
     }
 
@@ -115,6 +116,14 @@ namespace rt {
         stringstream sstr;
         sstr << method << "  OperandStack >> " << _m << "  >>  " << m_size;
         logError(sstr.str());
+    }
+
+    void OperandStack::clear() {
+        for (int i = m_size; i > 0 ; --i) {
+            m_slots[i] = NULL;
+        }
+        m_size = 0;
+
     }
 
 }

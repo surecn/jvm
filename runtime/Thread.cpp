@@ -3,6 +3,7 @@
 //
 
 #include "Thread.h"
+#include "Frame.h"
 
 namespace rt {
 
@@ -46,5 +47,13 @@ namespace rt {
 
     Frame* Thread::newFrame(Method *method) {
         return new Frame(this, method);
+    }
+
+    void Thread::clearStack() {
+        m_stack->clear();
+    }
+
+    Stack* Thread::getFrames() {
+        return m_stack;
     }
 }

@@ -3,6 +3,7 @@
 //
 
 #include "Stack.h"
+#include "Frame.h"
 
 namespace rt {
 
@@ -48,5 +49,14 @@ namespace rt {
         return m_top == NULL;
     }
 
+    void Stack::clear() {
+        while (!isEmpty()) {
+            pop();
+        }
+    }
+
+    int Stack::getSize() {
+        return m_size;
+    }
 
 }

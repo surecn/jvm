@@ -17,6 +17,8 @@ namespace cf {
         SourceFileAttribute(ConstantPool *cp);
 
         void readInfo(ClassReader *reader);
+
+        string *getSourceFile() const;
     };
 }
 

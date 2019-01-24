@@ -14,23 +14,58 @@ namespace rt {
         }
         string name = *getName();
         if (name == "[Z") {
-            return new Object(this, new java_bool[count], count);
+            java_bool * arr = new java_bool[count];
+            for (int i = 0; i < count; ++i) {
+                arr[i] = 0;
+            }
+            return new Object(this, arr, count);
         } else if (name == "[B") {
-            return new Object(this, new java_byte[count], count);
+            java_byte * arr = new java_byte[count];
+            for (int i = 0; i < count; ++i) {
+                arr[i] = 0;
+            }
+            return new Object(this, arr, count);
         } else if (name == "[C") {
-            return new Object(this, new java_char[count], count);
+            java_char * arr = new java_char[count];
+            for (int i = 0; i < count; ++i) {
+                arr[i] = 0;
+            }
+            return new Object(this, arr, count);
         } else if (name == "[S") {
-            return new Object(this, new java_short[count], count);
+            java_short * arr = new java_short[count];
+            for (int i = 0; i < count; ++i) {
+                arr[i] = 0;
+            }
+            return new Object(this, arr, count);
         } else if (name == "[I") {
-            return new Object(this, new java_int[count], count);
+            java_int * arr = new java_int[count];
+            for (int i = 0; i < count; ++i) {
+                arr[i] = 0;
+            }
+            return new Object(this, arr, count);
         } else if (name == "[J") {
-            return new Object(this, new java_long[count], count);
+            java_long * arr = new java_long[count];
+            for (int i = 0; i < count; ++i) {
+                arr[i] = 0;
+            }
+            return new Object(this, arr, count);
         } else if (name == "[F") {
-            return new Object(this, new java_float[count], count);
+            java_float * arr = new java_float[count];
+            for (int i = 0; i < count; ++i) {
+                arr[i] = 0;
+            }
+            return new Object(this, arr, count);
         } else if (name == "[D") {
-            return new Object(this, new java_double[count], count);
+            java_double * arr = new java_double[count];
+            for (int i = 0; i < count; ++i) {
+                arr[i] = 0;
+            }
+            return new Object(this, arr, count);
         } else {
             void **obj = new void*[count];
+            for (int i = 0; i < count; ++i) {
+                obj[i] = NULL;
+            }
             return new Object(this, obj, count);
         }
     }

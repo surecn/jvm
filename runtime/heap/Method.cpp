@@ -5,6 +5,7 @@
 #include "Method.h"
 #include "AccessFlags.h"
 #include "MethodDescriptor.h"
+#include "ConstantPool.h"
 
 namespace rt {
 
@@ -18,6 +19,8 @@ namespace rt {
             m_maxStack = codeAttribute->getMaxStack();
             m_maxLocals = codeAttribute->getMaxLocals();
             m_code = codeAttribute->getCode();
+            m_lineNumberTable = codeAttribute->getLineNumberTableAttribute();
+            m_exceptionTable = new ExceptionTable(codeAttribute->getExceptionTable(), codeAttribute->getExceptionTableLength(), getClass()->getConstantPool());
         }
     }
 
@@ -120,6 +123,21 @@ namespace rt {
         }
     }
 
+    int Method::findExceptionHandler(rt::Class *exClass, int pc) {
+        ExceptionHandler * handler = m_exceptionTable->findExceptionHandler(exClass, pc);
+        if (handler != NULL) {
+            return handler->handlerPC;
+        }
+        return -1;
+    }
 
-
+    int Method::getLineNumber(int pc) {
+        if (isNative()) {
+            return -2;
+        }
+        if (m_lineNumberTable == NULL) {
+            return -1;
+        }
+        return m_lineNumberTable->getLineNumber(pc);
+    }
 }

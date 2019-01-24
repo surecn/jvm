@@ -10,7 +10,7 @@
 
 namespace native {
 
-    class JVM {
+    class VM {
     public:
         static void init();
         static void initialize(rt::Frame *frame);

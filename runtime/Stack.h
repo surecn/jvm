@@ -6,10 +6,9 @@
 #define JVM_STRACK_H
 
 #include "../common.h"
-#include "Frame.h"
 
 namespace rt {
-
+    extern class Frame;
     class Stack {
     private:
         int m_maxSize;
@@ -22,6 +21,8 @@ namespace rt {
         Frame* pop();
         Frame* top();
         bool isEmpty();
+        void clear();
+        int getSize();
     };
 }
 

@@ -3,7 +3,9 @@
 //
 
 #include "ConstantPool.h"
-#include "Constants.h"
+#include "ConstantUtf8Info.h"
+#include "ConstantClassInfo.h"
+#include "ConstantNameAndTypeInfo.h"
 
 namespace cf {
     ConstantInfo* ConstantPool::getConstantInfo(u2 index) {

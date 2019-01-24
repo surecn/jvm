@@ -150,6 +150,33 @@ Interperter.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/Interperter.cpp.s
 .PHONY : Interperter.cpp.s
 
+JVM.o: JVM.cpp.o
+
+.PHONY : JVM.o
+
+# target to build an object file
+JVM.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/JVM.cpp.o
+.PHONY : JVM.cpp.o
+
+JVM.i: JVM.cpp.i
+
+.PHONY : JVM.i
+
+# target to preprocess a source file
+JVM.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/JVM.cpp.i
+.PHONY : JVM.cpp.i
+
+JVM.s: JVM.cpp.s
+
+.PHONY : JVM.s
+
+# target to generate assembly for a file
+JVM.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/JVM.cpp.s
+.PHONY : JVM.cpp.s
+
 MainParamater.o: MainParamater.cpp.o
 
 .PHONY : MainParamater.o
@@ -231,6 +258,33 @@ classfile/ClassReader.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ClassReader.cpp.s
 .PHONY : classfile/ClassReader.cpp.s
 
+classfile/ConstantClassInfo.o: classfile/ConstantClassInfo.cpp.o
+
+.PHONY : classfile/ConstantClassInfo.o
+
+# target to build an object file
+classfile/ConstantClassInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantClassInfo.cpp.o
+.PHONY : classfile/ConstantClassInfo.cpp.o
+
+classfile/ConstantClassInfo.i: classfile/ConstantClassInfo.cpp.i
+
+.PHONY : classfile/ConstantClassInfo.i
+
+# target to preprocess a source file
+classfile/ConstantClassInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantClassInfo.cpp.i
+.PHONY : classfile/ConstantClassInfo.cpp.i
+
+classfile/ConstantClassInfo.s: classfile/ConstantClassInfo.cpp.s
+
+.PHONY : classfile/ConstantClassInfo.s
+
+# target to generate assembly for a file
+classfile/ConstantClassInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantClassInfo.cpp.s
+.PHONY : classfile/ConstantClassInfo.cpp.s
+
 classfile/ConstantInfo.o: classfile/ConstantInfo.cpp.o
 
 .PHONY : classfile/ConstantInfo.o
@@ -284,6 +338,60 @@ classfile/ConstantInvokeDynamic.s: classfile/ConstantInvokeDynamic.cpp.s
 classfile/ConstantInvokeDynamic.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantInvokeDynamic.cpp.s
 .PHONY : classfile/ConstantInvokeDynamic.cpp.s
+
+classfile/ConstantMemberInfo.o: classfile/ConstantMemberInfo.cpp.o
+
+.PHONY : classfile/ConstantMemberInfo.o
+
+# target to build an object file
+classfile/ConstantMemberInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantMemberInfo.cpp.o
+.PHONY : classfile/ConstantMemberInfo.cpp.o
+
+classfile/ConstantMemberInfo.i: classfile/ConstantMemberInfo.cpp.i
+
+.PHONY : classfile/ConstantMemberInfo.i
+
+# target to preprocess a source file
+classfile/ConstantMemberInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantMemberInfo.cpp.i
+.PHONY : classfile/ConstantMemberInfo.cpp.i
+
+classfile/ConstantMemberInfo.s: classfile/ConstantMemberInfo.cpp.s
+
+.PHONY : classfile/ConstantMemberInfo.s
+
+# target to generate assembly for a file
+classfile/ConstantMemberInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantMemberInfo.cpp.s
+.PHONY : classfile/ConstantMemberInfo.cpp.s
+
+classfile/ConstantNameAndTypeInfo.o: classfile/ConstantNameAndTypeInfo.cpp.o
+
+.PHONY : classfile/ConstantNameAndTypeInfo.o
+
+# target to build an object file
+classfile/ConstantNameAndTypeInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantNameAndTypeInfo.cpp.o
+.PHONY : classfile/ConstantNameAndTypeInfo.cpp.o
+
+classfile/ConstantNameAndTypeInfo.i: classfile/ConstantNameAndTypeInfo.cpp.i
+
+.PHONY : classfile/ConstantNameAndTypeInfo.i
+
+# target to preprocess a source file
+classfile/ConstantNameAndTypeInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantNameAndTypeInfo.cpp.i
+.PHONY : classfile/ConstantNameAndTypeInfo.cpp.i
+
+classfile/ConstantNameAndTypeInfo.s: classfile/ConstantNameAndTypeInfo.cpp.s
+
+.PHONY : classfile/ConstantNameAndTypeInfo.s
+
+# target to generate assembly for a file
+classfile/ConstantNameAndTypeInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantNameAndTypeInfo.cpp.s
+.PHONY : classfile/ConstantNameAndTypeInfo.cpp.s
 
 classfile/ConstantNumeric.o: classfile/ConstantNumeric.cpp.o
 
@@ -339,32 +447,86 @@ classfile/ConstantPool.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantPool.cpp.s
 .PHONY : classfile/ConstantPool.cpp.s
 
-classfile/Constants.o: classfile/Constants.cpp.o
+classfile/ConstantStringInfo.o: classfile/ConstantStringInfo.cpp.o
 
-.PHONY : classfile/Constants.o
+.PHONY : classfile/ConstantStringInfo.o
 
 # target to build an object file
-classfile/Constants.cpp.o:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/Constants.cpp.o
-.PHONY : classfile/Constants.cpp.o
+classfile/ConstantStringInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantStringInfo.cpp.o
+.PHONY : classfile/ConstantStringInfo.cpp.o
 
-classfile/Constants.i: classfile/Constants.cpp.i
+classfile/ConstantStringInfo.i: classfile/ConstantStringInfo.cpp.i
 
-.PHONY : classfile/Constants.i
+.PHONY : classfile/ConstantStringInfo.i
 
 # target to preprocess a source file
-classfile/Constants.cpp.i:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/Constants.cpp.i
-.PHONY : classfile/Constants.cpp.i
+classfile/ConstantStringInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantStringInfo.cpp.i
+.PHONY : classfile/ConstantStringInfo.cpp.i
 
-classfile/Constants.s: classfile/Constants.cpp.s
+classfile/ConstantStringInfo.s: classfile/ConstantStringInfo.cpp.s
 
-.PHONY : classfile/Constants.s
+.PHONY : classfile/ConstantStringInfo.s
 
 # target to generate assembly for a file
-classfile/Constants.cpp.s:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/Constants.cpp.s
-.PHONY : classfile/Constants.cpp.s
+classfile/ConstantStringInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantStringInfo.cpp.s
+.PHONY : classfile/ConstantStringInfo.cpp.s
+
+classfile/ConstantUtf8Info.o: classfile/ConstantUtf8Info.cpp.o
+
+.PHONY : classfile/ConstantUtf8Info.o
+
+# target to build an object file
+classfile/ConstantUtf8Info.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantUtf8Info.cpp.o
+.PHONY : classfile/ConstantUtf8Info.cpp.o
+
+classfile/ConstantUtf8Info.i: classfile/ConstantUtf8Info.cpp.i
+
+.PHONY : classfile/ConstantUtf8Info.i
+
+# target to preprocess a source file
+classfile/ConstantUtf8Info.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantUtf8Info.cpp.i
+.PHONY : classfile/ConstantUtf8Info.cpp.i
+
+classfile/ConstantUtf8Info.s: classfile/ConstantUtf8Info.cpp.s
+
+.PHONY : classfile/ConstantUtf8Info.s
+
+# target to generate assembly for a file
+classfile/ConstantUtf8Info.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/ConstantUtf8Info.cpp.s
+.PHONY : classfile/ConstantUtf8Info.cpp.s
+
+classfile/MemberInfo.o: classfile/MemberInfo.cpp.o
+
+.PHONY : classfile/MemberInfo.o
+
+# target to build an object file
+classfile/MemberInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/MemberInfo.cpp.o
+.PHONY : classfile/MemberInfo.cpp.o
+
+classfile/MemberInfo.i: classfile/MemberInfo.cpp.i
+
+.PHONY : classfile/MemberInfo.i
+
+# target to preprocess a source file
+classfile/MemberInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/MemberInfo.cpp.i
+.PHONY : classfile/MemberInfo.cpp.i
+
+classfile/MemberInfo.s: classfile/MemberInfo.cpp.s
+
+.PHONY : classfile/MemberInfo.s
+
+# target to generate assembly for a file
+classfile/MemberInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/classfile/MemberInfo.cpp.s
+.PHONY : classfile/MemberInfo.cpp.s
 
 classfile/attribute/AttributeInfo.o: classfile/attribute/AttributeInfo.cpp.o
 
@@ -2202,6 +2364,33 @@ instructions/references/ARRAY_LENGTH.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/ARRAY_LENGTH.cpp.s
 .PHONY : instructions/references/ARRAY_LENGTH.cpp.s
 
+instructions/references/ATHROW.o: instructions/references/ATHROW.cpp.o
+
+.PHONY : instructions/references/ATHROW.o
+
+# target to build an object file
+instructions/references/ATHROW.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/ATHROW.cpp.o
+.PHONY : instructions/references/ATHROW.cpp.o
+
+instructions/references/ATHROW.i: instructions/references/ATHROW.cpp.i
+
+.PHONY : instructions/references/ATHROW.i
+
+# target to preprocess a source file
+instructions/references/ATHROW.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/ATHROW.cpp.i
+.PHONY : instructions/references/ATHROW.cpp.i
+
+instructions/references/ATHROW.s: instructions/references/ATHROW.cpp.s
+
+.PHONY : instructions/references/ATHROW.s
+
+# target to generate assembly for a file
+instructions/references/ATHROW.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/instructions/references/ATHROW.cpp.s
+.PHONY : instructions/references/ATHROW.cpp.s
+
 instructions/references/CHECK_CAST.o: instructions/references/CHECK_CAST.cpp.o
 
 .PHONY : instructions/references/CHECK_CAST.o
@@ -2931,6 +3120,87 @@ native/Registry.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/Registry.cpp.s
 .PHONY : native/Registry.cpp.s
 
+native/java/io/JFileDescriptor.o: native/java/io/JFileDescriptor.cpp.o
+
+.PHONY : native/java/io/JFileDescriptor.o
+
+# target to build an object file
+native/java/io/JFileDescriptor.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/java/io/JFileDescriptor.cpp.o
+.PHONY : native/java/io/JFileDescriptor.cpp.o
+
+native/java/io/JFileDescriptor.i: native/java/io/JFileDescriptor.cpp.i
+
+.PHONY : native/java/io/JFileDescriptor.i
+
+# target to preprocess a source file
+native/java/io/JFileDescriptor.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/java/io/JFileDescriptor.cpp.i
+.PHONY : native/java/io/JFileDescriptor.cpp.i
+
+native/java/io/JFileDescriptor.s: native/java/io/JFileDescriptor.cpp.s
+
+.PHONY : native/java/io/JFileDescriptor.s
+
+# target to generate assembly for a file
+native/java/io/JFileDescriptor.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/java/io/JFileDescriptor.cpp.s
+.PHONY : native/java/io/JFileDescriptor.cpp.s
+
+native/java/io/JFileInputStream.o: native/java/io/JFileInputStream.cpp.o
+
+.PHONY : native/java/io/JFileInputStream.o
+
+# target to build an object file
+native/java/io/JFileInputStream.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/java/io/JFileInputStream.cpp.o
+.PHONY : native/java/io/JFileInputStream.cpp.o
+
+native/java/io/JFileInputStream.i: native/java/io/JFileInputStream.cpp.i
+
+.PHONY : native/java/io/JFileInputStream.i
+
+# target to preprocess a source file
+native/java/io/JFileInputStream.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/java/io/JFileInputStream.cpp.i
+.PHONY : native/java/io/JFileInputStream.cpp.i
+
+native/java/io/JFileInputStream.s: native/java/io/JFileInputStream.cpp.s
+
+.PHONY : native/java/io/JFileInputStream.s
+
+# target to generate assembly for a file
+native/java/io/JFileInputStream.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/java/io/JFileInputStream.cpp.s
+.PHONY : native/java/io/JFileInputStream.cpp.s
+
+native/java/io/JFileOutputStream.o: native/java/io/JFileOutputStream.cpp.o
+
+.PHONY : native/java/io/JFileOutputStream.o
+
+# target to build an object file
+native/java/io/JFileOutputStream.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/java/io/JFileOutputStream.cpp.o
+.PHONY : native/java/io/JFileOutputStream.cpp.o
+
+native/java/io/JFileOutputStream.i: native/java/io/JFileOutputStream.cpp.i
+
+.PHONY : native/java/io/JFileOutputStream.i
+
+# target to preprocess a source file
+native/java/io/JFileOutputStream.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/java/io/JFileOutputStream.cpp.i
+.PHONY : native/java/io/JFileOutputStream.cpp.i
+
+native/java/io/JFileOutputStream.s: native/java/io/JFileOutputStream.cpp.s
+
+.PHONY : native/java/io/JFileOutputStream.s
+
+# target to generate assembly for a file
+native/java/io/JFileOutputStream.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/java/io/JFileOutputStream.cpp.s
+.PHONY : native/java/io/JFileOutputStream.cpp.s
+
 native/java/lang/JClass.o: native/java/lang/JClass.cpp.o
 
 .PHONY : native/java/lang/JClass.o
@@ -3093,32 +3363,167 @@ native/java/lang/JSystem.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/java/lang/JSystem.cpp.s
 .PHONY : native/java/lang/JSystem.cpp.s
 
-native/sun/misc/JVM.o: native/sun/misc/JVM.cpp.o
+native/java/lang/JThread.o: native/java/lang/JThread.cpp.o
 
-.PHONY : native/sun/misc/JVM.o
+.PHONY : native/java/lang/JThread.o
 
 # target to build an object file
-native/sun/misc/JVM.cpp.o:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/sun/misc/JVM.cpp.o
-.PHONY : native/sun/misc/JVM.cpp.o
+native/java/lang/JThread.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/java/lang/JThread.cpp.o
+.PHONY : native/java/lang/JThread.cpp.o
 
-native/sun/misc/JVM.i: native/sun/misc/JVM.cpp.i
+native/java/lang/JThread.i: native/java/lang/JThread.cpp.i
 
-.PHONY : native/sun/misc/JVM.i
+.PHONY : native/java/lang/JThread.i
 
 # target to preprocess a source file
-native/sun/misc/JVM.cpp.i:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/sun/misc/JVM.cpp.i
-.PHONY : native/sun/misc/JVM.cpp.i
+native/java/lang/JThread.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/java/lang/JThread.cpp.i
+.PHONY : native/java/lang/JThread.cpp.i
 
-native/sun/misc/JVM.s: native/sun/misc/JVM.cpp.s
+native/java/lang/JThread.s: native/java/lang/JThread.cpp.s
 
-.PHONY : native/sun/misc/JVM.s
+.PHONY : native/java/lang/JThread.s
 
 # target to generate assembly for a file
-native/sun/misc/JVM.cpp.s:
-	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/sun/misc/JVM.cpp.s
-.PHONY : native/sun/misc/JVM.cpp.s
+native/java/lang/JThread.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/java/lang/JThread.cpp.s
+.PHONY : native/java/lang/JThread.cpp.s
+
+native/java/lang/JThrowable.o: native/java/lang/JThrowable.cpp.o
+
+.PHONY : native/java/lang/JThrowable.o
+
+# target to build an object file
+native/java/lang/JThrowable.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/java/lang/JThrowable.cpp.o
+.PHONY : native/java/lang/JThrowable.cpp.o
+
+native/java/lang/JThrowable.i: native/java/lang/JThrowable.cpp.i
+
+.PHONY : native/java/lang/JThrowable.i
+
+# target to preprocess a source file
+native/java/lang/JThrowable.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/java/lang/JThrowable.cpp.i
+.PHONY : native/java/lang/JThrowable.cpp.i
+
+native/java/lang/JThrowable.s: native/java/lang/JThrowable.cpp.s
+
+.PHONY : native/java/lang/JThrowable.s
+
+# target to generate assembly for a file
+native/java/lang/JThrowable.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/java/lang/JThrowable.cpp.s
+.PHONY : native/java/lang/JThrowable.cpp.s
+
+native/java/security/AccessController.o: native/java/security/AccessController.cpp.o
+
+.PHONY : native/java/security/AccessController.o
+
+# target to build an object file
+native/java/security/AccessController.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/java/security/AccessController.cpp.o
+.PHONY : native/java/security/AccessController.cpp.o
+
+native/java/security/AccessController.i: native/java/security/AccessController.cpp.i
+
+.PHONY : native/java/security/AccessController.i
+
+# target to preprocess a source file
+native/java/security/AccessController.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/java/security/AccessController.cpp.i
+.PHONY : native/java/security/AccessController.cpp.i
+
+native/java/security/AccessController.s: native/java/security/AccessController.cpp.s
+
+.PHONY : native/java/security/AccessController.s
+
+# target to generate assembly for a file
+native/java/security/AccessController.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/java/security/AccessController.cpp.s
+.PHONY : native/java/security/AccessController.cpp.s
+
+native/sun/misc/JUnsafe.o: native/sun/misc/JUnsafe.cpp.o
+
+.PHONY : native/sun/misc/JUnsafe.o
+
+# target to build an object file
+native/sun/misc/JUnsafe.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/sun/misc/JUnsafe.cpp.o
+.PHONY : native/sun/misc/JUnsafe.cpp.o
+
+native/sun/misc/JUnsafe.i: native/sun/misc/JUnsafe.cpp.i
+
+.PHONY : native/sun/misc/JUnsafe.i
+
+# target to preprocess a source file
+native/sun/misc/JUnsafe.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/sun/misc/JUnsafe.cpp.i
+.PHONY : native/sun/misc/JUnsafe.cpp.i
+
+native/sun/misc/JUnsafe.s: native/sun/misc/JUnsafe.cpp.s
+
+.PHONY : native/sun/misc/JUnsafe.s
+
+# target to generate assembly for a file
+native/sun/misc/JUnsafe.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/sun/misc/JUnsafe.cpp.s
+.PHONY : native/sun/misc/JUnsafe.cpp.s
+
+native/sun/misc/VM.o: native/sun/misc/VM.cpp.o
+
+.PHONY : native/sun/misc/VM.o
+
+# target to build an object file
+native/sun/misc/VM.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/sun/misc/VM.cpp.o
+.PHONY : native/sun/misc/VM.cpp.o
+
+native/sun/misc/VM.i: native/sun/misc/VM.cpp.i
+
+.PHONY : native/sun/misc/VM.i
+
+# target to preprocess a source file
+native/sun/misc/VM.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/sun/misc/VM.cpp.i
+.PHONY : native/sun/misc/VM.cpp.i
+
+native/sun/misc/VM.s: native/sun/misc/VM.cpp.s
+
+.PHONY : native/sun/misc/VM.s
+
+# target to generate assembly for a file
+native/sun/misc/VM.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/sun/misc/VM.cpp.s
+.PHONY : native/sun/misc/VM.cpp.s
+
+native/sun/reflect/JReflection.o: native/sun/reflect/JReflection.cpp.o
+
+.PHONY : native/sun/reflect/JReflection.o
+
+# target to build an object file
+native/sun/reflect/JReflection.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/sun/reflect/JReflection.cpp.o
+.PHONY : native/sun/reflect/JReflection.cpp.o
+
+native/sun/reflect/JReflection.i: native/sun/reflect/JReflection.cpp.i
+
+.PHONY : native/sun/reflect/JReflection.i
+
+# target to preprocess a source file
+native/sun/reflect/JReflection.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/sun/reflect/JReflection.cpp.i
+.PHONY : native/sun/reflect/JReflection.cpp.i
+
+native/sun/reflect/JReflection.s: native/sun/reflect/JReflection.cpp.s
+
+.PHONY : native/sun/reflect/JReflection.s
+
+# target to generate assembly for a file
+native/sun/reflect/JReflection.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/native/sun/reflect/JReflection.cpp.s
+.PHONY : native/sun/reflect/JReflection.cpp.s
 
 runtime/Frame.o: runtime/Frame.cpp.o
 
@@ -3471,6 +3876,33 @@ runtime/heap/ConstantPool.cpp.s:
 	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/ConstantPool.cpp.s
 .PHONY : runtime/heap/ConstantPool.cpp.s
 
+runtime/heap/ExceptionTable.o: runtime/heap/ExceptionTable.cpp.o
+
+.PHONY : runtime/heap/ExceptionTable.o
+
+# target to build an object file
+runtime/heap/ExceptionTable.cpp.o:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/ExceptionTable.cpp.o
+.PHONY : runtime/heap/ExceptionTable.cpp.o
+
+runtime/heap/ExceptionTable.i: runtime/heap/ExceptionTable.cpp.i
+
+.PHONY : runtime/heap/ExceptionTable.i
+
+# target to preprocess a source file
+runtime/heap/ExceptionTable.cpp.i:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/ExceptionTable.cpp.i
+.PHONY : runtime/heap/ExceptionTable.cpp.i
+
+runtime/heap/ExceptionTable.s: runtime/heap/ExceptionTable.cpp.s
+
+.PHONY : runtime/heap/ExceptionTable.s
+
+# target to generate assembly for a file
+runtime/heap/ExceptionTable.cpp.s:
+	$(MAKE) -f CMakeFiles/jvm.dir/build.make CMakeFiles/jvm.dir/runtime/heap/ExceptionTable.cpp.s
+.PHONY : runtime/heap/ExceptionTable.cpp.s
+
 runtime/heap/Field.o: runtime/heap/Field.cpp.o
 
 .PHONY : runtime/heap/Field.o
@@ -3780,6 +4212,9 @@ help:
 	@echo "... Interperter.o"
 	@echo "... Interperter.i"
 	@echo "... Interperter.s"
+	@echo "... JVM.o"
+	@echo "... JVM.i"
+	@echo "... JVM.s"
 	@echo "... MainParamater.o"
 	@echo "... MainParamater.i"
 	@echo "... MainParamater.s"
@@ -3789,21 +4224,36 @@ help:
 	@echo "... classfile/ClassReader.o"
 	@echo "... classfile/ClassReader.i"
 	@echo "... classfile/ClassReader.s"
+	@echo "... classfile/ConstantClassInfo.o"
+	@echo "... classfile/ConstantClassInfo.i"
+	@echo "... classfile/ConstantClassInfo.s"
 	@echo "... classfile/ConstantInfo.o"
 	@echo "... classfile/ConstantInfo.i"
 	@echo "... classfile/ConstantInfo.s"
 	@echo "... classfile/ConstantInvokeDynamic.o"
 	@echo "... classfile/ConstantInvokeDynamic.i"
 	@echo "... classfile/ConstantInvokeDynamic.s"
+	@echo "... classfile/ConstantMemberInfo.o"
+	@echo "... classfile/ConstantMemberInfo.i"
+	@echo "... classfile/ConstantMemberInfo.s"
+	@echo "... classfile/ConstantNameAndTypeInfo.o"
+	@echo "... classfile/ConstantNameAndTypeInfo.i"
+	@echo "... classfile/ConstantNameAndTypeInfo.s"
 	@echo "... classfile/ConstantNumeric.o"
 	@echo "... classfile/ConstantNumeric.i"
 	@echo "... classfile/ConstantNumeric.s"
 	@echo "... classfile/ConstantPool.o"
 	@echo "... classfile/ConstantPool.i"
 	@echo "... classfile/ConstantPool.s"
-	@echo "... classfile/Constants.o"
-	@echo "... classfile/Constants.i"
-	@echo "... classfile/Constants.s"
+	@echo "... classfile/ConstantStringInfo.o"
+	@echo "... classfile/ConstantStringInfo.i"
+	@echo "... classfile/ConstantStringInfo.s"
+	@echo "... classfile/ConstantUtf8Info.o"
+	@echo "... classfile/ConstantUtf8Info.i"
+	@echo "... classfile/ConstantUtf8Info.s"
+	@echo "... classfile/MemberInfo.o"
+	@echo "... classfile/MemberInfo.i"
+	@echo "... classfile/MemberInfo.s"
 	@echo "... classfile/attribute/AttributeInfo.o"
 	@echo "... classfile/attribute/AttributeInfo.i"
 	@echo "... classfile/attribute/AttributeInfo.s"
@@ -4008,6 +4458,9 @@ help:
 	@echo "... instructions/references/ARRAY_LENGTH.o"
 	@echo "... instructions/references/ARRAY_LENGTH.i"
 	@echo "... instructions/references/ARRAY_LENGTH.s"
+	@echo "... instructions/references/ATHROW.o"
+	@echo "... instructions/references/ATHROW.i"
+	@echo "... instructions/references/ATHROW.s"
 	@echo "... instructions/references/CHECK_CAST.o"
 	@echo "... instructions/references/CHECK_CAST.i"
 	@echo "... instructions/references/CHECK_CAST.s"
@@ -4089,6 +4542,15 @@ help:
 	@echo "... native/Registry.o"
 	@echo "... native/Registry.i"
 	@echo "... native/Registry.s"
+	@echo "... native/java/io/JFileDescriptor.o"
+	@echo "... native/java/io/JFileDescriptor.i"
+	@echo "... native/java/io/JFileDescriptor.s"
+	@echo "... native/java/io/JFileInputStream.o"
+	@echo "... native/java/io/JFileInputStream.i"
+	@echo "... native/java/io/JFileInputStream.s"
+	@echo "... native/java/io/JFileOutputStream.o"
+	@echo "... native/java/io/JFileOutputStream.i"
+	@echo "... native/java/io/JFileOutputStream.s"
 	@echo "... native/java/lang/JClass.o"
 	@echo "... native/java/lang/JClass.i"
 	@echo "... native/java/lang/JClass.s"
@@ -4107,9 +4569,24 @@ help:
 	@echo "... native/java/lang/JSystem.o"
 	@echo "... native/java/lang/JSystem.i"
 	@echo "... native/java/lang/JSystem.s"
-	@echo "... native/sun/misc/JVM.o"
-	@echo "... native/sun/misc/JVM.i"
-	@echo "... native/sun/misc/JVM.s"
+	@echo "... native/java/lang/JThread.o"
+	@echo "... native/java/lang/JThread.i"
+	@echo "... native/java/lang/JThread.s"
+	@echo "... native/java/lang/JThrowable.o"
+	@echo "... native/java/lang/JThrowable.i"
+	@echo "... native/java/lang/JThrowable.s"
+	@echo "... native/java/security/AccessController.o"
+	@echo "... native/java/security/AccessController.i"
+	@echo "... native/java/security/AccessController.s"
+	@echo "... native/sun/misc/JUnsafe.o"
+	@echo "... native/sun/misc/JUnsafe.i"
+	@echo "... native/sun/misc/JUnsafe.s"
+	@echo "... native/sun/misc/VM.o"
+	@echo "... native/sun/misc/VM.i"
+	@echo "... native/sun/misc/VM.s"
+	@echo "... native/sun/reflect/JReflection.o"
+	@echo "... native/sun/reflect/JReflection.i"
+	@echo "... native/sun/reflect/JReflection.s"
 	@echo "... runtime/Frame.o"
 	@echo "... runtime/Frame.i"
 	@echo "... runtime/Frame.s"
@@ -4149,6 +4626,9 @@ help:
 	@echo "... runtime/heap/ConstantPool.o"
 	@echo "... runtime/heap/ConstantPool.i"
 	@echo "... runtime/heap/ConstantPool.s"
+	@echo "... runtime/heap/ExceptionTable.o"
+	@echo "... runtime/heap/ExceptionTable.i"
+	@echo "... runtime/heap/ExceptionTable.s"
 	@echo "... runtime/heap/Field.o"
 	@echo "... runtime/heap/Field.i"
 	@echo "... runtime/heap/Field.s"

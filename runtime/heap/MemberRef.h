@@ -7,6 +7,7 @@
 
 
 #include "SymRef.h"
+#include "../../classfile/ConstantMemberInfo.h"
 
 namespace rt {
 

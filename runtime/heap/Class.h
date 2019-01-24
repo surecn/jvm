@@ -36,12 +36,14 @@ namespace rt {
         SlotArray *m_staticVars;
         bool m_initStarted;
         Object *m_jClass;
+        string m_sourceFile;
         string getArrayClassName(string className);
         string toDescriptor(string string);
         static map<string, string> *s_primitiveTypes;
         void startInit();
         void scheduleClinit(Thread *thread);
         void initSuperClass(Thread *thread);
+        string getSourceFile(cf::ClassFile *classFile);
     public:
 
         Class(int accessFlags, string *name, ClassLoader *classLoader,
@@ -97,8 +99,8 @@ namespace rt {
         Object *getJClass() const;
         void setJClass(Object *jClass);
 
-        Method *getMethod(string *name, string *descriptor, bool isStatic);
-        Field *getField(string *name, string *descriptor, bool isStatic);
+        Method *getMethod(string &name, string &descriptor, bool isStatic);
+        Field *getField(string &name, string &descriptor, bool isStatic);
         Class *getPrimitiveClass();
         string *getName0();
         string getJavaName();
@@ -111,6 +113,7 @@ namespace rt {
         Object *getRefVar(string &field, string &descriptor);
         void setRefVar(string &field, string &descriptor, Object *ref);
         Method *getInstanceMethod(string &field, string &descriptor);
+        string getSourceFile();
 
     };
 

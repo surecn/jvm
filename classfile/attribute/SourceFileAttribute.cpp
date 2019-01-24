@@ -14,4 +14,8 @@ namespace cf {
         int sourceFileIndex = reader->readU2();
         m_sourceFile = m_constantPool->getUtf8(sourceFileIndex);
     }
+
+    string *SourceFileAttribute::getSourceFile() const {
+        return m_sourceFile;
+    }
 }

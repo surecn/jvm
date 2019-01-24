@@ -6,6 +6,7 @@
 #include "runtime/heap/ClassLoader.h"
 #include "common/ZipUtils.h"
 #include "runtime/heap/StringPool.h"
+#include "JVM.h"
 
 const string PATHSeparter;
 
@@ -20,21 +21,21 @@ void printLoadError(int error) {
     cout << "LoadClass : " << error << endl;
 }
 
-void startVM(struct MainParamater cmd) {
-    ClassPath classPath(cmd.m_xjreOption, cmd.m_cpOption);
-    rt::ClassLoader classLoader(&classPath, cmd.m_verboseClassFlag);
-
-    string className = cmd.m_className;
-    StrUtils::replace(className, ".", "/");
-
-    rt::Class *mainClass = classLoader.loadClass(&className);
-    rt::Method *mainMethod = mainClass->getMainMethod();
-    if (mainMethod != NULL) {
-        Interperter::interpret(mainMethod, cmd.m_verboseInstFlag, cmd.m_args);
-    }
-
-    cout << "startVM" << endl;
-}
+//void startVM(struct MainParamater cmd) {
+//    ClassPath classPath(cmd.m_xjreOption, cmd.m_cpOption);
+//    rt::ClassLoader classLoader(&classPath, cmd.m_verboseClassFlag);
+//
+//    string className = cmd.m_className;
+//    StrUtils::replace(className, ".", "/");
+//
+//    rt::Class *mainClass = classLoader.loadClass(&className);
+//    rt::Method *mainMethod = mainClass->getMainMethod();
+//    if (mainMethod != NULL) {
+//        Interperter::interpret(mainMethod, cmd.m_verboseInstFlag);
+//    }
+//
+//    cout << "startVM" << endl;
+//}
 
 
 int main(int argc, char *argv[]) {
@@ -45,7 +46,8 @@ int main(int argc, char *argv[]) {
     } else if (mainParamater.m_helpFlag || mainParamater.m_className == "") {
         printUsage();
     } else {
-        startVM(mainParamater);
+        JVM jvm(&mainParamater);
+        jvm.start();
     }
     return 0;
 }

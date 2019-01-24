@@ -4,9 +4,21 @@
 
 #include "ConstantStringInfo.h"
 
-using namespace cls;
+namespace cf {
 
+    ConstantStringInfo::ConstantStringInfo(ConstantPool *cp) : m_cp(cp) {
+    }
 
-//string ConstantStringInfo::toString() {
-//    return *constantPool->getUtf8(stringIndex);
-//}
+    void ConstantStringInfo::readInfo(cf::ClassReader *classReader) {
+        m_stringIndex = classReader->readU2();
+    }
+
+    void ConstantStringInfo::print() {
+        cout << "string:" + m_stringIndex << endl;
+    }
+
+    void* ConstantStringInfo::getValue() {
+        return m_cp->getUtf8(m_stringIndex);
+    }
+
+}
